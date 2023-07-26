@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
+// import Carousel from './components/carousel/carousel';
+// import Main from './components/main/main';
+// import Error from './components/error/error';
+// import Web from './components/web/web';
+// import Services from './components/services/services';
+// import Portfolio from './components/portfolio/portfolio';
+// import Team from './components/team/team';
+// import Company from './components/company/company';
+// import Network from './components/network/network';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+<Navbar/>
+{/* <Carousel/> */}
+{/* <Main/> */}
+{/* <Error/> */}
+{/* <Web/> */}
+{/* <Services/> */}
+{/* <Portfolio/> */}
+{/* <Team/> */}
+{/* <Company/> */}
+<Network/>
+<Footer/> 
+
+
     </div>
   );
 }
