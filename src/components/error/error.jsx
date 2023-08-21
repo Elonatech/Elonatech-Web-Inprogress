@@ -1,11 +1,20 @@
-import React from 'react';
+import { useRouteError } from "react-router-dom";
+import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
+
 
 const Error = () => {
-    return (
+
+const error = useRouteError();
+console.error(error);
+
+return (
 <>
+< Navbar/>
 <main>
 <div class="container-fluid  bg-dark page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container text-center py-5">
+    
+     <div class="container text-center py-5">
         <h1 class="display-2 text-white mb-4 animated slideInDown">404 Error</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
@@ -14,10 +23,10 @@ const Error = () => {
                 <li class="breadcrumb-item text-primary" aria-current="page">404 Error</li>
             </ol>
         </nav>
-    </div>
-</div>
+    </div> 
+</div> 
 
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-xxl py-5  wow fadeInUp" data-wow-delay="0.1s">
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -32,7 +41,7 @@ const Error = () => {
     </div>
 </div>
 </main>
-            
+   < Footer/>         
 </>
     );
 }

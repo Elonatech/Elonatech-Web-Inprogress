@@ -1,5 +1,8 @@
-import React from 'react';
-import './bootstrap.min.css'
+import './navbar.css'
+import './drop.css'
+
+
+
 
 // function
 const Navbar = () => {
@@ -21,57 +24,76 @@ const Navbar = () => {
         <div class="offcanvas-body">
           <ul class="navbar-nav pe-4  ms-auto">
             <li class="nav-item pe-4">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              <a class="nav-link fw-bold active" aria-current="page" href="#">HOME</a>
             </li>
+
             {/* <!-- first drop down --> */}
-            <li class="nav-item dropdown pe-4">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                OUR EXPERTISE
+            <li class="nav-item dropdown  pe-4">
+              <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Solutions
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li class="dropdown-item p-3">Action else</li>
+                <li><a class="dropdown-item p-3" href="#">Another action</a></li>
+                <li><a class="dropdown-item p-3" href="#">Something else</a></li>
+                <li class="dropdown-item p-3" ><a href="#">
+                  
+                <li class="nav-item dropdown pe-4">
+              <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu p-4">
+                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+              </ul>
+            </li>
+                  
+                  </a></li>
               </ul>
             </li>
             
             {/* <!-- second drop down --> */}
             <li class="nav-item dropdown pe-4">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                THE COMPANY
+              <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu p-4">
+                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
               </ul>
             </li>
             {/* <!-- third drop down --> */}
             <li class="nav-item dropdown pe-4">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                SHOP
+              <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Support
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu p-4">
+                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item active pe-4">
-              <a class="nav-link active">CONTACT</a>
+
+            {/* <!-- fourth drop down --> */}
+            <li class="nav-item dropdown pe-4">
+              <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Who we are
+              </a>
+              <ul class="dropdown-menu p-4">
+                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+              </ul>
             </li>
+          
             <li class="nav-item pe-4">
-              <a class="nav-link active">BLOG</a>
+              <a class="nav-link  fw-bold active">Get in touch</a>
             </li>
           </ul>
           
@@ -79,7 +101,6 @@ const Navbar = () => {
       </div>
     </div>
   </nav>
-
 
 </>
     );

@@ -1,64 +1,65 @@
+import './footer.css'
+
+
+
 const Footer = () => {
     return (
-<>
-       
-  <div class="container-fluid bg-secondary">
-  <footer class="py-5 footer mt-auto">
-    <div class="row">
-      <div class="col-6 col-md-2 ">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
+<> 
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-2 mb-1">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-1">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address"/>
-            <button class="btn btn-primary" type="button">Subscribe</button>
+<footer id="footer" class="footer  bg-secondary">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+            <span> 
+            <h4>ELONATECH NIGERIA LIMITED</h4>
+            </span>
+          </a>
+          {/* <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> */}
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
-        </form>
-        <ul class="list-unstyled d-flex mt-3">
-          <li class="nav-item ms-2"><a href="#" class="nav-link p-1 text-body-secondary"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="nav-item ms-2"><a href="#" class="nav-link p-1 text-body-secondary"><i class="fab fa-twitter"></i></a></li>
-          <li class="nav-item ms-2"><a href="#" class="nav-link p-1 text-body-secondary"><i class="fab fa-instagram"></i></a></li>
-          <li class="nav-item ms-2"><a href="#" class="nav-link p-1 text-body-secondary"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Team Members</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">App + Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Network Developments</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>4 , Oluwakemi Street, Shasha Road <br /> Egbeda, Lagos. <br /> Nigeria  <br /> <strong>Phone:</strong> +2349 0145 44520. <br /> <strong>Email:</strong>  info@elonatech.com.ng<br /></p>
+        </div>
+
       </div>
     </div>
-    </footer>
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+      </div>
     </div>
-            
-</>
-    );
+  </footer>
+</>  
+)
 }
 
-export default Footer;
+export default Footer

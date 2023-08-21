@@ -9,9 +9,9 @@ import team4 from './image/team-4.jpg';
 const Team = () => {
     return (
 <>
-<div class="container-xxl py-5 mt-5">
+<div class="container-xxl py-5 mt-5 mb-5">
             <div class="container">
-                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{minWidth:"500px"}}>
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{minWidth:"20px"}}>
                     <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
                     <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
                 </div>
