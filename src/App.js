@@ -68,7 +68,7 @@ import Pos from './pages/sales/pos/pos';
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 
-
+import Say from './components/say/say';
 
 
 
@@ -288,7 +288,12 @@ const router = createBrowserRouter([
         element:<SingleProduct/>
       },
   ],
+  
 },
+{
+  path:'/say',
+  element:<Say/>
+}
 ]);
 
 

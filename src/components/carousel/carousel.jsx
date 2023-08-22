@@ -1,6 +1,10 @@
 import React from 'react';
 import './carousel.css';
 
+import carousel1 from './captions/img_environment.jpg'
+import carousel2 from './captions/313365.jpg'
+// import carousel3 from './captions/4391681.jpg'
+import carousel4 from './captions/4391687.png'
 
 
 const Carousel = () => {
@@ -15,7 +19,8 @@ const Carousel = () => {
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src={carousel1} class="bd-placeholder-img" alt="" />
+        {/* <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Example headline.</h1>
@@ -25,7 +30,8 @@ const Carousel = () => {
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src={carousel2} class="bd-placeholder-img" alt="" />
+        {/* <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -35,7 +41,8 @@ const Carousel = () => {
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src={carousel4} class="bd-placeholder-img" alt="" />
+        {/* <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>One more for good measure.</h1>
