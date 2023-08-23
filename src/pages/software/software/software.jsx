@@ -12,8 +12,10 @@ import './software.css'
 
 const Software = () => {
     return (
-    <>
-    {/* Header */}
+
+  <>
+
+{/* Header */}
 <section class="mt-5 bg-dark" >
       <div class="container" >
         <div class="row justify-content-between">
@@ -31,9 +33,7 @@ const Software = () => {
           </div>
         </div>
       </div>
-    </section>
-{/* End */}
-
+ </section>
 
 {/* body */}
 <div className="container-fluid  mb-5" style={{marginTop:"100px"}}>
@@ -257,10 +257,10 @@ const Software = () => {
         </div>
 
       </div>
-    </section>   
+</section>   
     
             
-    </>
+  </>
     );
 }
 

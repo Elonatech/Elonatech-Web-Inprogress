@@ -1,4 +1,4 @@
-/* 
+
 
 
 
@@ -59,11 +59,11 @@
   }
   
   .about .nav-link.active {
-    color: var(--color-primary);
-    background: none;
+    background-color: green;
+    padding: 15px;
     border-bottom: 3px solid var(--color-primary);
   }
-  
+
   @media (max-width: 575px) {
     .about .nav-link {
       font-size: 16px;
@@ -85,4 +85,4 @@
   }
 
 
-   */
+   

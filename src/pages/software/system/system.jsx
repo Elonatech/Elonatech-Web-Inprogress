@@ -42,7 +42,7 @@ const System = () => {
 </div>
 
 {/* <!-- ======= Stats Counter Section ======= --> */}
-    <section id="stats-counter" class="stats-counter">
+    <section id="stats-counter" class="stats-counter mb-5 ">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4 align-items-center">
@@ -54,7 +54,6 @@ const System = () => {
           <div class="col-lg-6">
 
             <div class="stats-item d-flex align-items-center">
-              {/* <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter text-success"></span>4 */}
               <h1 className='text-success me-3'>232</h1>
               <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
             </div>
