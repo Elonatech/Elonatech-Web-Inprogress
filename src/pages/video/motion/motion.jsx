@@ -5,7 +5,6 @@ import si3 from './captions/si-3.png'
 import si4 from './captions/si-4.png'
 
 
-import './motion.css'
 
 
 import logo1 from './captions/logo-1.png'
