@@ -4,8 +4,7 @@ const Remote = () => {
     return (
  <>
  {/* header */}
-<div class="hero ">
-		{/* <img src={blob} alt="" class="img-fluid blob"/> */}
+<div class="hero mb-5">
 		<div class="container">
 			<div class="row align-items-center justify-content-between pt-5">
 				<div class="col-lg-6 text-center text-lg-start pe-lg-5">
@@ -16,11 +15,6 @@ const Remote = () => {
 						<a href="https://www.youtube.com/watch?v=Mb1zrW_zra4" class="text-white glightbox text-decoration-none">Watch the video</a>
 					</div>
 				</div>
-				{/* <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-					<div class="img-wrap">
-						<img src={img} alt="Image" class="img-fluid rounded p-5"/>
-					</div>
-				</div> */}
 			</div>
 		</div>
 	</div>

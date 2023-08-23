@@ -12,7 +12,7 @@ const Admin = () => {
     return (
      <>
     {/* header */}
-<div class="hero ">
+<div class="hero mb-5 ">
 		<img src={blob} alt="" class="img-fluid"/>
 		<div class="container">
 			<div class="row align-items-center justify-content-between pt-5">
@@ -37,7 +37,7 @@ const Admin = () => {
 
 {/* body */}
 
-<div class="section">
+<div class="section mb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 order-lg-2 mb-4 mb-lg-0">
@@ -82,12 +82,12 @@ const Admin = () => {
 	</div>
 
 
-<div class="section  sec-features">
+<div class="section  sec-features mb-5 ">
 		<div class="container">
 			<div class="row g-5">
 				<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
 					<div class="feature d-flex">
-						<span class="bi-bag-check-fill"></span>
+						<span class="bi-bag-check-fill pe-4"></span>
 						<div>
 							<h3>Build financial</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
@@ -96,7 +96,7 @@ const Admin = () => {
 				</div>
 				<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
 					<div class="feature d-flex">
-						<span class="bi-wallet-fill"></span>
+						<span class="bi-wallet-fill pe-4"></span>
 						<div>
 							<h3>Invest for the future</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
@@ -105,7 +105,7 @@ const Admin = () => {
 				</div>
 				<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
 					<div class="feature d-flex">
-						<span class="bi-pie-chart-fill"></span>
+						<span class="bi-pie-chart-fill pe-4"></span>
 						<div>
 							<h3>Responsible banking</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>

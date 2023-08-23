@@ -1,4 +1,4 @@
-/* 
+
   
 
       
@@ -28,7 +28,6 @@
         z-index: 2;
         position: relative; }
       .sec-features .feature [class^="bi-"]:after {
-        content: "";
         position: absolute;
         z-index: 1;
         left: -10px;
@@ -67,7 +66,6 @@
         z-index: 2;
         position: relative; }
       .service [class^="bi-"]:after {
-        content: "";
         position: absolute;
         z-index: 1;
         left: -10px;
@@ -93,7 +91,6 @@
         background: linear-gradient(140deg, #306ee8 0%, #3038e8 100%);
         opacity: .9;
         overflow: hidden;
-        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -109,4 +106,4 @@
       color: #fff; }
 
 
-       */
+       
