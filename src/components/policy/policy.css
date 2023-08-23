@@ -4,7 +4,9 @@
 /***********************/
 /*     Extra Pages     */
 /***********************/
-.ex-header {
+
+
+/* .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
 	background-color: #24262a;
@@ -58,35 +60,32 @@
 }
 
 
-/*************************/
-/*     Media Queries     */
-/*************************/	
-/* Min-width 768px */
+
 @media (min-width: 768px) {
 
-	/* Header */
+	
 	.header {
 		padding-top: 11rem;
 		padding-bottom: 9rem;
 	}
-	/* end of header */
 
 
-	/* Services */
+
+	
 	.basic-2 .text-box {
 		padding-right: 2.125rem;
 		padding-left: 2.125rem;
 	}
-	/* end of services */
 
 
-	/* Extra Pages */
+
+	
 	.ex-basic-1 .text-box {
 		padding: 1.75rem 2rem 0.875rem 2rem;
 	}
-	/* end of extra pages */
+	
 }
-/* end of min-width 768px */
+ */
 
 
 

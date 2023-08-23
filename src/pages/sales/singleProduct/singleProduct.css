@@ -1,8 +1,5 @@
 /* 
----------------------------------------------
-Single Product Page
---------------------------------------------- 
-*/
+
 
 #product {
     margin-top: 80px;
@@ -83,10 +80,6 @@ Single Product Page
 
 
 
-/*---------------------
-  Services Section
------------------------*/
-
 .services-section {
 	background: #eeeffb;
 	padding-bottom: 60px;
@@ -131,9 +124,7 @@ Single Product Page
 	color: #111111;
 }
 
-/*---------------------
-  Pricing Section
------------------------*/
+
 
 .pricing-section {
 	padding-bottom: 60px;
@@ -262,7 +253,7 @@ Single Product Page
 
 
 
-
+ */
 
 
   

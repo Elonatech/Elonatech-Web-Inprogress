@@ -1,5 +1,5 @@
 
-import './hardware.css'
+
 
 
 const Hardware = () => {

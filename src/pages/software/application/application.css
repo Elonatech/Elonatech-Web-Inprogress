@@ -1,6 +1,8 @@
-/*--------------------------------------------------------------
-# Call To Action Section
---------------------------------------------------------------*/
+/* 
+
+
+
+
 .call-to-action .container {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./captions/cta-bg.jpg") center center;
     background-size: cover;
@@ -65,23 +67,7 @@
     transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
   
-  /* /* .call-to-action .play-btn:hover:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-40%) translateY(-50%);
-    width: 0;
-    height: 0;
-    border: none;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #fff;
-    z-index: 200;
-    animation: none;
-    border-radius: 0;
-  } */
-   */
+
   .call-to-action .play-btn:hover:after {
     border-left: 15px rgba(0, 131, 116, 0.4) ;
     transform: scale(20);
@@ -118,9 +104,7 @@
     }
   }
 
-/*--------------------------------------------------------------
-# Our Services Section
---------------------------------------------------------------*/
+
 .services {
     padding: 60px 0;
   }
@@ -192,19 +176,7 @@
     border-color: var(--color-primary);
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 
 
