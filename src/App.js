@@ -30,7 +30,6 @@ import Hosting from './pages/webs/hosting/hosting';
 
 // video 
 import Video from './pages/video/video/video';
-import Motion from './pages/video/motion/motion';
 import Animation from './pages/video/animation/animation';
 
 // graphic 
@@ -193,11 +192,6 @@ const router = createBrowserRouter([
     {
       path:'/video',
       element:<Video/>
-    },
- 
-    {
-      path:'/motion',
-      element:<Motion/>
     },
     //graphic
      {
