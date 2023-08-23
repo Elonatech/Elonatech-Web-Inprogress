@@ -69,9 +69,10 @@ const Brand = () => {
                 <button type="button" class="btn btn-outline-light btn-lg">Large button</button>
             </div>
         </div>
-        {/* <!--Right Contents  --> */}
+        {/* image */}
         <div class="starups-img"></div>
     </div>
+
     <div class="categories-area section-padding40 mt-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -85,7 +86,7 @@ const Brand = () => {
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="single-cat mb-50 text-center">
                         <div class="cat-icon pt-5">
                             <img src={services1}  alt=""/>
                         </div>
@@ -95,7 +96,7 @@ const Brand = () => {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="single-cat mb-50 text-center">
                         <div class="cat-icon pt-5">
                             <img src={services2} alt=""/>
                         </div>
@@ -105,7 +106,7 @@ const Brand = () => {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                    <div class="single-cat mb-50 text-center">
                         <div class="cat-icon pt-5">
                             <img src={services3} alt=""/>
                         </div>
@@ -115,7 +116,7 @@ const Brand = () => {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-cat mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                    <div class="single-cat mb-50 text-center">
                         <div class="cat-icon pt-5">
                             <img src={services4} alt=""/>
                         </div>
