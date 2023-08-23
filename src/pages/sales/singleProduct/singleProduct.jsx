@@ -77,11 +77,8 @@ const SingleProduct = () => {
         </div>
     </section>
 
-{/*  Product Area Ends  */}
-
 
 {/* table */}
-
 <section class="hosting-section spad mb-5">
         <div class="container">
             <div class="row">
@@ -1033,7 +1030,6 @@ const SingleProduct = () => {
         </div>
     </section>
 
-    {/* end */}
     </>
     );
 }

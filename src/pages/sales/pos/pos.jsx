@@ -1,9 +1,5 @@
 
 
-import './pos.css'
-
-
-
 const Pos = () => {
     return (
  <>
