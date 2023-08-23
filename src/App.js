@@ -67,8 +67,6 @@ import Pos from './pages/sales/pos/pos';
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 
-import Say from './components/say/say';
-
 
 
 const Layout = () =>{
@@ -284,12 +282,7 @@ const router = createBrowserRouter([
   ],
   
 },
-{
-  path:'/say',
-  element:<Say/>
-}
 ]);
-
 
 function App() {
   return (

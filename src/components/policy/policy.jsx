@@ -4,6 +4,7 @@ const Policy = () => {
     return (
  <> 
  {/* header */}
+ 
     <header class="ex-header mt-5">
         <div class="container">
             <div class="row">

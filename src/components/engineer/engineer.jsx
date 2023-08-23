@@ -3,10 +3,7 @@ import pro from './author.png'
 import './eng.css'
 const Engineer = () => {
     return (
-        <>
-
-
-
+<>
 
 {/* header */}
 <div

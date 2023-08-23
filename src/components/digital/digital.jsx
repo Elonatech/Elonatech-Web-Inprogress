@@ -10,7 +10,8 @@ import img18 from './icons/icon-10-light.png'
 
 const Digital = () => {
     return (
-        <>
+      
+<>
 
 {/* header */}
 <div
@@ -28,7 +29,6 @@ const Digital = () => {
    </nav> */}
  </div>
 </div>
-
 
  {/* image card */}
 <div className="container">
@@ -49,9 +49,7 @@ Whatever your goals, whether to improve existing marketing campaigns or design y
     </div>
 </div>
 
-
 {/* digital services */}
-
    <div class="container-xxl py-5">
       <div class="container">
     <div class="section-header  text-center">
@@ -180,9 +178,7 @@ Whatever your goals, whether to improve existing marketing campaigns or design y
       </div>
     </div>
             
-
 {/* frequent question */}
-
 <section id="faq" class="faq mb-5 mt-3">
       <div class="container" data-aos="fade-up">
 
@@ -292,10 +288,10 @@ Whatever your goals, whether to improve existing marketing campaigns or design y
         </div>
 
       </div>
-    </section>
+ </section>
 
-        </>
-    );
+</>
+      );
 }
 
 export default Digital;

@@ -1,5 +1,4 @@
 import './css/portfolio.css';
-// import './css/animate.css'
 import project1 from './project-1.jpg'
 import project2 from './project-2.jpg'
 import project3 from './project-3.jpg'
@@ -259,7 +258,7 @@ const Portfolio = () => {
         </div>
 
       </div>
-    </section>
+  </section>
 
             
     </>
