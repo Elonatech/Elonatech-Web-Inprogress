@@ -1,6 +1,5 @@
-import './navbar.css'
 import './drop.css'
-
+// import './navbar.css'
 
 
 
