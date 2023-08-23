@@ -27,7 +27,10 @@ import './main.css'
 const Main = () => {
     return (
 <>
+
+
 {/* Card */}
+
 <div class="album py-3 bg-body-tertiary">
   
   <h2 className='text-center'>Why Elonatech</h2>
@@ -67,6 +70,7 @@ const Main = () => {
 </div>
 
 {/* Marketing */}
+
   <div className="container marketing">
   <div class="row featurette mt-5 mb-5 ">
     <div class="col-md-7">
@@ -183,11 +187,10 @@ const Main = () => {
   </button>
 </div>
 </div>
-{/* End Marketing */}
-
 
 
 {/* <!-- Carousel --> */}
+
 <div id="demo" class="carousel slide bg-secondary" data-bs-ride="carousel">
   {/* <!-- The slideshow/carousel --> */}
   <div class="carousel-inner">
@@ -343,6 +346,7 @@ const Main = () => {
 
 
 {/* Consult */}
+
 <nav class="navbar navbar navbar-dark bg-body-secondary">
 <div class="container ">
   <div class="row g-4 py-4">
