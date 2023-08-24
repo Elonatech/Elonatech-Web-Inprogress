@@ -136,12 +136,17 @@ const Main = () => {
   <div class="row featurette mt-5 ">
     <div class="col-md-7">
       <h2 class="">First featurette heading. It’ll blow your mind.</h2>
-      <p class="fs-6">The IT Solutions and Corporate Consultant Company.
-        We endeavor to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.</p>
+      <p class="fs-6 p-2">The IT Solutions and Corporate Consultant Company.
+        We endeavor to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
+        exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard
+        to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
+        exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard
+        to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
+      </p>
      </div>
      <div class="col-md-5">
       {/* feature image */}
-      <img src={Feature}  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img- mx-auto" style={{width:"28rem" , height:"29rem"}}   alt="" />
+      <img src={Feature}  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img- mx-auto" style={{width:"28rem" , height:"25rem"}}   alt="" />
      </div>
     </div>
 
@@ -251,7 +256,7 @@ const Main = () => {
 </div>
 
 {/* Carousel  */}
-<div id="demo" class="carousel slide  mb-5" data-bs-ride="carousel" style={{backgroundColor:"	#191970"}}>
+<div id="demo" class="carousel slide  mb-5" data-bs-ride="carousel" style={{backgroundColor:"#11253D"}}>
   {/* <!-- The slideshow/carousel --> */}
   <div class="carousel-inner">
     <div class="carousel-item active">
