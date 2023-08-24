@@ -18,7 +18,7 @@ const Carousel = () => {
       <div class="carousel-item active" style={{height:"600px"}}>
         <img src={carousel1} class="bd-placeholder-img" alt="" />
         <div class="container">
-          <div class="carousel-caption text-start mb-5" >
+          <div class="carousel-caption text-start"  >
             <h1>Example headline.</h1>
             <p>Some representative placeholder content for the first slide of the carousel.</p>
             <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
@@ -28,7 +28,7 @@ const Carousel = () => {
       <div class="carousel-item" style={{height:"600px"}}>
         <img src={carousel2} class="bd-placeholder-img" alt="" />
         <div class="container mt-5">
-          <div class="carousel-caption mb-5">
+          <div class="carousel-caption">
             <h1>Another example headline.</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
@@ -38,7 +38,7 @@ const Carousel = () => {
       <div class="carousel-item" style={{height:"600px"}}>
         <img src={carousel4} class="bd-placeholder-img" alt="" />
         <div class="container">
-          <div class="carousel-caption mb-5 text-end">
+          <div class="carousel-caption text-end">
             <h1>One more for good measure.</h1>
             <p>Some representative placeholder content for the third slide of this carousel.</p>
             <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>

@@ -41,6 +41,7 @@ const Main = () => {
 <div class="album py-3 bg-body-tertiary">
   
   <h2 className='text-center'>Why Elonatech</h2>
+  <div class="about-border"></div>
   <h2 className='text-center pt-3'>Top-notch Technology Service Providers</h2>
   <h3 className='text-center pt-3'></h3>
 
@@ -77,7 +78,7 @@ const Main = () => {
 </div>
 
 {/* support */}
-<div className="container  mt-5  p-5 rounded">
+<div className="container  mt-5  p-5 rounded" style={{backgroundColor:"#D3D3D3"}}>
 
     <div className="row">
         <div className="col-md-6">
@@ -149,6 +150,7 @@ const Main = () => {
 
 {/* Our clients */}
 <h2 className='text-center' style={{marginTop:"100px"}}>Some Of Our Clients</h2>
+<div class="about-border"></div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner mt-5">
   <div className="container">
@@ -261,12 +263,12 @@ const Main = () => {
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src={test1} class="testimonial-img" alt=""/>
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3 className='text-white'>Saul Goodman</h3>
+                <h4 className='text-white'>Ceo &amp; Founder</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p>
+                <p className='text-white'>
                   <i class="bi bi-quote quote-icon-left"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bi bi-quote quote-icon-right"></i>
@@ -288,12 +290,12 @@ const Main = () => {
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src={test2} class="testimonial-img" alt=""/>
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3 className='text-white'>Saul Goodman</h3>
+                <h4 className='text-white'>Ceo &amp; Founder</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p>
+                <p className='text-white'>
                   <i class="bi bi-quote quote-icon-left"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bi bi-quote quote-icon-right"></i>
@@ -315,12 +317,12 @@ const Main = () => {
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src={test3} class="testimonial-img" alt=""/>
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3 className='text-white'>Saul Goodman</h3>
+                <h4 className='text-white'>Ceo &amp; Founder</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p>
+                <p className='text-white'>
                   <i class="bi bi-quote quote-icon-left"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bi bi-quote quote-icon-right"></i>
@@ -342,12 +344,12 @@ const Main = () => {
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src={test4} class="testimonial-img" alt=""/>
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3 className='text-white'>Saul Goodman</h3>
+                <h4 className='text-white'>Ceo &amp; Founder</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p>
+                <p className='text-white'>
                   <i class="bi bi-quote quote-icon-left"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bi bi-quote quote-icon-right"></i>
@@ -372,12 +374,12 @@ const Main = () => {
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src={test5} class="testimonial-img" alt=""/>
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3 className='text-white'>Saul Goodman</h3>
+                <h4 className='text-white'>Ceo &amp; Founder</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p>
+                <p className='text-white'>
                   <i class="bi bi-quote quote-icon-left"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bi bi-quote quote-icon-right"></i>
