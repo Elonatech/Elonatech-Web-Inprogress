@@ -54,7 +54,7 @@ const Main = () => {
             <h5 class="card-title">Website and App Solutions</h5>
             <p class="card-text fs-6">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists, designers, developers, and project managers work together to help clients meet their business objective</p>
             <div class="d-flex justify-content-between align-items-center">
-              <button className='btn btn-primary'>Read More</button>
+              <button className='btn btn-danger'>Read More</button>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Main = () => {
             <h5 class="card-title">Flexible, Scalable IT Solutions</h5>
             <p class="card-text fs-6">This is a wider card with supporting text below as a natural lead-in <br /> to additional content. This content <br /> is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
-            <button className='btn btn-primary'>Read More</button> 
+            <button className='btn btn-danger'>Read More</button> 
             </div>
           </div>
         </div>
@@ -251,7 +251,7 @@ const Main = () => {
 </div>
 
 {/* Carousel  */}
-<div id="demo" class="carousel slide bg-secondary mb-5" data-bs-ride="carousel">
+<div id="demo" class="carousel slide  mb-5" data-bs-ride="carousel" style={{backgroundColor:"	#191970"}}>
   {/* <!-- The slideshow/carousel --> */}
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -269,9 +269,9 @@ const Main = () => {
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p className='text-white'>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <i class="bi bi-quote quote-icon-left text-danger"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-right text-danger"></i>
                 </p>
               </div>
             </div>
