@@ -18,11 +18,19 @@ import client9 from './captions/client/Safebrooks-Logo-png.png'
 import client10 from './captions/client/The-Home-Builders-Ministry-Logo.png'
 import client11 from './captions/client/TruCSR-logo.png'
 import client12 from './captions/client/Universal-Peace-Chaplains.png'
-
 import Feature from './captions/313371.jpg'
 
 import './main.css'
 
+import bg1 from './captions/images (1).jpeg'
+import bg2 from './captions/images (2).jpeg'
+import bg3 from './captions/images.jpeg'
+
+
+import icons1 from './captions/gears.svg'
+import icons2 from './captions/Battery.svg'
+import icons3 from './captions/antivirus.svg'
+import icons4 from './captions/gears.svg'
 
 const Main = () => {
     return (
@@ -30,7 +38,6 @@ const Main = () => {
 
 
 {/* Card */}
-
 <div class="album py-3 bg-body-tertiary">
   
   <h2 className='text-center'>Why Elonatech</h2>
@@ -44,7 +51,7 @@ const Main = () => {
         <div class="card shadow-sm me-auto">
           <div class="card-body">
             <h5 class="card-title">Website and App Solutions</h5>
-            <p class="card-text">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists, designers, developers, and project managers work together to help clients meet their business objective</p>
+            <p class="card-text fs-6">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists, designers, developers, and project managers work together to help clients meet their business objective</p>
             <div class="d-flex justify-content-between align-items-center">
               <button className='btn btn-primary'>Read More</button>
             </div>
@@ -57,7 +64,7 @@ const Main = () => {
         <div class="card shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Flexible, Scalable IT Solutions</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in <br /> to additional content. This content <br /> is a little bit longer.</p>
+            <p class="card-text fs-6">This is a wider card with supporting text below as a natural lead-in <br /> to additional content. This content <br /> is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
             <button className='btn btn-primary'>Read More</button> 
             </div>
@@ -69,13 +76,66 @@ const Main = () => {
   </div>
 </div>
 
-{/* Marketing */}
+{/* support */}
+<div className="container  mt-5  p-5 rounded">
 
+    <div className="row">
+        <div className="col-md-6">
+            <ul className='list-unstyled'>
+                <li className=''>
+                    <div className="d-flex">
+                     <img src={icons3} alt="" className='mb-4' />
+                    <div className="">
+                    <h5 className='ps-5'>Onsite Support And Installations </h5> <h6 className='ps-5 '>Expertise. Convinience. Customer Experience.</h6>
+                    </div>
+                    </div>
+                </li>
+                {/*  */}
+                <li className='mt-3'>
+                    <div className="d-flex">
+                     <img src={icons2} alt="" className='mb-4' />
+                    <div className="">
+                    <h5 className='ps-5'>Contact Suppor</h5> <h6 className='ps-5 '>Let us assist you with any product or service questions.</h6>
+                    </div>
+                    </div>
+                </li>
+                {/*  */}
+                <li className='mt-3'>
+                    <div className="d-flex">
+                     <img src={icons3} alt="" className='mb-4' />
+                    <div className="">
+                    <h5 className='ps-5'>Laptops. Network Servers. Workstations</h5> <h6 className='ps-5 '>Get the best.</h6>
+                    </div>
+                    </div>
+                </li>
+                {/*  */}
+                <li className='mt-3'>
+                    <div className="d-flex">
+                     <img src={icons3} alt="" className='mb-4' />
+                    <div className="">
+                    <h5 className='ps-5'>Premium Antivirus Retail & Installation</h5> <h6 className='ps-5 '>Ensure you stay safe behind a firewall.</h6>
+                    </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div className="col-md-6">
+          <div className="text-center" style={{marginTop:"100px"}}>
+            <h1>ELONATECH 24/7 SUPPORT </h1>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+{/* Marketing */}
   <div className="container marketing">
-  <div class="row featurette mt-5 mb-5 ">
+  <div class="row featurette mt-5 ">
     <div class="col-md-7">
       <h2 class="">First featurette heading. It’ll blow your mind.</h2>
-      <p class="">The IT Solutions and Corporate Consultant Company.
+      <p class="fs-6">The IT Solutions and Corporate Consultant Company.
         We endeavor to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.</p>
      </div>
      <div class="col-md-5">
@@ -88,7 +148,7 @@ const Main = () => {
 
 
 {/* Our clients */}
-<h2 className='text-center mt-4'>Some Of Our Clients</h2>
+<h2 className='text-center' style={{marginTop:"100px"}}>Some Of Our Clients</h2>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner mt-5">
   <div className="container">
@@ -188,10 +248,8 @@ const Main = () => {
 </div>
 </div>
 
-
-{/* <!-- Carousel --> */}
-
-<div id="demo" class="carousel slide bg-secondary" data-bs-ride="carousel">
+{/* Carousel  */}
+<div id="demo" class="carousel slide bg-secondary mb-5" data-bs-ride="carousel">
   {/* <!-- The slideshow/carousel --> */}
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -343,10 +401,40 @@ const Main = () => {
   </button>
 </div>
 
+{/* three cards  */}
+<div className="text-center mb-5">
+<div className="container">
+  <div className="row">
+    <div className="col-sm-4">
 
+      <div class="card mt-5" style={{backgroundImage:`url(${bg1})`}}>
+        <div class="card-body text-center">
+          <p class="card-text p-5 text-white">We Offer bespoke user experience, web design, app design and software development services.</p>
+        </div>
+      </div>
+
+    </div>
+    <div className="col-sm-4">
+
+    <div class="card mt-5" style={{backgroundImage:`url(${bg2})`}}>
+     <div class="card-body text-center">
+          <p class="card-text p-5 text-white">We Offer bespoke user experience, web design, app design and software development services.</p>
+        </div>
+      </div>
+    </div>
+    <div className="col-sm-4">
+    <div class="card mt-5" style={{backgroundImage:`url(${bg3})`}}>
+    <div class="card-body text-center text-white">
+          <p class="card-text p-5">We Offer bespoke user experience, web design, app design and software development services.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 {/* Consult */}
-
 <nav class="navbar navbar navbar-dark bg-body-secondary">
 <div class="container ">
   <div class="row g-4 py-4">
@@ -356,21 +444,21 @@ const Main = () => {
 
          <div className="row">
         <div className="col-md-6">
-        <h3 class="fs-2 mt-4 mb-3 ">How about a FREE Consultation on the Best Digital Marketing Strategy for your Business?</h3> 
-        <p>Want to know how to increase your brand visibility, boost audience engagement, drive traffic, increase social media followers, promote your
+        <h3 class="fs-5 mt-4 mb-3 ">How about a FREE Consultation on the Best Digital Marketing Strategy for your Business?</h3> 
+        <p className='fs-6'>Want to know how to increase your brand visibility, boost audience engagement, drive traffic, increase social media followers, promote your
            products and service online and increase sales for your business?
             Elonatech offers tailored advice on how to reach and engage your audience better, increase conversion and maximize profit through a bespoke monthly/yearly
              digital marketing plan for your business</p>
         </div>
 
         <div className="col-md-6">
-            <img src={ceo} className=' float-end'  alt=""  style={{width:"20rem" , height:"19rem"}}/>
+            <img src={ceo} className=' float-end'  alt=""  style={{width:"17rem" , height:"16rem"}}/>
         </div>
         </div>
 
        
            
-        <button class="btn btn-primary mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
          GET FREE CONSULTATION
         </button>
         {/* <!-- form --> */}
