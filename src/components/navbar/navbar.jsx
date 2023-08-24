@@ -70,7 +70,7 @@ const Navbar = () => {
               <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Support
               </a>
-              <ul class="dropdown-menu p-4">
+              <ul class="dropdown-menu text-center p-4">
                 <li><a class="dropdown-item mt-2" href="#">Technical Support</a></li>
                 <li><a class="dropdown-item mt-2" href="#">Network Support</a></li>
                 <li><a class="dropdown-item mt-2" href="#">Remote Support</a></li>
@@ -83,13 +83,12 @@ const Navbar = () => {
               <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Who we are
               </a>
-              <ul class="dropdown-menu p-4">
-                <li><a class="dropdown-item mt-2" href="#">Our Blog</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Our Team</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Our Company</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Our Portfolio</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Our Blog</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Career</a></li>
+              <ul class="dropdown-menu text-center p-2">
+                <li><a class="dropdown-item mt-2 p-2" href="#">Blog</a></li>
+                <li><a class="dropdown-item mt-2 p-2" href="#">Team</a></li>
+                <li><a class="dropdown-item mt-2 p-2" href="#">Company</a></li>
+                <li><a class="dropdown-item mt-2 p-2" href="#">Portfolio</a></li>
+                <li><a class="dropdown-item mt-2 p-2" href="#">Career</a></li>
               </ul>
             </li>
           
