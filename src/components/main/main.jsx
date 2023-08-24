@@ -96,7 +96,7 @@ const Main = () => {
                     <div className="d-flex">
                      <img src={icons2} alt="" className='mb-4' />
                     <div className="">
-                    <h5 className='ps-5'>Contact Suppor</h5> <h6 className='ps-5 '>Let us assist you with any product or service questions.</h6>
+                    <h5 className='ps-5'>Contact Support</h5> <h6 className='ps-5 '>Let us assist you with any product or service questions.</h6>
                     </div>
                     </div>
                 </li>
@@ -301,9 +301,9 @@ const Main = () => {
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p className='text-white'>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <i class="bi bi-quote quote-icon-left text-danger"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-right text-danger"></i>
                 </p>
               </div>
             </div>
@@ -328,9 +328,9 @@ const Main = () => {
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p className='text-white'>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <i class="bi bi-quote quote-icon-left text-danger"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-right text-danger"></i>
                 </p>
               </div>
             </div>
@@ -355,9 +355,9 @@ const Main = () => {
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p className='text-white'>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <i class="bi bi-quote quote-icon-left text-danger"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-right text-danger"></i>
                 </p>
               </div>
             </div>
@@ -385,9 +385,9 @@ const Main = () => {
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p className='text-white'>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <i class="bi bi-quote quote-icon-left text-danger"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="bi bi-quote quote-icon-right text-danger"></i>
                 </p>
               </div>
             </div>
