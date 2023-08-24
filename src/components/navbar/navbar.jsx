@@ -59,10 +59,10 @@ const Navbar = () => {
                 Products
               </a>
               <ul class="dropdown-menu p-4">
-                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Computers</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Printers</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Office Equipment</a></li>
+                <li><a class="dropdown-item mt-2" href="#">POS Systems</a></li>
               </ul>
             </li>
             {/* <!-- third drop down --> */}
@@ -71,10 +71,10 @@ const Navbar = () => {
                 Support
               </a>
               <ul class="dropdown-menu p-4">
-                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Technical Support</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Network Support</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Remote Support</a></li>
+                {/* <li><a class="dropdown-item mt-2" href="#"></a></li> */}
               </ul>
             </li>
 
@@ -84,10 +84,12 @@ const Navbar = () => {
                 Who we are
               </a>
               <ul class="dropdown-menu p-4">
-                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Our Blog</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Our Team</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Our Company</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Our Portfolio</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Our Blog</a></li>
+                <li><a class="dropdown-item mt-2" href="#">Career</a></li>
               </ul>
             </li>
           
