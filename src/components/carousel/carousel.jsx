@@ -1,6 +1,6 @@
 import './carousel.css';
 import carousel1 from './captions/samsung.jpg'
-import carousel2 from './captions/time.jpg'
+import carousel2 from './captions/sales mike.png'
 import carousel4 from './captions/4391687.png'
 
 
