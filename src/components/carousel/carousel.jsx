@@ -1,6 +1,6 @@
 import './carousel.css';
 import carousel1 from './captions/samsung.jpg'
-import carousel2 from './captions/img_environment.jpg'
+import carousel2 from './captions/time.jpg'
 import carousel4 from './captions/4391687.png'
 
 
@@ -26,7 +26,7 @@ const Carousel = () => {
         </div>
       </div>
       <div class="carousel-item" style={{height:"600px"}}>
-        <img src={carousel2} class="bd-placeholder-img" alt="" />
+        <img src={carousel2} class="bd-placeholder-img" style={{backgroundSize:"cover" , backgroundPosition:"center"}} alt="" />
         <div class="container mt-5">
           <div class="carousel-caption" style={{marginBottom:"150px"}}>
             <h1>Another example headline.</h1>
