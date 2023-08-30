@@ -128,7 +128,7 @@ const Main = () => {
                     <div className="">
                     <h5 className='ps-5' style={{color:"#34548C"}}>Onsite Support And Installations </h5> 
 
-                    <h6 className='ps-5 mt-2 mb-3'>Expertise. Convinience. Customer Experience.
+                    <h6 className='ps-5 mt-2 mb-3'>Expertise. Convenience. Customer Experience.
 
                     <div className="support-line mt-2"></div>
                     </h6>
