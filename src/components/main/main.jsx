@@ -201,14 +201,14 @@ const Main = () => {
   <div className="container marketing">
   <div class="row featurette mt-5 ">
     <div class="col-md-7">
-      <h2 class="">First featurette heading. It’ll blow your mind.</h2>
-      <p class="fs-6 p-2">The IT Solutions and Corporate Consultant Company.
-        We endeavor to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
-        exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard
-        to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
-        exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard
-        to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
-      </p>
+      <h2 class=""> The IT Solutions and  Consultant Company.</h2>
+      <p class="fs-6 p-2">
+      We, at Elonatech are aware of your need for quality IT Services. Beyond reasonable doubt, the management of information technology for business is not inherently a do-it-yourself project. Business owners who aren’t tech-savvy need to find quality IT solution providers.
+      We are experts in IT related matters, poised to shape the industry, by helping clients solve complex IT challenges. <br /> <br />
+      Our Company’s logistical services are designed for the top-of-the-market corporate clientele; we serve as an interface keeping you above the turmoil of working in today’s Nigeria with minimum hassle.
+      We strive to be the leading provider of innovative information technologies that improve the quality of lives. <br />  <br />  We delight in satisfying our clients through the provision of innovative, quality, timely, relevant, accurate and affordable solutions to their needs.
+      “Our concept is to provide One-Stop ‘IT’ solution
+            </p>
      </div>
      <div class="col-md-5">
       {/* feature image */}
