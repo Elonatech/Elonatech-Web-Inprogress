@@ -1,21 +1,23 @@
 import './footer.css'
-
+import elona from './caption/elona icon.png'
 
 
 const Footer = () => {
     return (
 <> 
 
-<footer id="footer" class="footer  bg-secondary">
-    <div class="container">
+<footer id="footer" class="footer" style={{backgroundColor:"#11253D"}}>
+    <div class="container text-white">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+          <div className="mx-5">
+             <img src={elona} alt="" className='mx-4' style={{height:"5rem" ,  width:"5rem" }} />
+          </div>
+          <a href="index.html" class="logo d-flex align-items-center text-decoration-none mt-4">
             <span> 
             <h4>ELONATECH NIGERIA LIMITED</h4>
             </span>
           </a>
-          {/* <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> */}
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -52,9 +54,9 @@ const Footer = () => {
 
       </div>
     </div>
-    <div class="container mt-4">
+    <div class="container mt-4 text-white">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>elonatech</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer>

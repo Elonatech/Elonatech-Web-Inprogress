@@ -1,6 +1,6 @@
 import './carousel.css';
-import carousel1 from './captions/img_environment.jpg'
-import carousel2 from './captions/313365.jpg'
+import carousel1 from './captions/samsung.jpg'
+import carousel2 from './captions/img_environment.jpg'
 import carousel4 from './captions/4391687.png'
 
 
@@ -19,7 +19,7 @@ const Carousel = () => {
         <img src={carousel1} class="bd-placeholder-img" alt="" />
         <div class="container">
           <div class="carousel-caption text-start" style={{marginBottom:"150px"}}  >
-            <h1>Example headline.</h1>
+            <h1>We Are Digitial Marketing</h1>
             <p>Some representative placeholder content for the first slide of the carousel.</p>
             <p><a class="btn btn-lg btn-danger" href="#">Sign up today</a></p>
           </div>

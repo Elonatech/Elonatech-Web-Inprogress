@@ -1,7 +1,6 @@
 import './drop.css'
-// import './navbar.css'
-
-
+import { Link } from 'react-router-dom';
+import logo from './captions/Elonatech White.png'
 
 // function
 const Navbar = () => {
@@ -10,7 +9,8 @@ const Navbar = () => {
           
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
+ 
+      <Link to={'/'} className='navbar-brand'><img src={logo} alt=""  style={{height:"4rem", width:"12rem"}} /></Link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,11 +58,11 @@ const Navbar = () => {
               <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Products
               </a>
-              <ul class="dropdown-menu p-4">
-                <li><a class="dropdown-item mt-2" href="#">Computers</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Printers</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Office Equipment</a></li>
-                <li><a class="dropdown-item mt-2" href="#">POS Systems</a></li>
+              <ul class="dropdown-menu text-center p-4">
+                <li><Link to={'/computer'} class="dropdown-item mt-2 p-3">Computers</Link></li>
+                <li><Link to={'/printer'} class="dropdown-item mt-2 p-3">Printers</Link></li>
+                <li><Link to={'/office'} class="dropdown-item mt-2 p-3">Office Equipment</Link></li>
+                <li><Link to={'/pos'} class="dropdown-item mt-2 p-3">POS Systems</Link></li>
               </ul>
             </li>
             {/* <!-- third drop down --> */}
@@ -71,10 +71,9 @@ const Navbar = () => {
                 Support
               </a>
               <ul class="dropdown-menu text-center p-4">
-                <li><a class="dropdown-item mt-2" href="#">Technical Support</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Network Support</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Remote Support</a></li>
-                {/* <li><a class="dropdown-item mt-2" href="#"></a></li> */}
+                <li ><Link to={'/technical'} class="dropdown-item mt-2 p-3">Technical Support</Link></li>
+                <li><Link to={'/network'} class="dropdown-item mt-2 p-3">Network Support</Link></li>
+                <li><Link to={'/remote'} class="dropdown-item mt-2 p-3">Remote Support</Link></li>
               </ul>
             </li>
 
@@ -84,11 +83,11 @@ const Navbar = () => {
                 Who we are
               </a>
               <ul class="dropdown-menu text-center p-2">
-                <li><a class="dropdown-item mt-2 p-2" href="#">Blog</a></li>
-                <li><a class="dropdown-item mt-2 p-2" href="#">Team</a></li>
-                <li><a class="dropdown-item mt-2 p-2" href="#">Company</a></li>
-                <li><a class="dropdown-item mt-2 p-2" href="#">Portfolio</a></li>
-                <li><a class="dropdown-item mt-2 p-2" href="#">Career</a></li>
+                <li><Link to={'/blog'} class="dropdown-item mt-2 p-3">Blog</Link></li>
+                <li><Link to={'/team'} class="dropdown-item mt-2 p-3">Team</Link></li>
+                <li><Link to={'/company'} class="dropdown-item mt-2 p-3">Company</Link></li>
+                <li><Link to={'/portfolio'} class="dropdown-item mt-2 p-3">Portfolio</Link></li>
+                <li><Link to={'/career'} class="dropdown-item mt-2 p-3">Career</Link></li>
               </ul>
             </li>
           

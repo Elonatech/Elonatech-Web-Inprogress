@@ -68,7 +68,6 @@ import Pos from './pages/sales/pos/pos';
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 
 
-
 const Layout = () =>{
   return(
   <>
