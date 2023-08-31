@@ -19,18 +19,18 @@ const Carousel = () => {
         <img src={carousel1} class="bd-placeholder-img" alt="" />
         <div class="container">
           <div class="carousel-caption text-start" style={{marginBottom:"150px"}}  >
-            <h1>We Are Digitial Marketing</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-danger" href="#">Sign up today</a></p>
+            <h1> IT CONSULTANTS </h1>
+            <h5>Some representative placeholder content for the first slide of the carousel.</h5>
+            <p><a class="btn btn-lg btn-danger" href="#">Know More</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item" style={{height:"600px"}}>
         <img src={carousel2} class="bd-placeholder-img" style={{backgroundSize:"cover" , backgroundPosition:"center"}} alt="" />
         <div class="container mt-5">
-          <div class="carousel-caption" style={{marginBottom:"150px"}}>
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
+          <div class="carousel-caption text-start" style={{marginBottom:"150px"}}>
+            <h1>WE ARE DIGITAL MARKETERS</h1>
+            <h5>We are experts in providing digital marketing strategies that convert engagemet </h5>
             <p><a class="btn btn-lg btn-danger" href="#">Learn more</a></p>
           </div>
         </div>
@@ -39,9 +39,10 @@ const Carousel = () => {
         <img src={carousel4} class="bd-placeholder-img" alt="" />
         <div class="container">
           <div class="carousel-caption text-end" style={{marginBottom:"150px"}}>
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-danger" href="#">Browse gallery</a></p>
+            <h1>WEB DEVELOPERS</h1>
+            <h5>
+              We offer bespoke user experience, web design, app design, and software development services</h5>
+            <p><a class="btn btn-lg btn-danger mt-3" href="#">Know More</a></p>
           </div>
         </div>
       </div>

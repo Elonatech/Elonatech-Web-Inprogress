@@ -1,24 +1,40 @@
+import { Link } from 'react-router-dom'
 import test1 from './testimonials/Mary-Ephraim-Egbas.jpeg'
 import test2 from './testimonials/Abayomi-Kakanfo.jpg'
 import test3 from './testimonials/Chunyere-Nganwuchu.jpg'
 import test4 from './testimonials/Remeben-MD-1.png'
-import test5 from './testimonials/profile.png'
+import test5 from './testimonials/Gabriel-Osondu.jpeg'
 import test6 from './testimonials/paul-michael.png'
 
-import ceo from './testimonials/IMG_7338-removebg-preview.png'
+import ceo from './testimonials/ceo.png'
 
-import client1 from './captions/client/Diva-Cakes.png'
-import client2 from './captions/client/Friesland-Campina.png'
-import client3 from './captions/client/IRETI-logo-300x300-1.png'
-import client4 from './captions/client/Jigirinty_sewage-energy.png'
-import client5 from './captions/client/MTMSD-logo_3d.png'
-import client6 from './captions/client/PFN-Logo.png'
-import client7 from './captions/client/PineheightSystems-logo.png'
-import client8 from './captions/client/Remaben_Logo-removebg-preview.png'
-import client9 from './captions/client/Safebrooks-Logo-png.png'
-import client10 from './captions/client/The-Home-Builders-Ministry-Logo.png'
-import client11 from './captions/client/TruCSR-logo.png'
-import client12 from './captions/client/Universal-Peace-Chaplains.png'
+import client1 from './captions/cli/amp-featured1.png'
+import client2 from './captions/cli/awf 1.png'
+import client3 from './captions/cli/Cathenet treasures1.png'
+import client4 from './captions/cli/kosofe local govt1.png'
+import client5 from './captions/cli/MTMSD1.png'
+import client6 from './captions/cli/Hyperthread1.png'
+
+// second
+
+import client7 from './captions/cli/IRETI-logo1.png'
+import client8 from './captions/cli/Kappachem1.png'
+import client9 from './captions/cli/LSG_Skycheffs1.png'
+import client10 from './captions/cli/Domino-Stores1.png'
+import client11 from './captions/cli/Olajide & Associates1.png'
+import client12 from './captions/cli/PFN Logo1.png'
+import client13 from './captions/cli/PicsArt1.png'
+import client14 from './captions/cli/Safebrooks-Logo-png.png'
+import client15 from './captions/cli/PFN Logo1.png'
+import client16 from './captions/cli/The Home-Builders1.png'
+import client17 from './captions/cli/okhma1.png'
+import client18 from './captions/cli/Universal Peace Chaplains1.png'
+import client19 from './captions/cli/Wrahp-logo1.png'
+import client20 from './captions/cli/kosofe local govt1.png'
+import client21 from './captions/cli/okhma1.png'
+
+
+
 import Feature from './captions/card1.jpg'
 
 import './main.css'
@@ -70,10 +86,14 @@ import articonvideogall from './captions/services/icons/video-gallery.png'
 
 
 
+import scrollTop from '../scrolltop/scrolltop'
+
+
 const Main = () => {
+
     return (
 <>
-
+{/* <Scrolltop /> */}
 
 {/* Card */}
 <div class="album py-3 bg-body-tertiary">
@@ -263,19 +283,19 @@ const Main = () => {
             <img src={client7} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
             </li>
             <li class="nav-item col-6 col-md-4 col-lg-2">
-            <img src={client2} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+            <img src={client8} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
             </li>
             <li class="nav-item col-6 col-md-4 col-lg-2">
-            <img src={client3} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+            <img src={client10} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
             </li>
             <li class="nav-item col-6 col-md-4 col-lg-2">
-            <img src={client4} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+            <img src={client11} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
             </li>
             <li class="nav-item col-6 col-md-4 col-lg-2">
-            <img src={client5} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+            <img src={client12} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
             </li>
             <li class="nav-item col-6 col-md-4 col-lg-2">
-            <img src={client6} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+            <img src={client13} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
             </li>
 
       </ul>
@@ -287,22 +307,22 @@ const Main = () => {
     <ul class="row g-5 list-unstyled  d-flex">
 
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client9} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client14} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client2} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client15} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client3} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client16} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client4} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client17} alt="" style={{width:"8rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client5} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client18} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client6} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client19} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
 
    </ul>
@@ -322,7 +342,6 @@ const Main = () => {
 </div>
 
 {/* services */}
-
 <div class="album py-5 bg-body-tertiary">
       <h2 className='text-center mt-5'>What We Do Best</h2>
        <div class="about-border"></div>
@@ -341,7 +360,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">WEB DESIGN & DEVELOPMENT</h4>
             <img src={articonwebsite} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists.</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link  to={'/web'}  onClick={()=> scrollTop()}   class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -359,7 +378,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">DIGITIAL MARKETING</h4>
             <img src={articoonsdigitial} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">With Digital marketing, we have successfully changed the way brands and businesses use technology for marketing. Digital platforms are..</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link  to={'/digital'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -376,7 +395,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">GRAPHICS & BRANDING</h4>
             <img src={articongraphic} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">Elonatech Nigeria Limited, in a bid to serve you better, has included Corporate branding in their services; Which includes: logo design..</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link to={'/brand'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -393,7 +412,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">NETWORK ENGINEERING / ADMINISTRATION</h4>
             <img src={articonnetwork} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">Elonatech Nigeria Limited is built on the assumption that the management of information technology for business is not...</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link to={'/network'} onClick={()=> scrollTop()} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -410,7 +429,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">COMPUTER ENGINEERING</h4>
             <img src={articonConputer} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">Network administration involves a wide array of operational tasks that help a network to run smoothly and efficiently. This includes activitie...</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link onClick={() =>  scrollTop() } to={'/computer'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -427,7 +446,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">ACCESS CONTROL & SURVAILANCE</h4>
             <img src={articonsuvalliance} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio expedita, aut possimus labore non sit libero eaque autem molestias...</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link to={'/suvalliance'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -444,7 +463,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">ANIMATIONS & VIDEO GRAPHIC</h4>
             <img src={articonvideogall} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">Elonatech Nigeria Limited is built on the assumption that the management of information technology for business is not</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link to={'/animation'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -461,7 +480,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">LIVESTREAMING & VIDEOCONFERENCING</h4>
             <img src={articonvideo} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">Network administration involves a wide array of operational tasks that help a network to run smoothly and efficiently. This includes activiti</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link to={'/video'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -478,7 +497,7 @@ const Main = () => {
             <h4 class="mt-5 text-white">CONSULTING</h4>
             <img src={articonconsult} class="mb-4"  alt="" srcset=""/>
             <p class="text-white">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists,</p>
-            <button class="btn btn-danger"><h5>See More</h5></button>
+            <Link to={'/social'} class="btn btn-danger"><h5>See More</h5></Link>
             </div>
           </div>
            </div>
@@ -493,9 +512,6 @@ const Main = () => {
       </div>
     </div>
   </div>
-
-
-
 {/* What They Say About Us */}
 <div id="demo" class="carousel slide  mb-5" data-bs-ride="carousel" style={{backgroundColor:"#11253D"}}>
   {/* <!-- The slideshow/carousel --> */}
@@ -511,7 +527,7 @@ const Main = () => {
               <div class="testimonial-item mb-5">
                 <img src={test1} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>MARY EPHRAIM EGBAS</h3>
-                <h4 className='text-white'>Ceo &amp; , Okhma Consult</h4>
+                <h4 className='text-white'>CEO, Okhma Consult</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -536,9 +552,9 @@ const Main = () => {
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src={test2} class="testimonial-img" alt=""/>
+                <img src={test4} class="testimonial-img"  alt=""/>
                 <h3 className='text-white'>BENJAMIN MIACHI</h3>
-                <h4 className='text-white'>CEO/Chief Analyst &amp;, Remaben Scientific Services Ltd.</h4>
+                <h4 className='text-white'>CEO/Chief Analyst, Remaben Scientific Services Ltd.</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -565,7 +581,7 @@ const Main = () => {
               <div class="testimonial-item">
                 <img src={test3} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>CHINYERE IZIOGU</h3>
-                <h4 className='text-white'>Admin Manager &amp;, Shepherd Specialist Hospital</h4>
+                <h4 className='text-white'>Admin Manager, Shepherd Specialist Hospital</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -590,9 +606,9 @@ const Main = () => {
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src={test4} class="testimonial-img" alt=""/>
+                <img src={test2} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>ABAYOMI KAKANFO</h3>
-                <h4 className='text-white'>Business Dev. Manager &amp;, Hyperthread Ventures Limited  </h4>
+                <h4 className='text-white'>Business Dev. Manager, Hyperthread Ventures Limited  </h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -622,7 +638,7 @@ const Main = () => {
               <div class="testimonial-item">
                 <img src={test6} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>PAUL MICHAEL</h3>
-                <h4 className='text-white'>CEO &amp;, Felvic Unique Services</h4>
+                <h4 className='text-white'>CEO, Felvic Unique Services</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -651,7 +667,7 @@ const Main = () => {
               <div class="testimonial-item">
                 <img src={test5} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>GABRIEL OSONDU</h3>
-                <h4 className='text-white'>Ceo/Water Specialist &amp;, Safebrooks Nig. Ltd.</h4>
+                <h4 className='text-white'>Ceo/Water Specialist, Safebrooks Nig. Ltd.</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -687,7 +703,7 @@ const Main = () => {
 
       <div class="card mt-5" style={{backgroundImage:`url(${bg1})`}}>
         <div class="card-body text-center">
-          <p class="card-text p-5 text-white">We Offer bespoke user experience, web design, app design and software development services.</p>
+          <p class="p-3 text-white">We Offer bespoke user experience, web design, app design and software development services.</p>
         </div>
       </div>
 
@@ -696,14 +712,14 @@ const Main = () => {
 
     <div class="card mt-5" style={{backgroundImage:`url(${bg2})`}}>
      <div class="card-body text-center">
-          <p class="card-text p-5 text-white">We Offer bespoke user experience, web design, app design and software development services.</p>
+          <p class="p-3 text-white">We Offer bespoke user experience, web design, app design and software development services.</p>
         </div>
       </div>
     </div>
     <div className="col-sm-4">
     <div class="card mt-5" style={{backgroundImage:`url(${bg3})`}}>
     <div class="card-body text-center text-white">
-          <p class="card-text p-5">We Offer bespoke user experience, web design, app design and software development services.</p>
+          <p class="p-3">We Offer bespoke user experience, web design, app design and software development services.</p>
         </div>
 
       </div>
@@ -784,9 +800,9 @@ const Main = () => {
   <div class="about-border"></div>
   {/* product */}
 
-  <div className="">
-<div class="container   mt-5">
-<div class="row mt-5">
+<div className="mx-auto">
+<div class="container mt-5">
+<div class="row mt-5  justify-content-md-center">
   {/* product 1 */}
   <div class="col-lg-2 mx-1  border shadow-lg p-3 mb-5 bg-body rounded">
     <div className="text-center">

@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet , BrowserRouter as Router  } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import Error from './components/error/error';
@@ -67,10 +67,10 @@ import Pos from './pages/sales/pos/pos';
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 
-
 const Layout = () =>{
   return(
   <>
+  
   <Navbar />
   <Outlet/>
   <Footer />
@@ -78,11 +78,11 @@ const Layout = () =>{
   )
 }
 
-const router = createBrowserRouter([ 
+const router = createBrowserRouter([
 {
   path:"/",
   element: <Layout/>,
-  errorElement:<Error />,
+  // errorElement:<Error />,
   children:[
     {
       path:'/',
@@ -281,14 +281,13 @@ const router = createBrowserRouter([
   ],
   
 },
+
 ]);
 
 function App() {
   return (
 <div>
 <RouterProvider router={router} /> 
-
-
 </div> 
   );
 }

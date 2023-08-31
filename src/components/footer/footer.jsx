@@ -1,5 +1,6 @@
 import './footer.css'
 import elona from './caption/elona icon.png'
+import eloa2 from './caption/Elonatech icon (1).png'
 
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <div className="mx-5">
-             <img src={elona} alt="" className='mx-4' style={{height:"5rem" ,  width:"5rem" }} />
+             <img src={eloa2} alt="" className='mx-4' style={{height:"5rem" ,  width:"5rem" }} />
           </div>
           <a href="index.html" class="logo d-flex align-items-center text-decoration-none mt-4">
             <span> 

@@ -30,7 +30,7 @@
   
   .testimonials .testimonial-item .testimonial-img {
     width: 100px;
-    border-radius: 50%;
+    border-radius: 60%;
     border: 6px solid rgba(var(--color-white-rgb), 0.15);
     margin: 0 auto;
   }
