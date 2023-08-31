@@ -20,7 +20,7 @@ const Carousel = () => {
         <div class="container">
           <div class="carousel-caption text-start" style={{marginBottom:"150px"}}  >
             <h1> IT CONSULTANTS </h1>
-            <h5>Some representative placeholder content for the first slide of the carousel.</h5>
+            <h5>Information technology consulting services help improve the performance, scalability <br /> and competitiveness of your company through right technology enablement and usage</h5>
             <p><a class="btn btn-lg btn-danger" href="#">Know More</a></p>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Carousel = () => {
         <div class="container mt-5">
           <div class="carousel-caption text-start" style={{marginBottom:"150px"}}>
             <h1>WE ARE DIGITAL MARKETERS</h1>
-            <h5>We are experts in providing digital marketing strategies that convert engagemet </h5>
+            <h5>Experts in providing digital marketing strategies that convert engagement </h5>
             <p><a class="btn btn-lg btn-danger" href="#">Learn more</a></p>
           </div>
         </div>

@@ -4,7 +4,7 @@ import test2 from './testimonials/Abayomi-Kakanfo.jpg'
 import test3 from './testimonials/Chunyere-Nganwuchu.jpg'
 import test4 from './testimonials/Remeben-MD-1.png'
 import test5 from './testimonials/Gabriel-Osondu.jpeg'
-import test6 from './testimonials/paul-michael.png'
+import test6 from './testimonials/Mr. Yahaya Olajide.jpg'
 
 import ceo from './testimonials/ceo.png'
 
@@ -637,7 +637,7 @@ const Main = () => {
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src={test6} class="testimonial-img" alt=""/>
-                <h3 className='text-white'>PAUL MICHAEL</h3>
+                <h3 className='text-white'>Mr. Yahaya Olajide</h3>
                 <h4 className='text-white'>CEO, Felvic Unique Services</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -667,7 +667,7 @@ const Main = () => {
               <div class="testimonial-item">
                 <img src={test5} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>GABRIEL OSONDU</h3>
-                <h4 className='text-white'>Ceo/Water Specialist, Safebrooks Nig. Ltd.</h4>
+                <h4 className='text-white'>COO/Water Specialist, Safebrooks Nig. Ltd.</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
