@@ -638,7 +638,7 @@ const Main = () => {
               <div class="testimonial-item">
                 <img src={test6} class="testimonial-img" alt=""/>
                 <h3 className='text-white'>Mr. Yahaya Olajide</h3>
-                <h4 className='text-white'>CEO, Felvic Unique Services</h4>
+                <h4 className='text-white'>Managing Partner, Olajide & Associates Ltd.</h4>
                 <div class="stars" style={{color:'yellow'}}>
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
