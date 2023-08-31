@@ -136,8 +136,10 @@ const Main = () => {
   </div>
 </div>
 
+{/* style={{backgroundColor:"#DCDCDC"}} */}
+
 {/* support */}
-<div className="container  mt-5  p-5 rounded" style={{backgroundColor:"#DCDCDC"}}>
+<div className="container  mt-5  p-5 rounded" >
 
     <div className="row">
         <div className="col-md-6">
