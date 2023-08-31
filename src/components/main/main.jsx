@@ -801,7 +801,7 @@ const Main = () => {
   {/* product */}
 
 <div className="mx-auto">
-<div class="container mt-5">
+<div class="container-fluid mt-5">
 <div class="row mt-5  justify-content-md-center">
   {/* product 1 */}
   <div class="col-lg-2 mx-1  border shadow-lg p-3 mb-5 bg-body rounded">
