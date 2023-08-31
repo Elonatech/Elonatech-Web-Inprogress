@@ -9,17 +9,17 @@ import test6 from './testimonials/Mr. Yahaya Olajide.jpg'
 import ceo from './testimonials/ceo.png'
 
 import client1 from './captions/cli/amp-featured1.png'
-import client2 from './captions/cli/awf 1.png'
-import client3 from './captions/cli/Cathenet treasures1.png'
+import client2 from './captions/cli/LSG_Skycheffs1.png'
+import client3 from './captions/cli/Supreme Logo1.png'
 import client4 from './captions/cli/kosofe local govt1.png'
-import client5 from './captions/cli/MTMSD1.png'
+import client5 from './captions/cli/TruCSR logo1.png'
 import client6 from './captions/cli/Hyperthread1.png'
 
 // second
 
 import client7 from './captions/cli/IRETI-logo1.png'
-import client8 from './captions/cli/Kappachem1.png'
-import client9 from './captions/cli/LSG_Skycheffs1.png'
+import client8 from './captions/cli/Remaben_Logo-removebg-preview.png'
+// import client9 from './captions/cli/LSG_Skycheffs1.png'
 import client10 from './captions/cli/Domino-Stores1.png'
 import client11 from './captions/cli/Olajide & Associates1.png'
 import client12 from './captions/cli/PFN Logo1.png'
@@ -254,10 +254,10 @@ const Main = () => {
         <img src={client1} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client2} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client2} alt="" style={{width:"11rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client3} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client6} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
         <img src={client4} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
@@ -266,7 +266,7 @@ const Main = () => {
         <img src={client5} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
         </li>
         <li class="nav-item col-6 col-md-4 col-lg-2">
-        <img src={client6} alt="" style={{width:"7rem" , height:"6rem" ,marginRight:"50px"}}  />
+        <img src={client3} alt="" style={{width:"7rem" , height:"7rem" ,marginRight:"50px"}}  />
         </li>
 
 </ul>
