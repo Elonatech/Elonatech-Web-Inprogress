@@ -9,7 +9,7 @@ const Printer = () => {
     return (
  <>
  {/* header */}
-<div class="container-fluid bg-secondary py-5 " style={{backgroundImage:`url(${printerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover"}} >
+<div class="container-fluid bg-secondary py-5 " style={{backgroundImage:`url(${printerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover", height:"600px"}} >
   <div class="container py-5 ">
     <h1 class=" mt-5 text-white text-center pb-5">Printer Repair & Maintenance</h1>
     <h4 class=" mt-2 text-white text-center ">Keeping Up with all Necessary Maintenance is The Best Way to Protect your Investment</h4>
