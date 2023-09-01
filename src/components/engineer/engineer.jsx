@@ -8,7 +8,7 @@ const Engineer = () => {
 <>
 
 {/* header */}
-<div class="container-fluid   py-5 mb-5" style={{backgroundImage:`url(${computerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover"}} >
+<div class="container-fluid   py-5 mb-5" style={{backgroundImage:`url(${computerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover" , height:"600px"}} >
  <div class="container py-5 text-center ">
    <h1 class=" mt-5  py-3 text-white">Computer Engineering</h1>
    <h5 class=" mt-2  py-3 text-white ">Because your business works when your hardware works.</h5>
