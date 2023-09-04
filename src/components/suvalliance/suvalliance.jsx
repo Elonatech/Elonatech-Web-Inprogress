@@ -10,14 +10,6 @@ const Suvalliance = () => {
     return (
 <>
 
-
-
-
-
-
-
-
-
 {/* detect people */}
 <section class="bg-light mb-4" >
 			<div class="container">

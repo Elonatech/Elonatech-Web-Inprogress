@@ -3,13 +3,14 @@ import bg2 from './caption/printerImg.jpg';
 import printer4 from './caption/external-printer-home-office-photo3ideastudio-lineal-color-photo3ideastudio.png'
 import printer5 from './caption/external-printer-printing-tulpahn-outline-color-tulpahn-1.png'
 import printerCombine from './caption/printersCombined.png'
-import printerHeader from './caption/wire2.jpg'
-
+import printerHeader from './caption/printer6.jpg'
+import './printer.css'
 const Printer = () => {
     return (
  <>
  {/* header */}
-<div class="container-fluid bg-secondary py-5 " style={{backgroundImage:`url(${printerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover", height:"600px"}} >
+ 
+<div class="container-fluid  overly  py-5 " style={{backgroundImage:`url(${printerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover", height:"600px" }} >
   <div class="container py-5 ">
     <h1 class=" mt-5 text-white text-center pb-5">Printer Repair & Maintenance</h1>
     <h4 class=" mt-2 text-white text-center ">Keeping Up with all Necessary Maintenance is The Best Way to Protect your Investment</h4>
@@ -70,6 +71,44 @@ const Printer = () => {
     </div>
   </div>
 
+
+
+  <div className="container-fluid  mb-5">
+<div class="row justify-content-md-center row-cols-1 row-cols-lg-2 row-cols-lg-3 ">
+      <div class="col-md-5">
+        <img src={printer2} alt=""   className='img-fluid rounded  shadow' />
+      </div>
+      <div class="col-md-5">
+        <div className="border-x" style={{height:"475px"}}>
+          <div className="p-5">
+          <div class="stars text-center fs-5 mt-3" style={{color:'#D9B938'}}>
+         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <h4 className='text-center  mt-3'>Get Professional Printer Repair</h4>
+          <p className='mt-3'>
+          Many people like to tackle copier and printer repair on their own. After all, if you can do it yourself, you cut down your wait time and get back up to speed faster. However, some types of repairs are too complex for people who do not have special knowledge of these devices. If your printer is consistently getting jammed, has parts that need to be replaced, or is making any worrisome sounds or smells, it is time to get professional help. 
+          <br /> Elonatech can readily help you solve your printer repair problems quickly and affordably.
+            </p>
+
+          </div>
+        </div>
+      </div>  
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  {/* printer repair */}
 {/* <div className="container mb-5"> 
 <div class="row">
@@ -90,12 +129,38 @@ const Printer = () => {
 </div> */}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {/* specialists */}
 <div className="container-fluid" style={{backgroundColor:"#34548c"}}>
-  <div className="row justify-content-md-center ">
+  <div className="row justify-content-md-center">
   <div className="col-lg-5">
     <div className="card  p-3 mt-4" style={{border:"none" , backgroundColor:"#34548c"}}>
-      <h4 className='text-white'>Our Printer Specialists Work on The Following Top Brands</h4>
+      <h4 className='text-white  mt-5'>Our Printer Specialists Work on The Following Top Brands</h4>
       <ul className='list-unstyled text-white'>
         <li><h5><i class="bi bi-printer text-danger me-3"></i>Brother</h5></li>
         <li><h5><i class="bi bi-printer-fill text-danger me-3"></i>Canon</h5></li>
@@ -110,7 +175,7 @@ const Printer = () => {
     </div>
   </div>
   <div className="col-lg-6">
-    <div className="card" style={{border:"none" , backgroundColor:"#34548c"}}>
+    <div className="card mt-5" style={{border:"none" , backgroundColor:"#34548c"}}>
       <img src={printerCombine} alt="" />
     </div>
   </div>

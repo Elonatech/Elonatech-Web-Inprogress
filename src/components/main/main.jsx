@@ -35,7 +35,7 @@ import client21 from './captions/cli/okhma1.png'
 
 
 
-import Feature from './captions/card1.jpg'
+import Feature from './captions/elonatech web dev.png'
 
 import './main.css'
 

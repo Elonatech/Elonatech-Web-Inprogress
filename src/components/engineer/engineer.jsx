@@ -2,6 +2,13 @@
 // import pro from './captions/author.png'
 import computerHeader from './captions/3945114.jpg'
 import computerRepair from './captions/computer repair.jpg'
+
+import top1 from './captions/desktop-cmputers.png'
+import bottom1 from './captions/best-laptop-small.jpg'
+
+import top2 from './captions/computer-repair.jpg'
+import bottom2 from './captions/computer-engineering.jpg'
+
 import './eng.css'
 const Engineer = () => {
     return (
@@ -13,21 +20,8 @@ const Engineer = () => {
    <h1 class=" mt-5  py-3 text-white">Computer Engineering</h1>
    <h5 class=" mt-2  py-3 text-white ">Because your business works when your hardware works.</h5>
    <h6 class=" mt-2 py-3 text-white">While computer hardware configurations vary widely, we work on a broad range of hardware systems.</h6>
-
-   {/* <div className="text-center">
-   <ul className='d-flex'>
-    <li className='text-white' >Client Computer Systems (Desktop & Laptop PCs)</li>
-    <li className='text-white'> Servers & Workstations</li>
-   </ul>
-   </div> */}
-
  </div>
 </div>
-
-
-
-
-
 
 
 {/* body */}
@@ -49,69 +43,48 @@ const Engineer = () => {
 </div>
 
 
-
-
-
-
-
-
 {/* Desktop */}
-<section class="bg-light mb-4" >
-			<div class="container-fluid">
-				<div class="row ">
-					<div class="col-md-6 col-lg-6 d-flex">
-						<div class="">
+<div className="container-fluid  mt-5" style={{backgroundColor:"#cccccc "}} >
+<div class="row justify-content-md-center ">
+      <div class="col-md-6 order-md-1  mt-5 ">
+      <div class="">
 							<h2   class="text-dark fs-1 mb-4">Desktop and Laptop PCs</h2>
-							<p  class="text-dark">We offer all kinds of laptop, desktop and server repairs of all makes and models, including Windows, Mac and Linux computers. We do virus removal  <br /> without reformatting so you don't lose your important files or photos. We repair both hardware and software. We have no queue so come any time and we'll start fixing your computer right away.</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-6 d-flex align-items-end ">
-            {/* <ul className='list-unstyled'>
-              <li><img src={img} class="img-fluid" className='' style={{ paddingLeft:"215px"}} alt=""/></li>
-              <li><img src={img} class="img-fluid"  className='' style={{}} alt=""/></li>
-            </ul> */}
-			        <div className="row">
-                {/* <div className="col">  <div className="card">people1</div></div>
-                <div className="coi">  <div className="card">people2</div></div> */}
-                <div className="col"><div className="card  p-5" style={{marginTop:"130px"}}>people3</div></div>
-                <div className="col">  <div className="card   p-5">people4</div></div>
-              </div>
-          
-          
-            
-           
-
-
-					</div>
-				</div>
+							<h5  class="text-dark">We offer all kinds of laptop, desktop and server repairs of all makes and models, including Windows, Mac and Linux computers. We do virus removal  <br /> without reformatting so you don't lose your important files or photos. We repair both hardware and software. We have no queue so come any time and we'll start fixing your computer right away.</h5>
 			</div>
-</section> 
+      </div>  
+      <div class="col-md-5 order-md-2">
+        <div class="container-fluid">
+          {/* mouth 1 */}
+        <div class="row align-items-center content-row">
+        <div class="col-lg-6 wrap-block">
+        </div>
+          <div class="col-lg-6">
+              <img src={top1}  className='img-fluid  mt-5  shadow' alt="" title=""/>
+          </div>
+        </div>
+        </div>
+       {/* mouth 2 */}
+     <div class="container-fluid ">
+        <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img src={bottom1}  className='img-fluid ms-4 mb-5 shadow' alt="" title=""/>
+          </div>
+          <div class="col-lg-6">
+          </div>
+      </div>
+    </div>
 
+
+    {/*  */}
+      </div>
+    </div>
+</div>
 
 
 
 
 {/* convenient */}
-
-{/* <div className="container mb-5"> 
-<div class="row">
-      <div class="col-md-7 order-md-4">
-        <h2   class="text-dark fs-1 mb-4">We offer 4 Convenient Computer Repair Options</h2>
-        <ul>
-            <li className='fs-4'  >Pick-up and Return</li>
-            <li className='fs-4'>Onsite Repair</li>
-            <li className='fs-4'>Walk-in and Repair</li>
-            <li className='fs-4'>Remote Support</li>
-        </ul>
-		<p class="text-dark fs-4">If you require friendly, expert staff and to have your computer running better than ever, come to our computer repair workshop or give us a call.</p>
-      </div>
-      <div class="col-md-5 ">
-      <img src={img} class="img-fluid" alt=""/>
-      </div>
-    </div>
-</div> */}
-
-<div className="container-fluid  mt-5 mb-5">
+<div className="container-fluid" style={{backgroundColor:"#f3e3f0"}} >
 <div class="row justify-content-md-center ">
       <div class="col-md-6 order-md-2  mt-5 ">
         <h1>We offer 4 Convenient Computer Repair Options</h1>
@@ -125,7 +98,33 @@ const Engineer = () => {
       </div>  
       
       <div class="col-md-5 order-md-1">
-        <img src={computerRepair} alt=""   className='img-fluid rounded  shadow' />
+        <div class="container-fluid">
+          {/* mouth 1 */}
+        <div class="row align-items-center content-row">
+          
+          <div class="col-lg-6">
+              <img src={top2}  className='img-fluid ms-4 mt-5  shadow' alt="" title=""/>
+          </div>
+          <div class="col-lg-6 wrap-block">
+              {/* <h1 class="text-white">ABOUT ME</h1> */}
+          </div>
+        </div>
+      
+        </div>
+       {/* mouth 2 */}
+     <div class="container-fluid ">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+              {/* <p class="text-white">I like pastel colors. I prefer making tender and sweet photos of happy people.</p> */}
+          </div>
+          <div class="col-lg-6">
+          <img src={bottom2}  className='img-fluid  mb-5 shadow' alt="" title=""/>
+          </div>
+      </div>
+    </div>
+
+
+    {/*  */}
       </div>
     </div>
 </div>
