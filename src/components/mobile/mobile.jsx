@@ -33,7 +33,7 @@ const Mobile = () => {
  </div>
 
 {/* Phone repair issues */}
-<div className="container-fluid  mb-5 " style={{marginTop:"200px"}}>
+<div className="container  mb-5 " style={{marginTop:"200px"}}>
 <div class="row justify-content-md-center ">
       <div class="col-md-6">
        {/*  */}
@@ -123,7 +123,9 @@ const Mobile = () => {
 </div>
 
 {/* Technology advance */}
- <div className="container-fluid" style={{backgroundImage:`url(${bannerFilp})`, backgroundSize:"500%" }} >
+ <div className="container-fluid" style={{backgroundColor:"#3f556d"}}
+  // style={{backgroundImage:`url(${bannerFilp})`, backgroundSize:"500%" }} 
+  >
   <div className="row justify-content-md-center">
     <div className="col-md-6 mt-5" >
   <h5 className='text-white mt-3 mb-5'>As technology advances, devices utilizing these technologies become smaller and smaller. Today's cell phones have more computing power than past computers that took up an entire room of space. Modern mobile devices allow users to hold the world, or at least all of its information, maps, and games in their hands. <br />
@@ -136,7 +138,7 @@ const Mobile = () => {
 </div> 
 
 {/* mobile phone technicians */}
-<div className="container-fluid  mb-5 mt-4">
+<div className="container  mb-5 mt-4">
 <div class="row justify-content-md-center ">
       <div class="col-md-6 order-md-2 mt-5">
      <h5 className=''>Our mobile phone repair technicians run tests to assess the mobile phones' functionality, install and update phone software,
@@ -170,10 +172,10 @@ const Mobile = () => {
 					</div>
 				</div>
 			</div>
-	</section> 
+</section> 
             
 </>
-    );
+ );
 }
 
 export default Mobile;

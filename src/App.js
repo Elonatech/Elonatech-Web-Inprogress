@@ -18,6 +18,9 @@ import Mobile from './components/mobile/mobile';
 import Printer from './components/printer/printer';
 import Access from './components/access/access';
 import Suvalliance from './components/suvalliance/suvalliance';
+import Networka from './components/networkA/networka';
+
+
 // telecom pages
 import Voip from './pages/telecom/voip';
 import Telecom from './pages/telecom/telecom';
@@ -151,6 +154,10 @@ const router = createBrowserRouter([
     {
       path:'/suvalliance',
       element:<Suvalliance/>
+    },
+    {
+      path:'/networka',
+      element:<Networka/>
     },
     // telecom pages
     {

@@ -31,9 +31,21 @@
     border-color: blue;
 }
  
+.common{
+    border: 2px solid #dc3545;
+    border-right: none;
+}
 
-
-
+.common-router{
+    border: 2px solid #dc3545;
+    border-left: none;  
+}
+.underline {
+    width: 50px;
+    height: 1px;
+    background: #dc3545;
+    margin: auto;
+}
 
 
 

@@ -20,7 +20,7 @@ const Carousel = () => {
         <div class="container">
           <div class="carousel-caption text-start" style={{marginBottom:"150px"}}  >
             <h1> IT CONSULTANTS </h1>
-            <h5>Information technology consulting services help improve the performance, scalability <br /> and competitiveness of your company through right technology enablement and usage</h5>
+            <h5 className='mt-3 mb-3'>Information technology consulting services help improve the performance, scalability <br /> and competitiveness of your company through right technology enablement and usage</h5>
             <p><a class="btn btn-lg btn-danger" href="#">Know More</a></p>
           </div>
         </div>

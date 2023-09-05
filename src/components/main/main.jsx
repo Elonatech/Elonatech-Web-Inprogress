@@ -93,7 +93,6 @@ const Main = () => {
 
     return (
 <>
-{/* <Scrolltop /> */}
 
 {/* Card */}
 <div class="album py-3 bg-body-tertiary">
@@ -136,7 +135,6 @@ const Main = () => {
   </div>
 </div>
 
-{/* style={{backgroundColor:"#DCDCDC"}} */}
 
 {/* support */}
 <div className="container  mt-5  p-5 rounded" >
