@@ -799,7 +799,6 @@ const Main = () => {
   <h2 className='text-center mt-5'>Latest Products</h2>
   <div class="about-border"></div>
   {/* product */}
-
 <div className="mx-auto">
 <div class="container-fluid mt-5">
 <div class="row mt-5  justify-content-md-center">

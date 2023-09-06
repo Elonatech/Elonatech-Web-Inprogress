@@ -19,6 +19,8 @@ import Printer from './components/printer/printer';
 import Access from './components/access/access';
 import Suvalliance from './components/suvalliance/suvalliance';
 import Networka from './components/networkA/networka';
+import Server from './components/server/server';
+import Integration from './components/integration/integration';
 
 
 // telecom pages
@@ -148,6 +150,10 @@ const router = createBrowserRouter([
       element:<Printer/>
     },
     {
+      path:'/integration',
+      element:<Integration/>
+    },
+    {
       path:'/access',
       element:<Access/>
     },
@@ -158,6 +164,10 @@ const router = createBrowserRouter([
     {
       path:'/networka',
       element:<Networka/>
+    },
+    {
+      path:'/server',
+      element:<Server/>
     },
     // telecom pages
     {
