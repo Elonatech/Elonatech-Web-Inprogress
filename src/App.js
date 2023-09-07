@@ -21,7 +21,8 @@ import Suvalliance from './components/suvalliance/suvalliance';
 import Networka from './components/networkA/networka';
 import Server from './components/server/server';
 import Integration from './components/integration/integration';
-
+import Cabling from './components/cabling/cabling';
+import Cctv from './components/cctv/cctv';
 
 // telecom pages
 import Voip from './pages/telecom/voip';
@@ -71,6 +72,9 @@ import Pos from './pages/sales/pos/pos';
 
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
+
+
+import Test from './components/test/test';
 
 const Layout = () =>{
   return(
@@ -152,6 +156,14 @@ const router = createBrowserRouter([
     {
       path:'/integration',
       element:<Integration/>
+    },
+    {
+      path:'/cabling',
+      element:<Cabling/>
+    },
+    {
+      path:'/cctv',
+      element:<Cctv />
     },
     {
       path:'/access',
@@ -296,7 +308,11 @@ const router = createBrowserRouter([
         element:<SingleProduct/>
       },
   ],
-  
+
+},
+{
+  path:"/test",
+  element:<Test/>
 },
 
 ]);
