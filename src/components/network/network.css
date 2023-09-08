@@ -34,11 +34,13 @@
 .common{
     border: 2px solid #dc3545;
     border-right: none;
+    border-bottom: none;
 }
 
 .common-router{
     border: 2px solid #dc3545;
     border-left: none;  
+    border-top: none;
 }
 .underline {
     width: 50px;

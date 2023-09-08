@@ -51,26 +51,26 @@ const Server = () => {
             <h5 className='text-center'>Why You Need a Server Administrator</h5>
             <div className="d-flex ">
                 <i class="bi bi-wifi fs-2 me-3" ></i>
-                <p>A Server Administrator is responsible for the computer servers of an organization. This individual ensures on a daily basis that they are running efficiently by performing upgrading and maintenance tasks on hardware and software, resolving technical problems, overseeing their activity levels, ensuring server security, and developing new system structures when necessary.</p>  
+                <p>Administrators are responsible for the computer servers of an organization. Performs upgrades and maintenance tasks on hardware and software, and ensuring server security and developing new system structures when necessary.</p>  
             </div>
             <div className="d-flex">
                 <i class="bi bi-wifi fs-2 me-3" ></i>
-                <p>Also known as System Administrators, they manage both servers and networks to ensure their smooth functioning. They also keep track of data entering or exiting the organization to secure the networks. Because of the nature of this job, they need to be prepared to report to work round-the-clock.</p>  
+                <p>Manage both servers and networks to ensure their smooth functioning. They also keep track of data entering or exiting the organization to secure the networks.</p>  
            </div>
             <div className="d-flex ">
                 <i class="bi bi-wifi fs-2 me-3" ></i>
-                <p>Administrators have excellent communication (written and oral) skills. They should be able to think analytically and be adept at problem-solving.</p>  
+                <p>Ensures on a daily basis an efficient smooth running of the server. Think analytically and be adept at problem-solving.</p>  
            </div>
             <div className="d-flex">
                 <i class="bi bi-wifi fs-2 me-3" ></i>
-                <p>Administrators are physically fit, as their job entails working outdoors, working at heights, lifting and relocating equipment, etc. They are ready to work flexible hours.</p>  
+                <p> Resolves technical problems and oversee the activity levels of servers. Administrator job entails working outdoors, working at heights, lifting and relocating equipment, etc. They are ready to work flexible hours.</p>  
            </div>
          </div>
     </div>
 </div>
 
 {/* window server */}
- <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${serverClip})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="container bg-secondary py-5 rounded " style={{height:"620px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${serverClip})`, backgroundRepeat:"no-repeat" , backgroundPosition:"", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
 
  </div>
@@ -102,7 +102,6 @@ const Server = () => {
 
 
 {/* why admini elonatech */}
-
  <div className="container mb-5">
     <div className="row">
         <div className="col-md-3">

@@ -90,8 +90,8 @@ const Network = () => {
 </main> 
 
 {/* Common Network Devices  */}
-<main class="container mt-5">
-  <div class="p-4 p-md-5 mb-4 rounded">
+<main class="container">
+  <div class="rounded">
     <div className="row">
     <div class="col-md-6 common">
         <h3 className='text-center  mt-5 mb-3' style={{color:'#34548c'}}>Common Network Devices We Maintain</h3>
@@ -110,7 +110,6 @@ const Network = () => {
         <li><i class="bi bi-arrow-right-circle-fill fs-5"> Repeaters</i></li>
         <li><i class="bi bi-arrow-right-circle-fill fs-5"> Access Points</i></li>
         <li><i class="bi bi-arrow-right-circle-fill fs-5"> Servers</i></li>
-      
       </ul>
     </div>
     </div>
@@ -118,8 +117,8 @@ const Network = () => {
 </main>
 
 {/* router */}
-<main class="container mt-5">
-  <div class="p-4 p-md-5 mb-4 rounded">
+<main class="container mb-5">
+  <div class="rounded">
     <div className="row">
     <div class="col-md-6 p-4 text-white" style={{backgroundColor:"#002e62"}}>
       {/* <p class=""> <strong className='fs-4'>W</strong>ith the capability to repair thousands of items by the major network manufacturers, Elonatech is positioned to be your repair partner.</p> */}
@@ -134,6 +133,8 @@ const Network = () => {
     </div>
   </div>
 </main>
+
+
 
 
 </>

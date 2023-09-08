@@ -47,74 +47,34 @@ const Cabling = () => {
 <div class="slider">
   <div class="slide-track">
     <div class="slide">
-    <div className="card border border-white">
         <img src={img1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-          </div>
     </div>
-    <div class="slide">
-      <div className="card border border-white">
+    {/* <div class="slide">
         <img src={img2} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-          </div>
-    </div>
+    </div> */}
     <div class="slide">
-      <div className="card border border-white">
         <img src={img3} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div> 
     <div class="slide">
-      <div className="card border border-white">
         <img src={img4} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={img5} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={img6} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={img7} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={img8} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={img9} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={img10} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={img1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={img1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={img1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={img1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
   </div>
 </div>
@@ -122,87 +82,48 @@ const Cabling = () => {
 </div>
 
 {/* completed project 2 */}
+
 <div className="container mb-5">
-{/*  */}
+  <h4 className='text-center mb-5'>Some Of Our Recently Completed Projects</h4>
+  {/*  */}
   <div class="text-bg-light shadow py-4 rounded">
    <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5>
 <div class="slider">
   <div class="slide-track">
     <div class="slide">
-    <div className="card border border-white">
         <img src={p1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-          </div>
     </div>
+    {/* <div class="slide">
+        <img src={img2} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
+    </div> */}
     <div class="slide">
-      <div className="card border border-white">
         <img src={p2} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-          </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={p3} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div> 
     <div class="slide">
-      <div className="card border border-white">
         <img src={p4} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={p5} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={p6} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={p7} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={p8} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={p9} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
     <div class="slide">
-      <div className="card border border-white">
         <img src={p10} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={p11} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={p12} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={p13} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
-    </div>
-    <div class="slide">
-      <div className="card border border-white">
-        <img src={p14} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-      </div>
     </div>
   </div>
 </div>
 </div>
 </div>
-
     </>
     );
 }

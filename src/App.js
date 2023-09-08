@@ -23,6 +23,7 @@ import Server from './components/server/server';
 import Integration from './components/integration/integration';
 import Cabling from './components/cabling/cabling';
 import Cctv from './components/cctv/cctv';
+import Internet from './components/internet/internet';
 
 // telecom pages
 import Voip from './pages/telecom/voip';
@@ -73,8 +74,6 @@ import Pos from './pages/sales/pos/pos';
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 
-
-import Test from './components/test/test';
 
 const Layout = () =>{
   return(
@@ -164,6 +163,10 @@ const router = createBrowserRouter([
     {
       path:'/cctv',
       element:<Cctv />
+    },
+    {
+      path:'/internet',
+      element:< Internet/>
     },
     {
       path:'/access',
@@ -309,10 +312,6 @@ const router = createBrowserRouter([
       },
   ],
 
-},
-{
-  path:"/test",
-  element:<Test/>
 },
 
 ]);
