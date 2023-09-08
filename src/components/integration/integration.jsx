@@ -131,7 +131,7 @@ const Integration = () => {
                   <img src={si} className='img-fluid rounded' alt="" />
             </div>
             <div class="col-md-7">
-            <h3 className='text-center mt-5 text-white'>Why You Need A System Integrator?</h3>
+            <h3 className=' ms-3 mt-5 text-white'>Why You Need A System Integrator?</h3>
             <h5 className='p-4 text-white'>In this modern world connected by the Internet, the role of system integration engineers is important as more and more systems are designed to connect, both within the system under construction and to systems that are already deployed.
             <br /><br />
                   System Integrators integrates discrete systems utilizing a variety of techniques such as computer networking, enterprise application integration, business process management or manual programming.</h5>
@@ -177,19 +177,13 @@ const Integration = () => {
           </li>
     
           {/*  */}
-          <li className='d-flex border-danger' style={{ borderBottom:"dotted" }}>
-          <div className="d-flex ms-3 mt-2">
-          <i class="bi bi-record-circle me-3 fs-5"></i>
-          <p className='mt-1'>Consulting services in the field of business process integration.</p>
-          </div>
-          </li>
-          {/*  */}
           <li className='d-flex border-danger'>
           <div className="d-flex ms-3 mt-2">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>Consulting services in the field of business process integration.</p>
           </div>
           </li>
+          {/*  */}
         </ul>
       </div>
     </div>
@@ -199,7 +193,7 @@ const Integration = () => {
           <li className='border-danger' style={{ borderBottom:"dotted" }}>
             <div className="d-flex ms-3 mt-2">
             <i class="bi bi-record-circle me-3 fs-5"></i>
-          <p className='mt-1'>High Availability Solutions.</p>
+          <p className='mt-1'>  <p className='mt-1'>Consulting services in the field of business process integration.</p></p>
             </div>
        
           </li>
@@ -218,17 +212,10 @@ const Integration = () => {
           </div>
           </li>
           {/*  */}
-          <li className='d-flex border-danger' style={{ borderBottom:"dotted" }}>
-          <div className="d-flex ms-3 mt-2">
+          <li className='d-flex border-danger'>
+          <div className="d-flex ms-3 mt-3">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>Incorporation solution with Artificial Intelligence Engine.</p>
-          </div>
-          </li>
-          {/*  */}
-          <li className='d-flex'>
-          <div className="d-flex ms-3 mt-2">
-          <i class="bi bi-record-circle me-3 fs-5"></i>
-          <p className='mt-1'>Consulting services in the field of business process integration.</p>
           </div>
           </li>
         </ul>
