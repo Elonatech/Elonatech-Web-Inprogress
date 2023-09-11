@@ -147,10 +147,10 @@ const Integration = () => {
     <div className="col-md-4">
     <div className="card  border-danger" style={{borderStyle:"dotted", borderWidth:"2px"}}>
         <ul className='list-unstyled' style={{color:"#314f81"}}>
-          <li className='border-danger' style={{ borderBottom:"dotted" }}>
+        <li className='border-danger' style={{ borderBottom:"dotted" }}>
             <div className="d-flex ms-3 mt-2">
             <i class="bi bi-record-circle me-3 fs-5"></i>
-          <p className='mt-1'>Analysis and design of IT platforms.</p>
+          <p className='mt-1'>  <p className='mt-'>Analysis and design of IT platforms.</p></p>
             </div>
        
           </li>
@@ -169,21 +169,13 @@ const Integration = () => {
           </div>
           </li>
           {/*  */}
-          <li className='d-flex border-danger' style={{ borderBottom:"dotted" }}>
-          <div className="d-flex ms-3 mt-2">
-          <i class="bi bi-record-circle me-3 fs-5"></i>
-          <p className='mt-1'>Virtualization of physical environments.</p>
-          </div>
-          </li>
-    
-          {/*  */}
           <li className='d-flex border-danger'>
           <div className="d-flex ms-3 mt-2">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>Consulting services in the field of business process integration.</p>
           </div>
           </li>
-          {/*  */}
+  
         </ul>
       </div>
     </div>
@@ -193,7 +185,7 @@ const Integration = () => {
           <li className='border-danger' style={{ borderBottom:"dotted" }}>
             <div className="d-flex ms-3 mt-2">
             <i class="bi bi-record-circle me-3 fs-5"></i>
-          <p className='mt-1'>  <p className='mt-1'>Consulting services in the field of business process integration.</p></p>
+          <p className='mt-1'>  <p className='mt-'>High Availability Solutions.</p></p>
             </div>
        
           </li>
@@ -213,7 +205,7 @@ const Integration = () => {
           </li>
           {/*  */}
           <li className='d-flex border-danger'>
-          <div className="d-flex ms-3 mt-3">
+          <div className="d-flex ms-3 mt-2">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>Incorporation solution with Artificial Intelligence Engine.</p>
           </div>
@@ -223,7 +215,7 @@ const Integration = () => {
     </div>
     {/*  */}
     <div className="col-md-4 ">
-      <p>With the expertise of our IT professionals, businesses can create a data center infrastructure by following a process that involves:</p>
+      <p>With the expertise of our IT professionals, businesses can create a data center infrastructure.</p>
       <div className="card  border-danger" style={{borderStyle:"dotted", borderWidth:"2px"}}>
         <ul className='list-unstyled' style={{color:"#314f81"}}>
           <li className='border-danger' style={{ borderBottom:"dotted" }}>
@@ -235,14 +227,14 @@ const Integration = () => {
           </li>
           {/*  */}
           <li className='border-danger' style={{ borderBottom:"dotted" }}>
-          <div className="d-flex ms-3 mt-3">
+          <div className="d-flex ms-3 mt-2">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>Deciding on the architecture and design</p>
           </div>
           </li>
           {/*  */}
           <li className='d-flex border-danger'>
-          <div className="d-flex ms-3 mt-2">
+          <div className="d-flex ms-3 mt-1">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>The Infrastructure optimization and maintenance.</p>
           </div>

@@ -24,6 +24,7 @@ import Integration from './components/integration/integration';
 import Cabling from './components/cabling/cabling';
 import Cctv from './components/cctv/cctv';
 import Internet from './components/internet/internet';
+import Security from './components/security/security';
 
 // telecom pages
 import Voip from './pages/telecom/voip';
@@ -167,6 +168,10 @@ const router = createBrowserRouter([
     {
       path:'/internet',
       element:< Internet/>
+    },
+    {
+      path:'/security',
+      element:<Security/>
     },
     {
       path:'/access',
