@@ -1,4 +1,5 @@
 import internetHeader from './captions/2123350.jpg'
+import internetImage from './captions/p07br2yz.jpg'
 import './internet.css'
 
 
@@ -15,7 +16,7 @@ const Internet = () => {
 {/* header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${internetHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Lightning-fast Internet</h2>
+   <h2 class=" mt-5 text-white text-center">Internet Solution</h2>
    <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
    <p class=" mt-4 lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
  </div>
@@ -24,7 +25,6 @@ const Internet = () => {
  {/* Internet */}
  <div className="container">
     <h4 className='text-danger text-center'>Our Features</h4>
-    <h5 className='text-center'>We Are Internet Service Provider Company</h5>
     <div className="row mb-5 mt-3">
         <div className="col-md-3 mt-3">
             <div className="card card-vl left rounded"> 
@@ -65,6 +65,25 @@ const Internet = () => {
     </div>
  </div>
 
+{/* images */}
+<div className="container mb-5">
+    <div className="row g-0">
+        <div className="col-md-6">
+          <div className="card rounded-0" style={{backgroundColor:"#2b5592"}}>
+            <div className="card-body mt-5 mb-5">
+                <h2 className='text-white'>Fast Internet</h2>
+                <h6 className='mt-4 text-white'>Develop skills needed to protect networks and prevent intrusions.</h6>
+                <p className='mt-4 mb-5 text-white'>By Elonatech</p>
+            </div>
+         </div>  
+        </div>
+        <div className="col-md-6">
+            <div className="card rounded-0" style={{backgroundImage:`url(${internetImage})`, backgroundPosition:"center" , backgroundSize:"40rem" , height:"310px"}}>
+            </div>
+        </div>
+    </div>
+ </div>
+
 {/*  Solutions */}
 <div className="container mt-5 mb-5">
     <div className="row">
@@ -76,17 +95,21 @@ const Internet = () => {
            <div className="row">
             <div className="col">
             <ul className='list-unstyled'>
-               <li><i class="bi bi-check-circle-fill text-danger"></i>  Expert technical team</li> 
-               <li><i class="bi bi-check-circle-fill text-danger"></i>  50+ coverage areas</li> 
-               <li><i class="bi bi-check-circle-fill text-danger"></i> Reasonable price packages</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Expert Technical Team</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Experience in IP Networking</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Cost-effective Business Solutions</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Supply of equipment and software</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  High Availability Solutions</li> 
                <button className='btn btn-outline-danger  mt-3'>Know More</button>
             </ul>
             </div>
             <div className="col">
             <ul className='list-unstyled'>
-               <li><i class="bi bi-check-circle-fill text-danger"></i>  Expert technical team</li> 
-               <li><i class="bi bi-check-circle-fill text-danger"></i>  50+ coverage areas</li> 
-               <li><i class="bi bi-check-circle-fill text-danger"></i> Reasonable price packages</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Integrating Existing Systems</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Utilizing Computer Networking</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Enterprise Application integration</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Physical Environment Virtualization</li> 
+               <li><i class="bi bi-check-circle-fill text-danger"></i>  Business Process Management</li> 
             </ul>
             </div>
            
@@ -97,12 +120,12 @@ const Internet = () => {
         <div className="col-md-6">
           <div className="row">
             <div className="col-md-6">
-                <ul className='mt-5 list-unstyled'>
+                <ul className='mt-1 list-unstyled'>
                 <li>
                     <div className="card border-danger">
                     <div className="card border-danger p-4 ">
                     <i class="bi bi-broadcast fs-2 text-danger"></i>
-                    <h6 className='mt-2'>VSAT Services</h6>
+                    <h6 className=''>VSAT Services</h6>
                     <p className='mt-2 lead fs-6'>We operate different terminals on C- and Ku-Band. Our monitoring tools give access to...</p>
                     </div>
                     </div>
@@ -145,12 +168,8 @@ const Internet = () => {
     </div>
 </div>
 
-
-
-
-
-    </>
-    );
+</>
+);
 }
 
 export default Internet;

@@ -69,3 +69,11 @@
     transform: scale(1.2);
   }
   
+.underline-w {
+  width: 50px;
+  height: 3px;
+  background: blue;
+  margin: auto;
+}
+
+

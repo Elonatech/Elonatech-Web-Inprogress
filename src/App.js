@@ -25,6 +25,7 @@ import Cabling from './components/cabling/cabling';
 import Cctv from './components/cctv/cctv';
 import Internet from './components/internet/internet';
 import Security from './components/security/security';
+import Time from './components/time/time';
 
 // telecom pages
 import Voip from './pages/telecom/voip';
@@ -170,15 +171,19 @@ const router = createBrowserRouter([
       element:< Internet/>
     },
     {
-      path:'/security',
+      path:'/networksecurity',
       element:<Security/>
     },
     {
-      path:'/access',
+      path:'/access-control',
       element:<Access/>
     },
     {
-      path:'/suvalliance',
+      path:'/time',
+      element:<Time/>
+    },
+    {
+      path:'/surveilance',
       element:<Suvalliance/>
     },
     {

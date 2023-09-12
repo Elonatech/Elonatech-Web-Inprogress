@@ -5,13 +5,24 @@ import video from './captions/2022-ShieldSetup.mp4'
 import cloud from './captions/Cloud-Icon.svg'
 import night from './captions/Night-Icon.svg'
 import videoIcon from './captions/Video-Icon.svg'
+import survelHeader from './captions/3737316.jpg'
 
 const Suvalliance = () => {
     return (
 <>
 
+{/* header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${survelHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Surveilance</h2>
+   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
+   <p class=" mt-4 lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+ </div>
+ </div>
+
+
 {/* detect people */}
-<section class="bg-light mb-4" >
+<section class=" mb-4" >
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-md-8 col-lg-8 d-flex align-items-center">
@@ -66,8 +77,6 @@ const Suvalliance = () => {
     </div>
 </div>
 
-
-
 {/* steadfast and reliable */}
 <div className="container  mt-5 bg-secondary p-5 rounded">
     <div className="row">
@@ -88,8 +97,8 @@ const Suvalliance = () => {
                 {/*  */}
                 <li className='mt-4'>
                     <div className="d-flex">
-                     <img src={battery} alt="" className='mb-4' />
-                    <div className="mt-5">
+                     <i class="bi bi-camera-video fs-2 mb-4"></i>
+                    <div className="mt-2">
                     <h5 className='ps-5'>Premium power supply </h5> <h6 className='ps-5 '>Runs on a removable battery that recharges in ~5 hours. Plus you can swap in a backup battery (sold separately) while it’s charging — virtually eliminating security downtime.</h6>
                     </div>
                     </div>
@@ -97,8 +106,8 @@ const Suvalliance = () => {
                 {/*  */}
                 <li className='mt-4'>
                     <div className="d-flex">
-                     <img src={battery} alt="" className='mb-4' />
-                    <div className="mt-5">
+                     <i class="bi bi-circle fs-2 "></i>
+                    <div className="mt-2">
                     <h5 className='ps-5'>Premium power supply </h5> <h6 className='ps-5 '>Runs on a removable battery that recharges in ~5 hours. Plus you can swap in a backup battery (sold separately) while it’s charging — virtually eliminating security downtime.</h6>
                     </div>
                     </div>
@@ -111,7 +120,6 @@ const Suvalliance = () => {
         </div>
     </div>
 </div>
-
 
 {/* frequent question */}
 <section id="faq" class="faq mb-5 mt-3">

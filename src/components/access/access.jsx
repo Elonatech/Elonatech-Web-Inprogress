@@ -1,256 +1,100 @@
-
+import accessHeader from './captions/web-wallpaper-1680x1050.jpg'
+import accessImg from './captions/depositphotos_354792732-stock-photo-business-technology-internet-network-concept.jpg';
+import cctvImg from './captions/camera-supervision-check-3762055-1024x678-1.jpg'
+import epabx from './captions/epabx-telephone-system-500x500-1-300x185-1.png'
 
 const Access = () => {
     return (
     <>
-    <div className="container">
+
+{/* header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${accessHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Access Control</h2>
+   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
+   <p class=" mt-4 lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+ </div>
+ </div>
+
+{/* body */}
+<div className="container">
     <div class="row">
     <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <h5 class="mb-0">ACCESS CONTROL & SURVEILLANCE SOLUTION (CCTV)</h5>
+          <div className="underline-w mt-2" style={{  width:"80px", height:"3px" , background:"#f00"}}></div>
+          <img src={accessImg} className='img-fluid mt-3 rounded' alt="" />
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-body-secondary">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto ml d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
+      <p className='mt-4 lead fs-5'><strong>O</strong>f all the services offered at ELONATECH, Access control & Surveillance solutions is one among which delivers monitoring of behavior, activities, or information for the purpose of information gathering, influencing, managing or directing. Popular Security cameras & related integrated devices are promoted by ELONATECH, and we have maintained a good scale in best of observation and It is well acknowledged by all industries about the importance of Surveillance.</p>
+    </div>
+  </div>
+</div>
+
+{/* WHY INVEST IN CCTV */}
+<div className="container mb-4">
+  <h2 className='text-center'>Why Invest With Us</h2>
+  <div className="underline-w" style={{  width:"50px", height:"3px" ,margin:"auto" , background:"#f00"}}></div>
+  <div className="row">
+    <div className="col-md-6">
+            <div className="mt-5">
+              <ul className='list-unstyled'>
+                <li className='d-flex'>
+                  <i class="bi bi-check-lg text-danger fs-4 me-3"></i>
+                  <p className=''> Quality video evidence helps solve crime and increases apprehensions by private security and police agencies</p> 
+                </li>
+                <li className='d-flex'>
+                  <i class="bi bi-check-lg text-danger fs-4 me-3"></i>
+                  <p className=''>Acts as a deterrent to those that would consider being dishonest.</p> 
+                </li>
+                <li className='d-flex'>
+                  <i class="bi bi-check-lg text-danger fs-4 me-3"></i>
+                  <p className=''> Saves money by identifying operational issues.</p> 
+                </li>
+                <li className='d-flex'>
+                  <i class="bi bi-check-lg text-danger fs-4 me-3"></i>
+                  <p className=''>All too often businesses discover product or money missing weeks after the fact. Having video archives available to go back and review often solves these mysteries</p> 
+                </li>
+                <li className='d-flex'>
+                  <i class="bi bi-check-lg text-danger fs-4 me-3"></i>
+                  <p className=''>Video analytics – let video help the operational side of your business by mapping customer patterns, counting people, capturing license plates and more.</p> 
+                </li>
+
+              </ul>
+            </div>
+    </div>
+    <div className="col-md-6">
+      <img src={cctvImg} className='img-fluid' style={{height:"26rem", width:"26rem", borderRadius:"50%"}}   alt="" />
+    </div>
+  </div>
+</div>
+
+{/* PBX */}
+<div className="container mb-5">
+  <div className="row">
+    <div className="col-md-4 mt-3">
+      <div className="">
+        <h5 className='fw-bold'>PBX (INTERCOM) SYSTEM</h5>
+        <div className="underline-w mt-1" style={{  width:"40px", height:"3px" , background:"#f00"}}></div>
+        <img src={epabx} className='img-fluid mt-4' style={{height:"11rem" , width:"20rem"}} alt="" />
+      </div>
+    </div>
+    <div className="col-md-8">
+      <div className="">
+         <p className='lead p-2 pb-3'>Private Branch Exchange, which is a private telephone network used within a company or organization. The users of the PBX phone system can communicate within their company or organization and the outside world, using different communication channels like Voice over IP, ISDN or analog. A PBX also allows you to have more phones than physical phone lines (PTSN) and allows free calls between users. It also provides features like transfers, voicemail, call recording, interactive voice menus (IVRs) and ACD call queues. Our range of products offers intercoms for a variety of purposes. They are intended to provide maximum comfort and safety to offices and homes</p>
       </div>
     </div>
   </div>
-
-{/* under one */}
-
-<div class="row">
-  <div class="col-md-3">
-    <h5>Professional monitoring under $1/day & your first month free</h5>
-    </div>
-  <div class="col-md-3">
-    <h5>Easy to install yourself or choose optional pro install</h5>
-    </div>
-  <div class="col-md-3">
-    <h5>Complete control with the SimpliSafe® App</h5>
-    </div>
-  <div class="col-md-3">
-    <h5>60-day money-back guarantee with free return shipping</h5>
-    </div>
 </div>
 
-    </div>
 
 
 
-{/* Services  */}
-
-<section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2 className='text-center'>Our Services</h2>
-          <div class="about-border"></div>
-        </div>
-
-        <div class="row gy-4">
-
-     
-          <div class=" col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src={services2} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                <i class="bi bi-activity"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3 className='pt-2'>Eosle Commodi</h3>
-                </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-
-          <div class=" col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src={services2} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-broadcast"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3 className='pt-2'>Eosle Commodi</h3>
-                </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-
-
-          <div class=" col-md-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src={services3} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-easel"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Ledo Markt</h3>
-                </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-            <div class="service-item">
-              <div class="img">
-                <img src={services4} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative ">
-                <div class="icon">
-                  <i class="bi bi-bounding-box-circles"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Asperiores Commodit</h3>
-                </a>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-            <div class="service-item">
-              <div class="img">
-                <img src={services5} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-calendar4-week"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Velit Doloremque</h3>
-                </a>
-                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-            <div class="service-item">
-              <div class="img">
-                <img src={services6} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-chat-square-text"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Dolori Architecto</h3>
-                </a>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-            <div class="service-item">
-              <div class="img">
-                <img src={services6} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-chat-square-text"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Dolori Architecto</h3>
-                </a>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-            <div class="service-item">
-              <div class="img">
-                <img src={services6} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-chat-square-text"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Dolori Architecto</h3>
-                </a>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-            <div class="service-item">
-              <div class="img">
-                <img src={services6} class="img-fluid" alt=""/>
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-chat-square-text"></i>
-                </div>
-                <a href="#" class="stretched-link">
-                  <h3>Dolori Architecto</h3>
-                </a>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          {/* <!-- End Service Item --> */}
-
-        </div>
-
-      </div>
-    </section>
 
 {/* End Services  */}
-
-
-
-
-
-
-
-
-
-
     </>
     );
 }
