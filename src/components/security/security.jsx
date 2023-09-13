@@ -5,11 +5,12 @@ import icon1 from './captions/Icon1.svg'
 import icon2 from './captions/Icon2.svg'
 import icon3 from './captions/Icon3.svg'
 import icon4 from './captions/Icon4.svg'
+import image1 from './captions/image.png'
 
 const Security = () => {
     return (
         <>
-     {/* header */}
+{/* header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${securityHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Network Security</h2>
@@ -23,23 +24,57 @@ const Security = () => {
     <div className="row g-0">
         <div className="col-md-6">
           <div className="card rounded-0" style={{backgroundColor:"#2b5592"}}>
-            <div className="card-body mt-5 mb-5">
-                <h2 className='text-white'>Network Security</h2>
-                <h6 className='mt-4 text-white'>Develop skills needed to protect networks and prevent intrusions.</h6>
-                <p className='mt-4 mb-5 text-white'>By elonatech academy</p>
+            <div className="card-body">
+                <h2 className='text-white mt-4'>Network Security</h2>
+                <h6 className=' text-white mt-4'>Reasons Why Network Security Is Important.</h6>
+                <div className="row mt-4">
+                    <div className="col-md-6">
+                    <div className="">
+                    <ul className="list-unstyled mt-2">
+                    <li className="d-flex text-white">
+                    <i class="bi bi-check-circle  me-3"></i>
+                    <p className="">Network security protects your data</p>
+                    </li>
+                    <li className="d-flex text-white">
+                    <i class="bi bi-check-circle  me-3"></i>
+                    <p className="">Network security protects client data</p>
+                    </li>
+                    <li className="d-flex text-white mt-1">
+                    <i class="bi bi-check-circle  me-3"></i>
+                    <p className="">Network security improves your network’s performance</p>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div className="col-md-6">
+                    <div className="">
+                    <ul className="list-unstyled mt-2">
+                    <li className="d-flex text-white">
+                    <i class="bi bi-check-circle  me-3"></i>
+                    <p className="">Network security protects against ransomware</p>
+                    </li>
+                    <li className="d-flex text-white">
+                    <i class="bi bi-check-circle  me-3"></i>
+                    <p className="">Cyberattacks are on the rise</p>
+                    </li>
+                    <li className="d-flex text-white">
+                    <i class="bi bi-check-circle  me-3"></i>
+                    <p className="">The world depends on technology</p>
+                    </li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
             </div>
          </div>  
         </div>
         <div className="col-md-6">
-            <div className="card rounded-0" style={{backgroundImage:`url(${security})`, backgroundPosition:"center" , backgroundSize:"40rem" , height:"310px"}}>
-               
-            </div>
+            <img src={security} className='img-fluid' alt="" />
         </div>
     </div>
  </div>
 
 {/* Risk */}
-
 <div className="container">
     <div className="row">
         <div className="col-md-3">
@@ -72,165 +107,104 @@ const Security = () => {
 
 <div className="container">
     <div className="row">
-        <div className="col-md-4">
+       <div className="col-md-7">
             <div className="">
-            <div className="shadow p-2">
-                <h5>ELEMENTS OF NETWORK SECURITY</h5>
-                <ul className="list-unstyled mt-2">
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network firewall</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network firewall</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Unified threat management</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Advance network threat prevention</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network access control</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Cloud access security brokers</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">DDoS mitigation</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network behavior anomaly detection</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">SD-WAN security</p>
-                    </li>
-                </ul>
-            </div>  
+            <img src={image1}className='img-fluid' alt="" />
             </div>
         </div>
-        <div className="col-md-4">
-            <div className="">
-            <div className="shadow p-2">
-                <h5>ELEMENTS OF NETWORK SECURITY</h5>
+       <div className="col-md-5">
+        <div className="">
+         <div className="row">
+          <div className="col-md-6">
+          <div className="mt-3">
                 <ul className="list-unstyled mt-2">
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network security protects your data</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network security protects client data</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network security improves your network’s performance</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network security protects against ransomware</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Cyberattacks are on the rise</p>
-                    </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">The world depends on technology</p>
-                    </li>
-                </ul>
-            </div>  
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="">
-            <div className="shadow p-2">
-                <h5>OUR NETWORK SECURITY TOOLS</h5>
-                <ul className="list-unstyled mt-2">
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Access Control</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Antivirus and antimalware</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Access Control</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Application security</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Antivirus and Antimalware</p>
+                    </li>
+              
+                    {/* <li className="d-flex">
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Software-defined Perimeter</p>
+                    </li> */}
+                    <li className="d-flex">
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Application Security</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Cloud security</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Cloud Security</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Behavioral Analytics</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Data loss prevention (DLP)</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Data Loss Prevention</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Email security</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Firewall</p>
                     </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Intrusion detection systems (IDS)</p>
+                </ul>
+          </div>
+            </div>  
+          <div className="col-md-6">
+            <div className="mt-3">
+            <li className="d-flex">
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Intrusion Detection</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Intrusion Prevention system</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Intrusion Prevention</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Mobile device security</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Mobile Device Security</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Multifactor authentication (MFA)</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Multifactor Authentication</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Network segmentation</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Network Segmentation</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Sandboxing</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Software-defined perimeter (SDP)</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Virtual Private Network</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Virtual private network (VPN)</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Web Security</p>
                     </li>
                     <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Web security</p>
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Workload Security</p>
                     </li>
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Workload security</p>
-                    </li>
-                </ul>
-            </div>  
             </div>
+            </div>  
+         </div>
         </div>
+       </div>
     </div>
 </div>
 

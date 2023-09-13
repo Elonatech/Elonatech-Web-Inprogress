@@ -48,7 +48,7 @@ const Time = () => {
                 <ul className="list-unstyled mt-2">
                     <li className="d-flex">
                     <i class="bi bi-check-circle fs-3 me-3"></i>
-                    <p className="mt-2">Schedule staff on an interactive calendar</p>
+                    <p className="mt-2 l">Schedule staff on an interactive calendar</p>
                     </li>
                     <li className="d-flex">
                     <i class="bi bi-check-circle fs-3 me-3"></i>
