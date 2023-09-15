@@ -10,20 +10,31 @@ const IpTelephony = () => {
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${iptelephonyHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">IP Telephony & PBX Systems</h2>
-   <h5 class=" mt-4 text-white text-center">Develop skills needed to protect networks and prevent intrusions.</h5>
-   <p class=" mt-4 lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <h5 class=" mt-4 text-white text-center">Lower Bills and Higher Call Quality with IP Telephony.</h5>
+   <p class=" mt-4 lead text-white text-center">VoIP feature that greets callers, directs them to the appropriate extensions or departments, and assists in managing incoming calls with efficiency and professionalism.</p>
  </div>
  </div>
 
 {/* body */}
 <div className="container" style={{marginTop:"100px"}}>
-  <div class="row justify-content-center align-items-center g-2">
-  <h2 className='mb-5 text-center'>IP Telephony & PBX Systems</h2>
+  <div class="row justify-content-center g-2">
     <div class="col-md-6">
-    <p className="fs-6 mt-2">Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria's leading Website Design & Development Company Who's Core Values are Excellence, Professionalism, Integrity & Convenient Service.
-        We Design & Develop all kinds Of Websites and Web applications with the most suitable platforms at a friendly budget.  <br /><br />We offer premium web services such as Business Software Development, Mobile App Development, Web Based Apps etc.
-        We ensure that your needs are understood and implemented correctly. In fact, we are dedicated to the creation of a site that helps you become a success. Our specialty lies in providing comprehensive and custom web development services that provide you with a functional and complete solution.  <br /> <br />  The sites we develop are highly scalable with a great degree of usability. As a website development company, we also ensure the site responds fast and is SEO friendly with an excellent User Interface (UI) and User Experience (UX). You also get to enjoy complete control over your site. With our website development, you do not have to adjust your specifications to the capabilities of a given platform or change your design visions to fit a template. We deliver the work precisely to your requirements.
-        We won't just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.</p>
+    <h3 className='mb-4'>IP Telephony & PBX Systems</h3>
+    <p className="fs-6 ">
+    IP telephony is any phone system that runs on the internet instead of traditional landlines. In other words, it uses the internet — internet protocol (IP) — to send and receive voice transmissions. Voice over IP (VoIP) is another term for IP telephony.
+    <br /><br />
+    The traditional telephone system is dubbed the Public Switched Telephone Network (PSTN). The way that it moves calls from originator to destination resembles how VoIP moves information, but the underlying equipment differs from the devices moving traffic on the internet, which creates a number of ripple effects.
+
+    <br /><br />
+    A PBX is an acronym for Private Branch Exchange, a private telephone network allowing users to talk to each other. Different hardware components work together to provide connectivity to the telephone network.
+     <br /><br />
+     PBX design was proprietary, so a customer had to purchase all of its network equipment and phones from one vendor. These systems required a great deal of manual input to set up and maintain. Tasks as simple as assigning a phone extension to a new employee were cumbersome to complete.
+
+
+
+
+
+      </p>
     </div>
     <div class="col-md-6">
       <img src={img2} alt="" className='img-fluid rounded' srcset="" />
@@ -42,19 +53,24 @@ const IpTelephony = () => {
                 <ul className="list-unstyled mt-2">
                     <li className="d-flex">
                     <i class="bi bi-check-circle-fill fs-3 text-danger me-3"></i>
-                    <p className="mt-2 l">Schedule staff on an interactive calendar</p>
+                    <p className="mt-2 l">
+                    Complete unified communication system with voice, video, text messages, mobile, and web connectivity.
+                    </p>
                     </li>
                     <li className="d-flex">
                     <i class="bi bi-check-circle-fill fs-3 text-danger me-3"></i>
-                    <p className="mt-2">Manage and approve all types of absences</p>
+                    <p className="mt-2">
+                      Instant conference calls (including real-time video conference calls).
+                      </p>
                     </li>
                     <li className="d-flex">
                     <i class="bi bi-check-circle-fill fs-3 text-danger me-3"></i>
-                    <p className="mt-2">See who’s present at work in real time</p>
+                    <p className="mt-2">
+                       Our service allows you to effortlessly schedule your staff appointment.</p>
                     </li>
                     <li className="d-flex">
                     <i class="bi bi-check-circle-fill fs-3 text-danger me-3"></i>
-                    <p className="mt-2">Track overtime, be compliant, get HR reports and much more</p>
+                    <p className="mt-2">Reliable and trustworthy service with HD voice call quality</p>
                     </li>
                 </ul>
             </div>
@@ -70,16 +86,21 @@ const IpTelephony = () => {
         <div className="card-body">
         <i class="bi bi-telephone-minus-fill text-danger  fs-2"></i>
         <p className='fw-bold'>Inbound & Outbound</p>
-        <p className='lead fs-6'>Connect with your customers easily. And proactively reach your customers via different channels. Increase customer interactions, satisfaction and boost revenues.</p>
+        <p className='lead fs-6'>
+        Delight customers and empower employees with AI-powered workflows for every interaction.
+        Put your business on the map with local numbers and global connectivity from one easy app.
+          </p>
         </div>
       </div>
     </div>
     <div className="col-md-4">
     <div className="card border-2 bg-light">
         <div className="card-body">
-        <i class="bi bi-telephone-minus-fill text-danger fs-2"></i>
+        <i class="bi bi-mic-fill text-danger fs-2"></i>
         <p className='fw-bold'>Voice Services</p>
-        <p className='lead fs-6'>Connect with your customers easily. And proactively reach your customers via different channels. Increase customer interactions, satisfaction and boost revenues.</p>
+        <p className='lead fs-6'>
+        PBX feature that provides comprehensive insights and analytics on call activity, enabling businesses to track performance, identify trends, and make data-driven decisions.
+          </p>
         </div>
       </div>
     </div>
@@ -88,7 +109,7 @@ const IpTelephony = () => {
         <div className="card-body">
         <i class="bi bi-terminal-fill text-danger  fs-2"></i>
         <p className='fw-bold'>Automatic Call Distribution (ACD)</p>
-        <p className='lead fs-6'>Connect with your customers easily. And proactively reach your customers via different channels. Increase customer interactions, satisfaction and boost revenues.</p>
+        <p className='lead fs-6'>VoIP feature that automatically responds to incoming text messages, ensuring prompt engagement and providing personalized messages to enhance customer satisfaction.</p>
         </div>
       </div>
     </div>
