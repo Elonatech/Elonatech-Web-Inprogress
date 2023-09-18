@@ -1,4 +1,5 @@
 import bop from './captions/cta.jpg'
+import businessHeader from './captions/businessHeader.jpg'
 
 
 import './business.css'
@@ -6,41 +7,38 @@ import './business.css'
 const Business = () => {
     return (
  <>
-{/* Header */}
-<section class="mt-5 bg-dark" >
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p  class="text-white pt-2">We Provides Round-The-Clock Maintenance for All Network Equipment</p>
-              <p  class="text-white pt-2">we are committed to supplying you with the most reliable advice,
-                             support and services at all times, wherever you are in Nigeria.</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>
-{/* End */}
-
+{/* header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${businessHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Business</h2>
+   <h5 class=" mt-4 text-white text-center">Monitor, Configure and Maintain Servers to operate reliably and optimally</h5>
+   <p class="lead text-white text-center">Minimizing downtimes while maximizing reliability in other to meet the needs of organizations over time.</p>
+ </div>
+ </div>
 
 
 
 {/* <!-- ======= About Section ======= --> */}
     <section id="about" class="about mt-5 mb-5">
+      
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
-        </div>
+     
+
+        {/* <div class="section-header">
+
+        </div> */}
 
         <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+            <h2>About Us</h2>
+          <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+            </div>
+          </div>
+      
+        </div>
           <div class="col-lg-5">
             <div class="about-img">
               <img src={bop} class="img-fluid" alt=""/>

@@ -17,7 +17,6 @@ const Software = () => {
     return (
 
   <>
-
 {/* header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${softwareHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
@@ -26,30 +25,24 @@ const Software = () => {
    <p class="lead text-white text-center">Minimizing downtimes while maximizing reliability in other to meet the needs of organizations over time.</p>
  </div>
  </div>
-
-
 {/* body */}
 <div className="container  mb-5" style={{marginTop:"100px"}}>
   <div class="row justify-content-center  g-4">
     <div class="col-md-6 ps-5">
-    <h2 className='mb-4'>System Software</h2>
+    <h2 className='mb-4'>How System Software works?</h2>
     <p className="fs-6 " style={{textAlign:"justify"}}>
     Software engineering is one of the most important aspects of computer engineering, and Elonatech understands its unique importance since no computer system can function properly without a software.
     <br /><br />
     Computer software has to be “loaded” into the computer’s storage (such as a hard drive, memory, or ROM). Once the software is loaded, the computer is able to execute the software. The process of loading the software into the computer, and executing the appropriate functions is another unique aspect Elonatech handles.
     <br /><br />
     System software is the most important software in a computer, it enables other software to run properly, by interfacing with hardware and  software; and drivers which is responsible for every part of a computer to work and function properly.
-
-
-
-        </p>
+    </p>
     </div>
     <div class="col-md-6">
       <img src={img2} alt="" className='img-fluid rounded ' srcset="" />
     </div>
   </div>
 </div>
-
 {/* feature */}
 <section id="features" class="features mb-5">
       <div class="container" data-aos="fade-up">
@@ -256,9 +249,7 @@ const Software = () => {
         </div>
 
       </div>
-</section>   
-    
-            
+</section>     
   </>
     );
 }
