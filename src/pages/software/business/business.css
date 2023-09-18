@@ -59,7 +59,7 @@
   }
   
   .about .nav-link.active {
-    background-color: green;
+    background-color: #34548c;
     padding: 15px;
     border-bottom: 3px solid var(--color-primary);
   }

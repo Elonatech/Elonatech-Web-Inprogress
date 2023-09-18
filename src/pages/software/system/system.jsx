@@ -1,8 +1,7 @@
-import img2 from './captions/7085623.jpg'
-import img4 from './captions/stats-img.svg'
-import './system.css'
-import systemHeader from './captions/systemHeader.jpg'
-
+import img4 from './captions/stats-img.svg';
+import './system.css';
+import systemHeader from './captions/systemHeader.jpg';
+import systemImage from './captions/systemImage.png';
 
 
 const System = () => {
@@ -23,12 +22,12 @@ const System = () => {
 <div className="container  mb-5" style={{marginTop:"100px"}}>
   <div class="row justify-content-center  g-2">
     <div class="col-md-6 ps-5">
-    <h2 className='mb-4'>Our call, anytime, anywhere!</h2>
+    <h2 className='mb-4'>Features of System Software</h2>
     <p className="fs-6">Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria's leading Website Design & Development Company Who's Core Values are Excellence, Professionalism, Integrity & Convenient Service.
        ou become a success. Our specialty lies in providing comprehensive and custom web development services that provide youds, sales, customers, and clients.</p>
     </div>
     <div class="col-md-6">
-      <img src={img2} alt="" className='img-fluid rounded' srcset="" />
+      <img src={systemImage} alt="" className='img-fluid rounded' srcset="" />
     </div>
   </div>
 </div>
@@ -46,18 +45,18 @@ const System = () => {
           <div class="col-lg-6">
 
             <div class="stats-item d-flex align-items-center">
-              <h1 className='text-success me-3'>232</h1>
+              <h1 className='text-danger me-3'>232</h1>
               <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
             </div>
 
             <div class="stats-item d-flex align-items-center">
              
-              <h1 className='text-success me-3'>521</h1>
+              <h1 className='text-danger me-3'>521</h1>
               <p><strong>Projects</strong> adipisci atque cum quia aut</p>
             </div>
 
             <div class="stats-item d-flex align-items-center">
-              <h1 className='text-success me-3'>453</h1>
+              <h1 className='text-danger me-3'>453</h1>
               <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
             </div>
 

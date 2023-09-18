@@ -1,5 +1,6 @@
-import bop from './captions/cta.jpg'
+import bop from './captions/business.jpg'
 import businessHeader from './captions/businessHeader.jpg'
+import businessImage from './captions/businessImage.png'
 
 
 import './business.css'
@@ -22,26 +23,19 @@ const Business = () => {
     <section id="about" class="about mt-5 mb-5">
       
       <div class="container" data-aos="fade-up">
-
-     
-
-        {/* <div class="section-header">
-
-        </div> */}
-
         <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-        <div className="container">
+        <div className="container ">
           <div className="row">
             <div className="col-md-12">
-            <h2>About Us</h2>
+            <h2 className='text-center'>About Us</h2>
           <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
             </div>
           </div>
       
         </div>
           <div class="col-lg-5">
-            <div class="about-img">
-              <img src={bop} class="img-fluid" alt=""/>
+            <div class="mt-5">
+              <img src={bop} class="img-fluid" style={{height:"35rem"}} alt=""/>
             </div>
           </div>
 
@@ -63,19 +57,19 @@ const Business = () => {
                 <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2  bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2  bg-danger rounded-circle text-white"></i>
                   <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
                 </div>
                 <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2  bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2  bg-danger rounded-circle text-white"></i>
                   <h4>Incidunt non veritatis illum ea ut nisi</h4>
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
                 </div>
                 <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
@@ -87,19 +81,19 @@ const Business = () => {
                 <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
                 </div>
                 <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Incidunt non veritatis illum ea ut nisi</h4>
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
                 </div>
                 <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
@@ -111,19 +105,19 @@ const Business = () => {
                 <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
                 </div>
                 <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Incidunt non veritatis illum ea ut nisi</h4>
                 </div>
                 <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
 
                 <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-success rounded-circle text-white"></i>
+                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
                   <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
                 </div>
                 <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>

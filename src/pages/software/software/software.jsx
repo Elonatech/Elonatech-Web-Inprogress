@@ -1,16 +1,11 @@
-import img2 from './captions/system software.jpg'
-
-
+import img2 from './captions/systemImage.png'
 import f1 from './captions/captions/features-1.svg'
 import f2 from './captions/captions/features-2.svg'
 import f3 from './captions/captions/features-3.svg'
 import f4 from './captions/captions/features-4.svg'
 import f5 from './captions/captions/features-5.svg'
 import f6 from './captions/captions/features-6.svg'
-
-
 import softwareHeader from './captions/softwareHeader.jpg'
-
 import './software.css'
 
 const Software = () => {
@@ -46,73 +41,60 @@ const Software = () => {
 {/* feature */}
 <section id="features" class="features mb-5">
       <div class="container" data-aos="fade-up">
-
         <ul class="nav nav-tabs row gy-4 d-flex">
-
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
               <i class="bi bi-binoculars color-cyan"></i>
-              <h4>Modinest</h4>
+              <h4>Programming</h4>
             </a>
           </li>
-
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
               <i class="bi bi-box-seam color-indigo"></i>
-              <h4>Undaesenti</h4>
+              <h4>OS</h4>
             </a>
           </li>
-
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
               <i class="bi bi-brightness-high color-teal"></i>
-              <h4>Pariatur</h4>
+              <h4>DD</h4>
             </a>
           </li>
-
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
               <i class="bi bi-command color-red"></i>
-              <h4>Nostrum</h4>
+              <h4>Firmware</h4>
             </a>
           </li>
-
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
               <i class="bi bi-easel color-blue"></i>
-              <h4>Adipiscing</h4>
+              <h4>BIOS & UEFI</h4>
             </a>
           </li>
-
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
               <i class="bi bi-map color-orange"></i>
-              <h4>Reprehit</h4>
+              <h4>Utilities</h4>
             </a>
           </li>
-
         </ul>
 
         <div class="tab-content">
-
           <div class="tab-pane active show" id="tab-1">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                <h3>Modinest</h3>
+                <h4>Programming Language Translator</h4>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                These are the intermediate system software through which programmers convert the high-level language programming code to machine-level language code. 
+                Assembler, Interpreter, and Compiler are the popular language translators. 
+                They are usually designed by the computer manufacturer and are deliver inbuilt with the system.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> The compiler specifies the errors at the end of the compilation with line numbers when there are any errors in the source code.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> The Assembler is used to translate the program written in Assembly language into machine code.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> The interpreter moves on to the next line for execution only after the removal of the error. Example: Perl, Python and Matlab.</li>
                 </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
                 <img src={f1} alt="" class="img-fluid"/>
@@ -123,21 +105,17 @@ const Software = () => {
           <div class="tab-pane" id="tab-2">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Undaesenti</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h4>Operating system</h4>
+
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                An operating system is system software that provides a platform between computer hardware, application software, and end-users. 
+                It is pre-installed on devices and allows them to be identified and then function. OS is the first thing to be loaded when a system is started.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> The OS keeps the system and programs safe and secure through authentication.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  Allocates and deallocates resources.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> When more than one process runs on the system the OS decides how and when a process will use the CPU.</li>
+                  {/* <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li> */}
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
@@ -149,21 +127,17 @@ const Software = () => {
           <div class="tab-pane" id="tab-3">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Pariatur</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                <h4>Device Drivers</h4>
+                <p class="fst-italic">
+                A Device Driver is system software that operates or controls a particular device attached to a computer. 
+                It is the device drivers who make it possible for all the external devices to perform their tasks. 
+                Most of the hardware comes with pre-installed drivers in it. However, if the device is new to the system, then the user may have to download the drivers.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Device drivers enable peripheral devices, such as printers or keyboards, to interact with the computer.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Controlling the hardware is only possible if developers can initialize and communicate with the hardware.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> The device driver acts as a pipe between the higher-level application and the lower-level hardware or firmware for data transfer.</li>
                 </ul>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
                 <img src={f3} alt="" class="img-fluid"/>
@@ -174,20 +148,16 @@ const Software = () => {
           <div class="tab-pane" id="tab-4">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Nostrum</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h4>Firmware</h4>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                 Firmware is an operational software stored in a flash, ROM, EPROM for the OS to identify it.
+                 The firmware provides instructions on how the device should be operated. Unlike other software, firmware can not be manipulated, changed, or deleted by the end-users. 
+                 They remain on the device.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  Protect against malicious firmware and the best defenses against firmware attacks is purchasing hardware with built-in firmware security.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Constantly update firmware.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Register hardware devices to get the latest firmware updates, enterprises should register all hardware purchases..</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
@@ -199,20 +169,15 @@ const Software = () => {
           <div class="tab-pane" id="tab-5">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Adipiscing</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h4>BIOS & UEFI</h4>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                BIOS (Basic Input/Output System) or the new UEFI (Unified Extended Firmware Software) gets the computer system started when we turn it on.
+                BIOS also manages the flow of information between operating systems and the attached devices.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> UEFI supports drive sizes upto 9 zettabytes, whereas BIOS only supports 2.2 terabytes.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> UEFI provides faster boot time..</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  UEFI has discrete driver support, while BIOS has drive support stored in its ROM, so updating BIOS firmware is a bit difficult.</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
@@ -224,20 +189,16 @@ const Software = () => {
           <div class="tab-pane" id="tab-6">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Reprehit</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h4>Utilities</h4>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                Utilities are the type of system software that is present between user and application software. 
+                These are the programs designed to configure, analyze, optimize and maintain tasks of the computer. 
+                Their task varies from disk fragmentation to data security.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  An antivirus is a utility software that helps to keep the computer virus-free.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Utility software are used to manage data on disks.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  Utility software helps to back up the files, folders, databases, or complete disks..</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">

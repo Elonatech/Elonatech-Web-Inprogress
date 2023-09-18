@@ -17,7 +17,7 @@ const Application = () => {
 
 
 {/* services */}
-<section id="services" class="services bg-light">
+<section id="services" class="services ">
       <div class="container" >
 
         <div class="section-header">
