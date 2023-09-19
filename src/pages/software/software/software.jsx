@@ -1,10 +1,10 @@
-import img2 from './captions/systemImage.png'
-import f1 from './captions/captions/features-1.svg'
-import f2 from './captions/captions/features-2.svg'
-import f3 from './captions/captions/features-3.svg'
-import f4 from './captions/captions/features-4.svg'
-import f5 from './captions/captions/features-5.svg'
-import f6 from './captions/captions/features-6.svg'
+import img2 from './captions/system-software1.png'
+import f1 from './captions/captions/program_translation_2.png'
+import f2 from './captions/captions/operating-system-structure.png'
+import f3 from './captions/captions/Device driver30ac685128a8498ca455a6908da1dda9.webp'
+import f4 from './captions/captions/firmware.png'
+import f5 from './captions/captions/bios-vs-uefi.jpg'
+import f6 from './captions/captions/Utility-System-Software-1024x576.webp'
 import softwareHeader from './captions/softwareHeader.jpg'
 import './software.css'
 
@@ -16,15 +16,16 @@ const Software = () => {
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${softwareHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">System Software</h2>
-   <h5 class=" mt-4 text-white text-center">Monitor, Configure and Maintain Servers to operate reliably and optimally</h5>
+   <h5 class=" mt-4 text-white text-center">Computer program  designed to run a computer’s hardware and application programs</h5>
    <p class="lead text-white text-center">Minimizing downtimes while maximizing reliability in other to meet the needs of organizations over time.</p>
  </div>
  </div>
+
 {/* body */}
 <div className="container  mb-5" style={{marginTop:"100px"}}>
   <div class="row justify-content-center  g-4">
-    <div class="col-md-6 ps-5">
-    <h2 className='mb-4'>How System Software works?</h2>
+    <div class="col-md-6 ps-5 mt-5">
+    <h2 className='mb-4 mt-4'>How System Software works?</h2>
     <p className="fs-6 " style={{textAlign:"justify"}}>
     Software engineering is one of the most important aspects of computer engineering, and Elonatech understands its unique importance since no computer system can function properly without a software.
     <br /><br />
@@ -34,17 +35,17 @@ const Software = () => {
     </p>
     </div>
     <div class="col-md-6">
-      <img src={img2} alt="" className='img-fluid rounded ' srcset="" />
+      <img src={img2} alt="" className='img-fluid rounded'  srcset="" />
     </div>
   </div>
 </div>
 {/* feature */}
 <section id="features" class="features mb-5">
-      <div class="container" data-aos="fade-up">
+      <div class="container mb-5" data-aos="fade-up">
         <ul class="nav nav-tabs row gy-4 d-flex">
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <i class="bi bi-binoculars color-cyan"></i>
+              <i class="bi bi-code-slash color-cyan"></i>
               <h4>Programming</h4>
             </a>
           </li>
@@ -56,7 +57,7 @@ const Software = () => {
           </li>
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <i class="bi bi-brightness-high color-teal"></i>
+              <i class="bi bi-nut color-teal"></i>
               <h4>DD</h4>
             </a>
           </li>
@@ -68,7 +69,7 @@ const Software = () => {
           </li>
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-              <i class="bi bi-easel color-blue"></i>
+              <i class="bi bi-x-diamond color-blue"></i>
               <h4>BIOS & UEFI</h4>
             </a>
           </li>
@@ -91,7 +92,7 @@ const Software = () => {
                 They are usually designed by the computer manufacturer and are deliver inbuilt with the system.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> The compiler specifies the errors at the end of the compilation with line numbers when there are any errors in the source code.</li>
+                  <li><i class="bi bi-check-circle-fill "></i> The compiler specifies the errors at the end of the compilation with line numbers when there are any errors in the source code.</li>
                   <li><i class="bi bi-check-circle-fill"></i> The Assembler is used to translate the program written in Assembly language into machine code.</li>
                   <li><i class="bi bi-check-circle-fill"></i> The interpreter moves on to the next line for execution only after the removal of the error. Example: Perl, Python and Matlab.</li>
                 </ul>
@@ -119,7 +120,7 @@ const Software = () => {
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src={f2} alt="" class="img-fluid"/>
+                <img src={f2} alt="" style={{height:"19rem"}} class="img-fluid"/>
               </div>
             </div>
           </div>
@@ -161,7 +162,7 @@ const Software = () => {
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src={f4} alt="" class="img-fluid"/>
+                <img src={f4} alt=""  style={{height:"18rem"}} class="img-fluid"/>
               </div>
             </div>
           </div>

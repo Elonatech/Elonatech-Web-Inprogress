@@ -37,16 +37,16 @@
 
 .features .nav-link.active {
   transition: 0.3s;
-  background: #5F9EA0;
+  background: #34548c;
   border-color: var(--color-primary);
 }
 
 .features .nav-link.active h4 {
-  color: var(--color-white);
+  color: white;
 }
 
 .features .nav-link.active i {
-  color: var(--color-white) !important;
+  color: white;
 }
 
 .features .tab-content {
@@ -75,7 +75,7 @@
 .features .tab-pane ul i {
   font-size: 24px;
   margin-right: 4px;
-  color: #5F9EA0;
+  color: #dc354b;
 }
 
 .features .tab-pane p:last-child {

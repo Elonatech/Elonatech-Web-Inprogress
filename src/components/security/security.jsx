@@ -130,11 +130,7 @@ const Security = () => {
                     <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Antivirus and Antimalware</p>
                     </li>
-              
-                    {/* <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
-                    <p className="mt-2">Software-defined Perimeter</p>
-                    </li> */}
+        
                     <li className="d-flex">
                     <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Application Security</p>

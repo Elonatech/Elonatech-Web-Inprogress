@@ -1,7 +1,7 @@
 import bop from './captions/business.jpg'
 import businessHeader from './captions/businessHeader.jpg'
-import businessImage from './captions/businessImage.png'
-
+import mar from './captions/yop2.png'
+import busImg from './captions/for mike.png'
 
 import './business.css'
 
@@ -35,23 +35,15 @@ const Business = () => {
         </div>
           <div class="col-lg-5">
             <div class="mt-5">
-              <img src={bop} class="img-fluid" style={{height:"35rem"}} alt=""/>
+              <img src={mar} class="img-fluid" style={{height:"30rem"}} alt=""/>
             </div>
           </div>
 
           <div class="col-lg-7">
             <h3 class="pt-0 pt-lg-5">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
 
-            {/* <!-- Tabs --> */}
-            <ul class="nav nav-pills mb-3">
-              <li><a class="nav-link active rounded" data-bs-toggle="pill" href="#tab1">Saepe fuga</a></li>
-              <li><a class="nav-link rounded" data-bs-toggle="pill" href="#tab2">Voluptates</a></li>
-              <li><a class="nav-link rounded" data-bs-toggle="pill" href="#tab3">Corrupti</a></li>
-            </ul>
-
             {/* <!-- Tab Content --> */}
             <div class="tab-content">
-
               <div class="tab-pane fade show active" id="tab1">
 
                 <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
@@ -75,55 +67,6 @@ const Business = () => {
                 <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
 
               </div>
-
-              <div class="tab-pane fade show" id="tab2">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
-              </div>
-
-              <div class="tab-pane fade show" id="tab3">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2 bg-danger rounded-circle text-white"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
-              </div>
-
             </div>
 
           </div>
@@ -133,7 +76,31 @@ const Business = () => {
       </div>
     </section>
 
-          
+
+{/* body */}
+<div className="container  mb-5" style={{marginTop:""}}>
+  <div class="row justify-content-center  g-4">
+    <div class="col-md-6 ps-5 mt-5">
+    <h2 className='mb-4 '>How Application Software works?</h2>
+    <p className="fs-6 " style={{textAlign:"justify"}}>
+    Software designed to handle specific tasks for users are known as application software, also called application program. Such software directs the computer to execute commands given by the user and may be said to include any program that processes data for a user.
+    <br /><br />
+    This includes application software that enables a user to perform a task, such as Microsoft Office suite (Excel, Word, PowerPoint, Outlook, etc.) Internet browsers like Firefox, Safari, and Chrome; mobile pieces of software such as Pandora, Skype (for real-time online communication), and Slack (for team collaboration); PDF viewers and readers; 
+    <br /><br />
+    Business Application Software (These programs are built to facilitate certain business functions, improving), etc.
+   
+    </p>
+    </div>
+    <div class="col-md-6">
+      <img src={busImg} alt="" className='img-fluid rounded'  srcset="" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
 </>
     );
 }
