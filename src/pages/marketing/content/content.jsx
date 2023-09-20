@@ -1,35 +1,53 @@
-import bg from './captions/hero_bg_2.jpg';
-import gc from './captions/hero-img.svg'
+import contentHeader from './captions/84646169-words.jpg'
+import content from './captions/2. Content Marketing logo removed.png'
+import content2 from './captions/Content-marketing-cycle.webp'
 
 
 const Content = () => {
     return (
 <>
-{/*  */}
-<section class="mt-5 bg-dark ">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p  class="text-white pt-2">We Provides Round-The-Clock Maintenance for All Network Equipment</p>
-              <p  class="text-white pt-2">we are committed to supplying you with the most reliable advice,
-                             support and services at all times, wherever you are in Nigeria.</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
+{/* Header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Content Marketing</h2>
+   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
+   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+ </div>
+</div>
+
+
+
+   {/* content1 */}
+   <section class="section" id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <h2>Explore Our Products</h2>
+                        <span>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</span>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+                        </div>
+                        <p>There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.</p>
+                        <p>If this template is beneficial for your website or business, please kindly <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">support us</a> a little via PayPal. Please also tell your friends about our great website. Thank you.</p>
+
+                        <a href="products.html" className='btn btn-dark mb-4'>Discover More</a>
+                       
+                    </div>
+                </div>
+                <div class="col-md-6">
+                 <img src={content} className='img-fluid' alt="" />
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src={gc} class="img-fluid mb-4" alt=""/> 
-          </div>
         </div>
-      </div>
-</section>
-  {/*  */}
+    </section>
+
+  {/* details  */}
 <div class="section">
       <div class="container">
-        <div class="row text-left mb-5">
+        <div class="row text-left mb-3">
           <div class="col-12">
-            <h2 class="font-weight-bold heading  mb-4 mt-5">About Us</h2>
+            <h2 class="font-weight-bold heading  mb-4">About Us</h2>
           </div>
           <div class="col-lg-6">
             <p class="text-black">
@@ -67,106 +85,30 @@ const Content = () => {
         </div>
       </div>
     </div>
-  {/*  */}
-    <div class="section pt-0">
-      <div class="container">
-        <div class="row justify-content-between mb-5">
-          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
-            <div class="img-about dots">
-              <img src={bg} alt="Image" class="img-fluid" />
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-home2"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Quality properties</h3>
-                <p class="text-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
-            </div>
+ 
 
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-person"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Top rated agents</h3>
-                <p class="text-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
-            </div>
 
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-security"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Easy and safe</h3>
-                <p class="text-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+{/* content2 */}
+<div className="container  mb-5" style={{marginTop:""}}>
+  <div class="row justify-content-center">
+  <div class="col-md-6">
+      <img src={content2} alt="" className='img-fluid rounded'  srcset="" />
     </div>
-    {/*  */}
-    <div class="section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">
-                Quality Properties
-              </h3>
-              <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
-              <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-            <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">
-                Property for Sale
-              </h3>
-              <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-       
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">House for Sale</h3>
-              <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>        
+    <div class="col-md-6 mt-4">
+    <h2 className='mb-4 mt-5'>How Application Software works?</h2>
+    <p className="fs-6" style={{textAlign:"justify"}}>
+    Software designed to handle specific tasks for users are known as application software, also called application program. Such software directs the computer to execute commands given by the user and may be said to include any program that processes data for a user.
+    <br /><br />
+    This includes application software that enables a user to perform a task, such as Microsoft Office suite (Excel, Word, PowerPoint, Outlook, etc.) Internet browsers like Firefox, Safari, and Chrome; mobile pieces of software such as Pandora, Skype (for real-time online communication), and Slack (for team collaboration); PDF viewers and readers; 
+    <br /><br />
+    Business Application Software (These programs are built to facilitate certain business functions, improving), etc.
+   
+    </p>
+    </div>
+  </div>
+</div>
+      
 </>
     );
 }

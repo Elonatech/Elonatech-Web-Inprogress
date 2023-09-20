@@ -8,7 +8,7 @@ const Application = () => {
 {/* header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${applicationHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"50% 0", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Business Application Software</h2>
+   <h2 class=" mt-5 text-white text-center">Application Software</h2>
    <h5 class=" mt-4 text-white text-center">Monitor, Configure and Maintain Servers to operate reliably and optimally</h5>
    <p class="lead text-white text-center">Minimizing downtimes while maximizing reliability in other to meet the needs of organizations over time.</p>
  </div>
