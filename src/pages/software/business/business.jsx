@@ -71,17 +71,25 @@ const Business = () => {
 {/* body */}
 <div className="container  mb-5" style={{marginTop:""}}>
   <div class="row justify-content-center  g-4">
-    <div class="col-md-6 ps-5 mt-5">
-    <h2 className='mb-4 '>How Application Software works?</h2>
-    <p className="fs-6 " style={{textAlign:"justify"}}>
-    Software designed to handle specific tasks for users are known as application software, also called application program. Such software directs the computer to execute commands given by the user and may be said to include any program that processes data for a user.
-    <br /><br />
-    This includes application software that enables a user to perform a task, such as Microsoft Office suite (Excel, Word, PowerPoint, Outlook, etc.) Internet browsers like Firefox, Safari, and Chrome; mobile pieces of software such as Pandora, Skype (for real-time online communication), and Slack (for team collaboration); PDF viewers and readers; 
-    <br /><br />
-    Business Application Software (These programs are built to facilitate certain business functions, improving), etc.
-   
-    </p>
-    </div>
+  <div class="col-lg-5">
+            <div class="tab-content mt-4">
+              <div class="tab-pane fade show active" id="tab1">
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h4 className='ms-2 mt-2'>Time Savings</h4>
+                </div>
+                <p>By automating repetitive procedures, software allows employees to focus manual labor on more complicated tasks, reducing time and human error.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h4 className='ms-2 mt-2'>Minimized Turnaround Times </h4>
+                </div>
+                <p>A software solution maintains consistent results through automation, streamlining processes, and reducing turnaround times for employees and consumers. This promotes growing businesses and the satisfaction of internal and external associates.</p>
+
+              </div>
+            </div>
+
+          </div>
     <div class="col-md-6">
       <img src={busImg} alt="" className='img-fluid rounded'  srcset="" />
     </div>

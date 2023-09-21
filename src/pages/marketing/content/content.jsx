@@ -15,8 +15,6 @@ const Content = () => {
  </div>
 </div>
 
-
-
    {/* content1 */}
    <section class="section" id="explore">
         <div class="container">
@@ -86,9 +84,6 @@ const Content = () => {
       </div>
     </div>
  
-
-
-
 {/* content2 */}
 <div className="container  mb-5" style={{marginTop:""}}>
   <div class="row justify-content-center">

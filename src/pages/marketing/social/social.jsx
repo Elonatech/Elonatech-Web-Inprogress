@@ -1,5 +1,6 @@
 import bg from './captions/social-media-marketing-fundamentals.png';
-import socialHeader from './captions/socialj.jpg'
+import socialHeader from './captions/AdobeStock_389328016_Editorial_Use_Only-1280x640.jpeg';
+import soImg from './captions/Social-Media-Marketing.jpg'
 
 
 import './social.css'
@@ -19,43 +20,31 @@ const Social = () => {
   {/* body*/}
 <div class="section">
       <div class="container">
-        <div class="row text-left mb-5">
-          <div class="col-12">
-            <h2 class="font-weight-bold heading  mb-4 mt-5">About Us</h2>
+        <div class="row g-5 mb-5">
+        <div class="col-lg-6">
+         <img src={soImg} className='img-fluid' alt="" />
           </div>
           <div class="col-lg-6">
-            <p class="text-black">
+          <h2 class="font-weight-bold heading  mb-4 mt-5">About Us</h2>
+            <p class="text-black" style={{textAlign:"justify"}}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
               enim pariatur similique debitis vel nisi qui reprehenderit totam?
               Quod maiores.
             </p>
-            <p class="text-black">
+            <p class="text-black" style={{textAlign:"justify"}}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
               saepe, explicabo nihil. Est, autem error cumque ipsum repellendus
               veniam sed blanditiis unde ullam maxime veritatis perferendis
               cupiditate, at non esse!
             </p>
-            <p class="text-black">
+            <p class="text-black" style={{textAlign:"justify"}}>
               Enim, nisi labore exercitationem facere cupiditate nobis quod
               autem veritatis quis minima expedita. Cumque odio illo iusto
               reiciendis, labore impedit omnis, nihil aut atque, facilis
               necessitatibus asperiores porro qui nam.
             </p>
           </div>
-          <div class="col-lg-6">
-            <p class="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              saepe, explicabo nihil. Est, autem error cumque ipsum repellendus
-              veniam sed blanditiis unde ullam maxime veritatis perferendis
-              cupiditate, at non esse!
-            </p>
-            <p class="text-black">
-              Enim, nisi labore exercitationem facere cupiditate nobis quod
-              autem veritatis quis minima expedita. Cumque odio illo iusto
-              reiciendis, labore impedit omnis, nihil aut atque, facilis
-              necessitatibus asperiores porro qui nam.
-            </p>
-          </div>
+      
         </div>
       </div>
     </div>
