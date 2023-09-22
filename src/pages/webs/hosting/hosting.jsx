@@ -1,81 +1,88 @@
-// import f1 from './captions/features-1.svg'
-// import f2 from './captions/features-2.svg'
-// import f3 from './captions/features-3.svg'
-// import f4 from './captions/features-4.svg'
-// import f5 from './captions/features-5.svg'
-import client1 from './captions/clients/client-1.png'
-import client2 from './captions/clients/client-2.png'
-import client3 from './captions/clients/client-3.png'
-import client4 from './captions/clients/client-4.png'
-import client5 from './captions/clients/client-5.png'
-import client6 from './captions/clients/client-6.png'
-
-import bg from './captions/2482049.jpg'
-
-
+import hostHeader from './captions/9494216.png'
 
 import './host.css'
 
 
-
 const Hosting = () => {
     return (
-    <>
-    {/* Header */}
-<section class="mt-5  bg-dark" style={{backgroundImage:`url(${bg})`}}>
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">Web Hosting</h2>
-              <p  class="text-white pt-2">Lets Build an Amazing Website for your Brand</p>
-              <p  class="text-white pt-2">Excellence, Professionalism, Integrity & Convenient Service</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>    
+     <>
+   {/* header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hostHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Hosting Websites</h2>
+   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
+   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+ </div>
+</div>
 
-
-
-{/* hosting */}
-
-<section class="register-domain spad">
+{/* Register Domain Section Begin  */}
+    <section class="register-domain spad">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="register__text">
                         <div class="section-title">
-                            <h3 className='text-center mt-5 mb-2'>Register Your Domain Now!</h3>
+                            <h3 className='text-center mb-4 fw-bold' >Register Your Domain Now!</h3>
                         </div>
-                        <div class="register__form mt-5">
+                        <div class="register__form">
                             <form action="#">
                                 <input type="text" placeholder="ex: cloudhost"/>
-                                <div class="change__extension">
-                                    .com
+                                <div class="change__extension" >
+                                 .com  <i class="bi bi-caret-down-fill ms-2" style={{position:"absolute" , top:"3px"}}></i>
                                     <ul>
                                         <li>.net</li>
                                         <li>.org</li>
-                                        <li>.me</li>
+                                        <li>.gov</li>
                                     </ul>
                                 </div>
-                                <button type="submit" class="site-btn btn btn-primary btn-sm p-2"><b>Search</b></button>
+                                <button type="submit" class="site-btn">Search</button>
                             </form>
                         </div>
-                        <div class="register__result">
+
+                        {/* domain */}
+                        <div className="container mt-4 mb-4">
+                        <div class="row">
+                        <div class="col-6 col-md-3">
+                        <div className="text-center">
+                            
+                         <div class="register__result">
                             <ul>
                                 <li>.com <span>$1.95</span></li>
-                                <li>.net <span>$1.95</span></li>
-                                <li>.org <span>$1.95</span></li>
-                                <li>.us <span>$1.95</span></li>
-                                <li>.in <span>$1.95</span></li>
+                            </ul>
+                        </div>  
+                            
+                        </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div className="text-center">     
+                         <div class="register__result">
+                            <ul>
+                            <li>.gov <span>$1.95</span></li>
                             </ul>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                        <div className="text-center">
+                        <div class="register__result">
+                            <ul>
+                            <li>.org <span>$1.95</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                        <div className="text-center">
+                        <div class="register__result">
+                            <ul>
+                            <li>.ng <span>$1.95</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                     </div>
                 </div>
@@ -85,51 +92,44 @@ const Hosting = () => {
 
 
 
-
-
-
-
-{/* end */}
-
-
-    {/* <!-- Hosting Section Begin --> */}
-    <section class="hosting-section spad mt-5">
+{/* <!-- Hosting Section Begin --> */}
+    <section class="hosting-section spad mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title mt-5 mb-3">
-                        <h3 className='text-center mb-5'><b>WEB HOSTING PLAN PERFECT FOR YOU!</b></h3>
+                    <div class="section-title">
+                        <h3 className='text-center mb-5'>WEB HOSTING PLAN PERFECT FOR YOU!</h3>
                     </div>
                     <div class="hosting__text">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
                                     <span class="flaticon-003-network"></span>
-                                    <h5 className='p-3'>Web hosting</h5>
+                                    <h5>Web hosting</h5>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
                                     <span class="flaticon-030-server-1"></span>
-                                    <h5 className='p-3'>Servers</h5>
+                                    <h5>Servers</h5>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
                                     <span class="flaticon-010-cloud-storage-2"></span>
-                                    <h5 className='p-3'>Clouds VPS</h5>
+                                    <h5>Clouds VPS</h5>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
                                     <span class="flaticon-008-cloud-computing"></span>
-                                    <h5 className='p-3'>Dedicated</h5>
+                                    <h5>Dedicated</h5>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">
                                     <span class="flaticon-009-cloud-storage-1"></span>
-                                    <h5 className='p-3'>Reseller</h5>
+                                    <h5>Reseller</h5>
                                 </a>
                             </li>
                         </ul>
@@ -152,8 +152,7 @@ const Hosting = () => {
                                                             <div class="plan__price">$3.90</div>
                                                             <span>month</span>
                                                         </div>
-                                                        {/* <a href="#" class="primary-btn">Buy now</a> */}
-                                                        <button className='rounded'> <b>Buy Now</b></button>
+                                                    
                                                     </div>
                                                 </th>
                                                 <th>
@@ -163,8 +162,7 @@ const Hosting = () => {
                                                             <div class="plan__price">$5.90</div>
                                                             <span>month</span>
                                                         </div>
-                                                        {/* <a href="#" class="primary-btn">Buy now</a> */}
-                                                        <button className='rounded'> <b>Buy Now</b></button>
+                                                       
                                                     </div>
                                                 </th>
                                                 <th>
@@ -174,8 +172,6 @@ const Hosting = () => {
                                                             <div class="plan__price">$8.90</div>
                                                             <span>month</span>
                                                         </div>
-                                                        {/* <a href="#" class="primary-btn">Buy now</a> */}
-                                                        <button className='rounded'> <b>Buy Now</b></button>
                                                     </div>
                                                 </th>
                                             </tr>
@@ -198,7 +194,7 @@ const Hosting = () => {
                                                     <span class="fa fa-check-circle-o"></span>
                                                 </td>
                                                 <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
+                                                    <i class="bi bi-check-circle"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -217,12 +213,15 @@ const Hosting = () => {
                                                 <td class="hosting__feature--item">MySQL Databases</td>
                                                 <td class="hosting__feature--check">
                                                     <span class="fa fa-check-circle-o"></span>
+                                                    <i class="bi bi-check-circle"></i>
                                                 </td>
                                                 <td class="hosting__feature--check">
                                                     <span class="fa fa-check-circle-o"></span>
+                                                    <i class="bi bi-check-circle"></i>
                                                 </td>
                                                 <td class="hosting__feature--check">
                                                     <span class="fa fa-check-circle-o"></span>
+                                                    <i class="bi bi-check-circle"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -241,53 +240,39 @@ const Hosting = () => {
                                                 <td class="hosting__feature--item">cPanel Control Panel</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Daily Backups</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Bandwidth</td>
                                                 <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Setup</td>
                                                 <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Advanced Security Features</td>
@@ -297,12 +282,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
@@ -313,12 +295,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Website Builder</td>
@@ -328,12 +307,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -393,12 +369,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Web Space</td>
@@ -414,73 +387,53 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">cPanel Control Panel</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Daily Backups</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Bandwidth</td>
                                                 <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Setup</td>
                                                 <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Advanced Security Features</td>
@@ -490,12 +443,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
@@ -506,12 +456,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Website Builder</td>
@@ -521,12 +468,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -586,12 +530,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Web Space</td>
@@ -607,73 +548,53 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">cPanel Control Panel</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Daily Backups</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Bandwidth</td>
                                                 <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Setup</td>
                                                 <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Advanced Security Features</td>
@@ -683,12 +604,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
@@ -699,12 +617,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Website Builder</td>
@@ -714,12 +629,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -779,12 +691,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Web Space</td>
@@ -800,73 +709,53 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">cPanel Control Panel</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Daily Backups</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Bandwidth</td>
                                                 <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Setup</td>
                                                 <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Advanced Security Features</td>
@@ -876,12 +765,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
@@ -892,12 +778,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Website Builder</td>
@@ -907,12 +790,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -972,12 +852,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Web Space</td>
@@ -993,73 +870,53 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">cPanel Control Panel</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Daily Backups</td>
                                                 <td class="hosting__feature--close"><span
                                                         class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Bandwidth</td>
                                                 <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Free Setup</td>
                                                 <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Advanced Security Features</td>
@@ -1069,12 +926,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Cloud Hosting</td>
@@ -1085,12 +939,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">Website Builder</td>
@@ -1100,12 +951,9 @@ const Hosting = () => {
                                             </tr>
                                             <tr>
                                                 <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
+                                                <td class="hosting__feature--check"><i class="bi bi-check-circle"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1117,8 +965,15 @@ const Hosting = () => {
             </div>
         </div>
     </section>
+    {/* <!-- Hosting Section End --> */}
 
-    </>
+
+
+
+
+
+            
+     </>
     );
 }
 

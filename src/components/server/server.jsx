@@ -76,11 +76,6 @@ const Server = () => {
  </div>
  </div> 
 
-{/* <div className="container-fluid">
-        <div className="col">
-    <img src={serverClip}  style={{width:"110rem", height:"31rem"}}  alt="" />
-        </div>
-</div> */}
 
 
 {/* overall impact */}

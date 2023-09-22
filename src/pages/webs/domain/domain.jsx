@@ -1,124 +1,167 @@
 
-import body1 from './captions/devops.jpg'
-import  './domain.css'
+import domainHeader from './captions/Domain-Registration.png'
+import choosePlan from './captions/choose-plan.png'
+import domain2 from './captions/domain-1-removebg-preview.png'
+import  './domain.css';
 
 
 const Domain = () => {
     return (
     <>
-{/* Header */}
-<section class="mt-5  bg-dark">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">Domain Reg</h2>
-              <p  class="text-white pt-2">Lets Build an Amazing Website for your Brand</p>
-              <p  class="text-white pt-2">Excellence, Professionalism, Integrity & Convenient Service</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>  
-{/* body */}
-    <div className="container-fluid mt-5 mb-5">
-  <div class="row justify-content-center align-items-center g-2">
-    <div class="col-md-6">
-      <img src={body1} alt="" className='img-fluid rounded' srcset="" />
-    </div>
-    <div class="col-md-6 ps-5 pe-5">
-    <h2>Need A Telecoms for your Brand</h2>
-    <p className="fs-6">Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria's leading Website Design & Development Company Who's Core Values are Excellence, Professionalism, Integrity & Convenient Service.
-    We Design & Develop all kinds Of Websites and Web applications with the most suitable platforms at a friendly budget.  <br /><br />We offer premium web services such as Business Software Development, Mobile App Development, Web Based Apps etc.
-   We ensure that your needs are understood and implemented correctly. In fact, we are dedicated to the creation of a site that helps you become a success. Our specialty lies in providing comprehensive and custom web development services that provide you with a functional and complete solution.  <br /> <br />  The sites we develop are highly scalable with a great degree of usability. As a website development company, we also ensure the site responds fast and is SEO friendly with an excellent User Interface (UI) and User Experience (UX). You also get to enjoy complete control over your site. With our website development, you do not have to adjust your specifications to the capabilities of a given platform or change your design visions to fit a template. We deliver the work precisely to your requirements.
-    We won't just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.</p>
-    </div>
-  </div>
+   {/* header */}
+   <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${domainHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Hosting Websites</h2>
+   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
+   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+ </div>
 </div>
-{/* <!-- ======= Featured Services Section ======= --> */}
-    <section id="featured-services" class="featured-services">
-      <div class="container">
 
-        <div class="row gy-4">
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-            <div class="service-item position-relative">
-            <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              {/* <div class="icon"><i class="bi bi-activity icon"></i></div> */}
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link text-decoration-none">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+ {/* Work Section Begin  */}
+    <section class="work-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 className='text-center mb-4 fw-bold' >HOW TO BUILD YOUR WEBSITE ONLINE TODAY?</h3>
+                    </div>
+                    <div class="work__text" style={{boxShadow:" 0 0 10px 5px rgba(0,0,0,0.6)"}}>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="work__item">
+                                    <i class="fa fa-desktop"></i>
+                                    <span>CREATE YOUR OWN WEBSITE WITH OUR</span>
+                                    <h3>WEB SITE BUILDER</h3>
+                                    <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                        gravida facilisis. </p>
+                                    <a href="#" class="prim">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="work__item">
+                                    <i class="fa fa-shopping-bag"></i>
+                                    <span>EASY CREATE, MANAGE & SELL</span>
+                                    <h3>ONLINE STORE</h3>
+                                    <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                        gravida facilisis. </p>
+                                    <a href="#" class="prim">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link text-decoration-none">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-        
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link text-decoration-none">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-        
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link text-decoration-none">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-     
-
         </div>
-
-      </div>
     </section>
-{/* bottom cards  */}
-<h3 className='text-center mt-5'>LIST OF LABORATORY EQUIPMENTS & MATERIALS</h3>
-<section class="bg-dark mt-3 ">
-<div className="container">
-<div class="row">
-  <div class="col-md-6 mt-5 ">
-    <div class="card">
-      <div class="card-body" >
-      <h3  className=" text-center py-5">Domain Reg./DNS Mgt</h3>
+{/* Work Section End  */}
+
+{/* Achievement Section Begin */}
+<div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="achievement__item">
+                        <span class="fa fa-user"></span>
+                        <h2 class="achieve-counter">2468</h2>
+                        <p>Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="achievement__item">
+                        <span class="fa fa-edit"></span>
+                        <h2 class="achieve-counter">2468</h2>
+                        <p>Domains</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="achievement__item">
+                        <span class="fa fa-clone"></span>
+                        <h2 class="achieve-counter">2468</h2>
+                        <p>Server</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="achievement__item">
+                        <span class="fa fa-cog"></span>
+                        <h2 class="achieve-counter">2468</h2>
+                        <p>Installs</p>
+                    </div>
+                </div>
+            </div>
+</div>
+
+{/* Choose Plan Section End  */}
+<div className="container mt-5">
+  <div className="row">
+    <div className="col-md-6">
+      <div className="mt-4">
+        <p className='lead fs-6 mt-5'>
+         <strong className='fw-bold'>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi omnis totam, praesentium earum corrupti exercitationem cum architecto dolor porro ea itaque consequatur illo culpa ullam iste possimus libero repudiandae.
+         <br /><br />
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptates maxime illo minima architecto eligendi voluptatum dolore ipsam, qui explicabo voluptatibus eius, quos corrupti earum. Rem modi corrupti voluptatem repellat.
+         <br /><br />
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex iure officia perspiciatis ipsum at nesciunt, quibusdam velit reprehenderit veniam, omnis animi vel maxime provident rem deserunt repellendus itaque non?
+
+
+        </p>
+        
+        </div>
+        </div>
+    <div className="col-md-6">
+      <div className="">
+        <img src={domain2} alt="" />
       </div>
-    </div>
-  </div>
-  <div class="col-md-6 mt-5 mb-5">
-    <div class="card">
-      <div class="card-body">
-        <h3  className=" text-center py-5">Web Hosting</h3>
       </div>
-    </div>
   </div>
 </div>
-</div>
+  
+{/* Choose Plan Section Begin  */}
+<section class="choose-plan-section" style={{marginTop:"80px"}}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img src={choosePlan} alt=""/>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="plan__text">
+                        <h3>up to 70% discount with free domain name registration included!</h3>
+                        <ul>
+                            <li><span class="fa fa-check"></span> FREE Domain Name</li>
+                            <li><span class="fa fa-check"></span> FREE Email Address</li>
+                            <li><span class="fa fa-check"></span> Plently of disk space</li>
+                            <li><span class="fa fa-check"></span> FREE Website Bullder</li>
+                            <li><span class="fa fa-check"></span> FREE Marketing Tools</li>
+                            <li><span class="fa fa-check"></span> 1-Click WordPress Install</li>
+                        </ul>
+                        <a href="#" class="prim">Get start now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 
+ {/* Get in touch */}
+ <div className="container-fluid mt-5" style={{backgroundColor:"#120851"}}>
+    <div className="container">
+    <div className="row">
+        <div className="col-md-6">
+         <p className='text-white pt-5 pb-5 fs-1'>Talk with an expert about your next domain decision</p>
+        </div>
+        <div className="col-md-6">
+          
+                <div className="text-end mt-5 mb-3">
+                    <button className='btn btn-outline-dark rounded-0 btn-lg border-light text-white mt-5 trr ps-4  pe-4'>GET IN TOUCH</button>
+              
+            </div>
+        </div>
+    </div>
+    </div>
+ </div>
 
-
-
-
-
-
-
-    </>
-    );
+</>
+ );
 }
 
 export default Domain;
