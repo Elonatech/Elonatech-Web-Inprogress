@@ -12,44 +12,41 @@ const Social = () => {
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${socialHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Social Media Marketing</h2>
-   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
-   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <h5 class=" mt-4 text-white text-center">The Tools You Need to Grow Your Business</h5>
+   <p class="lead text-white text-center">A form of digital marketing that leverages the power of popular social media networks to achieve your marketing and branding goals.</p>
  </div>
 </div>
 
   {/* body*/}
-<div class="section">
-      <div class="container">
-        <div class="row g-5 mb-5">
-        <div class="col-lg-6">
-         <img src={soImg} className='img-fluid' alt="" />
-          </div>
-          <div class="col-lg-6">
-          <h2 class="font-weight-bold heading  mb-4 mt-5">About Us</h2>
-            <p class="text-black" style={{textAlign:"justify"}}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              enim pariatur similique debitis vel nisi qui reprehenderit totam?
-              Quod maiores.
-            </p>
-            <p class="text-black" style={{textAlign:"justify"}}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              saepe, explicabo nihil. Est, autem error cumque ipsum repellendus
-              veniam sed blanditiis unde ullam maxime veritatis perferendis
-              cupiditate, at non esse!
-            </p>
-            <p class="text-black" style={{textAlign:"justify"}}>
-              Enim, nisi labore exercitationem facere cupiditate nobis quod
-              autem veritatis quis minima expedita. Cumque odio illo iusto
-              reiciendis, labore impedit omnis, nihil aut atque, facilis
-              necessitatibus asperiores porro qui nam.
-            </p>
-          </div>
-      
-        </div>
+
+<div className="container mb-5 mt-5">
+  <div className="row g-0">
+    <div className="col-md-6">
+      <div className="card border-0" >
+      <img src={soImg} alt="img-fluid rounded" style={{height:"24.3rem"}} />
       </div>
     </div>
+    <div className="col-md-6">
+      <div className="card pb-5 border-2 rounded-0" style={{borderColor:"#016193"}}>
+      <h2 class="font-weight-bold heading p-3 pt-5 ">Why Social Media?</h2>
+      <p class="text-black p-3" style={{textAlign:"justify"}}>
+      Compared to traditional marketing, social media posts by businesses can be seen by followers across geography within seconds. 
+      This offers a somewhat level playing field as you can then have a global approach to your business.
+      <br /><br />
+      Whether through organic promotional posts or social ads, keeping an eye on conversions and leads can help you better determine your success rate through social media.
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
   {/*  */}
-    <div class="section pt-0">
+    <div class=" pt-0">
       <div class="container">
         <div class="row justify-content-between mb-5">
           <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
@@ -57,45 +54,52 @@ const Social = () => {
               <img src={bg} alt="Image" class="img-fluid" />
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-home2"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Quality properties</h3>
-                <p class="text-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
+          <div class="col-lg-5">
+          
+            <h4 className='fw-bolder'>Social Media Marketing helps businesses</h4>
+            <ul className='list-unstyled mt-3'>
+            <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Increase brand awareness</h6>
             </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-person"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Top rated agents</h3>
-                <p class="text-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
+            </li>
+            <li>
+            <div className='d-flex mt-2'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Build engaged communities</h6>
             </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-security"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Easy and safe</h3>
-                <p class="text-black">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
+             </li>
+             <li>
+            <div className='d-flex mt-2'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Sell products and services</h6>
             </div>
+            </li>
+             <li>
+            <div className='d-flex mt-2'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Measure brand sentiment</h6>
+            </div>
+            </li>
+             <li>
+            <div className='d-flex mt-2'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Provide social customer service</h6>
+            </div>
+            <div className='d-flex mt-2'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Advertise products and services to target audiences</h6>
+            </div>
+            </li>
+            <li>
+            <div className='d-flex mt-2'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Track performance and adjust larger marketing strategies accordingly</h6>
+            </div>
+            </li>
+            </ul>
+        
           </div>
         </div>
       </div>
@@ -107,41 +111,45 @@ const Social = () => {
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature mb-4">
               <h3 class="text-black mb-3 font-weight-bold">
-                Quality Properties
+              Set goals that make sense for your business
               </h3>
               <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+              Social media strategy planning starts with your goals. 
+              Whether you want to expand your team, build a larger following or a more active community,
+               taking the time to define your social goals is the first step to reaching them.
               </p>
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
+              <h3 class="text-black mb-3 font-weight-bold">Generate leads and sales</h3>
               <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+              Whether online, in-store or directly through your social profiles, followers don’t make purchases by accident.
+               For example, are you alerting customers about new products and promos?
+               Are you integrating your product catalog into your social profiles? Are you running exclusive deals for followers? etc.
               </p>
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
             <div class="box-feature mb-4">
               <h3 class="text-black mb-3 font-weight-bold">
-                Property for Sale
+              Grow your brand’s audience
               </h3>
               <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+              Bringing new followers into the fold means finding ways to introduce your brand to folks who haven’t 
+              heard of you before. Growing your audience also means discovering conversations around your business and industry that matter the most. 
+              Digging through your social channels is nearly impossible without monitoring or listening for specific keywords, phrases or hashtags.
               </p>
        
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">House for Sale</h3>
+              <h3 class="text-black mb-3 font-weight-bold">Drive traffic to your site to illustrate ROI of social efforts</h3>
               <p class="text-black">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+              The Sprout Social Index™ shows 46% of marketers plan to calculate the return on investment (ROI) of advertising 
+              spend to connect the value of social to business goals in 2024.
+Simple enough. If you’re focused on generating leads or traffic to your website, social media can make it happen.
               </p>
             </div>
           </div>

@@ -1,8 +1,11 @@
 
-import explore1 from './captions/1668588494618.png'
+import explore1 from './captions/email1_720.jpg'
 
 import mailHeader from './captions/mailHeader.jpg'
 import Email from './captions/54790.jpg'
+import email2 from './captions/email-marketing-business-removebg-preview.png'
+
+
 const Mail = () => {
     return (
     <>
@@ -10,55 +13,190 @@ const Mail = () => {
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${mailHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Email Marketing</h2>
-   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
-   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Email Marketing to nurture leads and increase sales.</h5>
+   <p class="lead text-white text-center">A form of direct marketing as well as digital marketing, that uses email to promote your business's products or services.</p>
  </div>
 </div>
 
+
+
+
     {/* Explore */}
     <section class="section" id="explore">
-        <div class="container mt-5 mb-5">
-            <div class="row">
+        <div class="container mt-5 mb-5 shadow rounded"style={{backgroundColor:"rgb(246 246 247)"}}>
+            <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="left-content">
-                        <h2>Explore Our Products</h2>
-                        <span>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</span>
-                        <div class="quote">
-                            <i class="fa fa-quote-left"></i><p>You are not allowed to redistribute this template ZIP file on any other website.</p>
-                        </div>
-                        <p>There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.</p>
-                        <p>If this template is beneficial for your website or business, please kindly <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">support us</a> a little via PayPal. Please also tell your friends about our great website. Thank you.</p>
-                        <div class="main-border-button mt-5">
-                            <a href="products.html" className='btn btn-dark mb-5'>Discover More</a>
-                        </div>
-                    </div>
+                    <h3>Email journeys for perfectly timed sends</h3>
+                  <p style={{textAlign:"justify"}} className='mt-4'>
+                  Email marketing is a powerful marketing channel that uses email to promote your business's products or services. It can help make your customers aware of your latest items or offers by integrating it into your marketing automation efforts.
+                  <br /><br />
+                    It's the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing. It involves using email to send advertisements, request business, or solicit sales or donations.
+                  </p>
                 </div>
                 <div class="col-md-6">
-                 <img src={explore1} className='img-fluid' alt="" />
+                 <img src={email2} className='img-fluid' alt="" />
                 </div>
             </div>
         </div>
     </section>
 
 {/* Email */}
-<div className="container  mb-5" style={{marginTop:""}}>
+<div className="container   mb-5" style={{marginTop:""}}>
   <div class="row justify-content-center  g-4">
   <div class="col-md-6">
-      <img src={Email} alt="" className='img-fluid rounded'  srcset="" />
+    <div className="card mt-3 border-3 border-danger" style={{height:"25rem"}}>
+
+      <img src={explore1} alt="" className='img-fluid' style={{height:"24.6rem"}}  />
     </div>
-    <div class="col-md-6 ps-5 mt-5">
-    <h2 className='mb-4 '>How Application Software works?</h2>
-    <p className="fs-6 " style={{textAlign:"justify"}}>
-    Software designed to handle specific tasks for users are known as application software, also called application program. Such software directs the computer to execute commands given by the user and may be said to include any program that processes data for a user.
-    <br /><br />
-    This includes application software that enables a user to perform a task, such as Microsoft Office suite (Excel, Word, PowerPoint, Outlook, etc.) Internet browsers like Firefox, Safari, and Chrome; mobile pieces of software such as Pandora, Skype (for real-time online communication), and Slack (for team collaboration); PDF viewers and readers; 
-    <br /><br />
-    Business Application Software (These programs are built to facilitate certain business functions, improving), etc.
-   
-    </p>
+    </div>
+    <div class="col-md-6 ps-5">
+    <h2 className='mb-4 '>Our Email Marketing Process</h2>
+    <ul className='list-unstyled'>
+        <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Strategy and Goal Setting</h6>
+            </div>
+            <p className='lead fs-6'>We begin by understanding your business objectives, target audience, and email marketing goals. Based on this information, we develop a customized email marketing strategy that aligns with your overall digital marketing strategy.</p>
+        </li>
+        <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >List Building and Segmentation</h6>
+            </div>
+            <p className='lead fs-6'>We help you build a quality email subscriber list through various tactics, such as lead magnets and opt-in forms. We then segment your list based on factors such as demographics, preferences, and past engagement to ensure targeted and personalized messaging.</p>
+        </li>
+        <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Content Creation and Design</h6>
+            </div>
+            <p className='lead fs-6'>Our creative team works closely with you to create compelling email content that aligns with your brand voice and objectives. We design visually appealing email templates that enhance engagement and drive conversions. q</p>
+        </li>
+    </ul>
     </div>
   </div>
 </div>
+
+<div className="container  mb-5" style={{marginBottom:"px"}}>
+  <div class="row justify-content-center  g-4">
+    <div class="col-md-6 ps-5 mt-5">
+    <ul className='list-unstyled'>
+        <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Automation and Campaign Execution</h6>
+            </div>
+            <p className='lead fs-6'>We set up automated email workflows, including welcome series, abandoned cart reminders, and post-purchase follow-ups. Our team manages the execution of your email campaigns, ensuring timely delivery and optimal engagement.</p>
+        </li>
+        <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Performance Tracking and Optimization</h6>
+            </div>
+            <p className='lead fs-6'>We monitor the performance of your email campaigns, analyzing open rates, click-through rates, and conversion metrics. Based on data-driven insights, we refine and optimize your campaigns to enhance their effectiveness.</p>
+        </li>
+        <li>
+            <div className='d-flex'>
+            <i class="bi bi-check-circle-fill fs-4"></i>
+            <h6 className='ms-3 mt-2' >Re-engagement emails</h6>
+            </div>
+            <p className='lead fs-6'>Set up sequences of win-back emails that engage inactive subscribers to become buyers.</p>
+        </li>
+    </ul>
+    </div>
+    <div class="col-md-6">
+    <div className="card mt-3 border-3 border-danger" style={{height:"25rem"}}>
+      <img src={Email} alt="" className='img-fluid' style={{height:"24.6rem"}}  />
+    </div>
+    </div>
+  </div>
+</div>
+{/*Email End  */}
+
+ {/* frequent question */}
+ <section id="faq" class="faq mb-5 " style={{marginTop:"100px"}}>
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3><strong>Automated Email FAQs</strong></h3>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+
+            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <span class="num">1.</span>
+                    What is automated email?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  Automated marketing emails is the process of setting up emails on autopilot using an email marketing automation tool so that you always convey the right message to the right people on your list at the right time.
+                   <br /><br />
+                 With email automation, you automate email sending of a single email message or an email series in a timed (predefined delay, specific date, anniversary) or triggered (based on customer actions like purchasing a product or clicking a link in the email) fashion.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <span class="num">2.</span>
+                    How does automatic marketing automation work?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  Email automation is easy to follow once you understand how it operates. Here’s a simplified explanation. <br /><br />
+                  Design an email campaign with the emails you wish to send to different segments of users. These could be single email campaigns, such as promotional messages, or multi-email sequences based on what you are trying to do.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <span class="num">3.</span>
+                    What are the benefits of sending email automatically?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body"> 
+                  From ecommerce to service-based startups, businesses in nearly every niche and industry can benefit from. The following are just a few of the benefits of email automation. Avoid the cost of additional manpower to handle email correspondence manually
+                  <br /><br />
+                  Setup an automated email sales funnel at a cost far lesser than selling over other channels such as PPC and social media advertising.
+                </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <span class="num">4.</span>
+                    How to send automated emails?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  With the right email service provider, setting up automation for your email marketing strategy can be not only easy, but also fun. Here are some steps to help you start sending automatic emails:
+                 </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+         
+      </div>
+</section>
 
  {/* Get in touch */}
  <div className="container-fluid" style={{backgroundColor:"#007bb5"}}>
@@ -76,7 +214,7 @@ const Mail = () => {
         </div>
     </div>
     </div>
- </div>
+ </div>    
     </>
     );
 }

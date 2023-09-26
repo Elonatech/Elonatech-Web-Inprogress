@@ -93,9 +93,6 @@ const Cabling = () => {
     <div class="slide">
         <img src={p1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
     </div>
-    {/* <div class="slide">
-        <img src={img2} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-    </div> */}
     <div class="slide">
         <img src={p2} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
     </div> 
@@ -122,6 +119,7 @@ const Cabling = () => {
     </div>
   </div>
 </div>
+
 </div>
 </div>
     </>
