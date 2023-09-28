@@ -142,15 +142,3 @@ $(document).ready(function() {
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-

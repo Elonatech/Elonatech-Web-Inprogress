@@ -41,11 +41,7 @@ const Social = () => {
 </div>
 
 
-
-
-
-
-  {/*  */}
+  {/* body 2 */}
     <div class=" pt-0">
       <div class="container">
         <div class="row justify-content-between mb-5">
@@ -104,65 +100,69 @@ const Social = () => {
         </div>
       </div>
     </div>
-    {/*  */}
-    <div class="section bg-light">
-      <div class="container">
-        <div class="row">
+  
+
+   {/*  */}
+      <div class="container mb-5 bg-light" style={{boxShadow:" 0 0 2px 2px rgba(0,0,0,0.6)"}} >
+        <p className='fs-4 fw-bold pt-3 '>Building the right Social Media Strategy</p>
+        <div class="row ">
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">
-              Set goals that make sense for your business
-              </h3>
-              <p class="text-black">
+              <h5 class="text-black mb-3 font-weight-bold">
+              Set goals for your business
+              </h5>
+              <p class="text lead fs-6">
               Social media strategy planning starts with your goals. 
               Whether you want to expand your team, build a larger following or a more active community,
                taking the time to define your social goals is the first step to reaching them.
               </p>
+              <input type="checkbox" class="text-btn" />
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">Generate leads and sales</h3>
-              <p class="text-black">
-              Whether online, in-store or directly through your social profiles, followers don’t make purchases by accident.
-               For example, are you alerting customers about new products and promos?
-               Are you integrating your product catalog into your social profiles? Are you running exclusive deals for followers? etc.
+              <h5 class="text-black mb-3 font-weight-bold">Generate leads and sales</h5>
+               <p class="text lead fs-6">
+               Whether online, in-store or directly through your social profiles, followers don’t make purchases by accident. 
+               For example, are you alerting customers about new products and promos? Are you integrating your product catalog into your social profiles? 
+               Are you running exclusive deals for followers? etc.
               </p>
+              <input type="checkbox" class="text-btn" />
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
             <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">
-              Grow your brand’s audience
-              </h3>
-              <p class="text-black">
+              <h5 class="text-black mb-3 font-weight-bold">
+              Grow your brand’s audience</h5>
+              <p class="text lead fs-6">
               Bringing new followers into the fold means finding ways to introduce your brand to folks who haven’t 
               heard of you before. Growing your audience also means discovering conversations around your business and industry that matter the most. 
               Digging through your social channels is nearly impossible without monitoring or listening for specific keywords, phrases or hashtags.
               </p>
-       
+              <input type="checkbox" class="text-btn" />   
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature mb-4">
-              <h3 class="text-black mb-3 font-weight-bold">Drive traffic to your site to illustrate ROI of social efforts</h3>
-              <p class="text-black">
+              <h5 class="text-black mb-3 font-weight-bold">Drive traffic to your site</h5>
+              <p class="text lead fs-6">
               The Sprout Social Index™ shows 46% of marketers plan to calculate the return on investment (ROI) of advertising 
               spend to connect the value of social to business goals in 2024.
-Simple enough. If you’re focused on generating leads or traffic to your website, social media can make it happen.
+              Simple enough. If you’re focused on generating leads or traffic to your website, social media can make it happen.
               </p>
+              <input type="checkbox" class="text-btn" />               
             </div>
           </div>
         </div>
       </div>
-    </div>      
+
 
  {/* Get in touch */}
  <div className="container-fluid" style={{backgroundColor:"#006b62"}}>
     <div className="container">
     <div className="row">
         <div className="col-md-6">
-         <p className='text-white pt-5 pb-5 fs-1'>Talk with an expert about your next cybersecurity decision</p>
+         <p className='text-white pt-5 pb-5 fs-1'>Talk with an expert about your next social decision</p>
         </div>
         <div className="col-md-6">
           

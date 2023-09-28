@@ -186,7 +186,7 @@ const Mail = () => {
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                  With the right email service provider, setting up automation for your email marketing strategy can be not only easy, but also fun. Here are some steps to help you start sending automatic emails:
+                  With the right email service provider, setting up automation for your email marketing strategy can be not only easy, but also fun.
                  </div>
                 </div>
               </div>
