@@ -1,8 +1,8 @@
-
 /*  */
-.text {
+
+ .text {
   max-width: 600px;
-  display: -webkit-box;
+  max-height: 70px;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -29,45 +29,10 @@
   content: "Read Less";
 }
 .text:has(+ .text-btn:checked) {
-  -webkit-line-clamp: initial;
+  max-height: none;
 }
 
-/* Djh6hhj */
-
-.extra {
-  display: none;
-}
-p {
-  font-family: "Poppins", sans-serif;
-  line-height: 2em;
-  display: inline;
-}
-input[type="checkbox"] {
-  height: 2em;
-  display: block;
-  appearance: none;
-}
-label {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  padding: 1em;
-  background-color: #2b8eec;
-  color: #ffffff;
-  cursor: pointer;
-  border-radius: 0.5em;
-}
-label:before {
-  content: "Read More";
-}
-input[type="checkbox"]:checked ~ label:before {
-  content: "Read Less";
-}
-.dots:has(~ input[type="checkbox"]:checked) {
-  display: none;
-}
-.extra:has(~ input[type="checkbox"]:checked) {
-  display: inline;
-}
+ 
 
 
 

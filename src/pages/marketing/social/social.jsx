@@ -1,11 +1,18 @@
 import bg from './captions/social-media-marketing-fundamentals.png';
 import socialHeader from './captions/AdobeStock_389328016_Editorial_Use_Only-1280x640.jpeg';
-import soImg from './captions/Social-Media-Marketing.jpg'
+import soImg from './captions/Social-Media-Marketing.jpg';
+
+import { useState } from 'react';
 
 
 import './social.css'
 
 const Social = () => {
+  const [isShowMore, setIsShowMore] = useState(false);
+
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore);
+  };
     return (
  <>
  {/* Header */}
@@ -102,7 +109,7 @@ const Social = () => {
     </div>
   
    {/*  */}
-      <div class="container mb-5 bg-light" style={{boxShadow:" 0 0 2px 2px rgba(0,0,0,0.6)"}} >
+  <div class="container mb-5 bg-light" style={{boxShadow:" 0 0 2px 2px rgba(0,0,0,0.6)"}} >
         <p className='fs-4 fw-bold pt-3 '>Building the right Social Media Strategy</p>
         <div class="row ">
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
@@ -153,36 +160,7 @@ const Social = () => {
             </div>
           </div>
         </div>
-      </div>
-
-
-      <div class="container">
-      <p class="original">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos porro
-        necessitatibus dicta aut, dignissimos nesciunt fugit? Sint voluptate
-        praesentium, consequatur doloribus sit explicabo odio deleniti nihil
-        cupiditate accusamus aliquid saepe hic quis unde quos. Saepe adipisci
-        quia, nulla error pariatur temporibus ullam natus. Voluptates mollitia
-        quod aliquid repudiandae illum esse a placeat enim, quia quam aperiam
-        tempore nesciunt delectus aspernatur voluptas soluta asperiores iste
-        autem ex consequuntur sit quos
-      </p>
-      <span class="dots">...</span>
-      <p class="extra">
-        Accusamus reprehenderit alias ipsam eum voluptas quos vero sapiente,
-        itaque distinctio fugit iste sunt molestias corporis aperiam eaque
-        reiciendis ducimus temporibus est sed nam, asperiores consequuntur.
-        Nostrum non cupiditate assumenda aspernatur? repudiandae maxime tenetur
-        adipisci? Voluptate, quibusdam nam rem nihil numquam quis. Amet tenetur
-        illo enim fugit. Doloremque odit necessitatibus inventore distinctio
-        commodi delectus et?
-      </p>
-      <input type="checkbox" id="btn" />
-      <label for="btn"></label>
-    </div>
-
-
-
+  </div>
 
  {/* Get in touch */}
  <div className="container-fluid" style={{backgroundColor:"#006b62"}}>
