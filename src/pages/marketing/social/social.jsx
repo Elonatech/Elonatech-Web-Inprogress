@@ -101,7 +101,6 @@ const Social = () => {
       </div>
     </div>
   
-
    {/*  */}
       <div class="container mb-5 bg-light" style={{boxShadow:" 0 0 2px 2px rgba(0,0,0,0.6)"}} >
         <p className='fs-4 fw-bold pt-3 '>Building the right Social Media Strategy</p>

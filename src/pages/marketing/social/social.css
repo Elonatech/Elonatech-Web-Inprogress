@@ -10,7 +10,6 @@
 }
 .text-btn {
   appearance: none;
-  /* border: 1px solid #000; */
   background-color:#014e78;
   color:white;
   padding: 0.5em;
@@ -19,7 +18,7 @@
   border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
-  -ms-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;  
   -o-border-radius: 0.25em;
 }
 .text-btn::before {
@@ -32,6 +31,8 @@
 .text:has(+ .text-btn:checked) {
   -webkit-line-clamp: initial;
 }
+
+
 
 
 
