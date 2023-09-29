@@ -156,6 +156,34 @@ const Social = () => {
       </div>
 
 
+      <div class="container">
+      <p class="original">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos porro
+        necessitatibus dicta aut, dignissimos nesciunt fugit? Sint voluptate
+        praesentium, consequatur doloribus sit explicabo odio deleniti nihil
+        cupiditate accusamus aliquid saepe hic quis unde quos. Saepe adipisci
+        quia, nulla error pariatur temporibus ullam natus. Voluptates mollitia
+        quod aliquid repudiandae illum esse a placeat enim, quia quam aperiam
+        tempore nesciunt delectus aspernatur voluptas soluta asperiores iste
+        autem ex consequuntur sit quos
+      </p>
+      <span class="dots">...</span>
+      <p class="extra">
+        Accusamus reprehenderit alias ipsam eum voluptas quos vero sapiente,
+        itaque distinctio fugit iste sunt molestias corporis aperiam eaque
+        reiciendis ducimus temporibus est sed nam, asperiores consequuntur.
+        Nostrum non cupiditate assumenda aspernatur? repudiandae maxime tenetur
+        adipisci? Voluptate, quibusdam nam rem nihil numquam quis. Amet tenetur
+        illo enim fugit. Doloremque odit necessitatibus inventore distinctio
+        commodi delectus et?
+      </p>
+      <input type="checkbox" id="btn" />
+      <label for="btn"></label>
+    </div>
+
+
+
+
  {/* Get in touch */}
  <div className="container-fluid" style={{backgroundColor:"#006b62"}}>
     <div className="container">
