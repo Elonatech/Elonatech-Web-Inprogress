@@ -1,6 +1,4 @@
-
 import explore1 from './captions/email1_720.jpg'
-
 import mailHeader from './captions/mailHeader.jpg'
 import Email from './captions/54790.jpg'
 import email2 from './captions/email-marketing-business-removebg-preview.png'
@@ -18,11 +16,8 @@ const Mail = () => {
  </div>
 </div>
 
-
-
-
-    {/* Explore */}
-    <section class="section" id="explore">
+{/* Explore */}
+<section class="section" id="explore">
         <div class="container mt-5 mb-5 shadow rounded"style={{backgroundColor:"rgb(246 246 247)"}}>
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -38,7 +33,7 @@ const Mail = () => {
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
 {/* Email */}
 <div className="container   mb-5" style={{marginTop:""}}>
@@ -71,7 +66,7 @@ const Mail = () => {
             <i class="bi bi-check-circle-fill fs-4"></i>
             <h6 className='ms-3 mt-2' >Content Creation and Design</h6>
             </div>
-            <p className='lead fs-6'>Our creative team works closely with you to create compelling email content that aligns with your brand voice and objectives. We design visually appealing email templates that enhance engagement and drive conversions. q</p>
+            <p className='lead fs-6'>Our creative team works closely with you to create compelling email content that aligns with your brand voice and objectives. We design visually appealing email templates that enhance engagement and drive conversions.</p>
         </li>
     </ul>
     </div>
