@@ -83,6 +83,26 @@ const Ppc = () => {
 </div>
 </div>
 </div>
+{/* ppc 2 */}
+<div class="section-top-border mt-5">
+<div className="container ">
+<h3 className='text-center fw-bold'>Make the Right Decisions for Your Brand With PPC Advertising</h3>
+<div class="row mt-5 mb-5">
+<div class="col-md-6">
+    <div className="text-center">
+	<img src={ppcImg2} alt="" class="img-fluid" style={{height:"26rem"}}/>
+    </div>
+</div>
+<div class="col-md-6 mt-5">
+    <h5 className='fw-bold mt-3 mb-3'>Make the Right Decisions for Your Brand With PPC Advertising</h5>
+	<p className='lead fs-6' style={{textAlign:"justify"}}>Today, the digital landscape keeps growing and websites are proliferating at warp speed. From small companies and franchises to eCommerce businesses and entrepreneurs, almost everyone is on the internet, figuring out advertising avenues and maximizing all possible conversion paths. Increased marketing opportunities, however, come with greater challenges.
+    <br /><br />
+    Despite the availability of advertising tools and digital marketing channels, some businesses remain invisible to their target audience. As a result, market players are in an uphill battle, barely making progress with their internet marketing efforts.
+    </p>
+</div>
+</div>
+</div>
+</div>
 
 {/* click */}
 <div class="section-top-border">
