@@ -1,7 +1,7 @@
 import aboutImage  from './captions/about-us.png';
 import ppcHeader from './captions/ppcheader.jpg';
 import ppcImg from './captions/payperclick2-removebg-preview.png';
-import ppcImg2 from './captions/ami-responsive-screens.png.webp';
+import ppcImg2 from './captions/ppc3.png';
 import ads from './captions/ppc-ads-image_neww.webp';
 import ppc2 from './captions/ppc2.webp'
 
@@ -12,7 +12,7 @@ const Ppc = () => {
     return (
     <>
 {/* Header */}
-<div class="container-fluid bg-secondary  py-5 " style={{height:"500px" , marginBottom:"120px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${ppcHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+<div class="container-fluid bg-secondary  py-5 " style={{height:"500px" , marginBottom:"" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${ppcHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 "> 
    <h2 class=" mt-5 text-white text-center">Pay Per Click</h2>
    <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
@@ -21,7 +21,7 @@ const Ppc = () => {
 </div>
 
 {/* ppc */}
-<section class="about-section spad mt-5">
+{/* <section class="about-section spad mt-5">
         <div class="container mb-5">
             <div class="row">
             <div class="col-md-6">
@@ -57,21 +57,21 @@ const Ppc = () => {
                 </div>
                 <div class="col-md-6">
                     <div class="">
-                        <img src={ppcImg} className='img-fluid' alt=""/>
+                        <img src={ppcImg2} className='img-fluid' alt=""/>
                     </div>
                 </div>
     
             </div>
         </div>
- </section>
+ </section> */}
 
 {/* ppc 2 */}
-<div class="section-top-border" style={{marginBottom:"120px"}} >
+<div class="section-top-border mt-5">
 <div className="container ">
 <h3 className='text-center fw-bold'>Make the Right Decisions for Your Brand With PPC Advertising</h3>
 <div class="row">
 <div class="col-md-6">
-	<img src={ppcImg2} alt="" class="img-fluid"/>
+	<img src={ppcImg} alt="" class="img-fluid"/>
 	</div>
 	<div class="col-md-6">
 	
@@ -85,8 +85,7 @@ const Ppc = () => {
 </div>
 
 {/* click */}
-
-<div class="section-top-border" style={{marginBottom:"120px"}} >
+<div class="section-top-border">
 <div className="container ">
 <h3 className='text-center fw-bold'>What Is Pay Per Click and How Does It Work?</h3>
 <div class="row">
@@ -104,10 +103,8 @@ const Ppc = () => {
 </div>
 </div>
 
-
-
 {/* ppc ads */}
-<div className="container mb-5">
+<div className="container mt-5 mb-5">
     <div className="row">
         <div className="col-md-8">
             <div className="">

@@ -8,11 +8,6 @@ import { useState } from 'react';
 import './social.css'
 
 const Social = () => {
-  const [isShowMore, setIsShowMore] = useState(false);
-
-  const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore);
-  };
     return (
  <>
  {/* Header */}
