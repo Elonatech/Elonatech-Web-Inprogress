@@ -1,5 +1,5 @@
 import hostHeader from './captions/9494216.png'
-
+import cloud from './captions/Why-Choose-Cloud-Hosting-withVerpex.com_2023-04-30-114836_ynww.png'
 import './host.css'
 
 
@@ -21,7 +21,7 @@ const Hosting = () => {
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h3 className='text-center mb-4 fw-bold' >HOW TO BUILD YOUR WEBSITE ONLINE TODAY?</h3>
+                        <p className='text-center mb-4 fs-3 fw-bold' >HOW TO BUILD YOUR WEBSITE ONLINE TODAY?</p>
                     </div>
                     <div class="work__text" style={{boxShadow:" 0 0 10px 5px rgba(0,0,0,0.6)"}}>
                         <div class="row">
@@ -61,7 +61,7 @@ const Hosting = () => {
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h3 className='text-center mb-5'>WEB HOSTING PLAN PERFECT FOR YOU!</h3>
+                        <p className='text-center mb-5 fs-3 fw-bold'>WEB HOSTING PLAN PERFECT FOR YOU!</p>
                     </div>
 
                     <div class="hosting__text">
@@ -202,6 +202,9 @@ const Hosting = () => {
                                                 <td class="hosting__feature--check">
                                                     <i class="bi bi-check-circle-fill"></i>
                                                 </td>
+                                                <td class="hosting__feature--check">
+                                                    <i class="bi bi-check-circle-fill"></i>
+                                                </td>
                                                
                                             </tr>
                                             <tr>
@@ -293,7 +296,34 @@ const Hosting = () => {
     </section>
     {/* <!-- Hosting Section End --> */}
 
-
+{/* cloud */} 
+<div className="container  mb-5">
+    <div className="row">
+        <div className="col-md-6">
+            <div className="">
+                <div className="text-center">
+                <img src={cloud} className='img-fluid ' style={{height:"20rem" , width:"30rem"}} alt="" />
+                </div>
+            </div>
+        </div>
+        <div className="col-md-6 mt-5">
+            <div className="">
+                <div className="text-start">
+                    <h5 className='fw-bold fs-3'>Why Choose Cloud Hosting with Elonatech?</h5>
+                    <p className='lead fs-6' style={{textAlign:"justify"}}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Exercitationem veniam cumque reiciendis. Sit deleniti eum modi debitis ut asperiores suscipit quasi hic amet, 
+                      sequi officia quidem tempore maiores blanditiis ipsa! 
+                      <br /><br />
+                      Cloud web hosting is designed to deliver a faster site. 
+                      A faster website means customers will stay on your site,
+                      thus leading to more purchases and gaining subscribers. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

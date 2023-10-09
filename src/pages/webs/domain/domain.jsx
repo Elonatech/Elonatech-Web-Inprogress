@@ -1,7 +1,8 @@
 
-import domainHeader from './captions/Domain-Registration.png'
+import domainHeader from './captions/yp[fc0fk.png'
 import choosePlan from './captions/choose-plan.png'
 import domain2 from './captions/domain-1-removebg-preview.png'
+
 import  './domain.css';
 
 
@@ -11,7 +12,7 @@ const Domain = () => {
    {/* header */}
    <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${domainHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Hosting Websites</h2>
+   <h2 class=" mt-5 text-white text-center">Domain Websites</h2>
    <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
    <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
  </div>
@@ -85,51 +86,13 @@ const Domain = () => {
                         </div>
                         </div>
                         </div>
-                        <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-{/* Work Section End  */}
-
-{/* Achievement Section Begin */}
-<div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="achievement__item">
-                        <span class="fa fa-user"></span>
-                        <h2 class="achieve-counter">2468</h2>
-                        <p>Clients</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="achievement__item">
-                        <span class="fa fa-edit"></span>
-                        <h2 class="achieve-counter">2468</h2>
-                        <p>Domains</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="achievement__item">
-                        <span class="fa fa-clone"></span>
-                        <h2 class="achieve-counter">2468</h2>
-                        <p>Server</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="achievement__item">
-                        <span class="fa fa-cog"></span>
-                        <h2 class="achieve-counter">2468</h2>
-                        <p>Installs</p>
-                    </div>
-                </div>
-            </div>
-</div>
+</section>
 
 {/* Choose Plan Section End  */}
 <div className="container mt-5">
@@ -138,17 +101,11 @@ const Domain = () => {
       <div className="mt-4">
         <p className='lead fs-6 mt-5'>
          <strong className='fw-bold'>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi omnis totam, praesentium earum corrupti exercitationem cum architecto dolor porro ea itaque consequatur illo culpa ullam iste possimus libero repudiandae.
-         <br /><br />
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptates maxime illo minima architecto eligendi voluptatum dolore ipsam, qui explicabo voluptatibus eius, quos corrupti earum. Rem modi corrupti voluptatem repellat.
-         <br /><br />
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex iure officia perspiciatis ipsum at nesciunt, quibusdam velit reprehenderit veniam, omnis animi vel maxime provident rem deserunt repellendus itaque non?
-
-
         </p>
-        
         </div>
         </div>
-    <div className="col-md-6">
+      <div className="col-md-6">
       <div className="">
         <img src={domain2} alt="" />
       </div>
@@ -156,6 +113,51 @@ const Domain = () => {
   </div>
 </div>
   
+
+{/* Wht do you get */}
+<div className="container mt-5">
+    <p className='fs-2 fw-bold text-center'>What Do You Get?</p>
+    <p className='mb-4 text-center'>Everything you could ever ask for. Register with us for the most comprehensive set of tools and features for the ideal domain name experience.</p>
+    <div className="row">
+        <div className="col-md-6">
+        <div className="ms-5">
+            <div className="d-flex">
+            <i class="bi bi-file-earmark-pdf-fill fs-3 ms-2"></i>
+            <h5 className='ms-3 mt-2'>Content Management</h5>
+            </div>
+           <p className='lead fs-6 ms-5'>Manage domain registrant, admin, and technical contacts. <br /> Change them, execute trade or transfers, and update contact <br /> details in bulk.</p>
+        </div>
+        </div>
+        <div className="col-md-6">
+        <div className="ms-5">
+            <div className="d-flex">
+            <i class="bi bi-clipboard-check-fill fs-3 ms-2"></i>
+            <h5 className='ms-3 mt-2 '>Always in Your Name</h5>
+            </div>
+           <p className='lead fs-6 ms-5'>Your domain will always be registered under your own name. <br /> No compromises  or  losing it in the future</p>
+        </div>
+        </div>
+        <div className="col-md-6">
+        <div className="ms-5">
+            <div className="d-flex">
+            <i class="bi bi-shield-lock-fill fs-3 ms-2"></i>
+            <h5 className='ms-3 mt-2'>Free Privacy Protection</h5>
+            </div>
+           <p className='lead fs-6 ms-5'>Privacy is paramount to us, so full WHOIS privacy protection is included <br /> and enabled as a standard at no extra cost.</p>
+        </div>
+        </div>
+        <div className="col-md-6">
+        <div className="ms-5">
+            <div className="d-flex">
+            <i class="bi bi-usb-mini-fill fs-3 ms-2"></i>
+            <h5 className='ms-3 mt-2'>Transfer Our Free Of Charges</h5>
+            </div>
+           <p className='lead fs-6 ms-5'>No stealth fees for transferring out. Generate your authorization <br /> codes and  lock your domain via our control panel.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
 {/* Choose Plan Section Begin  */}
 <section class="choose-plan-section" style={{marginTop:"80px"}}>
         <div class="container">
@@ -181,8 +183,6 @@ const Domain = () => {
         </div>
 </section>
  
-
-
  {/* Get in touch */}
  <div className="container-fluid mt-5" style={{backgroundColor:"#120851"}}>
     <div className="container">
@@ -200,7 +200,6 @@ const Domain = () => {
     </div>
     </div>
  </div>
-
 </>
  );
 }
