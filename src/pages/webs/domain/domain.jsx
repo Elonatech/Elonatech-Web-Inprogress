@@ -18,44 +18,83 @@ const Domain = () => {
 </div>
 
 
- {/* Work Section Begin  */}
-    <section class="work-section spad">
+{/* Register Domain Section Begin  */}
+<section class="register-domain spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h3 className='text-center mb-4 fw-bold' >HOW TO BUILD YOUR WEBSITE ONLINE TODAY?</h3>
-                    </div>
-                    <div class="work__text" style={{boxShadow:" 0 0 10px 5px rgba(0,0,0,0.6)"}}>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="register__text">
+                        <div class="section-title">
+                            <h3 className='text-center mb-4 fw-bold' >Register Your Domain Now!</h3>
+                        </div>
+                        <div class="register__form">
+                            <form action="#">
+                                <input type="text" placeholder="ex: cloudhost"/>
+                                <div class="change__extension" >
+                                 .com  <i class="bi bi-caret-down-fill ms-2" style={{position:"absolute" , top:"3px"}}></i>
+                                    <ul>
+                                        <li>.net</li>
+                                        <li>.org</li>
+                                        <li>.gov</li>
+                                    </ul>
+                                </div>
+                                <button type="submit" class="site-btn">Search</button>
+                            </form>
+                        </div>
+
+                        {/* domain */}
+                        <div className="container mt-4 mb-4">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="work__item">
-                                    <i class="fa fa-desktop"></i>
-                                    <span>CREATE YOUR OWN WEBSITE WITH OUR</span>
-                                    <h3>WEB SITE BUILDER</h3>
-                                    <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                        gravida facilisis. </p>
-                                    <a href="#" class="prim">Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="work__item">
-                                    <i class="fa fa-shopping-bag"></i>
-                                    <span>EASY CREATE, MANAGE & SELL</span>
-                                    <h3>ONLINE STORE</h3>
-                                    <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                        gravida facilisis. </p>
-                                    <a href="#" class="prim">Read More</a>
-                                </div>
+                        <div class="col-6 col-md-3">
+                        <div className="text-center">
+                            
+                         <div class="register__result">
+                            <ul>
+                                <li>.com <span>$1.95</span></li>
+                            </ul>
+                        </div>  
+                            
+                        </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div className="text-center">     
+                         <div class="register__result">
+                            <ul>
+                            <li>.gov <span>$1.95</span></li>
+                            </ul>
+                        </div>
                             </div>
                         </div>
+                        <div class="col-6 col-md-3">
+                        <div className="text-center">
+                        <div class="register__result">
+                            <ul>
+                            <li>.org <span>$1.95</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                        <div className="text-center">
+                        <div class="register__result">
+                            <ul>
+                            <li>.ng <span>$1.95</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 {/* Work Section End  */}
 
 {/* Achievement Section Begin */}

@@ -1,7 +1,7 @@
 import seoHeader from './captions/pexels-photo-270637.webp';
 import seoImg1 from './captions/8597358.jpg';
 import seoImg2 from './captions/seo2.png';
-import hgg from './captions/3d for emeka.png'
+
 import './seo.css'
 const Seo = () => {
     return (
@@ -10,11 +10,10 @@ const Seo = () => {
 <div class="container-fluid bg-secondary  py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${seoHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 "> 
    <h2 class=" mt-5 text-white text-center">Search Engine Optimization</h2>
-   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
-   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <h5 class=" mt-4 text-white text-center">A vital part of digital marketing that helps you get found online via search</h5>
+   <p class="lead text-white text-center">Optimizing pages and putting in best practices to rank websites on search engines</p>
  </div>
 </div>
-
 
 {/* D */}
 <div class="section-top-border mt-5">
@@ -118,8 +117,6 @@ const Seo = () => {
 <p className='lead fs-6'>Art & Design, Automotive, Aviation, Cryptocurrency & Blockchain, Education, Energy & Utilities, Finance & Accounting, Food & Beverage, Government & Public Sector, HR & Business Services, Insurance, Legal, Manufacturing & Construction, Media & Entertainment, Nonprofit, Real Estate, Retail & Consumer Goods, Science & Medicine, Sports & Recreation, Supply Chain & Logistics, Tech & IT, Travel & Hospitality</p>
 </div>
 
-
-
 {/* T */}
 <div class="container mt-5 mb-5">
 <table class="table table-striped bor table-hover">
@@ -157,7 +154,7 @@ const Seo = () => {
 					<td class="border-0"><i class="bi bi-check-lg fs-5"></i></td>
 				</tr>
                 <tr class="" style={{backgroundColor:"#57719f"}}>
-					<td>Tailored Action Plan</td>
+					<td className='border-0 text-light'>Tailored Action Plan</td>
 					<td class="border-0 text-light"><i class="bi bi-check-lg fs-5"></i></td>
 					<td class="border-0 text-light"><i class="bi bi-check-lg fs-5"></i></td>
 					<td class="border-0 text-light"><i class="bi bi-check-lg fs-5"></i></td>
