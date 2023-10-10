@@ -1,8 +1,7 @@
 
-import domainHeader from './captions/yp[fc0fk.png'
-import choosePlan from './captions/choose-plan.png'
-import domain2 from './captions/domain-1-removebg-preview.png'
-
+import domainHeader from './captions/Domain.png';
+import choosePlan from './captions/choose-plan.png';
+import domain2 from './captions/domain-1-removebg-preview.png';
 import  './domain.css';
 
 
@@ -34,9 +33,9 @@ const Domain = () => {
                                 <div class="change__extension" >
                                  .com  <i class="bi bi-caret-down-fill ms-2" style={{position:"absolute" , top:"3px"}}></i>
                                     <ul>
-                                        <li>.net</li>
+                                        <li>.dev</li>
                                         <li>.org</li>
-                                        <li>.gov</li>
+                                        <li>.com.ng</li>
                                     </ul>
                                 </div>
                                 <button type="submit" class="site-btn">Search</button>
@@ -51,7 +50,7 @@ const Domain = () => {
                             
                          <div class="register__result">
                             <ul>
-                                <li>.com <span>$1.95</span></li>
+                                <li>.com <span>$16.99</span></li>
                             </ul>
                         </div>  
                             
@@ -61,7 +60,7 @@ const Domain = () => {
                             <div className="text-center">     
                          <div class="register__result">
                             <ul>
-                            <li>.gov <span>$1.95</span></li>
+                            <li>.dev <span>$21.99</span></li>
                             </ul>
                         </div>
                             </div>
@@ -70,7 +69,7 @@ const Domain = () => {
                         <div className="text-center">
                         <div class="register__result">
                             <ul>
-                            <li>.org <span>$1.95</span></li>
+                            <li>.org <span>$18.99</span></li>
                             </ul>
                         </div>
                         </div>
@@ -79,35 +78,38 @@ const Domain = () => {
                         <div className="text-center">
                         <div class="register__result">
                             <ul>
-                            <li>.ng <span>$1.95</span></li>
+                            <li>.com.ng <span>$9.00</span></li>
                             </ul>
                         </div>
                         </div>
                         </div>
                         </div>
                         </div>
-                        <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <p className='lead fs-6'>The right domain name goes a long way. Expect greater traction with your target audience, a unique online presence and your own identity in an ever-growing market. Find your perfect domain now.</p>
                     </div>
                 </div>
             </div>
         </div>
 </section>
 
-{/* Choose Plan Section End  */}
+{/*   */}
 <div className="container mt-5">
   <div className="row">
     <div className="col-md-6">
       <div className="mt-4">
-        <p className='lead fs-6 mt-5'>
-         <strong className='fw-bold'>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi omnis totam, praesentium earum corrupti exercitationem cum architecto dolor porro ea itaque consequatur illo culpa ullam iste possimus libero repudiandae.
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptates maxime illo minima architecto eligendi voluptatum dolore ipsam, qui explicabo voluptatibus eius, quos corrupti earum. Rem modi corrupti voluptatem repellat.
+        <p className='fs-4 fw-bold'>Domain Name Registration</p>
+        <p className='lead fs-6'>
+         At Elonatech we take pride in providing secure, reliable & affordable Domain Registration to all our clients. That is why we offer the best industry prices not only for new domains registered with us but also for Domain Renewals & hassle free Domain Transfers to us.
+         <br /><br />
+         You can easily register any domain name of your choice with us. We offer several global domain extensions including major TLDs like .com, .net, .biz, .org & also popular ccTLDs including .ng (NIRA), .com.ng, .in, .co.in, .co, .co.uk, .pw and many other popular domain extensions. Our domain registration prices start from as low as $9.
+         <br /><br />
+         All the domain names registered with us come with 24x7 Support & many free services worth over $15 including Free DNS Service, Free Privacy Protection to hide your whois information from spammers & data miners, Free Domain Forwarding, Unlimited Mail Forwards, Domain Theft Protection & Registrar Lock to prevent Unauthorized domain transfer.
         </p>
         </div>
         </div>
       <div className="col-md-6">
       <div className="">
-        <img src={domain2} alt="" />
+        <img src={domain2} className='img-fluid me-3' alt="" />
       </div>
       </div>
   </div>
@@ -167,16 +169,15 @@ const Domain = () => {
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="plan__text">
-                        <h3>up to 70% discount with free domain name registration included!</h3>
+                        <h3>Every great website starts with a domain. Our domain name registration includes!</h3>
                         <ul>
-                            <li><span class="fa fa-check"></span> FREE Domain Name</li>
-                            <li><span class="fa fa-check"></span> FREE Email Address</li>
-                            <li><span class="fa fa-check"></span> Plently of disk space</li>
-                            <li><span class="fa fa-check"></span> FREE Website Bullder</li>
-                            <li><span class="fa fa-check"></span> FREE Marketing Tools</li>
-                            <li><span class="fa fa-check"></span> 1-Click WordPress Install</li>
+                            <li><span class="fa fa-check"></span>Free DNS Management</li>
+                            <li><span class="fa fa-check"></span>Multiple Year Discount</li>
+                            <li><span class="fa fa-check"></span>Free Renewal With Transfer</li>
+                            <li><span class="fa fa-check"></span>Instant Activation</li>
+                            <li><span class="fa fa-check"></span>Registrar Lock</li>
+                            <li><span class="fa fa-check"></span>Over 400 Domain Extensions</li>
                         </ul>
-                        <a href="#" class="prim">Get start now</a>
                     </div>
                 </div>
             </div>

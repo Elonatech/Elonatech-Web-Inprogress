@@ -6,12 +6,12 @@ import './host.css'
 const Hosting = () => {
     return (
      <>
-   {/* header */}
+{/* header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hostHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Hosting Websites</h2>
-   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
-   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <h2 class=" mt-5 text-white text-center">Website Hosting</h2>
+   <h5 class=" mt-4 text-white text-center">Experience the best service that allows you to store your Website data</h5>
+   <p class="lead text-white text-center">Our servers guarantees uptime on all our hosting plans at the most affordable prices.</p>
  </div>
 </div>
 
@@ -29,22 +29,21 @@ const Hosting = () => {
                                 <div class="work__item">
                                     <i class="fa fa-desktop"></i>
                                     <span>CREATE YOUR OWN WEBSITE WITH OUR</span>
-                                    <h3>WEB SITE BUILDER</h3>
-                                    <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                        gravida facilisis. </p>
-                                    <a href="#" class="prim">Read More</a>
+                                    <h3>WordPress Builder</h3>
+                                    <p className='lead fs-6'>WordPress is widely regarded as one of the best content management systems (CMS). Many popular and large-scale websites use this platform.
+                                    <br /><br />
+                                    it is a great choice for a personal website or to use to grow a small business with a relatively limited budget.
+                                     </p>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="work__item">
                                     <i class="fa fa-shopping-bag"></i>
                                     <span>EASY CREATE, MANAGE & SELL</span>
-                                    <h3>ONLINE STORE</h3>
-                                    <p className='lead fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                        gravida facilisis. </p>
-                                    <a href="#" class="prim">Read More</a>
+                                    <h3>Code-Based Websites</h3>
+                                    <p className='lead fs-6'>For many small and medium businesses (especially those with an online store) the choice is clear, website created with codes offers more flexibility and customization. 
+                                    <br /><br />
+                                    In order to code a website you will need HTML and CSS, or general programming languages like Javascript or Python. This is where we come in. </p>
                                 </div>
                             </div>
                         </div>
@@ -54,50 +53,26 @@ const Hosting = () => {
         </div>
     </section>
 
-
 {/* <!-- Hosting Section Begin --> */}
     <section class="hosting-section spad mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <p className='text-center mb-5 fs-3 fw-bold'>WEB HOSTING PLAN PERFECT FOR YOU!</p>
+                        <p className='text-center mb-5 fs-3 fw-bold'>Cloud Hosting Plan Perfect For You</p>
                     </div>
 
                     <div class="hosting__text">
 
-                        <ul class="nav nav-tabs" role="tablist">
+                        {/* <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab"  role="tab">
                                     <span class="flaticon-003-network"></span>
-                                    <h5>Web hosting</h5>
+                                    <h5>Cloud hosting</h5>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" role="tab">
-                                    <span class="flaticon-030-server-1"></span>
-                                    <h5>Servers</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" role="tab">
-                                    <span class="flaticon-010-cloud-storage-2"></span>
-                                    <h5>Clouds VPS</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab"  role="tab">
-                                    <span class="flaticon-008-cloud-computing"></span>
-                                    <h5>Dedicated</h5>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab"  role="tab">
-                                    <span class="flaticon-009-cloud-storage-1"></span>
-                                    <h5>Reseller</h5>
-                                </a>
-                            </li>
-                        </ul>
+                           
+                        </ul> */}
                         {/* ul nav */}
                         <div class="tab-content">
                             <div class="tab-pane active" role="tabpanel">
@@ -107,7 +82,7 @@ const Hosting = () => {
                                             <tr>
                                                 <th>
                                                     <div class="hosting__feature__plan--choose">
-                                                        <span>All Shared Hosting Features</span>
+                                                        <span>Cloud Hosting Features</span>
                                                         <div class="chose__title">CHOOSE PERFECT PLAN</div>
                                                     </div>
                                                 </th>
@@ -115,8 +90,9 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Iron</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$1.33</div>
+                                                            <div class="plan__price">$2.33</div>
                                                             <span>month</span>
+                                                            <p>Renews at $ 1.66</p>
                                                         </div>
                                                     
                                                     </div>
@@ -125,8 +101,9 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Bronze</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$2.80</div>
+                                                            <div class="plan__price">$4.80</div>
                                                             <span>month</span>
+                                                            <p>Renews at $ 3.50</p>
                                                         </div>
                                                        
                                                     </div>
@@ -135,8 +112,9 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Sliver</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$4.20</div>
+                                                            <div class="plan__price">$6.20</div>
                                                             <span>month</span>
+                                                            <p>Renews at $ 5.25</p>
                                                         </div>
                                                     </div>
                                                 </th>
@@ -144,8 +122,9 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Gold</div>
                                                         <div class="hosting__feature--price">
-                                                            <div class="plan__price">$8.00</div>
+                                                            <div class="plan__price">$12.00</div>
                                                             <span>month</span>
+                                                            <p>Renews at $ 10.00</p>
                                                         </div>
                                                     </div>
                                                 </th>
@@ -294,7 +273,6 @@ const Hosting = () => {
             </div>
         </div>
     </section>
-    {/* <!-- Hosting Section End --> */}
 
 {/* cloud */} 
 <div className="container  mb-5">
@@ -311,25 +289,23 @@ const Hosting = () => {
                 <div className="text-start">
                     <h5 className='fw-bold fs-3'>Why Choose Cloud Hosting with Elonatech?</h5>
                     <p className='lead fs-6' style={{textAlign:"justify"}}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Exercitationem veniam cumque reiciendis. Sit deleniti eum modi debitis ut asperiores suscipit quasi hic amet, 
-                      sequi officia quidem tempore maiores blanditiis ipsa! 
+                    We offer highly reliable & affordable Website Hosting Solutions to both individuals & businesses of all sizes in Nigeria. 
+                    Our Web Hosting Plans are all that you would ever need to get your website online.
+                     Elonatech is a leading Web Hosting provider with thousand of websites hosted on our servers globally.
                       <br /><br />
-                      Cloud web hosting is designed to deliver a faster site. 
-                      A faster website means customers will stay on your site,
-                      thus leading to more purchases and gaining subscribers. 
+                      Our cloud web hosting is designed to deliver a faster site. 
+                      A faster website means customers will stay on your site, thus leading to more purchases and gaining subscribers.
+                      <br /><br />
+                      Your success is ours. Elonatech cloud hosting packages allow you to build your web or business venture toward continuous growth.
+ 
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-            
-     </>
+    
+</>
     );
 }
 
