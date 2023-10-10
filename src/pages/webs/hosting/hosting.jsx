@@ -90,6 +90,7 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Iron</div>
                                                         <div class="hosting__feature--price">
+                                                            <p><del className='text-danger me-2'>$7.00</del><button style={{borderRadius:"20px"}} className='border-0'>save 73%</button></p>
                                                             <div class="plan__price">$2.33</div>
                                                             <span>monthly</span>
                                                             <p>Renews at $ 1.66</p>
@@ -101,6 +102,7 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Bronze</div>
                                                         <div class="hosting__feature--price">
+                                                        <p><del className='text-danger me-2'>$8.99</del>  <button style={{borderRadius:"20px"}} className='border-0'>save 53%</button></p>
                                                             <div class="plan__price">$4.80</div>
                                                             <span>monthly</span>
                                                             <p>Renews at $ 3.50</p>
@@ -112,6 +114,7 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Sliver</div>
                                                         <div class="hosting__feature--price">
+                                                        <p><del className='text-danger me-2'>$13.99</del><button style={{borderRadius:"20px"}} className='border-0'>save 58%</button></p>
                                                             <div class="plan__price">$6.20</div>
                                                             <span>monthly</span>
                                                             <p>Renews at $ 5.25</p>
@@ -122,6 +125,7 @@ const Hosting = () => {
                                                     <div class="hosting__feature--plan">
                                                         <div class="plan__title">Gold</div>
                                                         <div class="hosting__feature--price">
+                                                        <p><del className='text-danger me-2'>$18.99</del><button style={{borderRadius:"20px"}} className='border-0'>save 47%</button></p>
                                                             <div class="plan__price">$12.00</div>
                                                             <span>monthly</span>
                                                             <p>Renews at $ 10.00</p>
