@@ -91,7 +91,7 @@ const Hosting = () => {
                                                         <div class="plan__title">Iron</div>
                                                         <div class="hosting__feature--price">
                                                             <div class="plan__price">$2.33</div>
-                                                            <span>month</span>
+                                                            <span>monthly</span>
                                                             <p>Renews at $ 1.66</p>
                                                         </div>
                                                     
@@ -102,7 +102,7 @@ const Hosting = () => {
                                                         <div class="plan__title">Bronze</div>
                                                         <div class="hosting__feature--price">
                                                             <div class="plan__price">$4.80</div>
-                                                            <span>month</span>
+                                                            <span>monthly</span>
                                                             <p>Renews at $ 3.50</p>
                                                         </div>
                                                        
@@ -113,7 +113,7 @@ const Hosting = () => {
                                                         <div class="plan__title">Sliver</div>
                                                         <div class="hosting__feature--price">
                                                             <div class="plan__price">$6.20</div>
-                                                            <span>month</span>
+                                                            <span>monthly</span>
                                                             <p>Renews at $ 5.25</p>
                                                         </div>
                                                     </div>
@@ -123,7 +123,7 @@ const Hosting = () => {
                                                         <div class="plan__title">Gold</div>
                                                         <div class="hosting__feature--price">
                                                             <div class="plan__price">$12.00</div>
-                                                            <span>month</span>
+                                                            <span>monthly</span>
                                                             <p>Renews at $ 10.00</p>
                                                         </div>
                                                     </div>

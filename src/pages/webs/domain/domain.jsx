@@ -11,9 +11,9 @@ const Domain = () => {
    {/* header */}
    <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${domainHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Domain Websites</h2>
-   <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
-   <p class="lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <h2 class=" mt-5 text-white text-center">Domain Registration</h2>
+   <h5 class=" mt-4 text-white text-center">Everything You Need To Succeed Online, It all starts with a great domain</h5>
+   <p class="lead text-white text-center">Get your website online today! Register .com.ng, .ng Domains and Get Free DNS & Email Hosting.</p>
  </div>
 </div>
 
@@ -97,7 +97,6 @@ const Domain = () => {
   <div className="row">
     <div className="col-md-6">
       <div className="mt-4">
-        <p className='fs-4 fw-bold'>Domain Name Registration</p>
         <p className='lead fs-6'>
          At Elonatech we take pride in providing secure, reliable & affordable Domain Registration to all our clients. That is why we offer the best industry prices not only for new domains registered with us but also for Domain Renewals & hassle free Domain Transfers to us.
          <br /><br />
@@ -118,7 +117,7 @@ const Domain = () => {
 
 {/* Wht do you get */}
 <div className="container mt-5">
-    <p className='fs-2 fw-bold text-center'>What Do You Get?</p>
+    <p className='fs-2 fw-bold text-center'>What You Get?</p>
     <p className='mb-4 text-center'>Everything you could ever ask for. Register with us for the most comprehensive set of tools and features for the ideal domain name experience.</p>
     <div className="row">
         <div className="col-md-6">
@@ -152,7 +151,7 @@ const Domain = () => {
         <div className="ms-5">
             <div className="d-flex">
             <i class="bi bi-usb-mini-fill fs-3 ms-2"></i>
-            <h5 className='ms-3 mt-2'>Transfer Our Free Of Charges</h5>
+            <h5 className='ms-3 mt-2'>Transfer Free Of Charges</h5>
             </div>
            <p className='lead fs-6 ms-5'>No stealth fees for transferring out. Generate your authorization <br /> codes and  lock your domain via our control panel.</p>
         </div>
