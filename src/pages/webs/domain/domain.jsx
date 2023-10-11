@@ -1,5 +1,5 @@
 
-import domainHeader from './captions/Domain.png';
+import domainHeader from './captions/pngtree-domain-name-address-company-web-photo-image_21734744.jpg';
 import choosePlan from './captions/choose-plan.png';
 import domain2 from './captions/domain-1-removebg-preview.png';
 import  './domain.css';
