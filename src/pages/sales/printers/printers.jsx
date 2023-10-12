@@ -72,7 +72,7 @@ const Printers = () => {
                 <img src={printer2} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">Deskjet Ink Advantage 3835 All-In-One Color Printer</h5>
-			          <p className='lead fs-6'>Office System</p>
+			          <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -88,7 +88,7 @@ const Printers = () => {
                 <img src={printer3} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP Color LaserJet Enterprise M577dn All-In-One Laser Printer</h5>
-			         <p className='lead fs-6'>Office System</p>
+			         <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -104,7 +104,7 @@ const Printers = () => {
                 <img src={printer4} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP Color LaserJet Enterprise M652dn Network Printer</h5>
-			         <p className='lead fs-6'>Office System</p>
+			         <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -120,7 +120,7 @@ const Printers = () => {
                 <img src={printer5} className='img-fluid ' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-4">HP Color LaserJet M454DW</h5>
-               <p className='lead fs-6'>Computer</p>
+               <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -136,7 +136,7 @@ const Printers = () => {
                 <img src={printer6} className='img-fluid pt-1' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP Color LaserJet M553DN</h5>
-			        <p className='lead fs-6'>Computer</p>
+			        <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -152,7 +152,7 @@ const Printers = () => {
                 <img src={printer8} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP Color LaserJet Printer 255DW</h5>
-			        <p className='lead fs-6'>Computer</p>
+			        <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -232,7 +232,7 @@ const Printers = () => {
                 <img src={printer14} className='img-fluid pt-2' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP LaserJet Enterprise M607n – K0Q14A</h5>
-               <p className='lead fs-6'>Pos System</p>
+               <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -248,7 +248,7 @@ const Printers = () => {
                 <img src={printer15} className='img-fluid pt-2' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-4">HP LaserJet Enterprise M607n – K0Q14A</h5>
-			         <p className='lead fs-6'>Pos System</p>
+			         <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -264,7 +264,7 @@ const Printers = () => {
                 <img src={printer16} className='img-fluid pt-3' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP LaserJet MFP M433a (1VR14A)</h5>
-			   <p className='lead fs-6'>Pos System</p>
+			   <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -280,7 +280,7 @@ const Printers = () => {
                 <img src={printer17} className='img-fluid pt-1' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP LaserJet Enterprise M712DN Printer</h5>
-			   <p className='lead fs-6'>Pos System</p>
+			   <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
