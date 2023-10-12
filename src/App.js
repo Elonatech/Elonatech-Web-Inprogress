@@ -11,7 +11,6 @@ import Network from './components/network/network';
 import Policy from './components/policy/policy';
 import Digital from './components/digital/digital';
 import Hardware from './components/hardware/hardware';
-import Shop from './components/shop/shop';
 import Home from './components/home/home';
 import Engineer from './components/engineer/engineer';
 import Mobile from './components/mobile/mobile';
@@ -69,9 +68,9 @@ import Admin from './pages/support/admin/admin';
 // sales
 import Computer from './pages/sales/computer/computer';
 import Office from './pages/sales/office/office';
-import Net from './pages/sales/net/net';
-
+import Shop from './pages/sales/shop/shop'
 import Pos from './pages/sales/pos/pos';
+import PrinterSales from './pages/sales/printers/printers'
 
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
@@ -300,8 +299,12 @@ const router = createBrowserRouter([
         element:< Computer/>
       },
       {
-        path:"/net",
-        element:<Net/>
+        path:"/shop",
+        element:<Shop/>
+      },
+      {
+        path:"/printer-sales",
+        element:<PrinterSales/>
       },
       {
         path:"/office",

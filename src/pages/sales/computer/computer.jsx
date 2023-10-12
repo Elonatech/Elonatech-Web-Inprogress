@@ -1,23 +1,27 @@
 
-import office1 from './caption/office/1-3-1-1-130x130.jpg';
-import office2 from './caption/office/2-1-2-1-130x130.jpg';
-import office3 from './caption/office/1-1-2-130x130.jpg';
-import office4 from './caption/office/1-5-1-130x130.jpg';
 
-import computer1 from './caption/computer/81blwMhVV8L._AC_SX522_-130x110.jpg';
-import computer2 from './caption/computer/download-3-130x130.jpg';
-import computer3 from './caption/computer/Apple-Macbook-MRQN2LLA-2-130x91.jpg';
-import computer4 from './caption/computer/asus-laptop-130x130.jpg';
 
-import printer1 from './caption/printer/hp1.jpg';
-import printer2 from './caption/printer/printer2.jpg';
-import printer3 from './caption/printer/printer3.jpg';
-import printer4 from './caption/printer/printer4.jpg';
+import computer1 from './caption/computer1.jpg';
+import computer2 from './caption/computer2.jpg';
+import computer3 from './caption/computer3.jpg';
+import computer4 from './caption/computer4.jpg';
+import computer5 from './caption/computer5.png';
+import computer6 from './caption/computer6.jpg';
+import computer7 from './caption/computer7.jpg';
+import computer8 from './caption/computer8.jpg';
+import computer9 from './caption/computer9.jpg';
+import computer10 from './caption/computer10.jpg';
+import computer11 from './caption/computer11.jpg';
+import computer12 from './caption/computer12.jpg';
+import computer13 from './caption/computer13.jpg';
+import computer14 from './caption/computer14.jpg';
+import computer15 from './caption/computer3.jpg';
+import computer16 from './caption/computer16.jpg';
+import computer17 from './caption/computer17.jpg';
+import computer18 from './caption/computer18.jpg';
+import computer19 from './caption/computer19.jpg';
+import computer20 from './caption/computer20.jpg';
 
-import pos1 from './caption/pos/pos1.png';
-import pos2 from './caption/pos/pos2.png';
-import pos3 from './caption/pos/pos3.jpg';
-import pos4 from './caption/pos/pos4.jpg';
 
 import './computer.css'
 
@@ -42,93 +46,28 @@ const Computer = () => {
     </section>
 
 <main class="container-fluid">
-<div class="row ">
-{/* card */} 
-<div class="col-md-9">
+<div class="row g-0 ">
+<div class="col-md-9 ">
 <section class="ftco-section" id="skills-section">
 		<div class="container">
-			<div class="row justify-content-center pt-4 pb-4">
+			<div class="row justify-content-center   pt-4 pb-4">
         <h6>SHOWING 1–20 OF 32 RESULTS</h6>
 			</div>
-			<div class="row progress-circle ">
-				{/* office equipment */}
-			<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={office1} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - Black </h5>
-               <p className='lead fs-6'>Office System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={office2} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={office3} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">50 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
-                <img src={office4} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">ACE X118H Essentials 3600-Lumen</h5>
-			   <p className='lead fs-6'>Office System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
+			<div class="row g-1 progress-circle ">
+	
 		{/* computer */}
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
                 <img src={computer1} className='img-fluid ' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">30 Meter 15 Pins VGA Cable - Black </h5>
-               <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-4">Apple IMac 4.5K 24″ – M1 – 8Cores – 256 GB SSD, – 2021</h5>
+               <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦981,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
            </div>
            </div>
@@ -136,15 +75,15 @@ const Computer = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={computer2} className='img-fluid' style={{}} alt="" />
+                <img src={computer2} className='img-fluid pt-1' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-3">APPLE IMAC 21.5-(MHK03LL/A) 2020</h5>
+			   <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦877,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>
@@ -154,13 +93,13 @@ const Computer = () => {
                 <div className="text-center take">
                 <img src={computer3} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">50 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6 pt-3'>Office System</p>
+               <h5 class="fw-normal pt-4">Apple MacBook Pro 14″ M1 Pro Chip</h5>
+			   <p className='lead fs-6 pt-3'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦1,407,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
@@ -170,30 +109,31 @@ const Computer = () => {
                 <div className="text-center take">
                 <img src={computer4} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">ACE X118H Essentials 3600-Lumen</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-3">Asus MO3450 ZENBOOK FLIP 14.0″ TOUCH Laptop</h5>
+			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦757,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
 		</div>
-		{/* printer */}
+    {/*  */}
+		{/* computer */}
 		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer1} className='img-fluid' style={{}} alt="" />
+                <img src={computer5} className='img-fluid ' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - Black </h5>
-               <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-4">Apple Macbook Pro With Apple M1 Chip -13</h5>
+               <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦907,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
            </div>
            </div>
@@ -201,31 +141,31 @@ const Computer = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer2} className='img-fluid' style={{}} alt="" />
+                <img src={computer6} className='img-fluid pt-1' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-3">Asus AMD Dual Core 8GB RAM 1TB HDD Backlit Keyboard 14″ Win 10</h5>
+			   <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦186,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>
 		 </div>
 		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+		 <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer3} className='img-fluid' style={{}} alt="" />
+                <img src={computer7} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">50 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-4">Asus E410 Intel Celeron N4020 4GB RAM 128GB EMMC 14″ Win 10 -Pink + CA</h5>
+			   <p className='lead fs-6 pt-3'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦182,700.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
@@ -233,32 +173,33 @@ const Computer = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={printer4} className='img-fluid' style={{}} alt="" />
+                <img src={computer8} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">ACE X118H Essentials 3600-Lumen</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-3">Asus X515JF-BR323T Intel Core I5 15.6″HD Win 10 2GB GRAPHICS</h5>
+			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦430,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
 		</div>
-		{/* pos */}
+    {/*  */}
+		{/* computer */}
 		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos1} className='img-fluid' style={{}} alt="" />
+                <img src={computer9} className='img-fluid ' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - Black </h5>
-               <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-4">Dell G3 GAMING 15 3500</h5>
+               <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦494,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
            </div>
            </div>
@@ -266,31 +207,31 @@ const Computer = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos2} className='img-fluid' style={{}} alt="" />
+                <img src={computer10} className='img-fluid pt-1' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-3">Dell Inspiron 13-7306-7941BLK CONVERTIBLE</h5>
+			   <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦757,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>
 		 </div>
 		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+		 <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos3} className='img-fluid' style={{}} alt="" />
+                <img src={computer11} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">50 Meter 15 Pins VGA Cable - White</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-4">Dell Inspiron 13-I5379-5043GRY-PUS 2 In 1</h5>
+			   <p className='lead fs-6 pt-3'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦462,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
@@ -298,51 +239,175 @@ const Computer = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={pos4} className='img-fluid' style={{}} alt="" />
+                <img src={computer12} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">ACE X118H Essentials 3600-Lumen</h5>
-			   <p className='lead fs-6'>Office System</p>
+               <h5 class="fw-normal pt-3">Dell Inspiron 13-I5379-7923GRY-PUS 2 In 1</h5>
+			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
+               <p className='mt-2 px-1 text-danger'>₦388,150.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
 		</div>
-		{/* gyu */}
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer13} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Dell Inspiron 14-7490-7842SLV</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦527,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer14} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Dell Inspiron15-3501BLK-PUS</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦263,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer15} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Asus MO3450 ZENBOOK FLIP 14.0″ TOUCH Laptop</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦757,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">  
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer16} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Dell Latitude 3410</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦227,700.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer17} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Dell Vostro 3400</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦263,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer18} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Dell Vostro 3500</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦352,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer19} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Dell Vostro 3501</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦263,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+		 <div class="col-lg-3 mb-4">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+                <div className="text-center take">
+                <img src={computer20} className='img-fluid' style={{}} alt="" />
+                </div>
+               <h5 class="fw-normal pt-3">Hp 14 AMD RYZEN 3 3250U 12GB RAM 1TB HDD Windows 10</h5>
+			        <p className='lead fs-6'>Computer</p>
+               <div class="stars" style={{color:'black'}}>
+               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </div>
+                <div class="d-flex justify-content-between">
+               <p className='mt-2 px-1 text-danger'>₦247,000.00</p>
+               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+              </div>
+              </div>				
+		</div>
+    {/*  */}
 		</div>
 		</div>
 	</section>
 </div>
-{/* side bar */}
-<div class="col-md-3 mb-5">
-      <div class="position-sticky" style={{top:"2rem"}}>
-        <div class="p-4 mb-3  rounded">
+<div class="col-md-3  mb-5">
+      <div class="position-sticky p-3" style={{top:"2rem"}}>
+        <div class="mb-3 mt-4 rounded">
           {/* form */}
         <form class="d-flex mb-3 pb-5 pt-5">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-          <h4 class="">categories</h4>
-          <hr className="fw-3" />
+        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-success me-5" type="submit">Search</button>
+        </form>
+          <h4 class="">Categories</h4>
           <ul className="list-unstyled">
             <li>Computers</li>
             <li>Office Equipment</li>
             <li>POS System</li>
             <li>Printers</li>
           </ul>
-
             {/* range */}
           <h4 class="">Filter by price</h4>
           <input type="range"/>
           {/* range end */}
         </div>
-        
       </div>
 </div>
-  </div>
+</div>
 </main> 
 
 </>
