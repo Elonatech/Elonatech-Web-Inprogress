@@ -1,4 +1,6 @@
 
+
+import printerHeader from './captions/printerHeader.png'
 import printer1 from './captions/printer1.jpg'
 import printer2 from './captions/printer2.jpg'
 import printer3 from './captions/printer3.jpg'
@@ -20,24 +22,14 @@ import printer18 from './captions/printer17.jpg'
 const Printers = () => {
     return (
      <>
-            <section class="mt-5 bg-dark">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p  class="text-white pt-2">We Provides Round-The-Clock Maintenance for All Network Equipment</p>
-              <p  class="text-white pt-2">we are committed to supplying you with the most reliable advice,
-                             support and services at all times, wherever you are in Nigeria.</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>
+ {/* Header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${printerHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Computer Sales</h2>
+   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
+   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+ </div>
+</div>
 
  {/*start  */}
  <main class="container-fluid">
@@ -46,14 +38,14 @@ const Printers = () => {
 <section class="ftco-section" id="skills-section">
 		<div class="container">
 			<div class="row justify-content-center   pt-4 pb-4">
-        <h6>SHOWING 1–20 OF 32 RESULTS</h6>
+        <h6 className='ms-4'>SHOWING 1–20 OF 32 RESULTS</h6>
 			</div>
 			<div class="row g-1 progress-circle ">
 				{/* office equipment */}
 			<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer1} className='img-fluid' style={{}} alt="" />
+                <img src={printer1} className='img-fluid pt-4 ' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">All-In-One Printer HP Deskjet Ink Advantage 3790</h5>
                <p className='lead fs-6'>Printer</p>
@@ -69,7 +61,7 @@ const Printers = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer2} className='img-fluid' style={{}} alt="" />
+                <img src={printer2} className='img-fluid pt-5 pb-2' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">Deskjet Ink Advantage 3835 All-In-One Color Printer</h5>
 			          <p className='lead fs-6'>Printer</p>
@@ -87,10 +79,10 @@ const Printers = () => {
                 <div className="text-center take">
                 <img src={printer3} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">HP Color LaserJet Enterprise M577dn All-In-One Laser Printer</h5>
-			         <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <h5 class="fw-normal pt-3">HP Color LaserJet M577dn All-In-One Laser Printer</h5>
+			          <p className='lead fs-6'>Printer</p>
+                <div class="stars" style={{color:'black'}}>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
                 <div class="d-flex justify-content-between">
                <p className='mt-2 px-1 text-danger'>₦1,407,000.00</p>
@@ -101,7 +93,7 @@ const Printers = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={printer4} className='img-fluid' style={{}} alt="" />
+                <img src={printer4} className='img-fluid pt-4' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP Color LaserJet Enterprise M652dn Network Printer</h5>
 			         <p className='lead fs-6'>Printer</p>
@@ -114,12 +106,13 @@ const Printers = () => {
               </div>
               </div>				
 		</div>
+    {/*  */}
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer5} className='img-fluid ' style={{}} alt="" />
+                <img src={printer5} className='img-fluid pt-5 ' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">HP Color LaserJet M454DW</h5>
+               <h5 class="fw-normal pt-3">HP Color LaserJet M454DW</h5>
                <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -133,9 +126,9 @@ const Printers = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer6} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={printer6} className='img-fluid pt-5 pb-4' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">HP Color LaserJet M553DN</h5>
+               <h5 class="fw-normal pt-4">HP Color LaserJet M553DN</h5>
 			        <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -149,7 +142,7 @@ const Printers = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={printer8} className='img-fluid' style={{}} alt="" />
+                <img src={printer8} className='img-fluid pt-5 pb-2' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP Color LaserJet Printer 255DW</h5>
 			        <p className='lead fs-6'>Printer</p>
@@ -165,9 +158,9 @@ const Printers = () => {
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer9} className='img-fluid' style={{}} alt="" />
+                <img src={printer9} className='img-fluid pt-4' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-5">HP DeskJet Plus 4120 All-In-One Printer</h5>
+               <h5 class="fw-normal pt-3">HP DeskJet Plus 4120 All-In-One Printer</h5>
                <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -178,13 +171,14 @@ const Printers = () => {
            </div>
            </div>
 		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer10} className='img-fluid pt-2' style={{}} alt="" />
+       {/*  */}
+	 <div class="col-lg-3 mb-4">
+			<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+            <div className="text-center take">
+                <img src={printer10} className='img-fluid pt-5 pb-3' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-5">HP Color LaserJet M454DW</h5>
-			   <p className='lead fs-6'>Printer</p>
+			         <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -192,15 +186,15 @@ const Printers = () => {
                <p className='mt-2 px-1 text-danger'>₦307,000.00</p>
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
-              </div>
+          </div>
 		 </div>
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer12} className='img-fluid' style={{}} alt="" />
+                <img src={printer12} className='img-fluid pt-3' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-5">HP Ink Tank WL 415 All In One Printer</h5>
-			   <p className='lead fs-6'>Printer</p>
+               <h5 class="fw-normal pb-1">HP Ink Tank WL 415 All In One Printer</h5>
+			       <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -212,24 +206,24 @@ const Printers = () => {
 		</div>
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
-                <img src={printer13} className='img-fluid' style={{}} alt="" />
+                <div className="text-center take pt-1">
+                <img src={printer13} className='img-fluid pt-5 pb-3 ' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">HP LaserJet Enterprise M507dn</h5>
-			   <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
+                <h5 class="fw-normal pt-3">HP LaserJet Enterprise M507dn</h5>
+			          <p className='lead fs-6'>Printer</p>
+                <div class="stars" style={{color:'black'}}>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
                 <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦357,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+                <p className='mt-2 px-1 text-danger'>₦357,000.00</p>
+                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
 		</div>
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer14} className='img-fluid pt-2' style={{}} alt="" />
+                <div className="text-center take pt-3 pb-2">
+                <img src={printer14} className='img-fluid pt-1' style={{ height:"9rem"}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP LaserJet Enterprise M607n – K0Q14A</h5>
                <p className='lead fs-6'>Printer</p>
@@ -242,10 +236,11 @@ const Printers = () => {
            </div>
            </div>
 		   </div>
+       {/*  */}
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={printer15} className='img-fluid pt-2' style={{}} alt="" />
+                <img src={printer15} className='img-fluid pt-5' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-4">HP LaserJet Enterprise M607n – K0Q14A</h5>
 			         <p className='lead fs-6'>Printer</p>
@@ -260,8 +255,8 @@ const Printers = () => {
 		 </div>
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer16} className='img-fluid pt-3' style={{}} alt="" />
+                <div className="text-center take pb-4 pt-3">
+                <img src={printer16} className='img-fluid pt-3' style={{height:"9rem"}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP LaserJet MFP M433a (1VR14A)</h5>
 			   <p className='lead fs-6'>Printer</p>
@@ -277,10 +272,10 @@ const Printers = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={printer17} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={printer17} className='img-fluid pt-5 pb-4' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">HP LaserJet Enterprise M712DN Printer</h5>
-			   <p className='lead fs-6'>Printer</p>
+			         <p className='lead fs-6'>Printer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -310,13 +305,21 @@ const Printers = () => {
             <li>POS System</li>
             <li>Printers</li>
           </ul>
-            {/* range */}
           <h4 class="">Filter by price</h4>
           <input type="range"/>
-          {/* range end */}
         </div>
       </div>
+      <div className="container">
+       <div className="row">
+      <div className="col-md-12">
+      <label for="customRange3" class="form-label">Example range</label>
+      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3"/>
+       </div>
+  </div>
 </div>
+  
+</div>
+
 </div>
 </main> 
  {/* end */}

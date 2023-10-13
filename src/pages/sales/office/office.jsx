@@ -1,4 +1,4 @@
-
+import officeHeader from './captions/officeHeader1.jpg'
 import office1 from './captions/office1.jpg'
 import office2 from './captions/office2.jpg'
 import office3 from './captions/office3.jpg'
@@ -23,24 +23,14 @@ import office20 from './captions/office20.jpg'
 const Office = () => {
     return (
      <>
-         <section class="mt-5 bg-dark">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p  class="text-white pt-2">We Provides Round-The-Clock Maintenance for All Network Equipment</p>
-              <p  class="text-white pt-2">we are committed to supplying you with the most reliable advice,
-                             support and services at all times, wherever you are in Nigeria.</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>
+{/* Header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${officeHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Office Equipment</h2>
+   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
+   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+ </div>
+</div>
 
 {/* start */}
 <main class="container-fluid">
@@ -52,11 +42,11 @@ const Office = () => {
         <h6>SHOWING 1–20 OF 32 RESULTS</h6>
 			</div>
 			<div class="row g-1 progress-circle ">
-				{/* office equipment */}
+				{/*  */}
 			<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office1} className='img-fluid' style={{}} alt="" />
+                <img src={office1} className='img-fluid pt-4' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - Black </h5>
                <p className='lead fs-6'>Office System</p>
@@ -72,7 +62,7 @@ const Office = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office2} className='img-fluid' style={{}} alt="" />
+                <img src={office2} className='img-fluid pt-4' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">5 Meter 15 Pins VGA Cable – White</h5>
 			   <p className='lead fs-6'>Office Equipment</p>
@@ -88,7 +78,7 @@ const Office = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office3} className='img-fluid' style={{}} alt="" />
+                <img src={office3} className='img-fluid pt-4' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">50 Meter 15 Pins VGA Cable – Whit</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
@@ -104,7 +94,7 @@ const Office = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={office4} className='img-fluid' style={{}} alt="" />
+                <img src={office4} className='img-fluid pt-5' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">8 Digits Price Tag Gun</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
@@ -117,7 +107,7 @@ const Office = () => {
               </div>
               </div>				
 		</div>
-		{/* computer */}
+		{/*  */}
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
@@ -137,7 +127,7 @@ const Office = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office6} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={office6} className='img-fluid ' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">Acer H6530BD WUXGA DLP Home Theater Projector 3500 Lumens0</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
@@ -155,7 +145,7 @@ const Office = () => {
                 <div className="text-center take">
                 <img src={office7} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">Barcode Label Sticker 60x50mm 2X</h5>
+               <h5 class="fw-normal pt-2">Barcode Label Sticker 60x50mm 2X</h5>
 			        <p className='lead fs-6 pt-3'>Office Equipment</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -182,7 +172,7 @@ const Office = () => {
               </div>
               </div>				
 		</div>
-		{/* printer */}
+		{/*  */}
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
@@ -202,7 +192,7 @@ const Office = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office10} className='img-fluid pt-2' style={{}} alt="" />
+                <img src={office10} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-5">Fujitsu Network Scanner N7100</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
@@ -216,11 +206,11 @@ const Office = () => {
               </div>
 		 </div>
 		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
                 <img src={office11} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-5">Fujitsu Fi-7160 Image/Document Scanner (With Warranty)</h5>
+               <h5 class="fw-normal pt-4">Fujitsu Fi-7160 Image/Document Scanner (With Warranty)</h5>
 			        <p className='lead fs-6'>Office Equipment</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -236,7 +226,7 @@ const Office = () => {
                 <div className="text-center take">
                 <img src={office12} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Epson Perfection V19 Color Scanner</h5>
+               <h5 class="fw-normal pt-5">Epson Perfection V19 Color Scanner</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -247,7 +237,7 @@ const Office = () => {
               </div>
               </div>				
 		</div>
-		{/* pos */}
+		{/* */}
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
@@ -267,7 +257,7 @@ const Office = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office14} className='img-fluid pt-2' style={{}} alt="" />
+                <img src={office14} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-4">IOGEAR RedPoint Pro – 2.4GHz Gyroscopic Presentation Mouse With Laser Pointer</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
@@ -283,9 +273,9 @@ const Office = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={office15} className='img-fluid pt-3' style={{}} alt="" />
+                <img src={office15} className='img-fluid pt-5 pb-4' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Logitech GROUP</h5>
+               <h5 class="fw-normal">Logitech GROUP</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -299,9 +289,9 @@ const Office = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={office16} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={office16} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Logitech HD Pro Webcam C920 1080p Video Call & Recording</h5>
+               <h5 class="fw-normal pt-4">Logitech HD Pro Webcam C920 1080p Video Call & Recording</h5>
 			         <p className='lead fs-6'>Office Equipment</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -312,6 +302,7 @@ const Office = () => {
               </div>
               </div>				
 		</div>
+    {/*  */}
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
@@ -363,9 +354,9 @@ const Office = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={office20} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={office20} className='img-fluid pt-3 pb-1' style={{}} alt="" />
                 </div>
-                <h5 class="fw-normal pt-3">Projector Stand</h5>
+                <h5 class="fw-normal pt-4">Projector Stand</h5>
 			          <p className='lead fs-6'>Office Equipment</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>

@@ -1,4 +1,5 @@
 
+import posHeader from './captions/posH.jpg'
 import pos1 from './captions/pos1.png'
 import pos2 from './captions/pos2.jpg'
 import pos3 from './captions/pos3.jpg'
@@ -14,29 +15,17 @@ import pos10 from './captions/pos9.png'
 
 
 
-
-
 const Pos = () => {
     return (
  <>
-    <section class="mt-5 bg-dark">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p  class="text-white pt-2">We Provides Round-The-Clock Maintenance for All Network Equipment</p>
-              <p  class="text-white pt-2">we are committed to supplying you with the most reliable advice,
-                             support and services at all times, wherever you are in Nigeria.</p>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>
+{/* Header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${posHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Point Of Sale</h2>
+   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
+   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+ </div>
+</div>
 
 
 	<main class="container-fluid">
@@ -45,14 +34,14 @@ const Pos = () => {
 <section class="ftco-section" id="skills-section">
 		<div class="container">
 			<div class="row justify-content-center   pt-4 pb-4">
-        <h6>SHOWING 1–20 OF 32 RESULTS</h6>
+        <h6 className='ms-4'>SHOWING 1 OF 1 RESULTS</h6>
 			</div>
 			<div class="row g-1 progress-circle ">
 				{/* office equipment */}
 			<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos1} className='img-fluid' style={{}} alt="" />
+                <img src={pos1} className='img-fluid' style={{paddingTop:"18.7px"}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">BIXOLON BARCODE PRINTER XD5-40DK </h5>
                <p className='lead fs-6'>Pos System</p>
@@ -68,7 +57,7 @@ const Pos = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos2} className='img-fluid' style={{}} alt="" />
+                <img src={pos2} className='img-fluid pt-3' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">POS THERMAL PAPER 57MM X 38MM PER ROLL</h5>
 			   <p className='lead fs-6'>Pos System</p>
@@ -117,9 +106,9 @@ const Pos = () => {
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos5} className='img-fluid ' style={{}} alt="" />
+                <img src={pos5} className='img-fluid pt-5 pb-5' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">SAM4S CASH DRAWER</h5>
+               <h5 class="fw-normal">SAM4S CASH DRAWER</h5>
                <p className='lead fs-6'>Pos System</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -131,11 +120,11 @@ const Pos = () => {
            </div>
 		   </div>
 		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+				<div class=" card mx-1 p-3 shadow-lg  bg-body rounded">
                 <div className="text-center take">
-                <img src={pos6} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={pos6} className='img-fluid pt-4' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">SAM4S ELLIX-30 THERMAL RECEIPT PRINTER</h5>
+               <h5 class="fw-normal pt-4">SAM4S ELLIX-30 THERMAL RECEIPT PRINTER</h5>
 			        <p className='lead fs-6'>Pos System</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -147,7 +136,7 @@ const Pos = () => {
               </div>
 		 </div>
 		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+		 <div class=" mx-1  border shadow-lg p-3 pt-5 bg-body rounded">
                 <div className="text-center take">
                 <img src={pos8} className='img-fluid' style={{}} alt="" />
                 </div>
@@ -164,11 +153,11 @@ const Pos = () => {
 		</div>
 		{/* printer */}
 		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+	            <div class=" mx-1  border shadow-lg p-3 pt-5 bg-body rounded">
                 <div className="text-center take">
-                <img src={pos9} className='img-fluid' style={{}} alt="" />
+                <img src={pos9} className='img-fluid pt-3 ' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-5">SAM4S ELLIX-30 THERMAL RECEIPT PRINTER</h5>
+               <h5 class="fw-normal ">SAM4S ELLIX-30 THERMAL RECEIPT PRINTER</h5>
                <p className='lead fs-6'>Pos System</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>

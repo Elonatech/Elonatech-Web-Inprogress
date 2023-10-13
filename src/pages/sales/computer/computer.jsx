@@ -1,6 +1,6 @@
 
 
-
+import computerHeader from './caption/computerHeader.webp'
 import computer1 from './caption/computer1.jpg';
 import computer2 from './caption/computer2.jpg';
 import computer3 from './caption/computer3.jpg';
@@ -28,22 +28,14 @@ import './computer.css'
 const Computer = () => {
     return (
  <>
-
-<section class="mt-5 bg-dark">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>
+{/* Header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${computerHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Computer Sales</h2>
+   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
+   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+ </div>
+</div>
 
 <main class="container-fluid">
 <div class="row g-0 ">
@@ -125,7 +117,7 @@ const Computer = () => {
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
-                <img src={computer5} className='img-fluid ' style={{}} alt="" />
+                <img src={computer5} className='img-fluid pt-4' style={{paddingBottom:"25px"}} alt="" />
                 </div>
                <h5 class="fw-normal pt-4">Apple Macbook Pro With Apple M1 Chip -13</h5>
                <p className='lead fs-6'>Computer</p>
@@ -141,7 +133,7 @@ const Computer = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={computer6} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={computer6} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">Asus AMD Dual Core 8GB RAM 1TB HDD Backlit Keyboard 14″ Win 10</h5>
 			   <p className='lead fs-6'>Computer</p>
@@ -159,8 +151,8 @@ const Computer = () => {
                 <div className="text-center take">
                 <img src={computer7} className='img-fluid' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">Asus E410 Intel Celeron N4020 4GB RAM 128GB EMMC 14″ Win 10 -Pink + CA</h5>
-			   <p className='lead fs-6 pt-3'>Computer</p>
+               <h5 class="fw-normal">Asus E410 Intel Celeron N4020 4GB RAM 128GB</h5>
+			         <p className='lead fs-6 pt-4'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
@@ -173,9 +165,9 @@ const Computer = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={computer8} className='img-fluid' style={{}} alt="" />
+                <img src={computer8} className='img-fluid pt-4' style={{paddingBottom:"12px"}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Asus X515JF-BR323T Intel Core I5 15.6″HD Win 10 2GB GRAPHICS</h5>
+               <h5 class="fw-normal pt-4">Asus X515JF-BR323T Intel Core I5 15.6″HD Win 10 2GB GRAPHICS</h5>
 			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -189,11 +181,11 @@ const Computer = () => {
     {/*  */}
 		{/* computer */}
 		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
+	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={computer9} className='img-fluid ' style={{}} alt="" />
+                <img src={computer9} className='img-fluid pt-5 pb-4' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-4">Dell G3 GAMING 15 3500</h5>
+               <h5 class="fw-normal pt-1">Dell G3 GAMING 15 3500</h5>
                <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -207,9 +199,9 @@ const Computer = () => {
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
-                <img src={computer10} className='img-fluid pt-1' style={{}} alt="" />
+                <img src={computer10} className='img-fluid pt-5 pb-4' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Dell Inspiron 13-7306-7941BLK CONVERTIBLE</h5>
+               <h5 class="fw-normal pt-4">Dell Inspiron 13-7306-7941BLK CONVERTIBLE</h5>
 			   <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -252,9 +244,10 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-		 <div class="col-lg-3 mb-4">
+    {/*  */}
+		 <div class="col-lg-3 mb-4" >
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
+                <div className="text-center take" style={{height:"10rem"}}>
                 <img src={computer13} className='img-fluid' style={{}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">Dell Inspiron 14-7490-7842SLV</h5>
@@ -268,7 +261,7 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-		 <div class="col-lg-3 mb-4">
+		 <div class="col-lg-3 mb-4" style={{height:"10rem"}}>
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
                 <img src={computer14} className='img-fluid' style={{}} alt="" />
@@ -284,8 +277,8 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+		 <div class="col-lg-3 mb-4" >
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded" style={{height:"22.4rem"}}>
                 <div className="text-center take">
                 <img src={computer15} className='img-fluid' style={{}} alt="" />
                 </div>
@@ -301,7 +294,7 @@ const Computer = () => {
               </div>				
 		</div>
 		 <div class="col-lg-3 mb-4">  
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded" style={{height:"22.4rem"}}>
                 <div className="text-center take">
                 <img src={computer16} className='img-fluid' style={{}} alt="" />
                 </div>
@@ -316,12 +309,13 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
+    {/*  */}
 		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
+		 <div class=" mx-1 border shadow-lg p-3 bg-body rounded" style={{}}>
                 <div className="text-center take">
-                <img src={computer17} className='img-fluid' style={{}} alt="" />
+                <img src={computer17} className='img-fluid' style={{paddingTop:"2.5rem"}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Dell Vostro 3400</h5>
+               <h5 class="fw-normal pt-5">Dell Vostro 3400</h5>
 			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -335,9 +329,9 @@ const Computer = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={computer18} className='img-fluid' style={{}} alt="" />
+                <img src={computer18} className='img-fluid pt-5' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Dell Vostro 3500</h5>
+               <h5 class="fw-normal">Dell Vostro 3500</h5>
 			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -351,9 +345,9 @@ const Computer = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={computer19} className='img-fluid' style={{}} alt="" />
+                <img src={computer19} className='img-fluid pt-5' style={{}} alt="" />
                 </div>
-               <h5 class="fw-normal pt-3">Dell Vostro 3501</h5>
+               <h5 class="fw-normal pt-5">Dell Vostro 3501</h5>
 			        <p className='lead fs-6'>Computer</p>
                <div class="stars" style={{color:'black'}}>
                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -367,7 +361,7 @@ const Computer = () => {
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take">
-                <img src={computer20} className='img-fluid' style={{}} alt="" />
+                <img src={computer20} className='img-fluid' style={{paddingTop:"1.2rem"}} alt="" />
                 </div>
                <h5 class="fw-normal pt-3">Hp 14 AMD RYZEN 3 3250U 12GB RAM 1TB HDD Windows 10</h5>
 			        <p className='lead fs-6'>Computer</p>
