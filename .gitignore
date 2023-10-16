@@ -4,7 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+<<<<<<< HEAD
 
+=======
+src/pages/sales/office/captions/Power.Book.IV.Force.S02E07.(NKIRI.COM).mkv
+>>>>>>> 691b1f1 (update pages)
 # testing
 /coverage
 
