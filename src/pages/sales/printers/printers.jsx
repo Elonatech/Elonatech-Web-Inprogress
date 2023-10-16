@@ -25,9 +25,9 @@ const Printers = () => {
  {/* Header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${printerHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Computer Sales</h2>
-   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
-   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+   <h2 class=" mt-5 text-white text-center">Printers, Copiers and Scanners</h2>
+   <h5 class=" mt-4 text-white text-center">Printing has become a multi-faceted commercial offset and digital print facility</h5>
+   <p class="lead text-white text-center">From home use to small businesses, and to large businesses, we’ve got all the best All-in-One printers you need.</p>
  </div>
 </div>
 
