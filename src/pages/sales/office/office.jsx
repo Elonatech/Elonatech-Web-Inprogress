@@ -27,8 +27,8 @@ const Office = () => {
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${officeHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Office Equipment</h2>
-   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
-   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+   <h5 class=" mt-4 text-white text-center">Do twice as much work simultaneously with quality office equipment</h5>
+   <p class="lead text-white text-center">Increase productivity and the overall operating speed of your office operations and staff overall performance.</p>
  </div>
 </div>
 

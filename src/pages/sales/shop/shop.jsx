@@ -1,4 +1,4 @@
-
+import shopHeader from './caption/shopHeader.jpg'
 import office1 from './caption/office/1-3-1-1-130x130.jpg';
 import office2 from './caption/office/2-1-2-1-130x130.jpg';
 import office3 from './caption/office/1-1-2-130x130.jpg';
@@ -28,21 +28,14 @@ const Shop = () => {
         <>
 
         
-<section class="mt-5 bg-dark">
-      <div class="container" >
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center">
-            <div class="w-100 py-4" style={{marginTop:"100px"}}>
-              <h2 class="text-white">We Provides Round-The-Clock Maintenance for All Network Equipment</h2>
-              <p class="mb-0 pt-2"><a href="#" class="btn btn-success py-3 px-4">Contact Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-             <img src="img/" class="img-fluid" alt=""/> 
-          </div>
-        </div>
-      </div>
-    </section>
+{/* Header */}
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${shopHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Shop Products</h2>
+   <h5 class=" mt-4 text-white text-center">Get what you need to run your business</h5>
+   <p class="lead text-white text-center">Smart business people need quality and reliable hardware, software, service, and support for the day to day running of their businesses</p>
+ </div>
+</div>
 
 <main class="container-fluid">
 <div class="row g-0 ">

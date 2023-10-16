@@ -22,8 +22,8 @@ const Pos = () => {
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${posHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Point Of Sale</h2>
-   <h5 class=" mt-4 text-white text-center">Content is key! Quality content is part of all forms of marketing,</h5>
-   <p class="lead text-white text-center">Marketing today is impossible without great content and should be integrated into marketing processes.</p>
+   <h5 class=" mt-4 text-white text-center">A set of devices, software and payment services merchants use to make sales in person.</h5>
+   <p class="lead text-white text-center">Calculates a customer's purchase amount, adds sales tax, processes the payment and logs the time and date of the transaction.</p>
  </div>
 </div>
 
