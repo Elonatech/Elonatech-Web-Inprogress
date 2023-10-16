@@ -295,7 +295,7 @@ const router = createBrowserRouter([
       },
       // sales
       {
-        path:"/computer",
+        path:"/computers",
         element:< Computer/>
       },
       {
@@ -307,7 +307,7 @@ const router = createBrowserRouter([
         element:<PrinterSales/>
       },
       {
-        path:"/office",
+        path:"/office-equipment",
         element:<Office/>
       },
       {
