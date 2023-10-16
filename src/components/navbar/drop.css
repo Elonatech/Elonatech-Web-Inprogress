@@ -1,0 +1,36 @@
+
+ .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+.dropdown-item:hover{
+     background-color: #3B71CA ;
+     border-radius: 100px;
+     color: white;
+}
+
+.van:hover{
+   width: 300px;
+    height: 400px;
+ }
+
+
+.first-drop{
+position: absolute;
+left: -500px;
+width: 1020px;
+top: 50px;
+transition-delay: 2s;
+ }
+
+
+ 
+@media (min-width: 260px) and (max-width: 740px) {
+.first-drop{
+  width: 340px;
+}
+}
+
+
+

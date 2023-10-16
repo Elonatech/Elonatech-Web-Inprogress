@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="19px" viewBox="0 0 34 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>atoms/icons/Battery</title>
+    <g id="PROD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Meet-the-System-(desktop)" transform="translate(-752.000000, -705.000000)" fill="#0F2648">
+            <g id="ICON-BLOCKS-Copy" transform="translate(111.000000, 664.000000)">
+                <g id="Block-3" transform="translate(608.000000, 0.000000)">
+                    <g id="content" transform="translate(32.000000, 32.000000)">
+                        <g id="atoms/icons/Battery" transform="translate(1.726048, 8.984252)">
+                            <g id="Group-3" transform="translate(0.000000, 0.000000)">
+                                <path d="M0.0739523979,18.4657476 L26.6239524,18.4657476 L26.6239524,0.0157475797 L0.0739523979,0.0157475797 L0.0739523979,18.4657476 Z M1.73329531,16.7885063 L24.9646095,16.7885063 L24.9646095,1.69298885 L1.73329531,1.69298885 L1.73329531,16.7885063 Z" id="Fill-1"></path>
+                                <polygon id="Fill-2" points="29.3239524 12.6157476 32.4739524 12.6157476 32.4739524 5.86574758 29.3239524 5.86574758"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

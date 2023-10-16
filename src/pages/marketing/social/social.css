@@ -1,0 +1,38 @@
+/*  */
+
+ .text {
+  max-width: 600px;
+  max-height: 70px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 1.1rem;
+}
+.text-btn {
+  appearance: none;
+  background-color:#014e78;
+  color:white;
+  padding: 0.5em;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;  
+  -o-border-radius: 0.25em;
+}
+.text-btn::before {
+  content: "Read More";
+  text-transform: capitalize;
+}
+.text-btn:checked::before {
+  content: "Read Less";
+}
+.text:has(+ .text-btn:checked) {
+  max-height: none;
+}
+
+ 
+
+
+
