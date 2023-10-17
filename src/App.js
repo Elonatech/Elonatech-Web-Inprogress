@@ -74,6 +74,8 @@ import PrinterSales from './pages/sales/printers/printers'
 
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
+import Infinite from './pages/sales/infinite/infinite';
+import Grid from './pages/sales/grid/grid';
 
 
 const Layout = () =>{
@@ -303,6 +305,11 @@ const router = createBrowserRouter([
         element:<Shop/>
       },
       {
+        path:"/infinite",
+        element:<Infinite/>
+      },
+      
+      {
         path:"/printer-sales",
         element:<PrinterSales/>
       },
@@ -318,6 +325,7 @@ const router = createBrowserRouter([
         path:"/printer",
         element:<Printer/>
       },
+ 
       // single product
       {
         path:"/pro",
@@ -325,6 +333,10 @@ const router = createBrowserRouter([
       },
   ],
 
+},
+{
+  path:"/grid",
+  element:<Grid/>
 },
 
 ]);
