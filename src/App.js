@@ -25,6 +25,7 @@ import Cctv from './components/cctv/cctv';
 import Internet from './components/internet/internet';
 import Security from './components/security/security';
 import Time from './components/time/time';
+import Blog from './components/blog/blog';
 
 // telecom pages
 import Voip from './pages/telecom/voip';
@@ -182,6 +183,10 @@ const router = createBrowserRouter([
     {
       path:'/time',
       element:<Time/>
+    },
+    {
+      path:'/blog',
+      element:<Blog/>
     },
     {
       path:'/surveilance',
