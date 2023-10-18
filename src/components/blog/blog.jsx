@@ -7,6 +7,7 @@ import TroubleShoot from './captions/troubleshoot.jpg'
 import Security from './captions/security.jpg'
 import Network from './captions/network.png'
 import Cooperate from './captions/cooperate.png'
+import { error } from 'jquery';
 
 
 const Blog = () => {
@@ -182,6 +183,8 @@ const Blog = () => {
 </div>
 
 </div>
+
+
     </>
     );
 }

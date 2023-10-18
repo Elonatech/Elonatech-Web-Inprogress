@@ -77,6 +77,7 @@ import PrinterSales from './pages/sales/printers/printers'
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 import Infinite from './pages/sales/infinite/infinite';
 import Grid from './pages/sales/grid/grid';
+import BlogDetails from './components/blogDetails/blogDetails';
 
 
 const Layout = () =>{
@@ -187,6 +188,10 @@ const router = createBrowserRouter([
     {
       path:'/blog',
       element:<Blog/>
+    },
+    {
+      path:'/blog/:id',
+      element:<BlogDetails/>
     },
     {
       path:'/surveilance',
