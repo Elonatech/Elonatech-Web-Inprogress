@@ -7,7 +7,7 @@ import TroubleShoot from './captions/troubleshoot.jpg'
 import Security from './captions/security.jpg'
 import Network from './captions/network.png'
 import Cooperate from './captions/cooperate.png'
-import { error } from 'jquery';
+import { Link } from 'react-router-dom';
 
 
 const Blog = () => {
@@ -39,8 +39,8 @@ const Blog = () => {
                        <div className="col-md-6">
                         <div className="p-4">
                         <h6 className='fs-6 pb-3'>TRENDS</h6>
-                        <h5 className='pb-3' style={{color:"#34548c"}}>Computer Repair and Remote Support</h5>
-                        <p className='fs-6 pb-4'>Consequently, it could be quite challenging for you this period working from home if you’ve got a challenge with your…</p>
+                        <h5 className='pb-3' style={{color:"#34548c"}}> <Link className='text-decoration-none' to={"/blog/74665573"}>Computer Repair and Remote Support</Link></h5>
+                        <p className='fs-6 pb-4'> Consequently, it could be quite challenging for you this period working from home if you’ve got a challenge with your…</p>
                         <p className='fs-6'>ADMIN / AUGUST 26, 2021</p>
                         </div>
                     </div>

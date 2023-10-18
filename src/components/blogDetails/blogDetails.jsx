@@ -1,13 +1,13 @@
-import blog from './captions/56786414-content-marketing-text-as-memo-on-notebook.jpg'
+import blog from './captions/56786414-content-marketing-text-as-memo-on-notebook.jpg';
+import { Link } from 'react-router-dom';
 
 const BlogDetails = () => {
     return (
         <>
-<div class="container-fluid bg-secondary py-5 " style={{height:"500px" ,marginBottom:"45px", backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url()`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+<div class="container-fluid bg-secondary py-5 " style={{height:"300px" ,marginBottom:"45px", backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url()`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Blog Details</h2>
+   <h2 class=" mt-2  text-white text-center">Blog Details</h2>
    <h5 class=" mt-4 text-white text-center">Have what you need to run your business with maximum efficiency and reliability</h5>
-   <p class="lead text-white text-center">Properly used, a computer can help you become more organized, work more efficiently, and accomplish more tasks.</p>
  </div>
 </div>
 
@@ -19,6 +19,11 @@ const BlogDetails = () => {
         <div className="row">
     {/*  */}
         <div className="col-md-12 mt-4">
+      
+        <ol class="breadcrumb ">
+            <li class="breadcrumb-item"> <Link className='text-dark' style={{textDecoration:"none"}} to={'/'}>Home</Link></li>
+            <li class="breadcrumb-item"> <Link className='text-dark' to={'/blog'}   style={{textDecoration:"none"}} >Blog</Link></li> 
+        </ol>
             <h3 className='fw-bold'>Office System Setup</h3>
             <div className="shadow mt-4 mb-5">
                 <div className="row">
