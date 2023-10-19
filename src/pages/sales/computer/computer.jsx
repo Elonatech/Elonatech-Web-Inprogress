@@ -398,6 +398,8 @@ const Computer = () => {
           <h4 class="">Filter by price</h4>
           <input type="range"/>
           {/* range end */}
+
+
         </div>
       </div>
 </div>
