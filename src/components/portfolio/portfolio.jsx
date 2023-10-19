@@ -1,8 +1,8 @@
 import './css/portfolio.css';
-import project1 from './project-1.jpg'
-import project2 from './project-2.jpg'
-import project3 from './project-3.jpg'
-import project4 from './project-4.jpg'
+import project1 from './caption/project-1.jpg'
+import project2 from './caption/project-2.jpg'
+import project3 from './caption/project-3.jpg'
+import project4 from './caption/project-4.jpg'
 
 
 
@@ -106,7 +106,224 @@ const Portfolio = () => {
             </div>
              </div>
 </div>
-    
+    {/*  */}
+
+
+
+{/* feature */}
+<section id="features" class="features mb-5">
+      <div class="container mb-5" data-aos="fade-up">
+        <ul class="nav nav-tabs row gy-4 d-flex">
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-code-slash color-cyan"></i>
+              <h4>Programming</h4>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>OS</h4>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-nut color-teal"></i>
+              <h4>DD</h4>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-command color-red"></i>
+              <h4>Firmware</h4>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+              <i class="bi bi-x-diamond color-blue"></i>
+              <h4>BIOS & UEFI</h4>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+              <i class="bi bi-map color-orange"></i>
+              <h4>Utilities</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+               {/*  */}
+               <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style={{width:"380px"}}>
+               <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+  
+                 </a>
+                 {/*  */}
+    <div class="list-group list-group-flush border-bottom scrollarea">
+      <a href="#michael" class="list-group-item list-group-item-action active lh-sm" aria-current="true">
+        <div class="col-10 mb-1 p-2 ">Some placeholder content in a paragraph below the heading and date.</div>
+      </a>
+      <a href="#john" class="list-group-item list-group-item-action py-3 lh-sm">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">List group item heading</strong>
+          <small class="text-body-secondary">Tues</small>
+        </div>
+        <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">List group item heading</strong>
+          <small class="text-body-secondary">Mon</small>
+        </div>
+        <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">List group item heading</strong>
+          <small class="text-body-secondary">Wed</small>
+        </div>
+        <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">List group item heading</strong>
+          <small class="text-body-secondary">Tues</small>
+        </div>
+        <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1">List group item heading</strong>
+          <small class="text-body-secondary">Mon</small>
+        </div>
+        <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+      </a>
+    </div>
+  </div> 
+
+
+               {/*  */}
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h4>Operating system</h4>
+
+                <p class="fst-italic">
+                An operating system is system software that provides a platform between computer hardware, application software, and end-users. 
+                It is pre-installed on devices and allows them to be identified and then function. OS is the first thing to be loaded when a system is started.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> The OS keeps the system and programs safe and secure through authentication.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  Allocates and deallocates resources.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> When more than one process runs on the system the OS decides how and when a process will use the CPU.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                {/* <img src={f2} alt="" style={{height:"19rem"}} class="img-fluid"/> */}
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h4>Device Drivers</h4>
+                <p class="fst-italic">
+                A Device Driver is system software that operates or controls a particular device attached to a computer. 
+                It is the device drivers who make it possible for all the external devices to perform their tasks. 
+                Most of the hardware comes with pre-installed drivers in it. However, if the device is new to the system, then the user may have to download the drivers.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Device drivers enable peripheral devices, such as printers or keyboards, to interact with the computer.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Controlling the hardware is only possible if developers can initialize and communicate with the hardware.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> The device driver acts as a pipe between the higher-level application and the lower-level hardware or firmware for data transfer.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                {/* <img src={f3} alt="" class="img-fluid"/> */}
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h4>Firmware</h4>
+                <p class="fst-italic">
+                 Firmware is an operational software stored in a flash, ROM, EPROM for the OS to identify it.
+                 The firmware provides instructions on how the device should be operated. Unlike other software, firmware can not be manipulated, changed, or deleted by the end-users. 
+                 They remain on the device.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i>  Protect against malicious firmware and the best defenses against firmware attacks is purchasing hardware with built-in firmware security.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Constantly update firmware.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Register hardware devices to get the latest firmware updates, enterprises should register all hardware purchases..</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                {/* <img src={f4} alt=""  style={{height:"18rem"}} class="img-fluid"/> */}
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h4>BIOS & UEFI</h4>
+                <p class="fst-italic">
+                BIOS (Basic Input/Output System) or the new UEFI (Unified Extended Firmware Software) gets the computer system started when we turn it on.
+                BIOS also manages the flow of information between operating systems and the attached devices.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> UEFI supports drive sizes upto 9 zettabytes, whereas BIOS only supports 2.2 terabytes.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> UEFI provides faster boot time..</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  UEFI has discrete driver support, while BIOS has drive support stored in its ROM, so updating BIOS firmware is a bit difficult.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                {/* <img src={f5} alt="" class="img-fluid"/> */}
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h4>Utilities</h4>
+                <p class="fst-italic">
+                Utilities are the type of system software that is present between user and application software. 
+                These are the programs designed to configure, analyze, optimize and maintain tasks of the computer. 
+                Their task varies from disk fragmentation to data security.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i>  An antivirus is a utility software that helps to keep the computer virus-free.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Utility software are used to manage data on disks.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  Utility software helps to back up the files, folders, databases, or complete disks..</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                {/* <img src={f6} alt="" class="img-fluid"/> */}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+</section>     
+
+
+
+
+
 
 {/* why choose us */}
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -159,108 +376,7 @@ const Portfolio = () => {
             </div>
         </div>
     </div>
-</div>
-
-
-
-{/* frequently questions  */}
-<section id="faq" class="faq mb-4">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="content px-xl-5">
-              <h3>Frequently Asked <strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-
-            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <span class="num">1.</span>
-                    Non consectetur a erat nam at lectus urna duis?
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <span class="num">2.</span>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    <span class="num">3.</span>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                    <span class="num">4.</span>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                    <span class="num">5.</span>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                  </button>
-                </h3>
-                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-  </section>
-
-            
+</div>            
     </>
     );
 }

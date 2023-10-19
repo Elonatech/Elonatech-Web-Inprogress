@@ -116,7 +116,6 @@ const Software = () => {
                   <li><i class="bi bi-check-circle-fill"></i> The OS keeps the system and programs safe and secure through authentication.</li>
                   <li><i class="bi bi-check-circle-fill"></i>  Allocates and deallocates resources.</li>
                   <li><i class="bi bi-check-circle-fill"></i> When more than one process runs on the system the OS decides how and when a process will use the CPU.</li>
-                  {/* <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li> */}
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">

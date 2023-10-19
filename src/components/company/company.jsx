@@ -127,14 +127,14 @@ const Company = () => {
 <div className="container-fluid" style={{backgroundColor:"#000000", marginTop:"250px"}}>
 <div className="container" style={{position:"relative" , bottom:"160px"}}>
     <div className="row g-0">
-        <div className="col-md-6 bg-secondary"  >
+        <div className="col-md-6 bg-secondary wow fadeInLeft"  >
         <div className="pt-3">
               <h3 className="text-white text-center mb-2 mt-5">Vision</h3>
               <div className="" style={{backgroundColor:"white", height:"1px" , width:"14rem", margin:"auto"}}></div>
               <p className="fs-4 p-4 mb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis temporibtione maxime aperiam, accusamus at, perferendis tenetur vitae natus mollitia deleniti delectus quisquam.</p>
         </div>
             </div>
-        <div className="col-md-6" style={{backgroundColor:"#0d466d"}}>
+        <div className="col-md-6 wow fadeInRight" style={{backgroundColor:"#0d466d"}}>
             <div className="pt-3">
               <h3 className="text-white text-center mb-2 mt-5">Mission</h3>
               <div className="" style={{backgroundColor:"white", height:"1px" , width:"14rem", margin:"auto"}}></div>
@@ -146,7 +146,7 @@ const Company = () => {
 
 
 {/* Core Value */}
-<div className="container rounded" style={{backgroundColor:"#000000"}}>
+<div className="container rounded wow zoomIn" data-wow-delay="0.9s" style={{backgroundColor:"#000000" , position:"relative" , bottom:"50px"}}>
     <p className="fw-bold fs-2 text-center text-white mb-5">Core Values</p>
     <div className="row ">
         <div className="col-md-4">
@@ -225,7 +225,7 @@ const Company = () => {
 </div>
 
 {/* our client */}
-<div class="container-fluid  wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid  wow fadeInUp" data-wow-delay="0.9s">
     <div class="container mt-5 mb-5">
         <div class="bg-white">
             <div class="owl-carousel vendor-carousel">
@@ -254,8 +254,6 @@ const Company = () => {
     </div>
   
 </div>  
-
-
 
 </>
     );

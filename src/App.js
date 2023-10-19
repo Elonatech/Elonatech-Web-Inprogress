@@ -80,6 +80,7 @@ import Grid from './pages/sales/grid/grid';
 import BlogDetails from './components/blogDetails/blogDetails';
 
 
+
 const Layout = () =>{
   return(
   <>
@@ -348,6 +349,7 @@ const router = createBrowserRouter([
   path:"/grid",
   element:<Grid/>
 },
+
 
 ]);
 
