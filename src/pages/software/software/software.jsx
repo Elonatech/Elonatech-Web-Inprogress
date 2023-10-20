@@ -210,7 +210,9 @@ const Software = () => {
         </div>
 
       </div>
-</section>     
+</section>  
+
+
   </>
     );
 }
