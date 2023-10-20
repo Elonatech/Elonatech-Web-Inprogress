@@ -161,7 +161,6 @@ tab_lists.forEach(function(list){
           <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
           <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
           <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-          <li data-tc="tab_item_5 " onClick={scrollToHeader}>Privacy</li>
         </ul>
       </div>
       </div>
@@ -199,12 +198,6 @@ tab_lists.forEach(function(list){
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
   </div>
-  <div class="tab_item tab_item_5" id='lab-1' style={{display:"none"}}   >
-    <h3>5. Privacy</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-  </div>
 </div>
 </div>
       </div>
@@ -234,7 +227,6 @@ tab_lists.forEach(function(list){
           <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
           <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
           <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-          <li data-tc="tab_item_5 pt-3" onClick={scrollToHeader}>Privacy</li>
         </ul>
       </div>
       </div>
@@ -272,12 +264,6 @@ tab_lists.forEach(function(list){
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
   </div>
-  <div class="tab_item tab_item_5" id='lab-1' style={{display:"none"}}   >
-    <h3>5. Privacy</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-  </div>
 </div>
 </div>
       </div>
@@ -306,7 +292,6 @@ tab_lists.forEach(function(list){
           <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
           <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
           <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-          <li data-tc="tab_item_5" onClick={scrollToHeader}>Privacy</li>
         </ul>
       </div>
       </div>
@@ -344,12 +329,6 @@ tab_lists.forEach(function(list){
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
   </div>
-  <div class="tab_item tab_item_5" id='lab-1' style={{display:"none"}}   >
-    <h3>5. Privacy</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-  </div>
 </div>
 </div>
       </div>
@@ -361,8 +340,8 @@ tab_lists.forEach(function(list){
             </div>
           </div>
 {/* tab-4 */}
-          <div class="tab-pane" id="tab-4">
-          <div class="row gy-4">
+  <div class="tab-pane" id="tab-4">
+  <div class="row gy-4">
   <div class="col-lg-12 order-2 order-lg-1">
           
 <div className="container mb-5">
@@ -376,7 +355,6 @@ tab_lists.forEach(function(list){
           <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
           <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
           <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-          <li data-tc="tab_item_5" onClick={scrollToHeader}>Privacy</li>
         </ul>
       </div>
       </div>
@@ -413,12 +391,6 @@ tab_lists.forEach(function(list){
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
-  </div>
-  <div class="tab_item tab_item_5" id='lab-1' style={{display:"none"}}   >
-    <h3>5. Privacy</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
   </div>
 </div>
 </div>
@@ -515,7 +487,6 @@ tab_lists.forEach(function(list){
           <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
           <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
           <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-          <li data-tc="tab_item_5" onClick={scrollToHeader}>Privacy</li>
         </ul>
       </div>
       </div>
@@ -552,12 +523,6 @@ tab_lists.forEach(function(list){
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
-  </div>
-  <div class="tab_item tab_item_5" style={{display:"none"}}   >
-    <h3>5. Privacy</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
   </div>
 </div>
 </div>
