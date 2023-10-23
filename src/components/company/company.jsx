@@ -22,14 +22,7 @@ import './company.css'
 const Company = () => {
     return (
 <>
-{/* Header */}
-<div class="container-fluid bg-dark py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($)`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
- <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center"> We apply strategic and result-driven approved</h2>
-   <h5 class=" mt-4 text-white text-center">Have what you need to run your business with maximum efficiency and reliability</h5>
-   <p class="lead text-white text-center">Properly used, a computer can help you become more organized, work more efficiently, and accomplish more tasks.</p>
- </div>
-</div>
+
 
 {/* the company */}
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -95,11 +88,10 @@ const Company = () => {
         </div>
         <div className="col-md-7">
             <div className="">
-             <p style={{textAlign:"justify"}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero aperiam laudantium labore commodi eligendi soluta error. Aliquam sint ratione ducimus voluptas molestias velit porro, hic placeat maxime illo consequatur?</p>
+             <p  className="wow fadeInUp"  style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero aperiam laudantium labore commodi eligendi soluta error. Aliquam sint ratione ducimus voluptas molestias velit porro, hic placeat maxime illo consequatur?</p>
             <br />
-            <p style={{textAlign:"justify"}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus eum ut incidunt tenetur maiores iure dolorum! Ea aliquam ipsa cumque, commodi reprehenderit debitis praesentium modi minus! Ducimus, vero voluptas!
+            <p className="wow fadeInUp" style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus eum ut incidunt tenetur maiores iure dolorum! Ea aliquam ipsa cumque, commodi reprehenderit debitis praesentium modi minus! Ducimus, vero voluptas!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iste, distinctio quidem quia nesciunt a esse pariatur culpa nobis quam similique illo mollitia consequatur in temporibus! Aut nam error odio!
-              
             </p>
             </div>
             </div>
@@ -110,9 +102,9 @@ const Company = () => {
     <div className="row">
         <div className="col-md-7">
             <div className="">
-             <p style={{textAlign:"justify"}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero aperiam laudantium labore commodi eligendi soluta error. Aliquam sint ratione ducimus voluptas molestias velit porro, hic placeat maxime illo consequatur?</p>
+             <p className="wow fadeInUp"  style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero aperiam laudantium labore commodi eligendi soluta error. Aliquam sint ratione ducimus voluptas molestias velit porro, hic placeat maxime illo consequatur?</p>
             <br />
-            <p style={{textAlign:"justify"}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus eum ut incidunt tenetur maiores iure dolorum! Ea aliquam ipsa cumque, commodi reprehenderit debitis praesentium modi minus! Ducimus, vero voluptas!
+            <p className="wow fadeInUp"  style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus eum ut incidunt tenetur maiores iure dolorum! Ea aliquam ipsa cumque, commodi reprehenderit debitis praesentium modi minus! Ducimus, vero voluptas!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </p>
             </div>

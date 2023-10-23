@@ -1,9 +1,10 @@
 import './css/portfolio.css';
-import project1 from './caption/project-1.jpg'
-import project2 from './caption/project-2.jpg'
-import project3 from './caption/project-3.jpg'
-import project4 from './caption/project-4.jpg'
-import { useState } from 'react';
+import project1 from './caption/project1.png'
+import project2 from './caption/project2.jpg'
+import project3 from './caption/project3.png'
+import project4 from './caption/project4.png'
+
+
 
 
 
@@ -156,11 +157,11 @@ tab_lists.forEach(function(list){
       <div className="border rounded-0">
       <div class="ts_body">
       <div class="tabs_list" style={{padding:"16.7px"}}>
-        <ul className='list-unstyled p-4 pb-4'>
-          <li data-tc="tab_item_1" class="active">Introduction</li>
-          <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
-          <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
-          <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
+        <ul className='list-unstyled row p-4 pb-4'>
+          <li data-tc="tab_item_1 col-6 " class="active">Introduction</li>
+          <li data-tc="tab_item_2 col-6 " onClick={scrollToHeader}>General</li>
+          <li data-tc="tab_item_3 col-6 " onClick={scrollToHeader}>Google</li>
+          <li data-tc="tab_item_4 col-6 " onClick={scrollToHeader}>Save</li>
         </ul>
       </div>
       </div>
@@ -565,8 +566,9 @@ tab_lists.forEach(function(list){
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5 text-decoration-none" href="">Data Analytics & Insights</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                        <a class="d-block h5 text-decoration-none" href="">Computer Hardware Projects</a>
+                        <span>Your business works when your hardware works.
+While computer hardware configurations vary widely, we have worked on major categories of hardware for clients in the Medical Science, Financial, Telecoms, Aviation, ICT, Government & NGOs, etc.</span>
                     </div>
                 </div>
                 </div>
@@ -584,8 +586,9 @@ tab_lists.forEach(function(list){
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5 text-decoration-none" href="">Data Analytics & Insights</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                        <a class="d-block h5 text-decoration-none" href="">Network Engineering & Administration</a>
+                        <span>We implement and design both complex and simple data/voice local area networks for all types of organizations/institutions.
+Implementing a well-designed, secured enterprise network and utilizing the right combination of IT solutions so as to drive your business to the desired level.</span>
                     </div>
                 </div>
                 </div>
@@ -594,7 +597,7 @@ tab_lists.forEach(function(list){
            <div class="col-sm">     
               <div class="project-item mb-5">
                     <div class="position-relative">
-                        <img class="img-fluid" src={project4} alt=""/>
+                        <img class="img-fluid" src={project3} alt=""/>
                         <div class="project-overlay">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg"
                                 data-lightbox="project"><i class="fa fa-eye"></i></a>
@@ -603,8 +606,9 @@ tab_lists.forEach(function(list){
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5 text-decoration-none" href="">Social Marketing Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                    <a class="d-block h5 text-decoration-none" href="">Digital Marketing Strategy</a>
+                        <span>Developing effective digital marketing in any market is a tough, demanding, and technical undertaking.
+We achieve this aim by working closely with clients to craft and deliver successful and bottom-lined oriented online marketing strategies which integrate customer needs, business objectives, and technology.</span>
                     </div>
                 </div>
                 </div>
@@ -623,8 +627,10 @@ tab_lists.forEach(function(list){
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5 text-decoration-none" href="">Social Marketing Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                    <a class="d-block h5 text-decoration-none" href="">Structured Cabling</a>
+                        <span>We provide the infrastructure that supports the performance of organizations network
+it is the most critical part of your voice and data network, choosing a qualified provider is a critical decision. 
+We use only high-end quality products in our structured wiring solutions</span>
                     </div>
                 </div>
                 </div>

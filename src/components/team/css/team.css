@@ -61,4 +61,16 @@
     transition-delay: .5s;
 }
 
+
+
+.brci{
+    background-color:#0a8266;
+    color: #FFFFFF;
+    margin: auto;
+    height:50px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:50px;
+}
  
