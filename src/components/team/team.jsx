@@ -75,6 +75,106 @@ const Team = () => {
     </div>
 </div>
 
+
+
+
+
+<div class="container-fluid text-center">
+      <h3>Ayo Mulai Berkontribusi</h3><br/>
+      <div class="row justify-content-center">
+        <div class="kontribusi col-sm-2 col-sm-offset-1">
+         <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src={team1} alt=""/>
+                            <h5>Alex Robin</h5>
+                            <span class="text-primary">Founder & CEO</span>
+
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+        </div>
+        </div>
+        <div class="kontribusi col-sm-2">
+          {/* <div class="card card-block text-xs-center">
+            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Galang Dana</a></h4>
+            <p class="card-text">Untuk membuat kampanye penggalangan dana</p>
+          </div> */}
+
+
+<div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src={team1} alt=""/>
+                            <h5>Alex Robin</h5>
+                            <span class="text-primary">Founder & CEO</span>
+
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+        </div>
+        </div>
+        <div class="kontribusi col-sm-2">
+          {/* <div class="card card-block text-xs-center">
+            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Jadi Relawan</a></h4>
+            <p class="card-text">Untuk bantu terlibat dalam aksi kemanusiaan di bidang kesehatan</p>
+          </div> */}
+             <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src={team1} alt=""/>
+                            <h5>Alex Robin</h5>
+                            <span class="text-primary">Founder & CEO</span>
+
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+        </div>
+        </div>
+        <div class="kontribusi col-sm-2">
+          {/* <div class="card card-block text-xs-center">
+            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Butuh Relawan</a></h4>
+            <p class="card-text">Untuk dilibatkan dalam aksi kemanusiaan di bidang kesehatan</p>
+          </div> */}
+             <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src={team1} alt=""/>
+                            <h5>Alex Robin</h5>
+                            <span class="text-primary">Founder & CEO</span>
+
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+        </div>
+        </div>
+        <div class="kontribusi col-sm-2">
+          {/* <div class="card card-block text-xs-center" >
+            <h4 class="card-title"><a href="#" class="btn btn-danger btn-block">Logistik</a></h4>
+            <p class="card-text">Untuk disalurkan kepada pihak yang membutuhkan</p>
+          </div> */}
+             <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src={team1} alt=""/>
+                            <h5>Alex Robin</h5>
+                            <span class="text-primary">Founder & CEO</span>
+
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
 {/* team members */}
 <div class="container-xxl py-5 mt-5 mb-5">
             <div class="container">
