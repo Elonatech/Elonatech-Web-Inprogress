@@ -1,13 +1,9 @@
-import './css/team.css';
-
-
-
-
 import team1 from './image/team-1.jpg';
 import team2 from './image/team-2.jpg';
 import team3 from './image/team-3.jpg';
 import team4 from './image/team-4.jpg';
 
+import './css/team.css';
 
 const Team = () => {
     return (
@@ -83,8 +79,10 @@ const Team = () => {
 <div class="container-xxl py-5 mt-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{minWidth:"20px"}}>
-                    <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                    <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+                  <p className='fw-bolder fs-1' style={{color:"#34548c"}}>Meet the <span className='fst-italic  text-danger'>𝑡𝑒𝑎𝑚</span></p>
+                   <p className='fs-4'> <span className='text-danger fw-bold'>T</span>ogether <span className='text-danger fw-bold'>E</span>veryone <span className='text-danger fw-bold'>A</span>chieves <span className='text-danger fw-bold'>M</span>ore</p>
+                    {/* <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
+                    <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1> */}
                 </div>
 
                 <div class="row g-4  row-cols-xxl-5 mt-5">

@@ -22,7 +22,14 @@ import './company.css'
 const Company = () => {
     return (
 <>
-
+{/* header */}
+<div class="container-fluid bg-dark py-5 " style={{height:"500px" , marginBottom:"10px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url()`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center wow zoomIn" data-wow-delay="0.1s">Elonatech</h2>
+   <h5 class=" mt-4 text-white text-center wow fadeInRight" data-wow-delay="0.2s">At the heart of everything we do is a passion to deliver success stories.</h5>
+   <p class="lead text-white text-center wow fadeInLeft" data-wow-delay="0.2s">From website development, digital marketing campaigns, network management to graphics etc... We pride ourselves to getting it done!!</p>
+ </div>
+ </div>
 
 {/* the company */}
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
