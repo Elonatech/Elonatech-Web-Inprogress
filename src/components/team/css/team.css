@@ -37,7 +37,7 @@
 }
 
 .team-item .team-social li .btn:hover {
-    color: blue;
+    color: red;
     background: var(--primary);
 }
 

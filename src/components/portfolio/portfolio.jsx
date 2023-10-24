@@ -542,89 +542,65 @@ tab_lists.forEach(function(list){
 </section> 
 
 {/* our  */}
-<div class="container-xxl">
-        <div class="container">
-            <div className="row">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth:'500px;'}}>
-                <p class="fs-5 fw-medium text-primary">Our Projects</p>
+<div className="container mt-5 mb-5">
+<p class="fs-5 fw-medium text-primary">Our Projects</p>
                 <h1 class=" mb-5">We've Done Lot's of Awesome Projects</h1>
-            </div>
-            </div>
-            
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                <div class="project-item mb-5">
-                    <div class="position-relative ">
-                        <img class="img-fluid" src={project1}   alt=""/>
-                        <div class="project-overlay">
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5 text-decoration-none" href="">Computer Hardware Projects</a>
-                        <span>Your business works when your hardware works.
-                        While computer hardware configurations vary widely, we have worked on major categories of hardware for clients in the Medical Science, Financial, Telecoms, Aviation, ICT, Government & NGOs, etc.</span>
-                    </div>
-                </div>
-                </div>
-          {/*  */}
+  <div className="row">
+ <div className="col-md-3">
+  <div className="shadow">
+  <img class="img-fluid" src={project1} style={{height:"18rem"}}  alt="" />
+  <div className="ps-2 pt-2">
+  <h5 className='pt-3 text-center'>Computer Hardware Projects</h5>
+  <p className='lead fs-6 pb-5'>
+  Your business works when your hardware works.
+                        While computer hardware configurations vary widely, we have worked on major categories of hardware for clients in the Medical Science, Financial, Telecoms, Aviation, ICT, Government & NGOs, etc.
+  </p>
 
-              <div class="col-sm">
-                <div class="project-item mb-5">
-                    <div class="position-relative ">
-                        <img class="img-fluid" src={project2}  style={{height:"15.5rem"}} alt=""/>
-                        <div class="project-overlay">
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5 text-decoration-none" href="">Network Engineering & Administration</a>
-                        <span>We implement and design both complex and simple data/voice local area networks for all types of organizations/institutions.
-                         Implementing a well-designed, secured enterprise network and utilizing the right combination of IT solutions so as to drive your business to the desired level.</span>
-                    </div>
-                </div>
-                </div>
-
-                 {/*  */}
-           <div class="col-sm">     
-              <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src={project3} style={{height:'15.6rem'}} alt=""/>
-                        <div class="project-overlay">
-                        </div>
-                    </div>
-                    <div class="p-4">
-                    <a class="d-block h5 text-decoration-none" href="">Structured Cabling</a>
-                        <span>We provide the infrastructure that supports the performance of organizations network
+  </div>
+  </div>
+  </div>
+ <div className="col-md-3">
+ <div className="shadow">
+  <img class="img-fluid" src={project2} style={{height:"18rem"}}   alt="" />
+  <div className="ps-2 pt-2">
+  <h5 className='text-center pt-3'>Network Engineering</h5>
+  <p className='lead fs-6 pb-4 pe-2'>
+  We implement and design both complex and simple data/voice LANs for all types of organizations.
+                        Implementing a well-designed, secured enterprise network and utilizing the right combination of IT solutions  
+                        so as to drive that business to the desired level.
+  </p>
+  </div>
+  </div>
+ </div>
+ <div className="col-md-3">
+ <div className="shadow">
+  <img class="img-fluid" src={project3} style={{height:"18rem"}}  alt="" />
+  <div className="ps-2 pt-2">
+  <h5 className='text-center pt-3'>Structured Cabling</h5>
+  <p className='lead fs-6 pb-4 pe-2 '>
+  We provide the infrastructure that supports the performance of organizations network
                         it is the most critical part of your voice and data network, choosing a qualified provider is a critical decision. 
-                        We use only high-end quality products in our structured wiring solutions</span>
-                    </div>
-                </div>
-                </div>
-             {/*  */}
-             <div class="col-sm">     
-              <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src={project4} style={{height:'15.6rem'}} alt=""/>
-                        <div class="project-overlay">
-                            {/* <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg"
-                                data-lightbox="project"><i class="fa fa-eye"></i></a> */}
-                            {/* <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a> */}
-                        </div>
-                    </div>
-                    <div class="p-4">
-                    <a class="d-block h5 text-decoration-none" href="">Digital Marketing Strategy</a>
-                        <span>Developing effective digital marketing in any market is a tough, demanding, and technical undertaking.
-                        We achieve this aim by working closely with clients to craft and deliver successful and bottom-lined oriented online marketing strategies which integrate customer needs, business objectives, and technology.</span>
-                    </div>
-                </div>
-                </div>
-                 {/*  */}
-              </div>
-             </div>
-            </div>
-           </div>
-          </div>
+                        We use only high-end quality products in our structured wiring solutions
+  </p>
+  </div>
+  </div>
+ </div>
+ <div className="col-md-3">
+ <div className="shadow">
+  <img class="img-fluid" src={project4} style={{height:"18rem"}}  alt="" />
+ <div className="ps-2 pt-2">
+  <h5 className='text-center pt-3 '>Digital Marketing Strategy</h5>
+  <p className='lead fs-6 pb-4 pe-2 '>
+  Developing effective digital marketing in any market is tough, demanding, & technical. We achieve this by working closely with clients to craft & deliver successful & oriented online marketing strategies which integrate customer needs, business objectives & technology.
+  </p>
+  </div>
+  </div>
+ </div>
+  </div>
+</div>
+
+
+
 {/*  */}
     </>
     );

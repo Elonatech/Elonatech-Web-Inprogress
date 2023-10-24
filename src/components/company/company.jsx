@@ -5,8 +5,70 @@ import vendor4 from "./image/vendor-4.jpg"
 import vendor5 from "./image/vendor-5.jpg"
 import vendor6 from "./image/vendor-6.jpg"
 import vendor7 from "./image/vendor-7.jpg"
-import vendor8 from "./image/vendor-8.jpg"
-import vendor9 from "./image/vendor-9.jpg"
+
+
+
+import client1 from './clientLogo/Cathenet treasures.png'
+import client2 from './clientLogo/Hyperthread logo.jpeg'
+import client3 from './clientLogo/Ozone_Cinemas_Logo.png'
+import client4 from './clientLogo/IRETI-logo.png'
+import client5 from './clientLogo/Jigirinty_sewage-energy.png'
+import client6 from './clientLogo/Kappachem Labs Web logo.png'
+import client7 from './clientLogo/LSG_Skycheff log.png'
+import client8 from './clientLogo/Diva-Cakes.png'
+import client9 from './clientLogo/PFN-Logo.png'
+import client10 from './clientLogo/okhma.jpg'
+import client11 from './clientLogo/PineheightSystems-logo.png'
+import client12 from './clientLogo/Remaben_Logo.png'
+import client13 from './clientLogo/Safebrooks-Logo-png.png'
+import client14 from './clientLogo/Skekinah Sacred Place.png'
+import client15 from './clientLogo/Supreme Logo.png'
+import client16 from './clientLogo/The-Home-Builders-Ministry-Logo.png'
+import client17 from './clientLogo/TruCSR-logo.png'
+import client18 from './clientLogo/Universal-Peace-Chaplains.png'
+import client19 from './clientLogo/Western buckland Logo.png'
+import client20 from './clientLogo/amp-featured-image.png'
+import client21 from './clientLogo/domino.jpg'
+import client22 from './clientLogo/eduxtra.png'
+import client23 from './clientLogo/kosofe_local_govt..png'
+import client24 from './clientLogo/okhma.jpg'
+import client25 from './clientLogo/olajide.png'
+import client26 from './clientLogo/samsung.jpg'
+import client27 from './clientLogo/wrahp.png'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import about from "./image/about.jpg"
 import test from './image/razzer.jpg';
 import test2 from './image/wallpaper-design-featured-image-1.jpg'
@@ -34,16 +96,19 @@ const Company = () => {
 {/* the company */}
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
+        <h3 class="fw-bold text-uppercase">ABOUT US</h3>
+        <div className="mb-2"  style={{height:"2px", width:"4rem", backgroundColor:"red"}}></div>
             <div class="row g-5">
                 <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                    <div class="section-title position-relative pb-3 mb-">
+                        <h1 class="mt-3">The Best Innovative IT Solutions with  Over 10 Years of Experience</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <p class="mb-4 lead fs-6">We, at Elonatech are aware of your current need for quality IT Services.
+                    Beyond reasonable doubt, the management of information technology for business 
+                    is not inherently a do-it-yourself project. Business owners who aren’t tech-savvy need to find quality IT solution providers. We are experts in IT related matters.</p>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Best in industry</h5>
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
@@ -52,15 +117,15 @@ const Company = () => {
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style={{height:"60px", width:"60px"}}>
+                        <div class="d-flex align-items-center justify-content-center rounded" style={{height:"60px", width:"60px", backgroundColor:"#435d8b"}}>
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h4 class=" mb-0 text-primary" style={{color:""}}>+234 9014544520</h4>
                         </div>
                     </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
+                    <a href="quote.html" class="btn btn  text-white py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s" style={{backgroundColor:"#435d8b"}}>Request A Quote</a>
                 </div>
                 <div class="col-lg-5" style={{minHeight:"500px"}}>
                     <div class="position-relative h-100">
@@ -77,9 +142,17 @@ const Company = () => {
         <div className="col-md-10">
             <div class="">
             <h3 className="mb-3">Our Story</h3>
-            <div className="mb-2" style={{backgroundColor:"black", height:"1px" , width:"14rem", margin:"auto"}}></div>
+            <div className="mb-2" style={{backgroundColor:"red", height:"1px" , width:"14rem", margin:"auto"}}></div>
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quasi assumenda accusamus quos deserunt aut alias distinctio provident repellendus? Nulla molestias assumenda atque facilis expedita inventore minima similique eum at?</p>
+                <p class="lead fs-6">
+                Elonatech Nigeria Limited is a diversified company in pursuit of excellence in ‘IT’. Our company's logistical services are 
+                designed for the top-of-the-market corporate clientele; we serve to keep you above the turmoil of working in today's Nigeria. 
+                Our company is managed and structured to achieve effective results, even to the most challenging client requirement. 
+                This, we believe, forms the foundation for mutually beneficial, long-term partnerships and we 
+                ensure that we reach our goal of adding value to our client’s processes. We Endeavour to exceed our clients’ 
+                expectations with the solutions we provide, and aim at pricing our solutions and services competitively
+                 and deliver projects within budget while continuously striving to maintain premium quality and standard.
+                </p>
               </div>
             </div>
         </div>
@@ -95,10 +168,17 @@ const Company = () => {
         </div>
         <div className="col-md-7">
             <div className="">
-             <p  className="wow fadeInUp"  style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero aperiam laudantium labore commodi eligendi soluta error. Aliquam sint ratione ducimus voluptas molestias velit porro, hic placeat maxime illo consequatur?</p>
+                {/* <h3>Executive Summary</h3> */}
+             <p  className="wow fadeInUp lead fs-6"  style={{textAlign:"justify"}} data-wow-delay="0.2s">
+             We, at Elonatech are aware of your current need for quality IT Services. Beyond reasonable doubt, the management of information technology for business is not inherently a do-it-yourself project. Business owners who aren’t tech-savvy need to find quality IT solution providers. We are experts in IT related matters, poised to shape the industry, by helping clients solve complex IT challenges.
+             Our Company’s logistical services are designed for the top-of-the-market corporate clientele; we serve as an interface keeping you above the turmoil of working in today’s Nigeria with minimum hassle.
+            </p>
             <br />
-            <p className="wow fadeInUp" style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus eum ut incidunt tenetur maiores iure dolorum! Ea aliquam ipsa cumque, commodi reprehenderit debitis praesentium modi minus! Ducimus, vero voluptas!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iste, distinctio quidem quia nesciunt a esse pariatur culpa nobis quam similique illo mollitia consequatur in temporibus! Aut nam error odio!
+            <p className="wow fadeInUp lead fs-6" style={{textAlign:"justify"}} data-wow-delay="0.2s">
+            We strive to be the leading provider of innovative information technologies that improve the quality of lives.
+             We delight in satisfying our 
+            clients through the provision of innovative, quality, timely, relevant, accurate and affordable solutions to their needs. 
+            Our concept is to provide One-Stop ‘IT’ solutions.
             </p>
             </div>
             </div>
@@ -109,10 +189,15 @@ const Company = () => {
     <div className="row">
         <div className="col-md-7">
             <div className="">
-             <p className="wow fadeInUp"  style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero aperiam laudantium labore commodi eligendi soluta error. Aliquam sint ratione ducimus voluptas molestias velit porro, hic placeat maxime illo consequatur?</p>
+             <p className="wow fadeInUp lead fs-6"  style={{textAlign:"justify"}} data-wow-delay="0.2s">
+             Our Core Expertise focuses on Sales and Supply, Web Design and Development, Network Admin/Implementation, Access Control, PBX & Surveillance (CCTV), 
+             Hardware Engineering, Software Engineering, Digital Marketing, Graphics & Brand Identity, Livestreaming and Videoconferencing, 
+             Video Editing & Motion Graphics, Training, Consulting & Retainer Partnership, etc.
+              that will enable you and your clients maximize technology in bringing about the desired results, and access to a wide array of office equipment.
+             </p>
             <br />
-            <p className="wow fadeInUp"  style={{textAlign:"justify"}} data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus eum ut incidunt tenetur maiores iure dolorum! Ea aliquam ipsa cumque, commodi reprehenderit debitis praesentium modi minus! Ducimus, vero voluptas!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p className="wow fadeInUp lead fs-6"  style={{textAlign:"justify"}} data-wow-delay="0.2s">
+            In today’s complex and diverse data centre environments, a functional and diversified IT solutions provider is inevitable.
             </p>
             </div>
         </div>
@@ -130,14 +215,21 @@ const Company = () => {
         <div className="pt-3">
               <h3 className="text-white text-center mb-2 mt-5">Vision</h3>
               <div className="" style={{backgroundColor:"white", height:"1px" , width:"14rem", margin:"auto"}}></div>
-              <p className="fs-4 p-4 mb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis temporibtione maxime aperiam, accusamus at, perferendis tenetur vitae natus mollitia deleniti delectus quisquam.</p>
+              <p className="fs-4 p-4 mb-4 text-white">
+                To be the leading provider of innovative information technologies that 
+              improve the quality of lives by fostering a culture of technology and innovation.
+              </p>
         </div>
             </div>
         <div className="col-md-6 wow fadeInRight" style={{backgroundColor:"#0d466d"}}>
             <div className="pt-3">
               <h3 className="text-white text-center mb-2 mt-5">Mission</h3>
               <div className="" style={{backgroundColor:"white", height:"1px" , width:"14rem", margin:"auto"}}></div>
-              <p className="fs-4 p-4 mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis temporibtione maxime aperiam, accusamus at, perferendis tenetur vitae natus mollitia deleniti delectus quisquam.</p>
+              <p className="fs-4 p-4 mb-5 text-white">
+                To create a convenient communications services by delighting and satisfying our clients through
+                 the provision of innovative, quality, timely, relevant, 
+                 accurate and affordable solutions to their needs.
+                 </p>
         </div>
         </div>
     </div>
@@ -159,7 +251,7 @@ const Company = () => {
                 
                 <h3 className="text-white ms-4 mt-2">Innovation</h3>
              </div>
-             <p className="text-white mt-3 lead fs-6">Impossible made  I'm possible with groundbreaking</p>
+             <p className="text-white mt-3 lead fs-6">Building cutting-edge solutions with groundbreaking ideas</p>
             </div>
         </div>
         <div className="col-md-4 float-md-end transparent" style={{height:""}}>
@@ -170,9 +262,9 @@ const Company = () => {
                 <img src={mindset} className="" style={{height:"3rem" , color:"black" ,}} alt="" />
                 </div>
                 </div>
-                <h3 className="text-white  ms-4 mt-2">Growth Mindset</h3>
+                <h3 className="text-white  ms-4 mt-2">Professionalism</h3>
              </div>
-             <p className="text-white text-center mt-3 lead fs-6">Thriving on challenges, embracing comeback</p>
+             <p className="text-white text-center mt-3 lead fs-6">Providing specialized services with expert solutions</p>
             </div>
         </div>
         <div className="col-md-4">
@@ -185,7 +277,7 @@ const Company = () => {
                 </div>
                 <h3 className="text-white ms-4 mt-2">Integrity</h3>
              </div>
-             <p className="text-white ps-5 mt-3 lead fs-6">Doing what right, guided by unwavering character</p>
+             <p className="text-white ps-5 mt-3 lead fs-6">Guided by unwavering character, and doing what is right</p>
         </div>
         </div>
    
@@ -198,9 +290,9 @@ const Company = () => {
                 <img src={commitment} className="" style={{height:"3rem" , color:"black"}} alt="" />
                 </div>
                 </div>
-                <h3 className="text-white ms-4 mt-2">Commitment </h3>
+                <h3 className="text-white ms-4 mt-2">Excellence</h3>
              </div>
-             <p className="text-white mt-3 lead fs-6">Doing what right, guided by unwavering character</p>
+             <p className="text-white mt-3 lead fs-6">Excelling, and being truly the best at what we do.</p>
             </div>
             </div>
          
@@ -212,9 +304,9 @@ const Company = () => {
                 <img src={teamwork} className="" style={{height:"3rem" , color:"black"}} alt="" />
                 </div>
                 </div>
-                <h3 className="text-white ms-4 mt-2">Team-work</h3>
+                <h3 className="text-white ms-4 mt-2">Team Work</h3>
              </div>
-             <p className="text-white mt-3 ps-5 lead fs-6">Uniting minds together towards a unifying purpose</p>
+             <p className="text-white mt-3 ps-5 lead fs-6">Uniting minds together towards a unifying purpose.</p>
             </div>
                 </div>
             </div>
@@ -222,37 +314,48 @@ const Company = () => {
     </div>
 </div>
 </div>
-
 {/* our client */}
-<div class="container-fluid  wow fadeInUp" data-wow-delay="0.9s">
+<div class="container-fluid  wow fadeInLeft" style={{overflowX:"hidden"}} >
     <div class="container mt-5 mb-5">
-        <div class="bg-white">
+        <div class="bg-white wow fadeInLeft" data-wow-delay="0.1s">
             <div class="owl-carousel vendor-carousel">
-                <img src={vendor1}  class="img-fluid ms-3" style={{}} alt=""/>
-                <img src={vendor2}  class="img-fluid ms-3" alt=""/>
-                <img src={vendor3}  class="img-fluid  ms-3" alt=""/>
-                <img src={vendor4} class="img-fluid  ms-3" alt=""/>
-                <img src={vendor5} class="img-fluid  ms-3" alt=""/>
-                <img src={vendor6} class="img-fluid  ms-3" alt=""/>
-                <img  src={vendor7} class="img-fluid  ms-3" alt=""/>
-                {/* <img src={vendor8} class="img-fluid  ms-3"alt=""/> */}
+                <img src={client2}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client27  }  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client3}  class="img-fluid  ms-5" style={{width:"9rem" , height:"6rem"}} alt=""/>
+                <img src={client4} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client22} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client6} class="img-fluid  ms-5" style={{width:"12rem" , height:"6rem"}} alt=""/>
+                <img  src={client13} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
             </div>
         </div>
-        <div class="bg-white mt-5">
+        <div class="bg-white mt-5 wow fadeInRight" data-wow-delay="0.6s">
             <div class="owl-carousel vendor-carousel">
-                <img src={vendor1}  class="img-fluid ms-3" alt=""/>
-                <img src={vendor2}  class="img-fluid ms-3" alt=""/>
-                <img src={vendor3}  class="img-fluid  ms-3" alt=""/>
-                <img src={vendor4} class="img-fluid  ms-3" alt=""/>
-                <img src={vendor5} class="img-fluid  ms-3" alt=""/>
-                <img src={vendor6} class="img-fluid  ms-3" alt=""/>
-                <img  src={vendor7} class="img-fluid  ms-3" alt=""/>
-                {/* <img src={vendor8} class="img-fluid  ms-3"alt=""/> */}
-            </div>
+                <img src={client25}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client23}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client9}  class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client15} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client11} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client12} class="img-fluid  ms-5" style={{width:"11rem" , height:"6rem"}} alt=""/>
+                <img  src={client7} class="img-fluid  ms-5" style={{width:"11rem" , height:"6rem"}} alt=""/>
+            </div>      
+        </div>
+        <div class="bg-white mt-5 wow fadeInLeft" data-wow-delay="0.9s">
+            <div class="owl-carousel vendor-carousel">
+                <img src={client24}  class="img-fluid ms-5" style={{width:"10rem" , height:"6rem"}} alt=""/>
+                <img src={client16}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client21}  class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client18} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client19} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img src={client20} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
+                <img  src={client17} class="img-fluid  ms-5" style={{width:"9rem" , height:"6rem"}} alt=""/>
+            </div>      
         </div>
     </div>
   
-</div>  
+</div> 
+
+
+
 
 </>
     );
