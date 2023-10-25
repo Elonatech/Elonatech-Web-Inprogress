@@ -2,6 +2,7 @@ import team1 from './image/team-1.jpg';
 import team2 from './image/team-2.jpg';
 import team3 from './image/team-3.jpg';
 import team4 from './image/team-4.jpg';
+import test from   './image/20997.jpg'
 
 import './css/team.css';
 
@@ -20,7 +21,7 @@ const Team = () => {
 
 {/* attribute */}
 <div className="container mt-5">
-    <p className='fs-1 fw-bolder' style={{color:"#0a8266"}}>Excellence at Work for Over a Decade</p>
+    <p className='fs-1 fw-bolder' style={{color:"#34548c"}}>Excellence at Work for Over a Decade</p>
     <div className="row">
         <div className="col-md-12">
             <p className='lead fs-6' style={{textAlign:"justify"}}>
@@ -46,7 +47,7 @@ const Team = () => {
                 <div className='brci mb-3'>
                     <h1 className=''>F</h1>
                     </div>
-                <h5 className='fw-bolder'>FOCUS</h5>
+                <h5 className='fw-bolder'>Focus</h5>
             </div>
             </div>
         <div className="col-6 col-md-2 mt-4">
@@ -78,16 +79,46 @@ const Team = () => {
             <div className='brci mb-3'>
                     <h1 className=''>S</h1>
                     </div>
-                <h5 className='fw-bolder'>Sustainability</h5>
+                <h5 className='fw-bolder'>Sustainable</h5>
             </div>
             </div>
     </div>
 </div>
+{/* worthy */}
+
+<div className="container mt-5">
+    <div className="row">
+    <div className="col-md-6">
+        <div className=""> 
+        <p className='fs-3 fw-bold' style={{color:"#34548c"}}>Team Members</p> 
+        <p className='lead fs-6' style={{textAlign:"justify"}}>
+        The Elonatech team consists of young, talented, educated, proud and highly motivated people, to bring about positive change to our world of technology. 
+        Our people are passionate about technology, business, and customer relation. 
+        We strive for excellence and we have the strongest belief in ourselves and our potentials, which in turn brings about the desired result in the services rendered.
+        </p>
+        </div>
+        </div>
+    <div className="col-md-6">
+        <div className="">
+        <p className='fs-3 fw-bold text-end' style={{color:"#34548c"}}>Our Passion</p> 
+        <p className='lead fs-6' style={{textAlign:"justify"}}>
+            We have a passion for our clients, results and the solutions we provide. 
+            Our team possess a pragmatic drive for action that runs through the week, each working day, and doesn’t let up. 
+            We rally clients with our infectious energy, to make change stick. And we never do it alone. 
+            We support and are supported to develop our own personal result(s) stories. We train, and get trained to further equip ourselves,
+             so as to be abreast of imminent IT challenges. We work hard, but we don’t take ourselves too seriously. We enjoy what we do and we laugh a lot… most often at ourselves.
+            It feels different to work with us.
+        </p>
+        </div>
+       </div>
+    </div>
+</div>
+{/* 𝑡𝑒𝑎𝑚 */}
 
 {/* team members */}
 <div class="container-fluid mb-5 mb-5 text-center">
                  <div class="text-center mx-auto mt-5 wow fadeInUp" data-wow-delay="0.1s" style={{minWidth:"20px"}}>
-                  <p className='fw-bolder fs-1' style={{color:"#34548c"}}>Meet the <span className='fst-italic  text-danger'>𝑡𝑒𝑎𝑚</span></p>
+                  <p className='fw-bolder fs-1' style={{color:"#34548c"}}>Leadership <span className='fst-italic  text-danger'> Team</span></p>
                    <p className='fs-4'> <span className='text-danger fw-bold'>T</span>ogether <span className='text-danger fw-bold'>E</span>veryone <span className='text-danger fw-bold'>A</span>chieves <span className='text-danger fw-bold'>M</span>ore</p>
                 </div>
       <div class="row justify-content-center">
@@ -159,7 +190,42 @@ const Team = () => {
         </div>
       </div>
 </div>
-         
+
+{/* bef  */}
+<div className="container mb-4">
+    <div className="row">
+        <div className="col-md-4 mt-5">
+            <div className="mt-5">
+              <p className='fs-3 fw-bold'>The Technical Support Team</p>
+              <p className='lead fs-6' style={{textAlign:"justify"}}>
+                is composed of individuals that are familiar with the ins and outs of a device.
+                They offer user-friendly assistance for individuals having technical problems with computer/electronic devices. 
+                With this knowledge, they are able to troubleshoot most problems that a user experiences. 
+                Technical support may be provided over the phone, through email, a live-chat interface or with a remote support solution.
+                </p>
+            </div>
+        </div>
+        <div className="col-md-4">
+        <div class="team-item rounded overflow-hidden">
+            <img class="img-fluid" src={test} alt=""/>
+        </div>
+        </div>
+        <div className="col-md-4 mt-5">
+            <div className="mt-5">
+            <p className='fs-3 fw-bold'>Our Network Support Team</p>
+            <p className='lead fs-6' style={{textAlign:"justify"}}>
+            are responsible for managing a local area communications network (LAN) or wide area network (WAN) for Organizations. 
+            This includes activities such as the deployment, configuration, maintenance and monitoring of active network equipment.
+            consists mainly of web strategists, designers, developers, and project managers, 
+            who work together to help clients meet their business objectives.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{/* end */}
 </>
     );
 }
