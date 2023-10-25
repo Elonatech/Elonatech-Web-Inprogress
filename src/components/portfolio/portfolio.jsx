@@ -54,7 +54,7 @@ tab_lists.forEach(function(list){
  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class=" text-center position-relative pb-3 mb-5" style={{minWidth:"100px"}}>
-            <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
+            <h3 class="fw-bold  text-uppercase" style={{color:"#34548c"}}>Why Choose Us</h3>
             <h1 class="mb-0">We Are Here to Grow Your Business <br/> Exponentially</h1>
         </div>
         <div class="row g-5">
@@ -550,7 +550,7 @@ tab_lists.forEach(function(list){
   <div className="shadow">
   <img class="img-fluid" src={project1} style={{height:"18rem"}}  alt="" />
   <div className="ps-2 pt-2">
-  <h5 className='pt-3 text-center'>Computer Hardware Projects</h5>
+  <h5 className='pt-3'>Computer Hardware Projects</h5>
   <p className='lead fs-6 pb-5'>
   Your business works when your hardware works.
                         While computer hardware configurations vary widely, we have worked on major categories of hardware for clients in the Medical Science, Financial, Telecoms, Aviation, ICT, Government & NGOs, etc.
@@ -563,7 +563,7 @@ tab_lists.forEach(function(list){
  <div className="shadow">
   <img class="img-fluid" src={project2} style={{height:"18rem"}}   alt="" />
   <div className="ps-2 pt-2">
-  <h5 className='text-center pt-3'>Network Engineering</h5>
+  <h5 className='pt-3'>Network Engineering</h5>
   <p className='lead fs-6 pb-4 pe-2'>
   We implement and design both complex and simple data/voice LANs for all types of organizations.
                         Implementing a well-designed, secured enterprise network and utilizing the right combination of IT solutions  
@@ -576,7 +576,7 @@ tab_lists.forEach(function(list){
  <div className="shadow">
   <img class="img-fluid" src={project3} style={{height:"18rem"}}  alt="" />
   <div className="ps-2 pt-2">
-  <h5 className='text-center pt-3'>Structured Cabling</h5>
+  <h5 className='pt-3'>Structured Cabling</h5>
   <p className='lead fs-6 pb-4 pe-2 '>
   We provide the infrastructure that supports the performance of organizations network
                         it is the most critical part of your voice and data network, choosing a qualified provider is a critical decision. 
@@ -589,7 +589,7 @@ tab_lists.forEach(function(list){
  <div className="shadow">
   <img class="img-fluid" src={project4} style={{height:"18rem"}}  alt="" />
  <div className="ps-2 pt-2">
-  <h5 className='text-center pt-3 '>Digital Marketing Strategy</h5>
+  <h5 className='pt-3'>Digital Marketing Strategy</h5>
   <p className='lead fs-6 pb-4 pe-2 '>
   Developing effective digital marketing in any market is tough, demanding, & technical. We achieve this by working closely with clients to craft & deliver successful & oriented online marketing strategies which integrate customer needs, business objectives & technology.
   </p>

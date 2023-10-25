@@ -40,8 +40,8 @@ const Team = () => {
 
 {/* attribute  2*/}
 <div className="container bg-light mt-5">
-    <div className="row">
-        <div className="col-6 col-md-3 mb-3 mt-4">
+    <div className="row justify-content-md-center">
+        <div className="col-6 col-md-2 mb-3 mt-4">
             <div className="text-center">
                 <div className='brci mb-3'>
                     <h1 className=''>F</h1>
@@ -49,34 +49,40 @@ const Team = () => {
                 <h5 className='fw-bolder'>FOCUS</h5>
             </div>
             </div>
-        <div className="col-6 col-md-3 mt-4">
+        <div className="col-6 col-md-2 mt-4">
             <div className="text-center">
             <div className='brci mb-3'>
-                    <h1 className=''>A</h1>
+                    <h1 className=''>O</h1>
                     </div>
-                <h5 className='fw-bolder'>ACCOUNTABILITY</h5>
+                <h5 className='fw-bolder'>Optimism </h5>
             </div>
             </div>
-        <div className="col-6 col-md-3 mt-4">
+        <div className="col-6 col-md-2 mt-4">
             <div className="text-center">
             <div className='brci mb-3'>
                     <h1 className=''>C</h1>
                     </div>
-                <h5 className='fw-bolder'>COMMITMENT</h5>
+                <h5 className='fw-bolder'>Commitment</h5>
             </div>
             </div>
-        <div className="col-6 col-md-3 mt-4">
+        <div className="col-6 col-md-2 mt-4">
             <div className="text-center">
             <div className='brci mb-3'>
-                    <h1 className=''>E</h1>
+                    <h1 className=''>U</h1>
                     </div>
-                <h5 className='fw-bolder'>EXECUTION</h5>
+                <h5 className='fw-bolder'>Unparalleled</h5>
+            </div>
+            </div>
+        <div className="col-6 col-md-2 mt-4">
+            <div className="text-center">
+            <div className='brci mb-3'>
+                    <h1 className=''>S</h1>
+                    </div>
+                <h5 className='fw-bolder'>Sustainability</h5>
             </div>
             </div>
     </div>
 </div>
-
-
 
 {/* team members */}
 <div class="container-fluid mb-5 mb-5 text-center">
@@ -153,12 +159,7 @@ const Team = () => {
         </div>
       </div>
 </div>
-
-
-
-
-
-            
+         
 </>
     );
 }

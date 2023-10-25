@@ -35,40 +35,6 @@ import client24 from './clientLogo/okhma.jpg'
 import client25 from './clientLogo/olajide.png'
 import client26 from './clientLogo/samsung.jpg'
 import client27 from './clientLogo/wrahp.png'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import about from "./image/about.jpg"
 import test from './image/razzer.jpg';
 import test2 from './image/wallpaper-design-featured-image-1.jpg'
@@ -315,7 +281,11 @@ const Company = () => {
 </div>
 </div>
 {/* our client */}
+<p className="fw-bold fs-3 text-center wow zoomIn mt-5 mb-1" data-wow-delay="0.1s">Some Of Our Clients</p>
+    <div className="mb-2 wow zoomIn"  style={{height:"2px", width:"4rem", backgroundColor:"red" , margin:"auto"}} data-wow-delay="0.1s"></div>
 <div class="container-fluid  wow fadeInLeft" style={{overflowX:"hidden"}} >
+    <div>
+    </div>
     <div class="container mt-5 mb-5">
         <div class="bg-white wow fadeInLeft" data-wow-delay="0.1s">
             <div class="owl-carousel vendor-carousel">
@@ -328,7 +298,7 @@ const Company = () => {
                 <img  src={client13} class="img-fluid  ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
             </div>
         </div>
-        <div class="bg-white mt-5 wow fadeInRight" data-wow-delay="0.6s">
+        <div class="bg-white mt-5 wow fadeInRight" data-wow-delay="0.9s">
             <div class="owl-carousel vendor-carousel">
                 <img src={client25}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
                 <img src={client23}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
@@ -339,7 +309,7 @@ const Company = () => {
                 <img  src={client7} class="img-fluid  ms-5" style={{width:"11rem" , height:"6rem"}} alt=""/>
             </div>      
         </div>
-        <div class="bg-white mt-5 wow fadeInLeft" data-wow-delay="0.9s">
+        <div class="bg-white mt-5 wow fadeInLeft" data-wow-delay="0.6s">
             <div class="owl-carousel vendor-carousel">
                 <img src={client24}  class="img-fluid ms-5" style={{width:"10rem" , height:"6rem"}} alt=""/>
                 <img src={client16}  class="img-fluid ms-5" style={{width:"7rem" , height:"6rem"}} alt=""/>
