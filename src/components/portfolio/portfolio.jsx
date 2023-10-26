@@ -4,39 +4,47 @@ import project2 from './caption/project2.jpg'
 import project3 from './caption/project3.png'
 import project4 from './caption/digital marketing practical.jpg'
 
+import Rweb1 from  './caption/Remaben/Web design and development/Layout for remaben web.png'
+import Rweb2 from  './caption/Remaben/Web design and development/web2.png'
+import Rweb3 from  './caption/Remaben/Web design and development/web3.png'
+import Rweb4 from './caption/Remaben/Web design and development/image (13).png'
+import Rweb5 from './caption/Remaben/Web design and development/remaben-3333.jpg'
+ 
 
 
+const scrollToHeader = () => {
+  var tab_lists = document.querySelectorAll(".tabs_list ul li");
+  var tab_items = document.querySelectorAll(".tab_item"); 
 
+tab_lists.forEach(function(list){
+list.addEventListener("mouseover", function(){
+  var tab_data = list.getAttribute("data-tc");
+  
+  tab_lists.forEach(function(list){
+    list.classList.remove("active");
+  });
+  list.classList.add("active");
+  tab_items.forEach(function(item){
+    var tab_class = item.getAttribute("class").split(" ");
+    if(tab_class.includes(tab_data)){
+      item.style.display = "block";
+    }
+    else{
+      item.style.display = "none";
+    }
+    
+  })
+  
+})
+})
+};
 
 
 const Portfolio = () => {
 
-  const scrollToHeader = () => {
-    var tab_lists = document.querySelectorAll(".tabs_list ul li");
-    var tab_items = document.querySelectorAll(".tab_item"); 
 
-tab_lists.forEach(function(list){
-  list.addEventListener("click", function(){
-    var tab_data = list.getAttribute("data-tc");
-    
-    tab_lists.forEach(function(list){
-      list.classList.remove("active");
-    });
-    list.classList.add("active");
-    tab_items.forEach(function(item){
-      var tab_class = item.getAttribute("class").split(" ");
-      if(tab_class.includes(tab_data)){
-        item.style.display = "block";
-      }
-      else{
-        item.style.display = "none";
-      }
-      
-    })
-    
-  })
-})
-  };
+ 
+
 
     return (
     <>  
@@ -111,13 +119,13 @@ tab_lists.forEach(function(list){
           <li class="nav-item col-6 col-md-4 col-lg-2 wow zoomIn" data-wow-delay="0.1s">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
               <i class="bi bi-code-slash color-cyan"></i>
-              <h4>Programming</h4>
+              <h4>Remaben</h4>
             </a>
           </li>
           <li class="nav-item col-6 col-md-4 col-lg-2 wow zoomIn" data-wow-delay="0.2s">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
               <i class="bi bi-box-seam color-indigo"></i>
-              <h4>OS</h4>
+              <h4>Elonatech</h4>
             </a>
           </li>
           <li class="nav-item col-6 col-md-4 col-lg-2 wow zoomIn" data-wow-delay="0.3s">
@@ -145,24 +153,33 @@ tab_lists.forEach(function(list){
             </a>
           </li>
         </ul>
-{/* tab-1 */}
-  <div class="tab-content wow zoomIn" data-wow-delay="0.8s">
+
+  <div class="tab-content " data-wow-delay="0.8s">
+    {/* tab-1 REMABEN */}
  <div class="tab-pane active show" id="tab-1">
-          <div class="row gy-4">
-  <div class="col-lg-12 order-2 order-lg-1" style={{ }}>
-          
-<div className="container me-5   mb-5" style={{}}>
+
+ <div class="row gy-4">
+  <div class="col-lg-12 order-2 order-lg-1">   
+<div className="container mb-5">
   <div className="row g-0">
-    <div className="col-md-2" >
-      <div className="border rounded-0">
-      <div class="ts_body">
-      <div class="tabs_list" style={{padding:"16.7px"}}>
-        <ul className='list-unstyled row p-4 pb-4'>
-          <li data-tc="tab_item_1 col-6 " class="active">Introduction</li>
-          <li data-tc="tab_item_2 col-6 " onClick={scrollToHeader}>General</li>
-          <li data-tc="tab_item_3 col-6 " onClick={scrollToHeader}>Google</li>
-          <li data-tc="tab_item_4 col-6 " onClick={scrollToHeader}>Save</li>
-        </ul>
+    <div className="col-md-2">
+      <div className="card rounded-0">
+      <div class="ts_body ">
+      <div class="tabs_list">
+        {/* <ul className='list-unstyled p-4'> */}
+          {/* <li data-tc="tab_item_1" class="active pt-2"><h5>Web Design</h5></li>
+          <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
+          <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
+          <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
+          <li data-tc="tab_item_5" onClick={scrollToHeader}>Privacy</li> */}
+        {/* </ul> */}
+
+      <ul class=" text-center bg- p-2">
+      <li data-tc="tab_item_1" class=" dropdown-item mt-2 p-3 "> <h6>Web Design</h6></li>
+      <li data-tc="tab_item_2" onMouseEnter={scrollToHeader} class="dropdown-item mt-2 p-3 pe-5"><h6>Motion Graphic</h6></li>
+      <li data-tc="tab_item_3" class="dropdown-item mt-2 p-4 ps-1"><h6>Digital Marketing</h6></li>
+      <li data-tc="tab_item_4"  class="dropdown-item mt-2 p-3"><h6>Branding</h6></li>
+      </ul>
       </div>
       </div>
       </div>
@@ -174,11 +191,38 @@ tab_lists.forEach(function(list){
 
 <div class="tab_body">
   <div class="tab_item tab_item_1" >
-    <h3>1. Introduction</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-  </div>
+       {/* */}
+       <div className="row">
+        <div className="col-md-12">
+          <div className="card">
+            <img src={Rweb1} alt="" className='img-fluid'  style={{height:"24rem"}} />
+          </div>
+          </div>
+        <div className="col-md-5 mt-2">
+          <div className="">
+           <img src={Rweb4} className='img-fluid shadow' style={{height:"18.9rem" , marginTop:"2.4rem"}}    alt="" />
+        </div>
+        </div>
+        <div className="col-md-7 mt-5">
+          <div className="shadow">
+            <img src={Rweb3} className='img-fluid rounded shadow' alt="" />
+          </div>
+        </div>
+        <div className="col-md-7 mt-5">
+          <div className="">
+            <img src={Rweb2} className='img-fluid rounded shadow' alt="" />
+          </div>
+        </div>
+        <div className="col-md-5 mt-5">
+          <div className="">
+            <img src={Rweb5} className='img-fluid rounded shadow' style={{height:"20rem" , width:"2000rem"}} alt="" />
+          </div>
+        </div>
+       
+   
+      </div>
+    {/*  */}
+ </div>
 
   <div class="tab_item tab_item_2"  style={{display:"none"}}>
     <h3>2. General Description of Google Pay</h3>
@@ -199,6 +243,12 @@ tab_lists.forEach(function(list){
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
   </div>
+  <div class="tab_item tab_item_5" id='lab-1' style={{display:"none"}}   >
+    <h3>5. Privacy</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
+  </div>
 </div>
 </div>
       </div>
@@ -206,8 +256,11 @@ tab_lists.forEach(function(list){
     </div>
   </div>
 </div>
-</div>
-</div>
+              </div>
+            </div>
+
+
+
     </div> 
 
 
@@ -224,10 +277,10 @@ tab_lists.forEach(function(list){
       <div class="ts_body">
       <div class="tabs_list" style={{padding:"16.7px"}}>
         <ul className='list-unstyled ps-3 '>
-          <li data-tc="tab_item_1" class="active pt-3">Introduction</li>
-          <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
-          <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
-          <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
+          <li data-tc="tab_item_1" class="active pt-3">Web Development</li>
+          <li data-tc="tab_item_2" onClick={scrollToHeader}>Branding</li>
+          <li data-tc="tab_item_3" onClick={scrollToHeader}>Motion graphics</li>
+          <li data-tc="tab_item_4" onClick={scrollToHeader}>Digitial marketing</li>
         </ul>
       </div>
       </div>
@@ -240,10 +293,22 @@ tab_lists.forEach(function(list){
 
 <div class="tab_body ">
   <div class="tab_item tab_item_1" >
-    <h3 className='pt-4 pb-3'>1. Introduction</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+    {/* */}
+      <div className="row">
+        <div className="col-md-12"><div className="card">
+          <h2>Lorem ipsum dolor sit amet, orem ipsum dolor s eius sequi?
+            
+            </h2>
+          </div>
+          </div>
+        <div className="col-md-5 mt-2"><div className="card"><h2>3</h2></div></div>
+        <div className="col-md-7 mt-2"><div className="card"><h2>4</h2></div></div>
+        <div className="col-md-3 mt-2"><div className="card"><h2>5t amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis,</h2></div></div>
+        <div className="col-md-3 mt-2"><div className="card"><h2>6</h2></div></div>
+        <div className="col-md-3 mt-2"><div className="card"><h2>7</h2></div></div>
+        <div className="col-md-3 mt-2"><div className="card"><h2>8</h2></div></div>
+      </div>
+    {/*  */}
   </div>
 
   <div class="tab_item tab_item_2"  style={{display:"none"}}>
@@ -540,6 +605,7 @@ tab_lists.forEach(function(list){
 
       </div>
 </section> 
+
 
 {/* our  */}
 <div className="container mt-5 mb-5">

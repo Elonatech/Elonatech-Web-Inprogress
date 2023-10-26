@@ -111,10 +111,6 @@ const router = createBrowserRouter([
       element:<Hardware/>
     },
     {
-      path:'/hardware',
-      element:<Hardware/>
-    },
-    {
       path:'/network',
       element:<Network/>
     },

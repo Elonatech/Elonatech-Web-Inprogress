@@ -2,7 +2,7 @@ import team1 from './image/team-1.jpg';
 import team2 from './image/team-2.jpg';
 import team3 from './image/team-3.jpg';
 import team4 from './image/team-4.jpg';
-import test from   './image/20997.jpg'
+import test from   './image/1277553.png'
 
 import './css/team.css';
 
@@ -47,7 +47,7 @@ const Team = () => {
                 <div className='brci mb-3'>
                     <h1 className=''>F</h1>
                     </div>
-                <h5 className='fw-bolder'>Focus</h5>
+                <h5 className='fw-bolder'>Flexible</h5>
             </div>
             </div>
         <div className="col-6 col-md-2 mt-4">
@@ -87,14 +87,16 @@ const Team = () => {
 {/* worthy */}
 
 <div className="container mt-5">
-    <div className="row">
+    <div className="row g-5">
     <div className="col-md-6">
         <div className=""> 
         <p className='fs-3 fw-bold' style={{color:"#34548c"}}>Team Members</p> 
         <p className='lead fs-6' style={{textAlign:"justify"}}>
-        The Elonatech team consists of young, talented, educated, proud and highly motivated people, to bring about positive change to our world of technology. 
+        The Elonatech team consists of young, talented, educated, proud and highly motivated people, that brings positive changes to our world of technology. 
         Our people are passionate about technology, business, and customer relation. 
-        We strive for excellence and we have the strongest belief in ourselves and our potentials, which in turn brings about the desired result in the services rendered.
+        They strive for excellence and have the strongest belief in themselves and their potentials, which in turn brings about the desired result in the services rendered. 
+        When your mission is to be better and faster, you need the best people driving your vision. 
+        Those who can create focused marketing strategies that align with business goals, and infuse their creativity into groundbreaking campaigns.
         </p>
         </div>
         </div>
@@ -194,30 +196,35 @@ const Team = () => {
 {/* bef  */}
 <div className="container mb-4">
     <div className="row">
-        <div className="col-md-4 mt-5">
-            <div className="mt-5">
-              <p className='fs-3 fw-bold'>The Technical Support Team</p>
+        <div className="col-md-4">
+            <div className="">
+              <p className='fs-3 fw-bold'>The Technical Solutions Team</p>
               <p className='lead fs-6' style={{textAlign:"justify"}}>
-                is composed of individuals that are familiar with the ins and outs of a device.
-                They offer user-friendly assistance for individuals having technical problems with computer/electronic devices. 
-                With this knowledge, they are able to troubleshoot most problems that a user experiences. 
-                Technical support may be provided over the phone, through email, a live-chat interface or with a remote support solution.
+              Composed of individuals that are familiar with the ins and outs of all systems and networking devices. 
+              They are responsible for managing local area communications network, LAN and WAN for our clients. 
+              This includes activities such as the deployment, configuration, maintenance and monitoring of active network equipment.
+              In addition, they offer user-friendly assistance for individuals having technical problems on 
+              Client PCs and Servers and are able to troubleshoot most problems that a user experiences.
+              Technical support may be provided over the phone, through email, a live-chat interface or via a remote support solution.
                 </p>
             </div>
         </div>
         <div className="col-md-4">
         <div class="team-item rounded overflow-hidden">
-            <img class="img-fluid" src={test} alt=""/>
+                <img class="img-fluid" src={test} style={{height:"20rem"}} alt=""/>             
         </div>
         </div>
-        <div className="col-md-4 mt-5">
-            <div className="mt-5">
-            <p className='fs-3 fw-bold'>Our Network Support Team</p>
+        <div className="col-md-4 ">
+            <div className="">
+            <p className='fs-3 fw-bold'>The Digital Solutions Team</p>
             <p className='lead fs-6' style={{textAlign:"justify"}}>
-            are responsible for managing a local area communications network (LAN) or wide area network (WAN) for Organizations. 
-            This includes activities such as the deployment, configuration, maintenance and monitoring of active network equipment.
-            consists mainly of web strategists, designers, developers, and project managers, 
-            who work together to help clients meet their business objectives.
+            Consists mainly of web strategists, designers, developers, digital strategists, brand developers, 
+            creative designers, SEO experts, online marketers, product designers,
+             UI/UX designers and project managers, who work together to help clients meet their business objectives.
+             The Digital Solutions Team provides ongoing technical support with quality and innovation to 
+           Business Owners. From web development, email funnels, marketing campaigns and visual 
+           designs to CRM setups, and everything in between. They can guide you through navigating 
+          all of it while building a plan that works specifically for your business.
                 </p>
             </div>
         </div>

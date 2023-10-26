@@ -273,14 +273,17 @@
 }
 
 .ts_body .tabs_list li{
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   cursor: pointer;
 }
 
 .ts_body .tabs_list li:hover,
 .ts_body .tabs_list li.active{
-  color: green;
+
+  background-color: #34548c;
+  border-radius: 50px;
 }
+
 
 .ts_body .tabs_content .tab_body{
    height: calc(100% - 60px);

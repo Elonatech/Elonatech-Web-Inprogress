@@ -61,7 +61,7 @@ const Company = () => {
 
 {/* the company */}
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
+        <div class="container">
         <h3 class="fw-bold text-uppercase">ABOUT US</h3>
         <div className="mb-2"  style={{height:"2px", width:"4rem", backgroundColor:"red"}}></div>
             <div class="row g-5">
@@ -103,7 +103,7 @@ const Company = () => {
 </div>
 
 {/* our story */}
-<div className="container text-center mt-5">
+<div className="container text-center mt-">
     <div className="row justify-content-md-center">
         <div className="col-md-10">
             <div class="">
@@ -117,7 +117,8 @@ const Company = () => {
                 This, we believe, forms the foundation for mutually beneficial, long-term partnerships and we 
                 ensure that we reach our goal of adding value to our client’s processes. We Endeavour to exceed our clients’ 
                 expectations with the solutions we provide, and aim at pricing our solutions and services competitively
-                 and deliver projects within budget while continuously striving to maintain premium quality and standard.
+                 and deliver projects within budget while continuously striving to maintain premium quality. 
+                 {/* and standard. */}
                 </p>
               </div>
             </div>
@@ -125,7 +126,7 @@ const Company = () => {
     </div>
 </div>
 {/* story continue 1 */}
-<div className="container mt-5">
+<div className="container mt-">
     <div className="row">
         <div className="col-md-5"> 
         <div className="card " >
@@ -139,7 +140,7 @@ const Company = () => {
              We, at Elonatech are aware of your current need for quality IT Services. Beyond reasonable doubt, the management of information technology for business is not inherently a do-it-yourself project. Business owners who aren’t tech-savvy need to find quality IT solution providers. We are experts in IT related matters, poised to shape the industry, by helping clients solve complex IT challenges.
              Our Company’s logistical services are designed for the top-of-the-market corporate clientele; we serve as an interface keeping you above the turmoil of working in today’s Nigeria with minimum hassle.
             </p>
-            <br />
+            
             <p className="wow fadeInUp lead fs-6" style={{textAlign:"justify"}} data-wow-delay="0.2s">
             We strive to be the leading provider of innovative information technologies that improve the quality of lives.
              We delight in satisfying our 
@@ -153,7 +154,7 @@ const Company = () => {
 {/* story continue 2 */}
 <div className="container mt-5">
     <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-7 mt-3">
             <div className="">
              <p className="wow fadeInUp lead fs-6"  style={{textAlign:"justify"}} data-wow-delay="0.2s">
              Our Core Expertise focuses on Sales and Supply, Web Design and Development, Network Admin/Implementation, Access Control, PBX & Surveillance (CCTV), 
@@ -161,7 +162,6 @@ const Company = () => {
              Video Editing & Motion Graphics, Training, Consulting & Retainer Partnership, etc.
               that will enable you and your clients maximize technology in bringing about the desired results, and access to a wide array of office equipment.
              </p>
-            <br />
             <p className="wow fadeInUp lead fs-6"  style={{textAlign:"justify"}} data-wow-delay="0.2s">
             In today’s complex and diverse data centre environments, a functional and diversified IT solutions provider is inevitable.
             </p>
