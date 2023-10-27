@@ -5,32 +5,33 @@ import printer5 from './caption/external-printer-printing-tulpahn-outline-color-
 import printerCombine from './caption/printersCombined.png'
 import printerHeader from './caption/printer6.jpg'
 import './printer.css'
+
+
+
+
 const Printer = () => {
     return (
  <>
- {/* header */}
- 
-<div class="container-fluid  overly  py-5 " style={{backgroundImage:`url(${printerHeader})`, backgroundPosition:"center", backgroundRepeat:'no-repeat', backgroundSize:"cover", height:"600px" }} >
-  <div class="container py-5 ">
-    <h1 class=" mt-5 text-white text-center pb-5">Printer Repair & Maintenance</h1>
-    <h4 class=" mt-2 text-white text-center ">Keeping Up with all Necessary Maintenance is The Best Way to Protect your Investment</h4>
-    <h6 class=" mt-2 text-white text-center pb-5">A malfunctioning or out of service printer, copier or multifunction device can be disastrous for your business</h6>
-    
-  </div>
-
+ {/* */}
+ <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${printerHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+ <div class="py-5 mt-5 ">
+   <h2 class=" mt-5 text-white text-center">Printer Repair & Maintenance</h2>
+   <h5 class=" mt-4 text-white text-center">Keeping Up with all Necessary Maintenance is The Best Way to Protect your Investment</h5>
+   <p class="lead text-white text-center">A malfunctioning or out of service printer, copier or multifunction device can be disastrous for your business</p>
+ </div>
  </div>
  
-{/* body one */}
- <div class="container-fluid">
-  <div class="container-fluid py-5 ">
+{/**/}
+ <div class="container">
+  <div class="container-fluid  ">
     <h1 class=" mt-5 text-center" style={{color:"#34548c"}}>Printer Repair & Maintenance</h1>
-    <p class="text-dark fs-5 text-center">Maintaining the printer and copier in your office is very important. Keeping up with all necessary printer repair and maintenance is the best way to protect your valuable investment. It also ensures that your business will remain productive and avoid frustrating delays due to printer malfunction</p>
+    <p class="text-dark fs-5 text-center ">Maintaining the printer and copier in your office is very important. Keeping up with all necessary printer repair and maintenance is the best way to protect your valuable investment. It also ensures that your business will remain productive and avoid frustrating delays due to printer malfunction</p>
     <p class=" mt-2 fs-5  text-dark text-center">We offer a full range of printer repair services. Do you have issues with your printers or copiers? Is your printer or photocopier giving you a hard time? Your printing jobs should be more straight forward and seamless. Let's FIX IT!!
 </p>   
 </div>
  </div> 
 
- {/* cards */}
+ {/**/}
  <div class="album py-5">
       <div class="container rounded" style={{backgroundColor:"#34548c"}}>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3 g-3">
@@ -42,7 +43,7 @@ const Printer = () => {
               <div class="card-body">
                 <h5 className='text-center'>Repair and Maintenance Services for out of Warranty Print Products</h5>
                 <p  class="text-center fs-6 mb-4">Highly aware of your company’s business needs, 
-                Elonatech provides a portfolio of services that can be ordered as the occasion demands.
+                 Elonatech provides a portfolio of services that can be ordered as the occasion demands.
                  Your printer, photocopier or scanner is down, and you are out of warranty, or your device is not even covered by a warranty. 
                 You can opt for our repair option which includes the repair service and part replacement that can be managed throughout the usage of the device.</p>
               </div>
@@ -71,16 +72,14 @@ const Printer = () => {
     </div>
   </div>
 
-
-
-  <div className="container-fluid  mb-5">
+  <div className="container mb-5">
 <div class="row justify-content-md-center row-cols-1 row-cols-lg-2 row-cols-lg-3 ">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <img src={printer2} alt=""   className='img-fluid rounded  shadow' />
       </div>
-      <div class="col-md-5">
-        <div className="border-x" style={{height:"475px"}}>
-          <div className="p-5">
+      <div class="col-md-6">
+        <div className="border-x" style={{height:""}}>
+          <div className="p-4">
           <div class="stars text-center fs-5 mt-3" style={{color:'#D9B938'}}>
          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
           </div>
@@ -96,67 +95,9 @@ const Printer = () => {
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- {/* printer repair */}
-{/* <div className="container mb-5"> 
-<div class="row">
-      <div class="col-md-7 order-md-4">
-        <h2   class="text-dark fs-1 mb-4">We offer 4 Convenient Computer Repair Options</h2>
-        <ul>
-            <li className='fs-4'  >Pick-up and Return</li>
-            <li className='fs-4'>Onsite Repair</li>
-            <li className='fs-4'>Walk-in and Repair</li>
-            <li className='fs-4'>Remote Support</li>
-        </ul>
-		<p class="text-dark fs-4">If you require friendly, expert staff and to have your computer running better than ever, come to our computer repair workshop or give us a call.</p>
-      </div>
-      <div class="col-md-5 ">
-      <img src={printer2} class="img-fluid" alt=""/>
-      </div>
-    </div>
-</div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {/* specialists */}
 <div className="container-fluid" style={{backgroundColor:"#34548c"}}>
+  <div className="container">
   <div className="row justify-content-md-center">
   <div className="col-lg-5">
     <div className="card  p-3 mt-4" style={{border:"none" , backgroundColor:"#34548c"}}>
@@ -180,6 +121,8 @@ const Printer = () => {
     </div>
   </div>
   </div>
+</div>
+   
 </div>
 
  </>

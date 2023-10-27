@@ -9,8 +9,52 @@ import Rweb2 from  './caption/Remaben/Web design and development/web2.png'
 import Rweb3 from  './caption/Remaben/Web design and development/web3.png'
 import Rweb4 from './caption/Remaben/Web design and development/image (13).png'
 import Rweb5 from './caption/Remaben/Web design and development/remaben-3333.jpg'
- 
 
+import Rdigital from './caption/Remaben/Digital marketing/digital1.jpg'
+import Rdigital2 from './caption/Remaben/Digital marketing/digital2.jpg'
+import Rdigital3 from './caption/Remaben/Digital marketing/digital3.jpg'
+import Rdigital4 from './caption/Remaben/Digital marketing/digital4.jpg'
+import Rdigital5 from './caption/Remaben/Digital marketing/digital5.jpg'
+import Rdigital6 from './caption/Remaben/Digital marketing/digital6.jpg'
+import Rdigital7 from './caption/Remaben/Digital marketing/digital7.jpg'
+
+
+import Rbrand1 from './caption/Remaben/Branding/branding1.jpg'
+import Rbrand2 from './caption/Remaben/Branding/branding2.png'
+import Rbrand3 from './caption/Remaben/Branding/branding3.jpg'
+import Rbrand4 from './caption/Remaben/Branding/branding4.png'
+import Rbrand5 from './caption/Remaben/Branding/branding5.jpg'
+import Rbrand6 from './caption/Remaben/Branding/branding6.jpg'
+
+
+import Sweb1 from './caption/safebrooks/Web design and development/web.png'
+import Sweb2 from './caption/safebrooks/Web design and development/web1.jpg'
+import Sweb3 from './caption/safebrooks/Web design and development/web2.png'
+import Sweb4 from './caption/safebrooks/Web design and development/web3.png'
+import Sweb5 from './caption/safebrooks/Web design and development/web4.png'
+import Sweb6 from './caption/safebrooks/Web design and development/web5.png'
+
+
+import Sdigital from './caption/safebrooks/Digital marketing/Safebrooks - ABS_PS Home appliance shell-hard material crushing, washing and drying line_ Email.jpg'
+import Sdigital2 from './caption/safebrooks/Digital marketing/safebrooks-everyday-post7.jpg'
+import Sdigital3 from './caption/safebrooks/Digital marketing/safebrooks-everyday-post8 - Copy.jpg'
+import Sdigital4 from './caption/safebrooks/Digital marketing/safebrooks-everyday-post9.jpg'
+import Sdigital5 from './caption/safebrooks/Digital marketing/water softeners 2-01.png'
+
+
+import Sbrand from './caption/safebrooks/Branding/Brand identity/2 (1).png'
+import Sbrand2 from './caption/safebrooks/Branding/Brand identity/Nnenna Nkkwo ID..jpg'
+import Sbrand3 from './caption/safebrooks/Branding/Brand identity/SAFEBROOK-2.jpg'
+import Sbrand4 from './caption/safebrooks/Branding/Brand identity/SAFEWATER.jpg'
+import Sbrand5 from './caption/safebrooks/Branding/Brand identity/Safebrooks Complimentary Card.jpg'
+import Sbrand6 from './caption/safebrooks/Branding/Brand identity/Safebrooks ID Back.jpg'
+import Sbrand7 from './caption/safebrooks/Branding/Brand identity/Safebrooks complimentary card back.jpg'
+import Sbrand8 from './caption/safebrooks/Branding/Brand identity/Safebrooks.png'
+import Sbrand9 from './caption/safebrooks/Branding/Brand identity/safebrook book desi.jpg'
+
+
+
+ 
 
 const scrollToHeader = () => {
   var tab_lists = document.querySelectorAll(".tabs_list ul li");
@@ -42,8 +86,6 @@ list.addEventListener("mouseover", function(){
 
 const Portfolio = () => {
 
-
- 
 
 
     return (
@@ -131,7 +173,7 @@ const Portfolio = () => {
           <li class="nav-item col-6 col-md-4 col-lg-2 wow zoomIn" data-wow-delay="0.3s">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
               <i class="bi bi-nut color-teal"></i>
-              <h4>DD</h4>
+              <h4>Safebrooks</h4>
             </a>
           </li>
           <li class="nav-item col-6 col-md-4 col-lg-2 wow zoomIn" data-wow-delay="0.4s">
@@ -166,16 +208,9 @@ const Portfolio = () => {
       <div className="card rounded-0">
       <div class="ts_body ">
       <div class="tabs_list">
-        {/* <ul className='list-unstyled p-4'> */}
-          {/* <li data-tc="tab_item_1" class="active pt-2"><h5>Web Design</h5></li>
-          <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
-          <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
-          <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-          <li data-tc="tab_item_5" onClick={scrollToHeader}>Privacy</li> */}
-        {/* </ul> */}
 
       <ul class=" text-center bg- p-2">
-      <li data-tc="tab_item_1" class=" dropdown-item mt-2 p-3 "> <h6>Web Design</h6></li>
+      <li data-tc="tab_item_1" class="dropdown-item mt-2 p-3 "> <h6>Web Design</h6></li>
       <li data-tc="tab_item_2" onMouseEnter={scrollToHeader} class="dropdown-item mt-2 p-3 pe-5"><h6>Motion Graphic</h6></li>
       <li data-tc="tab_item_3" class="dropdown-item mt-2 p-4 ps-1"><h6>Digital Marketing</h6></li>
       <li data-tc="tab_item_4"  class="dropdown-item mt-2 p-3"><h6>Branding</h6></li>
@@ -225,23 +260,92 @@ const Portfolio = () => {
  </div>
 
   <div class="tab_item tab_item_2"  style={{display:"none"}}>
-    <h3>2. General Description of Google Pay</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+    <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698400448/Analysis_of_Raw_Materials_and_Consumer_Products_khpd5i.mp4' type="video/mp4" />
+    
   </div>
 
   <div class="tab_item tab_item_3" style={{display:"none"}}>
-    <h3>3. Using Google Pay</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sit commodi esse enim? Cum tempore deserunt numquam molestias. Pariatur, minima consequatur nam exercitationem explicabo porro quibusdam. Excepturi, voluptatibus repellendus. Provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
+   <div className="container">
+    <div className="row">
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Rdigital} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Rdigital2} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Rdigital3} className='img-fluid rounded' style={{height:"18rem"}}  alt="" />
+        </div>
+        </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rdigital4} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rdigital5} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rdigital6} className='img-fluid rounded' alt="" />
+        </div>
+        </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rdigital7} className='img-fluid rounded' alt="" />
+        </div>
+        </div>
+    </div>
+   </div>
+
   </div>
   <div class="tab_item tab_item_4" style={{display:"none"}}>
-    <h3>4. Save to Google Pay</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
+    
+  <div className="container">
+    <div className="row">
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Rbrand1} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Rbrand2} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Rbrand3} className='img-fluid rounded' style={{height:"18rem"}}  alt="" />
+        </div>
+        </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rbrand4} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rbrand5} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Rbrand6} className='img-fluid rounded' alt="" />
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+
+
   </div>
   <div class="tab_item tab_item_5" id='lab-1' style={{display:"none"}}   >
     <h3>5. Privacy</h3>
@@ -343,8 +447,8 @@ const Portfolio = () => {
 
 
 {/* tab-3 */}
-          <div class="tab-pane" id="tab-3">
-          <div class="row gy-4">
+  <div class="tab-pane" id="tab-3">
+  <div class="row gy-4">
   <div class="col-lg-12 order-2 order-lg-1">
           
 <div className="container mb-5">
@@ -352,13 +456,13 @@ const Portfolio = () => {
     <div className="col-md-2">
       <div className="card rounded-0">
       <div class="ts_body">
-      <div class="tabs_list" style={{padding:"16.7px"}}>
-        <ul className='list-unstyled p-4'>
-          <li data-tc="tab_item_1" class="active">Introduction</li>
-          <li data-tc="tab_item_2" onClick={scrollToHeader}>General</li>
-          <li data-tc="tab_item_3" onClick={scrollToHeader}>Google</li>
-          <li data-tc="tab_item_4" onClick={scrollToHeader}>Save</li>
-        </ul>
+      <div class="tabs_list">
+      <ul class=" text-center bg- p-2">
+      <li data-tc="tab_item_1" class="dropdown-item mt-2 p-3 "> <h6>Web Design</h6></li>
+      <li data-tc="tab_item_2" onMouseEnter={scrollToHeader} class="dropdown-item mt-2 p-3 pe-5"><h6>Motion Graphic</h6></li>
+      <li data-tc="tab_item_3" class="dropdown-item mt-2 p-4 ps-1"><h6>Digital Marketing</h6></li>
+      <li data-tc="tab_item_4"  class="dropdown-item mt-2 p-3"><h6>Branding</h6></li>
+      </ul>
       </div>
       </div>
       </div>
@@ -370,30 +474,119 @@ const Portfolio = () => {
 
 <div class="tab_body">
   <div class="tab_item tab_item_1" >
-    <h3>1. Introduction</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+    {/**/}
+    <div className="row">
+        <div className="col-md-12">
+          <div className="shadow">
+            <img src={Sweb1} alt="" className='img-fluid'  style={{height:"24rem"}} />
+          </div>
+          </div>
+        <div className="col-md-6 mt-5">
+          <div className="">
+            <img src={Sweb4} className='img-fluid rounded shadow' alt="" />
+          </div>
+        </div>
+        <div className="col-md-6 mt-5">
+          <div className="">
+            <img src={Sweb5} className='img-fluid rounded shadow' style={{height:"20rem" , width:"2000rem"}} alt="" />
+          </div>
+        </div>
+        <div className="col-md-12 mt-2">
+          <div className="card">
+            <img src={Sweb3} alt="" className='img-fluid'  style={{height:"29rem"}} />
+          </div>
+          </div>
+   
+      </div>
+    {/**/}
   </div>
 
   <div class="tab_item tab_item_2"  style={{display:"none"}}>
-    <h3>2. General Description of Google Pay</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+  <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698424763/Water_treatment_plw0c6.mp4' type="video/mp4" />
   </div>
 
   <div class="tab_item tab_item_3" style={{display:"none"}}>
-    <h3>3. Using Google Pay</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sit commodi esse enim? Cum tempore deserunt numquam molestias. Pariatur, minima consequatur nam exercitationem explicabo porro quibusdam. Excepturi, voluptatibus repellendus. Provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
+  <div className="container">
+    <div className="row">
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Sdigital} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Sdigital2} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Sdigital3} className='img-fluid rounded' style={{height:"18rem"}}  alt="" />
+        </div>
+        </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sdigital4} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sdigital5} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    </div>
+   </div>
+
   </div>
   <div class="tab_item tab_item_4" style={{display:"none"}}>
-    <h3>4. Save to Google Pay</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
+  <div className="container">
+    <div className="row">
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Sbrand} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Sbrand2} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4">
+      <div className="shadow">
+      <img src={Sbrand3} className='img-fluid rounded' style={{height:"18rem"}}  alt="" />
+        </div>
+        </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sbrand4} className='img-fluid rounded' alt="" />
+      </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sbrand5} className='img-fluid rounded' alt="" />
+    </div>
+    </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sbrand6} className='img-fluid rounded' alt="" />
+        </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sbrand7} className='img-fluid rounded' alt="" />
+        </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sbrand8} className='img-fluid rounded' alt="" />
+        </div>
+      </div>
+    <div className="col-md-4 mt-4">
+      <div className="shadow">
+      <img src={Sbrand9} className='img-fluid rounded' alt="" />
+        </div>
+      </div>
+    </div>
+   </div>
   </div>
 </div>
 </div>

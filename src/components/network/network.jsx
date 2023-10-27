@@ -75,7 +75,7 @@ const Network = () => {
 
 {/* Reliable */}
 
-<main class="container-fluid mt-5 ">
+<main class="container mt-5 ">
   <div class=" p-md-2 mb-4 rounded" style={{backgroundColor:"#002e62"}}>
     <div className="row">
     <div class="col-md-6">

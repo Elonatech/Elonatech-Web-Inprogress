@@ -34,7 +34,7 @@ const Application = () => {
               </div>
               <h3>Microsoft Office suite (Office, Excel, Word, PowerPoint, Outlook) etc.</h3>
               <p style={{textAlign:"justify"}}>OfficeSuite is a practical 5-in-1 office pack for Windows PC, giving you advanced features to create, edit, comment, format, convert, and protect documents.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+        
             </div>
           </div>
 
@@ -45,7 +45,7 @@ const Application = () => {
               </div>
               <h3> OneDrive | Office 365 | Share Point</h3>
               <p style={{textAlign:"justify"}} className='mt-3'>OneDrive gives you more storage space for your photos and files. OneDrive's cloud storage will secure photos, videos, files and keep them safe.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+    
             </div>
           </div>
 
@@ -56,7 +56,7 @@ const Application = () => {
               </div>
               <h3>Microsoft Windows range of products (Server and Client Operating Systems) </h3>
               <p style={{textAlign:"justify"}}>Microsoft Windows is a graphical operating system developed and published by Microsoft. It provides a way to store files, run software, play games, watch videos, and connect to the Internet.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+       
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const Application = () => {
               </div>
               <h3>Internet browsers – Firefox, Safari, Opera, Chrome, etc.</h3>
               <p style={{textAlign:"justify"}}>Web/internet browser is a software program that allows you to access and view web pages.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+      
             </div>
           </div>
 
@@ -78,7 +78,7 @@ const Application = () => {
               </div>
               <h3>PC/Mobile Security Software – Antivirus and Anti-malware (Norton Security) etc.</h3>
               <p style={{textAlign:"justify"}}>Mobile Security to help protect you from harmful viruses and malware</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+         
             </div>
           </div>
 
@@ -89,7 +89,7 @@ const Application = () => {
               </div>
               <h3>Mobile software such as Skype (communication), and Slack (for team collaboration) etc.</h3>
               <p style={{textAlign:"justify"}}>Mobile application or app is a computer program or software application designed to run on a mobile device such as a phone, tablet, or watch..</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
             </div>
           </div>
         </div>

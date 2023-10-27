@@ -76,29 +76,29 @@ const Security = () => {
 
 {/* Risk */}
 <div className="container">
-    <div className="row">
+    <div className="row ">
         <div className="col-md-3">
                 <div className="card-body d-flex">
                 <img src={icon1}  style={{height:"4rem", weight:"4rem"}} alt="" />
-                 <p className='text fs-5'>Cybersecurity Assessment & Compliance.</p>
+                 <p className='text fs-5 ms-3'>Cybersecurity Assessment </p>
             </div>
         </div>
         <div className="col-md-3">
                 <div className="card-body d-flex">
                 <img src={icon2}  style={{height:"4rem", weight:"4rem"}} alt="" />
-                 <p className='text fs-5'>Cyber Risk Quantification.</p>
+                 <p className='text fs-5 ms-3'>Cyber Risk Quantification</p>
             </div>
         </div>
         <div className="col-md-3">
                 <div className="card-body d-flex">
                 <img src={icon3}   style={{height:"4rem", weight:"4rem"}} alt="" />
-                 <p className='text fs-5'>Cybersecurity Performance Management.</p>
+                 <p className='text fs-5 ms-3'>Cybersecurity Performance</p>
             </div>
         </div>
         <div className="col-md-3">
                 <div className="card-body d-flex">
                 <img src={icon4}  style={{height:"4rem", weight:"4rem"}} alt="" />
-                 <p className='text fs-5'>Cyber Risk Transfer (Cyber Insurance Optimization).</p>
+                 <p className='text fs-5 mt-3 ms-3'>Cyber Risk Transfer</p>
             </div>
         </div>
    
@@ -118,10 +118,6 @@ const Security = () => {
           <div className="col-md-6">
           <div className="mt-3">
                 <ul className="list-unstyled mt-2">
-                    <li className="d-flex">
-                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
-                    <p className="mt-2">Access Control</p>
-                    </li>
                     <li className="d-flex">
                     <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Access Control</p>
@@ -154,6 +150,10 @@ const Security = () => {
                     <li className="d-flex">
                     <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
                     <p className="mt-2">Firewall</p>
+                    </li>
+                    <li className="d-flex">
+                    <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
+                    <p className="mt-2">Workload Security</p>
                     </li>
                 </ul>
           </div>
@@ -194,7 +194,7 @@ const Security = () => {
                     </li>
                     <li className="d-flex">
                     <i class="bi bi-check-circle fs-3 text-danger me-3"></i>
-                    <p className="mt-2">Workload Security</p>
+                    <p className="mt-2">  Software-defined Perimeter</p>
                     </li>
             </div>
             </div>  

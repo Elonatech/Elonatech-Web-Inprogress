@@ -55,7 +55,7 @@ const Team = () => {
             <div className='brci mb-3'>
                     <h1 className=''>O</h1>
                     </div>
-                <h5 className='fw-bolder'>Optimism </h5>
+                <h5 className='fw-bolder'>Optimistic</h5>
             </div>
             </div>
         <div className="col-6 col-md-2 mt-4">
@@ -63,7 +63,7 @@ const Team = () => {
             <div className='brci mb-3'>
                     <h1 className=''>C</h1>
                     </div>
-                <h5 className='fw-bolder'>Commitment</h5>
+                <h5 className='fw-bolder'>Committed</h5>
             </div>
             </div>
         <div className="col-6 col-md-2 mt-4">

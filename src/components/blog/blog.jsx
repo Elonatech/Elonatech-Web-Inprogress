@@ -24,6 +24,10 @@ const Blog = () => {
 
 <div className="container mb-5">
     <div className="row">
+    <ol class="breadcrumb ms-5 ">
+            <li class="breadcrumb-item"> <Link className='text-dark' style={{textDecoration:"none"}} to={'/'}>Home</Link></li>
+            <li class="breadcrumb-item"> <Link className='text-dark' to={'/blog'}   style={{textDecoration:"none"}} >Blog</Link></li> 
+        </ol>
    <div className="col-md-9">
     <div className="container">
         <div className="row">

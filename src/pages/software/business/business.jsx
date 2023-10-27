@@ -1,6 +1,11 @@
-import businessHeader from './captions/businessHeader.jpg'
-import mar from './captions/profit and loss.png'
-import busImg from './captions/for mike.png'
+import businessHeader from './captions/businessHeader.jpg';
+import mar from './captions/profit and loss.png';
+import busImg from './captions/for mike.png';
+import besImg from './captions/image__14_-removebg-preview.png';
+
+
+
+
 
 import './business.css'
 
@@ -8,7 +13,7 @@ const Business = () => {
     return (
  <>
 {/* header */}
-    <div class="container-fluid bg-secondary " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${businessHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+<div class="container-fluid bg-secondary " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${businessHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
     <div class="py-5 mt-5 ">
       <h2 class=" mt-5 text-white text-center">Business Application Software</h2>
       <h5 class=" mt-4 text-white text-center">Monitor, Configure and Maintain Servers to operate reliably and optimally</h5>
@@ -35,9 +40,6 @@ const Business = () => {
             {/* <!-- Tab Content --> */}
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tab1">
-
-                <p class="fst-italic">Below are some popular examples of business applications that we support and are commonly used by organizations.</p>
-
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2  bg-danger rounded-circle text-white"></i>
                   <h4>Metric Availability</h4>
@@ -94,6 +96,82 @@ const Business = () => {
     </div>
   </div>
 </div>
+
+
+
+{/* list */}
+<div className="container   mb-5" style={{marginTop:""}}>
+  <div class="row justify-content-center">
+  <div class="col-md-6">
+      <img src={besImg} alt="" className='img-fluid rounded'  srcset="" />
+    </div>
+  <div class="col-lg-5 mt-1 ms-5">
+  <h3>Business Application Software</h3>
+  <p class="fst-italic">Below are some popular examples of business applications that we support and are commonly used by organizations.</p>
+            <div class="">
+              <div class="tab-pane fade show active" id="tab1">
+                <div class="d-flex align-items-center mt-">
+                  <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Enterprise Resource Planning</h5>
+                </div>
+
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Customer Relationship Management (CRM)</h5>
+                </div>
+
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Resource Management Software</h5>
+                </div>
+                
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Project Management Software</h5>
+                </div>
+
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Business Process Management Software</h5>
+                </div>
+
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Database Application Software</h5>
+                </div>
+
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Productivity Software</h5>
+                </div>
+                <div class="d-flex align-items-center mt-1">
+                   <i class="bi bi-check-circle-fill fs-4 text-danger"></i>
+                  <h5 className='ms-2 mt-2'>Scheduling Software</h5>
+                </div>
+                
+
+              </div>
+            </div>
+
+  </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
