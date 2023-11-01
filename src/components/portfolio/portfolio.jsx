@@ -787,6 +787,11 @@ const Portfolio = () => {
   <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851830/OZONE_VIDEO_JINGLE_ocxxwm.mp4' type="video/mp4" />
 
   <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851726/This_August_s9hxv5.mp4' type="video/mp4" />
+  <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851726/This_August_s9hxv5.mp4' type="video/mp4" />
+  <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851726/This_August_s9hxv5.mp4' type="video/mp4" />
+  <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851726/This_August_s9hxv5.mp4' type="video/mp4" />
+  <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851726/This_August_s9hxv5.mp4' type="video/mp4" />
+  <video controls className='img-fluid rounded' loop src='https://res.cloudinary.com/pentecostal-fellowship-of-nigeria-lagos/video/upload/v1698851726/This_August_s9hxv5.mp4' type="video/mp4" />
     
   </div>
 
