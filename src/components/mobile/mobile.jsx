@@ -1,9 +1,8 @@
 import sideimage from  './caption/shadow2.png'
 import phoneRepair from './caption/phoneRepair.jpg'
-import bannerFilp from './caption/bannerFlipped7.png'
 import mobileRight from './caption/mobileRight2.jpg'
 import mobileHeader from './caption/mobileHeader2.png'
-import banner3 from './caption/banner3.png'
+
 
 
 

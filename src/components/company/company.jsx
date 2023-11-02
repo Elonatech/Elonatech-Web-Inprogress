@@ -1,18 +1,9 @@
-import vendor1 from "./image/vendor-1.jpg"
-import vendor2 from "./image/vendor-2.jpg"
-import vendor3 from "./image/vendor-3.jpg"
-import vendor4 from "./image/vendor-4.jpg"
-import vendor5 from "./image/vendor-5.jpg"
-import vendor6 from "./image/vendor-6.jpg"
-import vendor7 from "./image/vendor-7.jpg"
-
-
 
 import client1 from './clientLogo/Cathenet treasures.png'
 import client2 from './clientLogo/Hyperthread logo.jpeg'
 import client3 from './clientLogo/Ozone_Cinemas_Logo.png'
 import client4 from './clientLogo/IRETI-logo.png'
-import client5 from './clientLogo/Jigirinty_sewage-energy.png'
+// import client5 from './clientLogo/Jigirinty_sewage-energy.png'
 import client6 from './clientLogo/Kappachem Labs Web logo.png'
 import client7 from './clientLogo/LSG_Skycheff log.png'
 import client8 from './clientLogo/Diva-Cakes.png'
@@ -21,7 +12,7 @@ import client10 from './clientLogo/okhma.jpg'
 import client11 from './clientLogo/PineheightSystems-logo.png'
 import client12 from './clientLogo/Remaben_Logo.png'
 import client13 from './clientLogo/Safebrooks-Logo-png.png'
-import client14 from './clientLogo/Skekinah Sacred Place.png'
+// import client14 from './clientLogo/Skekinah Sacred Place.png'
 import client15 from './clientLogo/Supreme Logo.png'
 import client16 from './clientLogo/The-Home-Builders-Ministry-Logo.png'
 import client17 from './clientLogo/TruCSR-logo.png'

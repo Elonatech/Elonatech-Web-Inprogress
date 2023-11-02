@@ -1,7 +1,7 @@
 import blogHeader from './captions/9354657.jpg';
 import blog from './captions/blogpic.jpg'
 
-import IT from './captions/It support.jpg'
+import IT from './captions/It support .jpg'
 import Hp from './captions/hp&dell.jpg'
 import TroubleShoot from './captions/troubleshoot.jpg'
 import Security from './captions/security.jpg'

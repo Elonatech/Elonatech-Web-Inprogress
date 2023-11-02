@@ -60,7 +60,7 @@ import Ebrand8 from './caption/Elonatech/Branding/vertical-id-cards-mockup.jpg';
 import Edigital1 from './caption/Elonatech/Digital marketing/Elonatech - Computer networking 4.jpg'
 import Edigital2 from './caption/Elonatech/Digital marketing/Network Administration & Implementation.jpg'
 import Edigital3 from './caption/Elonatech/Digital marketing/Specialized Computer Repair Service.png'
-import Edigital4 from './caption/Elonatech/Digital marketing/Device.png'
+import Edigital4 from './caption/Elonatech/Digital marketing/digital-marketing-elonatech-555.jpg'
 import Edigital5 from './caption/Elonatech/Digital marketing/Wwebsite-2-elonatech-new.jpg'
 import Edigital6 from './caption/Elonatech/Digital marketing/digital-marketing-elonatech-555.jpg'
 import Edigital7 from './caption/Elonatech/Digital marketing/elonatech-bulk-sales.jpg';
