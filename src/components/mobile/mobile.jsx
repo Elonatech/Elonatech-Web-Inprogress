@@ -2,6 +2,7 @@ import sideimage from  './caption/shadow2.png'
 import phoneRepair from './caption/phoneRepair.jpg'
 import mobileRight from './caption/mobileRight2.jpg'
 import mobileHeader from './caption/mobileHeader2.png'
+import bannerFilp from './caption/bannerFlip9.png'
 
 
 
@@ -125,11 +126,11 @@ const Mobile = () => {
 <div className="container rounded mb-5" style={{backgroundColor:"#3f556d"}}>
   <div className="row justify-content-md-center">
     <div className="col-md-6 mt-5" >
-  <p className='text-white mt-3 mb-5' style={{textAlign:"justify"}}>As technology advances, devices utilizing these technologies become smaller and smaller. Today's cell phones have more computing power than past computers that took up an entire room of space. Modern mobile devices allow users to hold the world, or at least all of its information, maps, and games in their hands. <br />
+  <p className='text-white mt-5 mb-5' style={{textAlign:"justify"}}>As technology advances, devices utilizing these technologies become smaller and smaller. Today's cell phones have more computing power than past computers that took up an entire room of space. Modern mobile devices allow users to hold the world, or at least all of its information, maps, and games in their hands. <br />
       We repair all types of gadgets ranging from phones to tabs, smart watches, cameras, Bluetooth speakers and many more. We offer pick up services, our seasoned and experienced Phone Repair Technicians are available, to proffer solution to different phone challenges.</p>
     </div>
-    <div className="col-md-5"  >
-     <div style={{backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(${bannerFilp})` , width:"37rem" , height:"20rem"}}></div>
+    <div className="col-md-6"  >
+    <img src={bannerFilp} className='img-fluid rounded  ms-5' alt="" />
     </div>
   </div>
 </div> 
