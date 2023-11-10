@@ -27,7 +27,7 @@ import p14 from './cabling/phase2/IMG-20130908-00253.png'
 
 
 import structuredCable1 from './cabling/cable/Untitled-7.png'
-import structuredCable2 from './cabling/cable/Untitled-2.png'
+import structuredCable2 from './cabling/cable/Structured cabling image.jpg'
 
 
 const Cabling = () => {
@@ -55,8 +55,8 @@ const Cabling = () => {
     <div className="row">
         <div className="col-md-6">
             <div className="mt-4">
-             <p className='lead fs-6'>
-             <span className='fw-bold'>Structured</span> cabling is the design and installation of a cabling system that will support 
+             <p className=''>
+             <span className='fw-bold'>Structured cabling</span>  is the design and installation of a cabling system that will support 
              multiple hardware uses and be suitable for today's needs and those of the future. 
              <br /><br />
              With a correctly installed system, current and future requirements can be met, and hardware that is added in the future will be supported.
@@ -84,13 +84,16 @@ const Cabling = () => {
         </div>
         <div className="col-md-6">
             <div className="mt-3">
-            <p className='lead fs-6'>
+            <p className=''>
             These standards define how to lay the cabling in various topologies in order to 
-            meet the needs of the customer, typically using a central patch panel (which is normally 19-inch rack-mounted),
+            meet the needs of the customer, typically using a central patch panel (which is 19-inch rack-mounted),
             from where each modular connection can be used as needed. 
             <br /><br />
-            Each outlet is then patched into a network switch (normally also rack-mounted) for network 
+            Each outlet is patched into a network switch (normally also rack-mounted) for network 
             use or into an IP or PBX (private branch exchange) telephone system patch panel.
+            Structured cabling is the infrastructure that supports the performance of an organization's network. 
+            It is the glue that binds all PCs & devices used within the business together. Since it is the most critical part of your voice and data network, choosing a qualified provider is a critical decision. 
+            We use only high-end quality products in our structured wiring solutions, backed by manufacturer warranties.
             </p>
             </div>
         </div>
@@ -106,7 +109,9 @@ const Cabling = () => {
   <h4 className='text-center'>Some Of Our Recently Completed Projects</h4>
   {/*  */}
   <div class="text-bg-light shadow py-4 rounded">
-   <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5>
+   {/* <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5> */}
+   <h5 className='text-center p-3'>Sub-Contractor To Pine Height Systems On Networking/Structure Cabling Of An 8 Floor Luxury Flat BUILDING (96 Points) Lan Setup For Samsung Electronics Nigeria Ltd. At ADMIRALTY Admiralty Way, Lekki Phase 1. Project Phase 1</h5>
+
 <div class="slider">
   <div class="slide-track">
     <div class="slide">
@@ -147,7 +152,7 @@ const Cabling = () => {
 
   {/*  */}
   <div class="text-bg-light shadow py-4 rounded">
-   <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5>
+   <h5 className='text-center p-3'>Sub-Contractor To Pine Height Systems On Networking/Structure Cabling Of An 8 Floor Luxury Flat BUILDING (96 Points) Lan Setup For Samsung Electronics Nigeria Ltd. At ADMIRALTY Admiralty Way, Lekki Phase 1. Project Phase 2</h5>
 <div class="slider">
   <div class="slide-track">
     <div class="slide">
