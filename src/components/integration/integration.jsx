@@ -3,7 +3,7 @@ import infrastructure from './caption/infrastructure2.png'
 import infast1 from './caption/infrastructure-card3.jpg'
 import infast2 from './caption/infrastructure-card.jpg'
 import infast3 from './caption/infrastructure-card2.jpg'
-import infast4 from './caption/infrastructure4.png'
+import infast4 from './caption/infastructure5.jpg'
 import si from './caption/si.jpg'
 import intregrationBanner from './caption/SystemsIntegrationBanner.jpg'
 import intergration2 from './caption/system-integration2.png'
@@ -71,9 +71,9 @@ const Integration = () => {
     <div class="card shadow-sm border-0 rounded mb-3">
         <img src={infast1} className='' style={{width:"100%" , height:"225px"}} alt="" />
       <div class="card-body">
-       <h4 className='text-center'>FACILITIES</h4>
+       <h4 className='text-center'>Physical Layer</h4>
         <div className="text-center pb-0  ">
-        <p className='btn btn-light '><h5>LEARN MORE</h5></p>
+        <p className='btn btn-light '><h5>(Hardware and Cabling)</h5></p>
      </div>
       </div>
     </div>
@@ -83,9 +83,9 @@ const Integration = () => {
     <div class="card shadow-sm border-0 rounded ">
         <img src={infast2} className='' style={{width:"100%" , height:"225px"}} alt="" />
       <div class="card-body">
-       <h4 className='text-center'>FACILITIES</h4>
+       <h4 className='text-center'>Network Layer</h4>
         <div className="text-center pb-0  ">
-        <p className='btn btn-light '><h5>LEARN MORE</h5></p>
+        <p className='btn btn-light '><h5>(Routers and Switches)</h5></p>
      </div>
       </div>
     </div>
@@ -96,21 +96,21 @@ const Integration = () => {
     <div class="card shadow-sm border-0 rounded">
         <img src={infast3} className='' style={{width:"100%" , height:"225px"}} alt="" />
       <div class="card-body">
-       <h4 className='text-center'>FACILITIES</h4>
+       <h4 className='text-center'>Application Layer</h4>
         <div className="text-center pb-0  ">
-        <p className='btn btn-light '><h5>LEARN MORE</h5></p>
+        <p className='btn btn-light '><h5>(Software)</h5></p>
      </div>
       </div>
     </div>
     </div>
     {/*  */}
   <div class="col-md-3">
-    <div class="card shadow-sm border-0">
+    <div class="card  shadow-sm border-0">
         <img src={infast4} className='' style={{width:"100%" , height:"225px"}} alt="" />
       <div class="card-body">
-       <h4 className='text-center'>FACILITIES</h4>
+       <h4 className='text-center'>Storage Layer</h4>
         <div className="text-center pb-0  ">
-        <p className='btn btn-light '><h5>LEARN MORE</h5></p>
+        <p className='btn btn-light '><h5>(Servers and Data Storage)</h5></p>
      </div>
       </div>
     </div>
@@ -142,7 +142,7 @@ const Integration = () => {
 
 {/* Integration Scope */}
 <div className="container">
-  <h3 className='text-center mt-5'>Our System Integration Scope</h3>     
+  <h3 className='text-center fw-bold mt-5'>Our System Integration Scope</h3>     
   <div className="row mt-5 mb-5">
     <div className="col-md-4">
     <div className="card  border-danger" style={{borderStyle:"dotted", borderWidth:"2px"}}>
@@ -214,10 +214,16 @@ const Integration = () => {
       </div>
     </div>
     {/*  */}
-    <div className="col-md-4 ">
-      <p>With the expertise of our IT professionals, businesses can create a data center infrastructure.</p>
+    <div className="col-md-4">
       <div className="card  border-danger" style={{borderStyle:"dotted", borderWidth:"2px"}}>
         <ul className='list-unstyled' style={{color:"#314f81"}}>
+          <li className='border-danger' style={{ borderBottom:"dotted" }}>
+            <div className="d-flex ms-3 mt-3">
+            <i class="bi bi-record-circle me-3 fs-5"></i>
+          <p className='mt-1'>Create a data center infrastructure.</p>
+            </div>
+       
+          </li>
           <li className='border-danger' style={{ borderBottom:"dotted" }}>
             <div className="d-flex ms-3 mt-3">
             <i class="bi bi-record-circle me-3 fs-5"></i>
@@ -234,7 +240,7 @@ const Integration = () => {
           </li>
           {/*  */}
           <li className='d-flex border-danger'>
-          <div className="d-flex ms-3 mt-1">
+          <div className="d-flex ms-3 mt-2">
           <i class="bi bi-record-circle me-3 fs-5"></i>
           <p className='mt-1'>The Infrastructure optimization and maintenance.</p>
           </div>

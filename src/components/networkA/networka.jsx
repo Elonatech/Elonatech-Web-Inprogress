@@ -1,6 +1,6 @@
 import headerImage from './caption/networkServer.jpeg';
-import networkServer from './caption/computer-network.webp';
-import networkServer2 from './caption/q3.jpg';
+import networkServer from './caption/q-fix.png';
+
 import networkServer4 from './caption/q4.jpg';
 import q1 from './caption/q1.webp';
 import './networka.css'
@@ -34,39 +34,51 @@ const Networka = () => {
   return (
         <>
  {/* header */}
-<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${headerImage})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px"  , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${headerImage})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Mobile Device Repair</h2>
-   <h5 class=" mt-4 text-white text-center">Excellence, Professionalism, Integrity & Convenient Service</h5>
-   <p class=" mt-4 lead text-white text-center">We assess mobile phones functionality, install and update phone software, troubleshoot wiring problems,and replace damaged parts</p>
- </div>
-      <div class="container-fluid  position-relative">
-        <div class="row gy-4 mt-5">
-          <div class="col-md-12">
-             <div class="shadow py-4 rounded" style={{backgroundColor:"#34548c"}}>
-             <div className="row justify-content-md-center">
-              {/*  */}
-              <div class="col-md-5">
+   <h2 class=" mt-5 text-white text-center">Network Administration / Implementation</h2>
+   <h5 class=" mt-4 text-white text-center">Manage, Monitor, Maintain, Secure, and Service Networks</h5>
+   <p class="lead text-white text-center">Responsible for installing, implementing, and maintaining business applications for organizations</p>
+ </div> 
+</div>
+
+{/* The new reponsive one */}
+<div className="container mt-5">
+  <div className="row">
+    <div className="col-md-12 mt-2">
+    <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-6">
+              {/* implement */}
+              <div className="card" style={{boxShadow:" 0 0 10px 5px rgba(0,0,0,0.6)"}}> 
               <div class="text-bg-light shadow py-4 rounded">
               <h4 className="text-center">Implementation</h4>
-              <p class="my-3 text-center p-3">Due to the demands of today's growing economy and virtual IT environments, Organizations are beginning to rely on scalable and reliable IT infrastructure. Elonatech helps clients determine most effective technologies that will provide maximum productivity. Whether your business is looking to build a whole new network in an already existing area or to add on to your existing infrastructure, we will design it from conceptualization, with all of your needs in mind. <br /></p>
+              <p class=" text-center p-2">Due to the demands of today's growing economy and virtual IT environments, Organizations are beginning to rely on scalable and reliable IT infrastructure. Elonatech helps clients determine most effective technologies that will provide maximum productivity. Whether your business is looking to build a whole new network in an already existing area or to add on to your existing infrastructure, we will design it from conceptualization, with all of your needs in mind. <br /></p>
                </div>
-               </div>
-               {/*  */}
-              <div class="col-md-5">
-              <div class="text-bg-light shadow py-4 rounded">
-              <h4 className="text-center">Administration</h4>
-              <p class="my-3 text-center p-3">Network administration aims to ensure a reliable, secure network conducive to business operations. Network administration primarily consists of, but isn't limited to, network monitoring, network management, and maintaining network quality and security. <br />  Elonatech supports all the networks we implement and support existing ones. Any issues you have from desktops and laptops to servers, networking hardware and printers we will assess, investigate and proffer a solution </p>
               </div>
+            </div>
+            <div className="col-md-6">
+              {/* admin */}
+              <div className="card" style={{boxShadow:" 0 0 10px 5px rgba(0,0,0,0.6)"}}>
+                <div class="text-bg-light shadow py-4 rounded">
+                <h4 className="text-center">Administration</h4>
+                <p class="text-center p-2">Network administration aims to ensure a reliable, secure network conducive to business operations. Network administration primarily consists of, but isn't limited to, network monitoring, network management, and maintaining network quality and security. <br />  Elonatech supports all the networks we implement and support existing ones. Any issues you have from desktops and laptops to servers, networking hardware and printers we will assess, investigate and proffer a solution </p>
+                </div>
               </div>
-              {/*  */}
-              <div class="col-md-10 mt-3 mb-3">
-              <div class="text-bg-light shadow py-4 rounded">
-               <div className="row justify-content-md-center">
-                <div className="col-md-5">
-                 <div className="card">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div className="col-md-12 mt-5 mb-2">
+      <div className="card" style={{boxShadow:" 0 0 10px 5px rgba(0,0,0,0.6)"}}>
+ 
 
-                <div className="d-flex p-2">
+        <div className="container mt-5 mb-5">
+          <div className="row">
+            <div className="col-md-6">
+              {/* list */}
+              <div className="">
+              <div className="d-flex p-2">
                 <i class="bi bi-circle-fill me-3" ></i>
                 <p>Network Design, Installation, and Evaluation</p>  
                 </div>
@@ -97,30 +109,29 @@ const Networka = () => {
                 </div>
                 {/*  */}
                 
-                 </div>
-                </div>
-                <div className="col-md-5">
-                   <img src={networkServer} className='img-fluid' alt=""/>
-                </div>
-               </div>
               </div>
-              </div>
-              {/*  */}
-             </div>
-             </div>
+            </div>
+            <div className="col-md-6">
+            <img src={networkServer} className='img-fluid rounded' alt=""/>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </div>
+
+
+
 {/* Phone repair issues */}
-<div className="container  mb-5 " style={{marginTop:"800px"}}>
+<div className="container  mb-5  mt-5"  >
      <div className="row justify-content-md-center">
-      <div className="col-md-6">
+      <div className="col-md-6 mt-2">
         <div className="card">
         <img src={networkServer4} className='img-fluid' alt=""/>
           </div>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-6 mt-2">
         <div className="card" style={{backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${q1})`, backgroundPosition:"center"}}>
          <h5 className='text-center text-white mt-5'>WHY DO I NEED A NETWORK ADMINISTRATOR?</h5>
          <p className='pe-3 ps-3 text-white'>Every organization that uses more than one computer or software platform needs a network administrator to coordinate and connect

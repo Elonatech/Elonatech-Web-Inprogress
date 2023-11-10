@@ -26,21 +26,84 @@ import p13 from './cabling/phase2/DSC06986.png'
 import p14 from './cabling/phase2/IMG-20130908-00253.png'
 
 
+import structuredCable1 from './cabling/cable/Untitled-7.png'
+import structuredCable2 from './cabling/cable/Untitled-2.png'
+
+
 const Cabling = () => {
     return (
     <>
       {/* header */}
-<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${structuredHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
+<div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${structuredHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Structured Cabling</h2>
    <h5 class=" mt-4 text-white text-center">Any System is Only As Reliable As Its Weakest Link.</h5>
-   <p class=" mt-4 lead text-white text-center">The standardized infrastructure of communications cabling that supports network components</p>
+   <p class="lead text-white text-center">The standardized infrastructure of communications cabling that supports network components</p>
  </div>
  </div> 
- 
+
+
+{/* Cabling */}
+
+<div className="container mt-5 mb-5">
+    
+<p className='text-center'>
+    
+
+</p>
+
+    <div className="row">
+        <div className="col-md-6">
+            <div className="mt-4">
+             <p className='lead fs-6'>
+             <span className='fw-bold'>Structured</span> cabling is the design and installation of a cabling system that will support 
+             multiple hardware uses and be suitable for today's needs and those of the future. 
+             <br /><br />
+             With a correctly installed system, current and future requirements can be met, and hardware that is added in the future will be supported.
+
+             <br /><br />
+             Structured cabling design and installation is governed by a set of standards that 
+             specify wiring data centers, offices, and apartment buildings for 
+             data or voice communications using various kinds of cable, most commonly; category 
+             5e (Cat 5e), category 6 (Cat 6), and fiber optic cabling and modular connectors.
+             </p>
+            </div>
+        </div>
+        <div className="col-md-6">
+            <div className="card">
+            <img src={structuredCable2} className='img-fluid rounded' alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div className="row mt-3">
+        <div className="col-md-6">
+            <div className="card">
+            <img src={structuredCable1} className='img-fluid rounded' alt="" />
+            </div>
+        </div>
+        <div className="col-md-6">
+            <div className="mt-3">
+            <p className='lead fs-6'>
+            These standards define how to lay the cabling in various topologies in order to 
+            meet the needs of the customer, typically using a central patch panel (which is normally 19-inch rack-mounted),
+            from where each modular connection can be used as needed. 
+            <br /><br />
+            Each outlet is then patched into a network switch (normally also rack-mounted) for network 
+            use or into an IP or PBX (private branch exchange) telephone system patch panel.
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 {/* completed project */}
-<div className="container mb-5">
-  <h4 className='text-center mb-5'>Some Of Our Recently Completed Projects</h4>
+<div className="container ">
+  <h4 className='text-center'>Some Of Our Recently Completed Projects</h4>
   {/*  */}
   <div class="text-bg-light shadow py-4 rounded">
    <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5>
@@ -49,9 +112,6 @@ const Cabling = () => {
     <div class="slide">
         <img src={img1} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
     </div>
-    {/* <div class="slide">
-        <img src={img2} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
-    </div> */}
     <div class="slide">
         <img src={img3} className='img-fluid p-2' style={{height:"25rem"}} alt=""/>
     </div> 
@@ -84,7 +144,7 @@ const Cabling = () => {
 {/* completed project 2 */}
 
 <div className="container mb-5">
-  <h4 className='text-center mb-5'>Some Of Our Recently Completed Projects</h4>
+
   {/*  */}
   <div class="text-bg-light shadow py-4 rounded">
    <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5>

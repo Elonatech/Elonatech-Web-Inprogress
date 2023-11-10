@@ -15,21 +15,13 @@ const Network = () => {
 {/* header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , marginBottom:"100px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${net})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
-   <h2 class=" mt-5 text-white text-center">Mobile Device Repair</h2>
-   <h5 class=" mt-4 text-white text-center">Excellence, Professionalism, Integrity & Convenient Service</h5>
-   <p class=" mt-4 lead text-white text-center">We assess mobile phones functionality, install and update phone software, troubleshoot wiring problems,and replace damaged parts</p>
+   <h2 class=" mt-5 text-white text-center">Network Equipment Maintenance</h2>
+   <h5 class=" mt-4 text-white text-center">We Provides Round-The-Clock Maintenance for All Network Equipment</h5>
+   <p class="  lead text-white text-center">Committed to supplying you with the most reliable network advice, support and services at all times.</p>
  </div>
  </div>
 
-{/* here at elonatech */}
-{/* <main class="container-fluid mt-5">
-  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4">Reliable Network Support</h1>
-      <p class="lead my-3">Here at Elonatech, we are committed to supplying you with the most reliable advice, support and services at all times, wherever you are in Nigeria. To find out more about how we can help you please get in touch with us today.</p>
-    </div>
-  </div>
-</main> */}
+
 
 {/* cards */}
 <div className="container   mb-5">

@@ -24,7 +24,7 @@ const Printer = () => {
 {/**/}
  <div class="container">
   <div class="container-fluid  ">
-    <h1 class=" mt-5 text-center" style={{color:"#34548c"}}>Printer Repair & Maintenance</h1>
+    <h1 class=" mt-5 text-center" style={{color:"#34548c"}}>Maintaining Your Printer, Copier & Scanner</h1>
     <p class="text-dark fs-5 text-center ">Maintaining the printer and copier in your office is very important. Keeping up with all necessary printer repair and maintenance is the best way to protect your valuable investment. It also ensures that your business will remain productive and avoid frustrating delays due to printer malfunction</p>
     <p class=" mt-2 fs-5  text-dark text-center">We offer a full range of printer repair services. Do you have issues with your printers or copiers? Is your printer or photocopier giving you a hard time? Your printing jobs should be more straight forward and seamless. Let's FIX IT!!
 </p>   
@@ -33,10 +33,10 @@ const Printer = () => {
 
  {/**/}
  <div class="album py-5">
-      <div class="container rounded" style={{backgroundColor:"#34548c"}}>
-        <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm" style={{height:"380px"}}>
+      <div class="container rounded" >
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3 g-2">
+          <div class="col rounded-start" style={{backgroundColor:"#34548c"}}>
+            <div class="card mt-1 mb-1 shadow-sm" style={{height:"380px"}}>
               <div className="text-center mt-2">
               <img src={printer4} className='card-img-top text-center' style={{height:"4rem" , width:"4rem"}} alt="" />
               </div>
@@ -49,11 +49,11 @@ const Printer = () => {
               </div>
             </div>
           </div>
-          <div class="col">
-          <div className="card" style={{height:"380px" , backgroundImage:`url(${bg2})` , backgroundRepeat:"no-repeat", backgroundSize:"cover" }}></div>
+          <div class="col" style={{backgroundColor:"#34548c"}}>
+          <div className="card mt-1 mb-1" style={{height:"380px" , backgroundImage:`url(${bg2})` , backgroundRepeat:"no-repeat", backgroundSize:"cover" }}></div>
           </div>
-          <div class="col mb-3">
-          <div class="card shadow-sm" style={{height:"380px"}}>
+          <div class="col rounded-end " style={{backgroundColor:"#34548c"}} >
+          <div class="card mt-1 mb-1 shadow-sm" style={{height:"380px"}}>
               <div className="text-center mt-4">
               <img src={printer5} className='card-img-top text-center' style={{height:"4rem" , width:"4rem"}} alt="" />
               </div>

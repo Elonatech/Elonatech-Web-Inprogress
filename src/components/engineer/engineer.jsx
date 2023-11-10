@@ -1,10 +1,9 @@
 import engineerHeader from './captions/3945114.jpg'
 import computerRepair from './captions/computer repair.jpg'
-import top1 from './captions/desktop-cmputers.png'
-import bottom1 from './captions/best-laptop-small.jpg'
+
 
 import top2 from './captions/computer-repair.jpg'
-import bottom2 from './captions/computer-engineering.jpg'
+import bottom2 from './captions/computer-engineering-height.jpg'
 import './eng.css'
 
 
@@ -51,39 +50,20 @@ const Engineer = () => {
 			</div>
       </div>  
       <div class="col-md-5 order-md-2">
-        <div class="container">
-          {/* mouth 1 */}
-        <div class="row align-items-center content-row">
-        <div class="col-lg-6 wrap-block">
-        </div>
-          <div class="col-lg-6">
-              <img src={top1}  className='img-fluid  mt-5  shadow' alt="" title=""/>
-          </div>
-        </div>
-        </div>
-       {/* mouth 2 */}
-     <div class="container ">
-        <div class="row align-items-center">
-        <div class="col-lg-6">
-          <img src={bottom1}  className='img-fluid ms-4 mb-5 shadow' alt="" title=""/>
-          </div>
-          <div class="col-lg-6">
-          </div>
-      </div>
-    </div>
+       <img src={top2} className='img-fluid mt-2 mb-2 rounded' alt="" />
+
     </div>
 
     {/*  */}
       </div>
     </div>
 </div>
-
 {/**/}
-<div className="container-fluid" style={{backgroundColor:"#f3e3f0"}} >
+<div className="container-fluid"  style={{backgroundColor:"#f3e3f0"}} >
   <div className="container">
 <div class="row justify-content-md-center ">
-      <div class="col-md-6 order-md-2  mt-5 ">
-        <h1>We offer 4 Convenient Computer Repair Options</h1>
+      <div class="col-md-6 order-md-2 mt-3">
+        <h2>We offer 4 Convenient Computer Repair Options</h2>
             <ul className='fs-5  list-unstyled '>
             <li className='kos'><i class="bi bi-check-square fs-4 me-3"></i>Pick-up and Return</li>
             <li className='kos'><i class="bi bi-check-square fs-4 me-3"></i>Onsite Repair</li>
@@ -94,34 +74,19 @@ const Engineer = () => {
       </div>  
       
       <div class="col-md-5 order-md-1">
-        <div class="container-fluid">
-          {/* mouth 1 */}
-        <div class="row align-items-center content-row">
-          
-          <div class="col-lg-6">
-              <img src={top2}  className='img-fluid ms-4 mt-5  shadow' alt="" title=""/>
-          </div>
-          <div class="col-lg-6 wrap-block">
-          </div>
-        </div>
-      
-        </div>
-       {/* mouth 2 */}
-     <div class="container-fluid ">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-          </div>
-          <div class="col-lg-6">
-          <img src={bottom2}  className='img-fluid  mb-5 shadow' alt="" title=""/>
-          </div>
-      </div>
-    </div>
+    
+     <img src={bottom2} className='img-fluid mt-2 mb-2 rounded' alt="" />
+    
     </div>
 
     {/*  */}
       </div>
     </div>
 </div>
+
+
+
+
 
 </>
     );
