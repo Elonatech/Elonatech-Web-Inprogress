@@ -27,7 +27,7 @@ import p14 from './cabling/phase2/IMG-20130908-00253.png'
 
 
 import structuredCable1 from './cabling/cable/Untitled-7.png'
-import structuredCable2 from './cabling/cable/Structured cabling image.jpg'
+import structuredCable2 from './cabling/cable/Untitled-8.png'
 
 
 const Cabling = () => {
