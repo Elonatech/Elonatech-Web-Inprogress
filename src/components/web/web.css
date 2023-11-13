@@ -1,0 +1,10 @@
+.img-rou {
+    border-radius: 50%;
+    width: 5vmin;
+    height: 5vmin;
+    object-fit: cover;
+    object-position: center;
+
+    transition: all 0.2s ease;
+  }
+  

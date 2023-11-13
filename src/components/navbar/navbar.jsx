@@ -24,7 +24,7 @@ const Navbar = () => {
         <div class="offcanvas-body">
           <ul class="navbar-nav pe-4  ms-auto">
             <li class="nav-item pe-4">
-              <a class="nav-link fw-bold active" aria-current="page" href="#">HOME</a>
+              <a class="nav-link fw-bold active" aria-current="page" href="#"><i class="bi bi-house-fill"></i></a>
             </li>
 
             {/* <!-- first drop down --> */}
@@ -36,21 +36,6 @@ const Navbar = () => {
                 <li class="dropdown-item p-3">Action else</li>
                 <li><a class="dropdown-item p-3" href="#">Another action</a></li>
                 <li><a class="dropdown-item p-3" href="#">Something else</a></li>
-                <li class="dropdown-item p-3" ><a href="#">
-                  
-                <li class="nav-item dropdown pe-4">
-              <a class="nav-link active fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Products
-              </a>
-              <ul class="dropdown-menu p-4">
-                <li><a class="dropdown-item mt-2" href="#">Action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Another action</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
-                <li><a class="dropdown-item mt-2" href="#">Something else here</a></li>
-              </ul>
-            </li>
-                  
-                  </a></li>
               </ul>
             </li>
             
@@ -94,6 +79,7 @@ const Navbar = () => {
           
             <li class="nav-item pe-4">
               <a class="nav-link  fw-bold active">Get in touch</a>
+              {/* <button class="nav-link btn btn-danger fw-bold active" >Get in touch</button> */}
             </li>
           </ul>
           
