@@ -1,6 +1,6 @@
 import accessHeader from './captions/Access-Control-5.jpg'
 import accessImg from './captions/depositphotos_354792732-stock-photo-business-technology-internet-network-concept.jpg';
-import cctvImg from './captions/access-control-system.jpg'
+import cctvImg from './captions/access-control-system-removebg-preview.png'
 import epabx from './captions/Access-Control.jpg'
 
 const Access = () => {
@@ -20,13 +20,11 @@ const Access = () => {
 <div className="container">
     <div class="row">
     <div class="col-md-6 mb-5">
-          <h4 class="mb-0">Access Control &  Surveillance Solution (CCTV)</h4>
-          <div className="underline-w mt-2" style={{  width:"80px", height:"3px" , background:"#f00"}}></div>
-          <img src={accessImg} className='img-fluid mt-3 rounded' alt="" />
+        <img src={accessImg} className='img-fluid rounded' alt="" />
     </div>
     <div class="col-md-6">
       <div className=''>
-      <p className='pt-5'>
+      <p className=''>
       <span className='fw-bold'>Access control</span> is an essential element of security that determines who is allowed to access certain data, apps, and resources—and in what circumstances. In the same way that keys and preapproved guest lists protect physical spaces, access control policies protect digital spaces. In other words, they let the right people in and keep the wrong people out.
       <br /><br />
       Access Control is a method of security that controls access both physically and virtually unless authentication credentials are provided.
@@ -37,6 +35,32 @@ const Access = () => {
     </div>
   </div>
 </div>
+
+
+
+{/* PBX */}
+<div className="container mt-4 mb-5">
+     <h5 className='fw-bold'>What is an Access Control System?</h5>
+     <div className="underline-w mt-1" style={{  width:"40px", height:"3px" , background:"#f00"}}></div>
+  <div className="row">
+  <div className="col-md-7 ">
+      <div className="mt-3">
+        <p className=''>
+        When referring to a ‘physical’ Access Control system this typically includes locked gates, doors or barriers which can be opened using 
+        identity authentication methods such RFID access cards, pin codes, face recognition, finger prints or smartphones to allow entry to a building or certain area. 
+        This technology can also provide data to track how a building or site is being used, such as frequency and time-usage trends.
+        </p>
+      </div>
+    </div>
+    <div className="col-md-5 ">
+      <div className="mt-3">
+        <img src={epabx} className='img-fluid'  alt="" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 {/* WHY INVEST IN CCTV */}
 <div className="container mb-5">
@@ -88,32 +112,11 @@ const Access = () => {
             </div>
     </div>
     <div className="col-md-6">
-      <img src={cctvImg}  className='img-fluid' alt="" />
+      <img src={cctvImg}  className='img-fluid rounded' alt="" />
     </div>
   </div>
 </div>
 
-{/* PBX */}
-<div className="container mt-4 mb-5">
-     <h5 className='fw-bold'>What is an Access Control System?</h5>
-     <div className="underline-w mt-1" style={{  width:"40px", height:"3px" , background:"#f00"}}></div>
-  <div className="row">
-    <div className="col-md-5 ">
-      <div className="mt-4">
-        <img src={epabx} className='img-fluid'  alt="" />
-      </div>
-    </div>
-    <div className="col-md-7 ">
-      <div className="mt-4">
-        <p className=''>
-        When referring to a ‘physical’ Access Control system this typically includes locked gates, doors or barriers which can be opened using 
-        identity authentication methods such RFID access cards, pin codes, face recognition, finger prints or smartphones to allow entry to a building or certain area. 
-        This technology can also provide data to track how a building or site is being used, such as frequency and time-usage trends.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
