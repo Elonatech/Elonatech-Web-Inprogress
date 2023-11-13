@@ -109,7 +109,6 @@ const Cabling = () => {
   <h4 className='text-center'>Some Of Our Recently Completed Projects</h4>
   {/*  */}
   <div class="text-bg-light shadow py-4 rounded">
-   {/* <h5 className='text-center p-3'>SUB-CONTRACTOR TO PINE HEIGHT SYSTEMS ON NETWORKING/STRUCTURED CABLING OF AN 8 FLOOR LUXURY FLAT BUILDING (96 POINTS) LAN SETUP FOR SAMSUNG ELECTRONICS NIGERIA LTD. AT ADMIRALTY WAY, LEKKI PHASE 1. PROJECT PHASE 1</h5> */}
    <h5 className='text-center p-3'>Sub-Contractor To Pine Height Systems On Networking/Structure Cabling Of An 8 Floor Luxury Flat BUILDING (96 Points) Lan Setup For Samsung Electronics Nigeria Ltd. At ADMIRALTY Admiralty Way, Lekki Phase 1. Project Phase 1</h5>
 
 <div class="slider">

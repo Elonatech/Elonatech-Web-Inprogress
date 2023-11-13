@@ -1,7 +1,7 @@
-import accessHeader from './captions/web-wallpaper-1680x1050.jpg'
+import accessHeader from './captions/Access-Control-5.jpg'
 import accessImg from './captions/depositphotos_354792732-stock-photo-business-technology-internet-network-concept.jpg';
-import cctvImg from './captions/Access-Control-8-removebg-preview.png'
-import epabx from './captions/Access-Control-5.jpg'
+import cctvImg from './captions/access-control-system.jpg'
+import epabx from './captions/Access-Control.jpg'
 
 const Access = () => {
     return (
@@ -39,7 +39,7 @@ const Access = () => {
 </div>
 
 {/* WHY INVEST IN CCTV */}
-<div className="container mb-4">
+<div className="container mb-5">
   <h4>What are the benefits of Access Control Systems?</h4>
   <div className="underline-w" style={{  width:"50px", height:"3px", background:"#f00"}}></div>
   <div className="row">
@@ -87,24 +87,24 @@ const Access = () => {
               </ul>
             </div>
     </div>
-    <div className="col-md-6 mt-3">
-      <img src={cctvImg}  className='img-fluid mt-5' alt="" />
+    <div className="col-md-6">
+      <img src={cctvImg}  className='img-fluid' alt="" />
     </div>
   </div>
 </div>
 
 {/* PBX */}
-<div className="container mb-5">
+<div className="container mt-4 mb-5">
      <h5 className='fw-bold'>What is an Access Control System?</h5>
      <div className="underline-w mt-1" style={{  width:"40px", height:"3px" , background:"#f00"}}></div>
   <div className="row">
     <div className="col-md-5 ">
-      <div className="">
+      <div className="mt-4">
         <img src={epabx} className='img-fluid'  alt="" />
       </div>
     </div>
-    <div className="col-md-7 mt-5 ">
-      <div className="mt-3">
+    <div className="col-md-7 ">
+      <div className="mt-4">
         <p className=''>
         When referring to a ‘physical’ Access Control system this typically includes locked gates, doors or barriers which can be opened using 
         identity authentication methods such RFID access cards, pin codes, face recognition, finger prints or smartphones to allow entry to a building or certain area. 
