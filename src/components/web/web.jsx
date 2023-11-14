@@ -118,7 +118,8 @@ const Web = () => {
 		<div className="col-md-6">
 			<div className="">
              <h4>Need A Website For Your Brand?</h4>
-		     <div className="underline-w mb-2" style={{  width:"40px", height:"3px" , background:"#fcc"}}></div>
+			 <div className="underline-w mt-1 mb-2" style={{  width:"40px", height:"3px" , background:"#f00"}}></div>
+		     {/* <div className="underline-w mb-2" style={{  width:"40px", height:"3px" , background:"#fcc"}}></div> */}
 			 <p>
              Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria's
 			  leading Website Design & Development Company Who's Core Values are Excellence,
@@ -129,20 +130,21 @@ const Web = () => {
 			  <br /><br />
 			  We ensure that your needs are understood and implemented correctly. In fact, we are dedicated to the creation of a 
 			  site that helps you become a success. Our specialty lies in providing comprehensive and custom web development services 
-			  that provide you with a functional and complete solution. The sites we develop are highly scalable with a great degree of usability. 
-			  As a website development company, we also ensure the site responds fast and is SEO friendly with an excellent User Interface (UI) and User Experience (UX). 
-			  You also get to enjoy complete control over your site. With our website development, you do not have to
-			  adjust your specifications to the capabilities of a given platform or change your design visions to fit a template. 
-			  We deliver the work precisely to your requirements.
-			   <br /><br />
-			   We won't just build you an ordinary website but also develop a marketing strategy that can utilize 
-			   the website and your marketing channels to generate constant leads, sales, customers, and clients.
+			  that provide you with a functional and complete solution. 
+			 
 			 </p>
 			</div>
 		</div>
 		<div className="col-md-6">
 			<img src={deveops} className='img-fluid rounded' alt="" />
 		</div>
+<p> As a website development company, we also ensure the site responds fast and is SEO friendly with an excellent User Interface (UI) and User Experience (UX). 
+			  You also get to enjoy complete control over your site. With our website development, you do not have to
+			  adjust your specifications to the capabilities of a given platform or change your design visions to fit a template. 
+			  We deliver the work precisely to your requirements.
+			  
+			  The sites we develop are highly scalable with a great degree of usability.  We won't just build you an ordinary website but also develop a marketing strategy that can utilize 
+			   the website and your marketing channels to generate constant leads, sales, customers, and clients.</p>
 	</div>
 </div>
 
@@ -301,7 +303,8 @@ const Web = () => {
 <div className="container mt-5 mb-5">
 <h2 className='text-center  pt-4'>Our Work Process</h2>
 <p className='text-center fs-5 mb-1'>For quality job done, we take the below algorithm</p>
-<div className="underline-w mt- mb-5" style={{  width:"70px", height:"2px" , margin:"auto", background:"#f00"}}></div>
+<div className="underline-w mt-1 mb-5" style={{  width:"70px", height:"3px" , margin:"auto",  background:"#f00"}}></div>
+{/* <div className="underline-w mt- mb-5" style={{  width:"70px", height:"2px" , margin:"auto", background:"#f00"}}></div> */}
 	<div className="row g-5">
 		<div className="col-md-6">
 			<div className="card">
@@ -434,7 +437,7 @@ const Web = () => {
 
 
 	<div className="row">
-
+		
 	<div className="col-md-6 " >
 	<h3 className="text-center mt-5" style={{color:"#34548c"}}>Our Web Design And Development</h3>
 	<hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
