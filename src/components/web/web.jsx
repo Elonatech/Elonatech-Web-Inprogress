@@ -398,12 +398,12 @@ const Web = () => {
 </div>
 
 {/* splide web development */}
-<div style={{background: '#021048', padding: '2rem 0rem 2rem 0rem'}}>
-<h2 className="text-center text-white pt-5">Some Of Our Projects</h2>
+<div style={{background: '#021048', padding: '1rem 0rem 1rem 0rem'}}>
+<h2 className="text-center text-white ">Some Of Our Projects</h2>
 <h4 className="text-center text-white">Web Development/Web Design</h4>
 
-<hr className='m-auto mt-2 mb-4' style={{background:'red', width: "50px", height: "2px"}} />
-<h4 className="mb-5"></h4>
+<hr className='m-auto  mb-' style={{background:'red', width: "50px", height: "2px"}} />
+<h4 className="mb-4"></h4>
     <Splide
         options={{
             type: "loop",
@@ -423,7 +423,7 @@ const Web = () => {
             {projects.map((project)=> (
             <SplideSlide key={project.id}>
                 <Link href={project.web}>
-                    <img src={project.img} style={{width: '95%', height: '400px'}} alt="Image 1" />
+                    <img src={project.img} style={{width: '95%', height: ' 350px'}} alt="Image 1" />
                 </Link>
             </SplideSlide>
             ))}
@@ -437,7 +437,7 @@ const Web = () => {
 
 
 	<div className="row">
-		
+
 	<div className="col-md-6 " >
 	<h3 className="text-center mt-5" style={{color:"#34548c"}}>Our Web Design And Development</h3>
 	<hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
@@ -528,7 +528,7 @@ const Web = () => {
 	</div>
 	</div>
 
-	<div className="col-md-6 mt-">
+	<div className="col-md-6 mb-4">
     <h3 className="text-center mt-5" style={{color:"#34548c"}}>FAQ</h3>
 	<hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
 	<div className="">
@@ -536,14 +536,14 @@ const Web = () => {
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-12">
-            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+            <div class="accordion accordion-flush  " id="faqlist" data-aos="fade-up" data-aos-delay="100">
               <div class="accordion-item ">
-                <h3 class="">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+            
+                  <button class="accordion-button  pb-2 pt-3  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
                     <h6 class="num me-3">1.</h6>
                    <h6> What Domain Name Should I Choose?</h6>
                   </button>
-                </h3>
+               
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  The choice of domain name depends on how you plan to use it. In most cases, it makes sense to choose one that is easy to pronounce and spell if you will be telling people about it over the phone. Above all, you should choose a name that is memorable and not confusing.
@@ -552,12 +552,10 @@ const Web = () => {
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                  <button class="accordion-button  pb-2 pt-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
 				  <h6 class="num me-3">2.</h6>
                    <h6>How Much Will A Website Cost Me?</h6>
                   </button>
-                </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  The cost of a website varies depending on the complexity. We are happy to discuss your requirements and provide a quote at any time.
@@ -566,12 +564,10 @@ const Web = () => {
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                  <button class="accordion-button  pb-2 pt-3  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
 				  <h6 class="num me-3">3.</h6>
                    <h6>How Long Will It Take For My Website To Be Developed?</h6>
                   </button>
-                </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  The time it takes to build a site depends on the complexity of the site. If you have a deadline, we will work hard to meet it. The most common cause of delay is the content (text/images) from the client.
@@ -579,13 +575,11 @@ const Web = () => {
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+              <div class="accordion-item ">
+                  <button class="accordion-button pb-2 pt-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
                   <h6 class="num me-3">4.</h6>
                    <h6> What Kind Of Business Do You Work With?</h6>
                   </button>
-                </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  We work with a broad range of company types [small start-ups, large corporations, nonprofits, B2B, B2C and more] across many business industries [technology, food, apparel, health + beauty, camps, travel, finance, arts, fair trade, and more.] Over the years, we’ve helped businesses improve customer service, market their products, and attract customers. Functionality requests range from basic to advanced. Our team 
@@ -595,12 +589,10 @@ const Web = () => {
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                  <button class="accordion-button  pb-2 pt-3  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
 				  <h6 class="num me-3">5.</h6>
                    <h6> Will  We Need To Have A Meeting To Discuss About The Website?</h6>
                   </button>
-                </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  Most of the time, a meeting isn’t necessary and the work is completed with only discussions over phone and email. 
@@ -611,12 +603,10 @@ const Web = () => {
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                  <button class="accordion-button  pb-2 pt-3  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
                   <h6 class="num me-3">6.</h6>
                    <h6>Who Writes The Contents For The Website?</h6>
                   </button>
-                </h3>
                 <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  Usually that is you. You are the expert on your business, so it’s usually best if 
@@ -627,12 +617,10 @@ const Web = () => {
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                  <button class="accordion-button  pb-2 pt-3  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
                   <h6 class="num me-3">7.</h6>
                    <h6>Once My Website Is Completed, What After-Sales Service Do You Offer?</h6>
                   </button>
-                </h3>
                 <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
 				  We fully support any website we develop and are always available should you encounter any problems or require new enhancements. 
