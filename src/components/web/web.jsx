@@ -33,9 +33,6 @@ import logo from './captions/logo2.png'
 
 import './web.css'
 
-
-
-
 const Web = () => {
 
 	const projects = [
@@ -423,7 +420,7 @@ const Web = () => {
             {projects.map((project)=> (
             <SplideSlide key={project.id}>
                 <Link href={project.web}>
-                    <img src={project.img} style={{width: '95%', height: ' 350px'}} alt="Image 1" />
+                    <img src={project.img}  style={{height:"350px" , width:"90%"}}  alt="Image 1" />
                 </Link>
             </SplideSlide>
             ))}
