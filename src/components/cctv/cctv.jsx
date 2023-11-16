@@ -2,8 +2,10 @@ import cctvHeader from './caption/web-design.jpg'
 import './cctv.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
+
 import 'swiper/css';
+
+import { Navigation, Pagination,  Autoplay } from 'swiper/modules';
 
 import photo1 from './caption/photo1.jpeg'
 import photo2 from './caption/photo2.jpeg'
@@ -38,10 +40,10 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
 
 {/* slider */}
 <div className="container mb-5">
-<Swiper spaceBetween={23} slidesPerView={1}  >
+<Swiper spaceBetween={23} slidesPerView={1} modules={[Navigation, Pagination, Autoplay]}autoplay={{delay: 3000}} pagination={true}  >
      <SwiperSlide>
         <div className="container">
-          <div className="row boda-a " style={{borderColor:"#add8e6"}}>
+          <div className="row boda-a mb-5 " style={{borderColor:"#add8e6"}}>
             <div className="col-md-6 boda-right" style={{backgroundImage:`url(${photo1})`, backgroundPosition:"center" , backgroundSize:"40rem"}}>
             </div>
             <div className="col-md-6 pd " style={{borderColor:"#add8e6"}}>
@@ -49,7 +51,7 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
               <div className="p-2 " >
                 <div className="card-body p-5  mb-5 mt-2">
                 <h2 className='text-center'>CCTV 5.4</h2>
-                <h6 className='text-center mb-5 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique quae, cum sed minima iste blanditiis rem saepe ullam  <br /> <br />  et ratione natus consequuntur quidem recusandae aut eveniet mollitia quas non!</h6>
+                <h6 className='text-center  '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique quae, cum sed minima iste blanditiis rem saepe ullam  <br /> <br />  et ratione natus consequuntur quidem recusandae aut eveniet mollitia quas non!</h6>
                 <div className='mb-3 text-white'>ggd</div>
                 </div>
               </div>
@@ -66,7 +68,7 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
               <div className="p-2 " >
                 <div className="card-body p-5  mb-5 mt-2">
                 <h2 className='text-center'>CCTV v8</h2>
-                <h6 className='text-center mb-5 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quisquam odit earum aperiam deserunt.    <br /> <br /> Earum nobis, voluptas magnam consequuntur fugit facilis qui tenetur animi obcaecati vero? Rerum ullam nobis similique.</h6>
+                <h6 className='text-center  '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quisquam odit earum aperiam deserunt.    <br /> <br /> Earum nobis, voluptas magnam consequuntur fugit facilis qui tenetur animi obcaecati vero? Rerum ullam nobis similique.</h6>
                 <div className='mb-3 text-white'>ggd</div>
                 </div>
               </div>
@@ -87,7 +89,7 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
               <div className="p-2 " >
                 <div className="card-body p-5  mb-5 mt-2">
                 <h2 className='text-center'>CCTV 3.0</h2>
-                <h6 className='text-center mb-5 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quisquam odit earum aperiam deserunt.    <br /> <br /> Earum nobis, voluptas magnam consequuntur fugit facilis qui tenetur animi obcaecati vero? Rerum ullam nobis similique.</h6>
+                <h6 className='text-center '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quisquam odit earum aperiam deserunt.    <br /> <br /> Earum nobis, voluptas magnam consequuntur fugit facilis qui tenetur animi obcaecati vero? Rerum ullam nobis similique.</h6>
                 <div className='mb-3 text-white'>ggd</div>
                 </div>
               </div>
@@ -95,6 +97,8 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
               </div>
           </div>
       </div>
+
+      
         </SwiperSlide>
       <SwiperSlide>
       <div className="container">
@@ -178,7 +182,6 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
     </div>
   </div>
 </div>
-
 
 
 {/* contact us */}
