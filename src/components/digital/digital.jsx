@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 // Import Swiper styles
 import 'swiper/css';
 
-import business from './captions/Solutions-Phoaato.webp';
+import business from './captions/Teamwork_Illustration_VectorForFree-01-4.jpg';
 import  disruptive from './captions/Solutions-Photo-1.webp';
 import master from './captions/Master-Muffler.webp';
 import quoteRight from './captions/quote-right.webp';
@@ -50,6 +50,22 @@ import site from './captions/Ads/Website-Optimization-Icon-1 (1).webp'
 import Gen from './captions/Ads/Lead-Gen-Marketing2.webp';
 import commerce from './captions/Ads/Ecommerce-Marketing.webp';
 
+// services
+
+import seoS from './captions/services/seo.png';
+import socialM from './captions/services/social media.png';
+import ppc from './captions/services/ppc.png';
+import contentS from './captions/services/content.png';
+import Email from './captions/services/email.png';
+import affiliate from './captions/services/affiliate.png';
+
+
+
+
+
+
+
+
 import './digital.css'
 
 
@@ -74,14 +90,23 @@ const Digital = () => {
         <img src={business} alt="" />
       </div>
     </div>
-    <div className="col-md-7 "  style={{background:"#f8f8f8"}}>
+    <div className="col-md-7 "  style={{background:"#f8f8f8" ,height:"27rem"}}>
       <div className="p-3">
-        <h2 className="fw-bold pt-5">We help good businesses become GREAT.</h2>
-        <div className="mt-4" style={{  width:"90px", height:"3px" , background:"#f00"}}></div>
+        {/* <h2 className="fw-bold pt-3">We help good businesses become GREAT.</h2> */}
+        <h2 className="fw-bold pt- ">Our digital marketing services help your business grow online leads, calls, and revenue.</h2>
+        <div className="mt-3" style={{  width:"90px", height:"3px" , background:"#f00"}}></div>
+
         <p className="pt-3 pb-5 fs-5" style={{textAlign:"justify"}}>
-        We are your long-term growth partner focused on connecting your company's "why" to your target market and building meaningful 
-        connections with them. Identifying and connecting with your ICP allows us to create marketing campaigns that speak directly
-         to the needs and desires of your ideal customers, creating a win/win/win.
+        With Digital marketing, we have successfully changed the way brands and businesses use technology for marketing. Digital platforms are 
+        increasingly incorporated into marketing plans and everyday life, and with the high rise in the use of digital devices 
+        instead of visiting physical shops, digital marketing campaigns are becoming more prevalent and efficient.
+         
+         <br />
+         <br />
+        We achieve this aim by working closely with you to craft and deliver successful and bottom-lined oriented online 
+        marketing strategies which integrate customer needs, 
+        business objectives, and technology. 
+  
         </p>
       </div>
     </div>
@@ -92,7 +117,7 @@ const Digital = () => {
 <div className="container mt-5 mb-5">
   <div className="row g-0">
     <div className="col-md-7 "  style={{background:"#f8f8f8"}}>
-      <div className="card border-0" style={{background:"#f8f8f8"}}>
+      {/* <div className="card border-0" style={{background:"#f8f8f8"}}>
       <div className="p-3 text-end">
     <h2 className=' fw-bold pt-5'>The Disruptive Difference</h2>
 
@@ -102,6 +127,27 @@ const Digital = () => {
         <p className="pt-3 pb-5 fs-5" style={{textAlign:"justify"}}>
         We have a passion for people fueled by purpose. The brands and organizations we work with are supported to be world-changers by working with our innovative and empowered marketers. 
         Businesses can truly make a positive impact by bringing unique solutions to the world. We've built an environment where employees and clients are empowered to learn, grow, and win.
+        </p>
+      </div>
+    </div> */}
+      <div className="card border-0" style={{background:"#f8f8f8" , height:"22rem"}}>
+      <div className="p-3 text-end">
+    
+        <p className="pt- pb- fs-5" style={{textAlign:"justify"}}>
+        Developing effective digital marketing in any market is a tough, demanding, and technical undertaking. Hence the need to work with a Nigerian
+        internet marketing agency with the experience, network, tools and know-how needed to achieve market success.
+  
+         <br />
+         <br />
+    
+        Our encyclopedic knowledge of the Nigerian business environment, in-house pool of stellar associates, and strategic working alliance with outstanding
+        outside business experts provide us with the capability and 
+        expertise needed to help you achieve your desired business objectives.
+        <br />
+        <br />
+        Whatever your goals,  to improve existing marketing campaigns or design your comprehensive online media strategy from scratch, we can be of help.
+
+
         </p>
       </div>
     </div>
@@ -309,67 +355,78 @@ autoplay={{delay: 3000}}
 {/* our process */}
 <div className="container">
   <h2 className='fw-bold text-center pt-4'>Our Proven Process</h2>
-<ul className='d-flex row pt-5  justify-content-between list-unstyled'>
+<ul className='d-flex row pt-5 g-3 justify-content-between list-unstyled'>
 
   <li className='col-6 col-md-4 col-lg-2 pt-5'>
    <div className="pt- pb-5">
    <div className="text-center">
-  <img src={Gen} className='img-fluid rounded-circle' style={{height:"180px"}}  alt="" /> 
-  <h3 className='pt-4'>Discovery Call</h3>
-  <p>Tell us about your business’  needs & goals.</p>
+  <img src={seoS} className='img-fluid ' style={{height:"90px"}}  alt="" /> 
+  <h3 className='pt-4'>Search Engine Optimization</h3>
+  <p>We use advanced methods to rank websites based on content, keywords, and hundreds of other criteria to provide useful search results. Most people find what they are looking for on the first or second result....</p>
   </div> 
    </div> 
   </li>
   <li className='col-6 col-md-4  col-lg-2'>
   <div className="">
   <div className="text-center">
-  <img src={Gen} className='img-fluid rounded-circle' style={{height:"180px"}}  alt="" /> 
-  <h3 className='pt-4'>Solutions Call</h3>
-  <p>Receive an audit & our expert insights.</p>
+  <img src={socialM} className='img-fluid ' style={{height:"90px"}}  alt="" /> 
+  <h3 className='pt-4'>Social Media Marketing</h3>
+  <p>Most large and small business owners only see the surface value of social media marketing.
+  Promoting your business on social media marketing goes beyond followers, likes, and DMs. Your business’s outlook on social media needs your attention...</p>
   </div> 
   </div> 
   </li>
   <li className='col-6 col-md-4 col-lg-2 pt-5'>
   <div className="">
   <div className="text-center">
-  <img src={Gen} className='img-fluid rounded-circle' style={{height:"180px"}}  alt="" /> 
-  <h3 className='pt-4'>Marketing Level-set</h3>
-  <p>Work with your marketing team to strengthen your strategy.</p>
+  <img src={ppc} className='img-fluid ' style={{height:"90px"}}  alt="" /> 
+  <h3 className='pt-4'>PPC (pay-per-click)</h3>
+  <p>We use advanced methods to direct traffic towards your Brand. Pay Per Click has an instant impact and gives your brand a much larger reach and exposure, as a result, Of first-page exposure on major search engines.</p>
   </div> 
   </div> 
   </li>
   <li className='col-6 col-md-4 col-lg-2 pt-2'>
   <div className="">
   <div className="text-center">
-  <img src={Gen} className='img-fluid rounded-circle' style={{height:"180px"}}  alt="" /> 
-  <h3 className='pt-4'>Strategy Optimization</h3>
-  <p>Let our team maximize your results through optimization.</p>
+  <img src={contentS} className='img-fluid' style={{height:"90px"}}  alt="" /> 
+  <h3 className='pt-4'>Content Marketing</h3>
+  <p>We create unique and useful content that makes audiences become loyal to your brand.
+   We tell compelling stories about your brand that sell your products and services to potential customers through content marketing.</p>
   </div> 
   </div> 
   </li>
   <li className='col-6 col-md-4 col-lg-2 pt-5'>
   <div className="">
   <div className="text-center">
-  <img src={Gen} className='img-fluid rounded-circle ty' style={{height:"180px"}}  alt="" /> 
-  <h3 className='pt-4'>Growth Strategy</h3>
-  <p>Define next steps & goals with our team to help you scale.</p>
+  <img src={Email} className='img-fluid  ty' style={{height:"90px"}}  alt="" /> 
+  <h3 className='pt-4'>Email Marketing</h3>
+  <p>We help you connect to your prospects, customers through email marketing.
+   Email marketing is one of the best ways to connect with prospects and customers, generate leads, and build relationships. Are you taking full advantage of the opportunity?</p>
+  </div> 
+  </div>
+  </li>
+  <li className='col-6 col-md-4 col-lg-2 pt-'>
+  <div className="">
+  <div className="text-center">
+  <img src={affiliate} className='img-fluid  ty' style={{height:"90px"}}  alt="" /> 
+  <h3 className='pt-4'>Affiliate marketing</h3>
+  <p>We have the tools to enable your website or brand affiliable, an affiliate earns a commission for marketing your person's or company's products.
+    The affiliate simply searches for a product they enjoy, then promotes that product, and earns a piece of the profit from each sale they make.</p>
   </div> 
   </div>
   </li>
 </ul>
 </div>
 
-
-
 {/* Magenetic marketing */}
 <div className="container-fluid" style={{background:"#f00"}}>
 <div className='pt-5 pb-5'>
 <p className='fs-3 text-center text-white'>We Have A Passion For </p>
 <p className='text-center text-white pt-2 fw-bold fs-1'>
-Magnetic Marketing <br /> for Purpose-Driven Businesses
+Ready to discuss your project?
 </p>
 <div className="text-center">
-<button className='btn btn-dark p- fs-4 rounded-0' >LET'S GO <i class="bi bi-chevron-right ms-3"></i></button>
+<button className='btn btn-dark p- fs-4 rounded-0' >Get a Quote<i class="bi bi-chevron-right ms-3"></i></button>
 </div>
 </div>
 </div>
@@ -429,7 +486,6 @@ Magnetic Marketing <br /> for Purpose-Driven Businesses
 
   </div>
 </div>
-
 
 {/* Irresistable*/}
 <div className="container mt-5 mb-5">
