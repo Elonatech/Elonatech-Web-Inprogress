@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 // Import Swiper styles
 import 'swiper/css';
 
-import business from './captions/Teamwork_Illustration_VectorForFree-01-4.jpg';
+import business from './captions/Solutions-Phoaato.webp';
 import  disruptive from './captions/Solutions-Photo-1.webp';
 import master from './captions/Master-Muffler.webp';
 import quoteRight from './captions/quote-right.webp';
@@ -38,7 +38,7 @@ import ticktok from './captions/Ads/TikTok-Ads-Icon-1.webp';
 import linkedin from './captions/Ads/Linkedin-Ads-Icon-1.webp';
 import snap from './captions/Ads/Snapchat-Ads-Icon-1.webp'; 
 import bing from './captions/Ads/Bing-Ads-Icon-1.webp';
-import twitter from './captions/Ads/Twitter-Ads-Icon-1.webp';
+import twitter from './captions/Ads/twitter-x-logo-577BCAE525-seeklogo.com.png';
 import shopping from './captions/Ads/Google-Shopping-Icon-1.webp';
 import motion from './captions/Ads/Motion-Ads-Icon-1.webp';
 import landing from './captions/Ads/Landing-Pages-Icon-1.webp';
@@ -81,7 +81,6 @@ const Digital = () => {
    <p class="lead text-white text-center">An essential element of security that determines who is allowed to access certain data, apps, and resources and in what circumstances</p>
  </div>
  </div>
-
 {/* business */}
 <div className="container mt-5 mb-5">
   <div className="row g-0">
@@ -90,11 +89,11 @@ const Digital = () => {
         <img src={business} alt="" />
       </div>
     </div>
-    <div className="col-md-7 "  style={{background:"#f8f8f8" ,height:"27rem"}}>
+    <div className="col-md-7 "  style={{background:"#f8f8f8" ,height:"24rem"}}>
       <div className="p-3">
         {/* <h2 className="fw-bold pt-3">We help good businesses become GREAT.</h2> */}
         <h2 className="fw-bold pt- ">Our digital marketing services help your business grow online leads, calls, and revenue.</h2>
-        <div className="mt-3" style={{  width:"90px", height:"3px" , background:"#f00"}}></div>
+        <div className="mt-2" style={{  width:"90px", height:"3px" , background:"#f00"}}></div>
 
         <p className="pt-3 pb-5 fs-5" style={{textAlign:"justify"}}>
         With Digital marketing, we have successfully changed the way brands and businesses use technology for marketing. Digital platforms are 
@@ -106,7 +105,6 @@ const Digital = () => {
         We achieve this aim by working closely with you to craft and deliver successful and bottom-lined oriented online 
         marketing strategies which integrate customer needs, 
         business objectives, and technology. 
-  
         </p>
       </div>
     </div>
@@ -159,7 +157,6 @@ const Digital = () => {
     </div>
   </div>
 </div>
-
 {/* carousel */}
 <div className="container-fluid"  style={{background:"#f8f8f8"}}>
 <Swiper  
@@ -357,61 +354,57 @@ autoplay={{delay: 3000}}
   <h2 className='fw-bold text-center pt-4'>Our Proven Process</h2>
 <ul className='d-flex row pt-5 g-3 justify-content-between list-unstyled'>
 
-  <li className='col-6 col-md-4 col-lg-2 pt-5'>
+  <li className='col-6 col-md-4 col-lg-2 pt-5' >
    <div className="pt- pb-5">
    <div className="text-center">
-  <img src={seoS} className='img-fluid ' style={{height:"90px"}}  alt="" /> 
-  <h3 className='pt-4'>Search Engine Optimization</h3>
-  <p>We use advanced methods to rank websites based on content, keywords, and hundreds of other criteria to provide useful search results. Most people find what they are looking for on the first or second result....</p>
+  <img src={Gen} className='img-fluid rounded-circle' style={{height:"180px" , cursor:"pointer"}}  alt="" /> 
+  <h3 className='pt-4' style={{cursor:"pointer"}}>Search Engine Optimization</h3>
+  <p>We use advanced methods to rank...</p>
   </div> 
    </div> 
   </li>
   <li className='col-6 col-md-4  col-lg-2'>
   <div className="">
   <div className="text-center">
-  <img src={socialM} className='img-fluid ' style={{height:"90px"}}  alt="" /> 
-  <h3 className='pt-4'>Social Media Marketing</h3>
-  <p>Most large and small business owners only see the surface value of social media marketing.
-  Promoting your business on social media marketing goes beyond followers, likes, and DMs. Your business’s outlook on social media needs your attention...</p>
+  <img src={liquid} className='img-fluid rounded-circle' style={{height:"180px", cursor:"pointer"}}  alt="" /> 
+  <h3 className='pt-4' style={{cursor:"pointer"}}>Social Media Marketing</h3>
+  <p>Most large and small business owners...</p>
   </div> 
   </div> 
   </li>
   <li className='col-6 col-md-4 col-lg-2 pt-5'>
   <div className="">
   <div className="text-center">
-  <img src={ppc} className='img-fluid ' style={{height:"90px"}}  alt="" /> 
-  <h3 className='pt-4'>PPC (pay-per-click)</h3>
-  <p>We use advanced methods to direct traffic towards your Brand. Pay Per Click has an instant impact and gives your brand a much larger reach and exposure, as a result, Of first-page exposure on major search engines.</p>
+  <img src={ptc} className='img-fluid rounded-circle' style={{height:"180px", cursor:"pointer"}}  alt="" /> 
+  <h3 className='pt-4' style={{cursor:"pointer"}}>PPC (pay-per-click)</h3>
+  <p>We use advanced methods to direct traffic...</p>
   </div> 
   </div> 
   </li>
   <li className='col-6 col-md-4 col-lg-2 pt-2'>
   <div className="">
   <div className="text-center">
-  <img src={contentS} className='img-fluid' style={{height:"90px"}}  alt="" /> 
-  <h3 className='pt-4'>Content Marketing</h3>
-  <p>We create unique and useful content that makes audiences become loyal to your brand.
-   We tell compelling stories about your brand that sell your products and services to potential customers through content marketing.</p>
+  <img src={security} className='img-fluid rounded-circle' style={{height:"180px", cursor:"pointer"}}  alt="" /> 
+  <h3 className='pt-4' style={{cursor:"pointer"}}>Content Marketing</h3>
+  <p>We create unique and useful content...</p>
   </div> 
   </div> 
   </li>
   <li className='col-6 col-md-4 col-lg-2 pt-5'>
   <div className="">
   <div className="text-center">
-  <img src={Email} className='img-fluid  ty' style={{height:"90px"}}  alt="" /> 
-  <h3 className='pt-4'>Email Marketing</h3>
-  <p>We help you connect to your prospects, customers through email marketing.
-   Email marketing is one of the best ways to connect with prospects and customers, generate leads, and build relationships. Are you taking full advantage of the opportunity?</p>
+  <img src={revenue} className='img-fluid rounded-circle ty' style={{height:"180px", cursor:"pointer"}}  alt="" /> 
+  <h3 className='pt-4' style={{cursor:"pointer"}}>Email Marketing</h3>
+  <p>We help you connect to your prospects...</p>
   </div> 
   </div>
   </li>
-  <li className='col-6 col-md-4 col-lg-2 pt-'>
+  <li className='col-6 col-md-4 col-lg-2 pt-5'>
   <div className="">
   <div className="text-center">
-  <img src={affiliate} className='img-fluid  ty' style={{height:"90px"}}  alt="" /> 
-  <h3 className='pt-4'>Affiliate marketing</h3>
-  <p>We have the tools to enable your website or brand affiliable, an affiliate earns a commission for marketing your person's or company's products.
-    The affiliate simply searches for a product they enjoy, then promotes that product, and earns a piece of the profit from each sale they make.</p>
+  <img src={Gen} className='img-fluid rounded-circle ty' style={{height:"180px", cursor:"pointer"}}  alt="" /> 
+  <h3 className='pt-4' style={{cursor:"pointer"}}>Affiliate marketing</h3>
+  <p>We have the tools to enable your website...</p>
   </div> 
   </div>
   </li>
@@ -499,31 +492,31 @@ Ready to discuss your project?
     <div className="col-6  col-md-2 p-3 ">
     <div className="text-center">
         <img src={google} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>GOOGLE ADS</h6>
+        <h6 className='pt-4 fs-4'>Google Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 p-3 ">
     <div className="text-center">
         <img src={social} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>SOCIAL ADS</h6>
+        <h6 className='pt-4 fs-4'>Social Ads</h6>
       </div>
     </div>
     <div className="col-6  col-md-2 p-3 ">
     <div className="text-center">
         <img src={youtube} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>YOUTUBE ADS</h6>
+        <h6 className='pt-4 fs-4'>Youtube Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 p-3 ">
     <div className="text-center">
         <img src={amazon} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>AMAZON</h6>
+        <h6 className='pt-4 fs-4'>Amazon</h6>
       </div>
     </div>
     <div className="col-6  col-md-2 p-3 ">
     <div className="text-center">
         <img src={facebook} className='img-fluid' style={{width:"15px"}} alt="" />
-        <h6 className='pt-4 fs-4'>FACEBOOK ADS</h6>
+        <h6 className='pt-4 fs-4'>Facebook Ads</h6>
       </div>
     </div>
 
@@ -532,37 +525,37 @@ Ready to discuss your project?
     <div className="col-6 col-md-2 p-3 mt-4">
     <div className="text-center">
         <img src={ticktok} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>TIKTOK ADS</h6>
+        <h6 className='pt-4 fs-4'>Tiktok Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 p-3  mt-4">
     <div className="text-center">
         <img src={linkedin} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>LINKEDIN ADS</h6>
+        <h6 className='pt-4 fs-4'>Linkedin Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 p-3  mt-4">
     <div className="text-center">
         <img src={snap} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>SNAPCHAT ADS</h6>
+        <h6 className='pt-4 fs-4'>Snapschat Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 p-3  mt-4">
     <div className="text-center">
         <img src={bing} className='img-fluid' style={{width:"20px"}} alt="" />
-        <h6 className='pt-4 fs-4'>BING ADS</h6>
+        <h6 className='pt-4 fs-4'>Bing Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 p-3  mt-4">
     <div className="text-center">
         <img src={twitter} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>X ADS</h6>
+        <h6 className='pt-4 fs-4'>X Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2  p-3 mt-4">
     <div className="text-center">
         <img src={shopping} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>SHOPPING</h6>
+        <h6 className='pt-4 fs-4'>Shopping</h6>
       </div>
     </div>
   {/*  */}
@@ -570,44 +563,43 @@ Ready to discuss your project?
     <div className="col-6 col-md-2 mt-4">
     <div className="text-center">
         <img src={motion} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>MOTION ADS</h6>
+        <h6 className='pt-4 fs-4'>Motion Ads</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 mt-4">
     <div className="text-center">
         <img src={landing} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>LANDING PAGES</h6>
+        <h6 className='pt-4 fs-4'>Landing Pages</h6>
       </div>
     </div>
 
     <div className="col-6 col-md-2 mt-4">
     <div className="text-center">
         <img src={email} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>EMAIL</h6>
+        <h6 className='pt-4 fs-4'>Email</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 mt-4">
     <div className="text-center">
         <img src={lead} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>LEAD NURTURE</h6>
+        <h6 className='pt-4 fs-4'>Lead Nurture</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 mt-4">
     <div className="text-center">
         <img src={creative} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>CREATIVE</h6>
+        <h6 className='pt-4 fs-4'>Creative</h6>
       </div>
     </div>
     <div className="col-6 col-md-2 mt-4">
     <div className="text-center">
         <img src={site} className='img-fluid' style={{width:"25px"}} alt="" />
-        <h6 className='pt-4 fs-4'>OPTIMIZATION</h6>
+        <h6 className='pt-4 fs-4'>Optimization</h6>
       </div>
     </div>
   {/*  */}
   </div>
 </div>
-
 
 {/* e-commerce marketing */}
 <div className="container ">
