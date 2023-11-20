@@ -1,0 +1,135 @@
+
+  .branding-text-container{
+    padding: 10rem;
+  }
+
+  .branding-text{
+    text-align: center;
+    /* font-size: 40px;
+    font-weight: 700 ; */
+  }
+
+  /* .elo-img{
+    width: 550px;
+    height: 45vh;
+  } */
+
+  .text-container1{
+    display: flex;
+    margin: 4rem 8rem;
+
+  }
+  span{
+    color: red;
+  }
+
+  .frequent-container{
+    width: 50%;
+  }
+
+  .clients{
+    width: 100px;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    background: black;
+    cursor: pointer;
+  }
+
+  .content{
+    color: white;
+  }
+
+  .slider:hover .overlay{
+    opacity: 0.6;
+  }
+ 
+
+
+  
+  /* .clients{
+    height: 10px;
+    width: 250px;
+    margin: 0 40px;
+  } */
+
+
+
+
+
+  @media(max-width:768px) {
+    .branding-text{
+
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600 ;
+      }
+
+      .slider  img{
+        height: 80vh!important;
+      }
+
+      .branding-text-container{
+        padding: 1rem;
+        padding-top: 8rem;
+      }
+
+      .branding-background{
+        min-height: 50vh;
+      }
+
+      .elo-img{
+        width: 320px;
+        height: 25vh;
+      margin: 20px 0;
+      }
+
+      .elona{
+        margin-left: 30px;
+      }
+
+
+  }
+
+  .cup-img{
+    width: 400px;
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .img-bg{
+    margin-left: 25rem;
+  }
+
+ .slider  img{
+    height: 500px !important;
+  }
+
+
+  @media(max-width:768px) {
+    .cup-img{
+        width: 300px;
+        margin-left:0;
+        margin-bottom:0;
+      }
+
+      .discuss{
+        flex-direction: column;
+      }
+
+      .img-bg{
+        margin-left:10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width:18rem;
+      }
+
+
+  }

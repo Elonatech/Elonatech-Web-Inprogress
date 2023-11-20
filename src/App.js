@@ -42,8 +42,8 @@ import Video from './pages/video/video/video';
 import Animation from './pages/video/animation/animation';
 
 // graphic 
-import Prototype from './pages/graphic/prototype/prototype';
-import Brand from './pages/graphic/brand/brand';
+
+
 
 
 // marketing
@@ -78,6 +78,13 @@ import SingleProduct from './pages/sales/singleProduct/singleProduct';
 import Infinite from './pages/sales/infinite/infinite';
 import Grid from './pages/sales/grid/grid';
 import BlogDetails from './components/blogDetails/blogDetails';
+
+// Add
+
+
+import Graphic from './pages/add/graphic/graphic';
+import Branding from './pages/add/branding/branding';
+
 
 
 
@@ -240,16 +247,8 @@ const router = createBrowserRouter([
       path:'/video',
       element:<Video/>
     },
-    //graphic
-     {
-      path:'/brand',
-      element:<Brand/>
-     },
-     {
-      path:'/prototype',
-      element:<Prototype/>
-     },
-      // marketing
+   
+    // marketing
       {
         path:'/content',
         element:<Content/>
@@ -338,6 +337,17 @@ const router = createBrowserRouter([
         path:"/pro",
         element:<SingleProduct/>
       },
+      
+      // add
+
+      {
+        path:"/graphic",
+        element:< Graphic />
+      },
+      {
+        path:"/brand",
+        element:< Branding />
+      }
   ],
 
 },

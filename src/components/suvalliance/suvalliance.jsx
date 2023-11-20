@@ -16,7 +16,7 @@ const Suvalliance = () => {
  <div class="py-5 mt-5 ">
    <h2 class=" mt-5 text-white text-center">Surveilance</h2>
    <h5 class=" mt-4 text-white text-center">Experience the Next Level of Internet Speed and Reliability</h5>
-   <p class=" mt-4 lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
+   <p class=" lead text-white text-center"> System integrator with experience in IP Network and IT services. We provide organizations with quality and cost-effective business solutions.</p>
  </div>
  </div>
 
@@ -122,14 +122,14 @@ const Suvalliance = () => {
 </div>
 
 {/* frequent question */}
-<section id="faq" class="faq mb-5 mt-3">
+<section id="faq" class="faq mb-5 mt-5">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
 
           <div class="col-lg-4">
             <div class="content px-xl-5">
-              <h3><strong> Frequently AskedQuestions</strong></h3>
+              <h3 className='text-dark'><strong> Frequently Asked Questions</strong></h3>
               <h5 className="">
               Wireless Outdoor Camera
               </h5>
