@@ -4,6 +4,13 @@ import { useState } from 'react';
 
 
 
+
+
+
+
+
+
+
  export const teamData = [
     {
       id: 1,
@@ -66,7 +73,6 @@ import { useState } from 'react';
 
 const Grid = () => {
 
-  const [dropValue, setDropValue ]= useState();
 
   const [currentFruit, setCurrentFruit] = useState('oranges')
   
@@ -84,7 +90,7 @@ const Grid = () => {
   <section className="text-center">
         <div className="container">
             <h2 className="fw-bold">OUR TEAM</h2>
-            {/* <div className="row">
+            <div className="row">
              {
                 teamData.map(teams =>{
                     return(
@@ -99,12 +105,12 @@ const Grid = () => {
                     )
                 })
              }
-            </div> */}
+            </div>
         </div>
-        </section>
+  </section>
 
-       {/*  */}
-       <form>
+   
+    <form>
       <select 
         onChange={(event) => changeFruit(event.target.value)}
         value={currentFruit}
@@ -116,7 +122,7 @@ const Grid = () => {
       </select>
     </form>
 
-       {/*  */}
+
 
 
 

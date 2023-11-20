@@ -40,7 +40,15 @@ Closed-circuit television (CCTV), also known as video surveillance, is the use o
 
 {/* slider */}
 <div className="container mb-5">
-<Swiper spaceBetween={23} slidesPerView={1} modules={[Navigation, Pagination, Autoplay]}autoplay={{delay: 3000}} pagination={true}  >
+<Swiper 
+   spaceBetween={23} 
+   slidesPerView={1} 
+   modules={[Navigation, Pagination, Autoplay]}
+   autoplay={{delay: 3000}} 
+   pagination={true}
+ 
+
+  >
      <SwiperSlide>
         <div className="container">
           <div className="row boda-a mb-5 " style={{borderColor:"#add8e6"}}>
