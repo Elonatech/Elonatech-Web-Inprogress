@@ -136,36 +136,40 @@ const Graphic = () => {
        </div>
 
    {/* slider */}
-        <div className="container-fluid  pt-5 pb-5 projects-img" style={{overflowX:"hidden"}}>
+       {/* <div className="container-fluid  pt-5 pb-5 projects-img" style={{overflowX:"hidden"}}>
           <h2 className='text-center fs-1 pb-5'>Latest Projects</h2>
      
         <Slider  {...settings} style={sliderStyle}>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE1} alt=""  className='elona-img rounded'/></h3>
                   </div>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE2} alt=""  className='elona-img rounded'/></h3>
                   </div>
                   <div className='p-0'>
                     <h3><img src={IMAGE3} alt=""  className='elona-img rounded'/></h3>
                   </div>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE4} alt=""  className='elona-img rounded'/></h3>
                   </div>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE5} alt=""  className='elona-img rounded'/></h3>
                   </div>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE6} alt=""  className='elona-img rounded'/></h3>
                   </div>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE7} alt=""  className='elona-img rounded'/></h3>
                   </div>
-                  <div className='p-0'>
+                  <div className='p-'>
                     <h3><img src={IMAGE8} alt=""  className='elona-img rounded'/></h3>
                   </div>
                 </Slider>
-        </div>
+        </div> */}
+
+
+
+
 
         <div className="container mb-5 mt-5">
           <div className="row g-0">

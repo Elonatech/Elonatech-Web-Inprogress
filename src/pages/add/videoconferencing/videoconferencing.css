@@ -1,0 +1,15 @@
+/* .vid-background{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../../components/VideoConferencing/img/digital-marketing-video-streaming-internet-conceptbusinesswoman-watching-online-movie-tv-series_102957-897.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    position: relative;
+    color: #f0f0f0;
+} */
+
+@media screen and (max-width:768px) {
+    .vid-background{
+        min-height: 30vh;
+        width: 100%;
+    } 
+}

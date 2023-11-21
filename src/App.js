@@ -37,22 +37,12 @@ import Design from './pages/webs/design/design';
 import Domain from './pages/webs/domain/domain';
 import Hosting from './pages/webs/hosting/hosting';
 
-// video 
-import Video from './pages/video/video/video';
-import Animation from './pages/video/animation/animation';
-
-// graphic 
-
-
-
-
 // marketing
 import Content from './pages/marketing/content/content';
 import Ppc from './pages/marketing/ppc/ppc';
 import Seo from './pages/marketing/seo/seo';
 import Social from './pages/marketing/social/social';
 import Mail from './pages/marketing/mail/mail';
-
 
 // software
 
@@ -62,9 +52,7 @@ import System from './pages/software/system/system';
 import Software from './pages/software/software/software';
 
 // support
-import Technical from './pages/support/technical/technical';
-import Remote from './pages/support/remote/remote';
-import Admin from './pages/support/admin/admin';
+
 
 // sales
 import Computer from './pages/sales/computer/computer';
@@ -80,18 +68,31 @@ import Grid from './pages/sales/grid/grid';
 import BlogDetails from './components/blogDetails/blogDetails';
 
 // Add
-
-
 import Graphic from './pages/add/graphic/graphic';
 import Branding from './pages/add/branding/branding';
+import Animation from './pages/add/animation/Animation';
+import Video from './pages/add/video/Video';
+import Motion from './pages/add/motion/motion';
+import Uiux from './pages/add/uiux/uiux';
+import Career from './pages/add/career/career';
+import Technical from './pages/add/technical/technical';
+import Remote from './pages/add/remote/remote';
+import Livestreaming from './pages/add/livestreaming/livestreaming';
+import Videoconferencing from './pages/add/videoconferencing/videoconferencing';
 
+// career page
+import AnimationCareer from './pages/add/animationCareer/animationCareer';
+import DigitalCareer from './pages/add/digitalCareer/digitalCareer';
+import GraphicCareer from './pages/add/graphicCareer/graphicCareer';
+import MarketingCareer from './pages/add/marketingCareer/marketingCareer';
+import SystemCareer from './pages/add/systemCareer/systemCareer';
+import WebCareer from './pages/add/webCareer/webCareer';
 
 
 
 const Layout = () =>{
   return(
   <>
-  
   <Navbar />
   <Outlet/>
   <Footer />
@@ -103,7 +104,7 @@ const router = createBrowserRouter([
 {
   path:"/",
   element: <Layout/>,
-  // errorElement:<Error />,
+// errorElement:<Error />,
   children:[
     {
       path:'/',
@@ -237,17 +238,7 @@ const router = createBrowserRouter([
       path:'/hosting',
       element:<Hosting/>
     },
-    // video
-    {
-      path:'/animation',
-      element:<Animation/>
-    },
- 
-    {
-      path:'/video',
-      element:<Video/>
-    },
-   
+  
     // marketing
       {
         path:'/content',
@@ -288,26 +279,13 @@ const router = createBrowserRouter([
         path:"/software",
         element:<Software/>
       },
-      // support
-      {
-        path:"/technical",
-        element:<Technical/>
-      },
-      {
-        path:"/remote",
-        element:<Remote/>
-      },
-      {
-        path:"/admin",
-        element:<Admin/>
-      },
       // sales
       {
         path:"/computers",
         element:< Computer/>
       },
       {
-        path:"/products",
+        path:"/shop",
         element:<Shop/>
       },
       {
@@ -347,7 +325,75 @@ const router = createBrowserRouter([
       {
         path:"/brand",
         element:< Branding />
-      }
+      },
+      {
+        path:'/animation',
+        element:<Animation/>
+      },
+      {
+        path:"/video",
+        element:< Video />
+      },
+      {
+        path:"/motion",
+        element:< Motion />
+      },
+   
+      {
+        path:"/uiux",
+        element:< Uiux />
+      },
+      {
+        path:"/career",
+        element:< Career />
+      },
+      {
+        path:"/technical",
+        element:< Technical />
+      },
+      {
+        path:"/technical",
+        element:< Technical />
+      },
+      {
+        path:"/remote",
+        element:< Remote />
+      },
+      {
+        path:"/livestreaming",
+        element:< Livestreaming />
+      },
+      {
+        path:"/videoconferencing",
+        element:< Videoconferencing />
+      },
+      // career page
+      {
+        path:"/animation-career",
+        element:< AnimationCareer />
+      },
+      {
+        path:"/digital-career",
+        element:< DigitalCareer  />
+      },
+      {
+        path:"/graphic-career",
+        element:< GraphicCareer  />
+      },
+      {
+        path:"/marketing-career",
+        element:<  MarketingCareer />
+      },
+      {
+        path:"/system-career",
+        element:< SystemCareer />
+      },
+      {
+        path:"/web-career",
+        element:< WebCareer />
+      },
+ 
+   
   ],
 
 },

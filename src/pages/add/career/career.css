@@ -1,0 +1,20 @@
+/* .career-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../components/Career/img/desk-scene-close-up.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+
+    color: #f0f0f0;
+} */
+.align-self-center{
+    width: 40%;
+}
+
+@media(max-width:768px){
+    .align-self-center{
+        width: 100%;
+    }
+    .card{
+        margin-top: 2rem;
+    }
+}

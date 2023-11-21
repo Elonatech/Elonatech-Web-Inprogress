@@ -1,0 +1,30 @@
+/* .technical-background{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../../components/technical/img/stock-photo-authentic-office-professional-black-it-programmer-working-on-desktop-computer-male-website-2079730696_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    position: relative;
+    color: #f0f0f0;
+  } */
+
+.p-text{
+    width: 90%;
+    padding-top: 10px;
+}
+.star{
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+
+
+  @media screen and (max-width:768px){
+    .p-text{
+        width: 100%;
+    }
+    .tech-text{
+        margin-top: 1rem;
+    }
+    
+  }

@@ -1,0 +1,16 @@
+.GraphicImage{
+    background-image: url('./caption/careerBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 10px;
+    color: #f0f0f0;
+}
+
+@media screen and (max-width:768px){
+    .GraphicImage{
+        width: 100%;
+        min-height: 190px;
+    }
+}

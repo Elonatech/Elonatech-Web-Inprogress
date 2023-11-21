@@ -8,12 +8,23 @@
     background-image: url('./img/colorful-266993_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* min-height: 50vh; */
+    min-height: 50vh;
     position: relative;
     color: #f0f0f0;
 
   }
 
+   
+
+  .elona-img-1{
+    width: 525px;
+    height: 15rem;
+  }
+
+  .elona-img-2{
+    width: 620px;
+    height: 15rem;
+  }
  
   .container-card{
     width: 100%;
@@ -79,11 +90,18 @@
     justify-content: center;
 
    }
-
+/* 
    .elona-img{
     width: 380px;
     height: 400px;
 
+
+  } */
+
+  .elona-img{
+    width: 310px;
+    height: 300px;
+    /* padding: 20px; */
 
   }
 
@@ -122,6 +140,8 @@
       margin-left: 0;
       padding: 20px;
     }
+
+
 
     .elona-img{
       width: 100px;
@@ -214,4 +234,13 @@
       margin: 0;
     }
   }
+
+/* 
+  @media screen and (min-width: 414px) {
+    body {
+      background-color: lightgreen;
+    }
+
+   
+  } */
 
