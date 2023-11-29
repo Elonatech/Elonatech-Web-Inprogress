@@ -17,6 +17,7 @@ src/pages/sales/office/captions/Power.Book.IV.Force.S02E07.(NKIRI.COM).mkv
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*

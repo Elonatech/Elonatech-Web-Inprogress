@@ -66,6 +66,7 @@ import SingleProduct from './pages/sales/singleProduct/singleProduct';
 import Infinite from './pages/sales/infinite/infinite';
 import Grid from './pages/sales/grid/grid';
 import BlogDetails from './components/blogDetails/blogDetails';
+import BlogWrite from './components/blogWrite/blogWrite';
 
 // Add
 import Graphic from './pages/add/graphic/graphic';
@@ -392,6 +393,12 @@ const router = createBrowserRouter([
         path:"/web-career",
         element:< WebCareer />
       },
+      
+      {
+        path:"/write",
+        element:< BlogWrite />
+      },
+      
  
    
   ],
