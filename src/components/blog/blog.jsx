@@ -48,8 +48,8 @@ console.log(process.env)
     <div className="container">
         <div className="row">
             {/*  */}
-            {isLoading ? (      
-            data.map((item) => (
+            {/* {isLoading ? (       */}
+            {data?.map((item) => (
                         <div className="col-md-12" key={item.id}>
                                 <div className="shadow mt-4">
                                     <div className="row">
@@ -69,12 +69,12 @@ console.log(process.env)
                                     </div>
                                 </div>
                         </div>
-                ))
-                ) : (
+                ))}
+                {/* ) : (
                     <div style={{marginLeft:"25rem"}}>
                      <Loading  />
                     </div>
-                )}
+                )} */}
         </div>
     </div>
    </div>
