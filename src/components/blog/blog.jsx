@@ -4,13 +4,14 @@ import blogHeader from './captions/9354657.jpg';
 import { Link } from 'react-router-dom';
 import { BASEURL } from '../../BaseURL/BaseURL';
 import Loading from '../Loading/Loading';
+import DOMPurify from 'dompurify';
+
+
 
 
 const Blog = () => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-console.log(process.env)
-
     useEffect(() => {
       const fetchData = async () => {
         try {
@@ -22,12 +23,12 @@ console.log(process.env)
           setIsLoading(true);
         }
       };
-  
       fetchData();
     }, []);
   
 
     return (
+    <>
     <>
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" ,marginBottom:"45px", backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${blogHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
@@ -47,27 +48,25 @@ console.log(process.env)
    <div className="col-md-9">
     <div className="container">
         <div className="row">
-            {/*  */}
+            {/* style={{position:"relative", right:"10px"}}  */}  
             {isLoading ? (      
             data?.map((item) => (
                         <div className="col-md-12" key={item.id}>
-                                <div className="shadow mt-4">
-                                    <div className="row">
+                          <Link className='text-decoration-none text-dark' to={`${item._id}`}>
+                                <div className="mt-4">
+                                    <div className="row shadow" style={{width:"100%"}}>
+                                        <div className="col-md-6" >
+                                      <img src={item.cloudinary_id} className='img-fluid'  alt="" />
+                                        </div>
                                         <div className="col-md-6">
-                                            <div className="">
-                                                <img src={item.cloudinary_id} className='img-fluid'  alt="" />
-                                            </div>
-                                                </div>
-                                        <div className="col-md-6">
-                                            <div className="p-4">
                                             <h6 className='fs-6 pb-3'>{item.category}</h6>
                                             <h5 className='pb-3' style={{color:"#34548c"}}> <Link className='text-decoration-none' to={`${item._id}`}>{item.title}</Link></h5>
-                                            <p className='fs-6 pb-4'> {item.description.slice(0,150)}</p>
+                                            <p className='fs-6 pb-4' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(item.description.slice(0,150))}}></p>
                                             <p className='fs-6'> {item.author} / {new Date(item.createdAt).toDateString()}   </p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                              </Link>
                         </div>
                 ))
                 ) : (
@@ -105,6 +104,9 @@ console.log(process.env)
 </div>
 
 </div>
+
+
+    </>
 
 
     </>

@@ -6,14 +6,11 @@ import hgdelete from './caption/delete.png'
 import edit from './caption/editing.png';
 import './blog.css';
 import Loading from '../Loading/Loading';
+import DOMPurify from 'dompurify';
 
 
 const BlogDetails = () => {
-const [title , setTitle] = useState('');
-const [description, setDescription] = useState('');
-const [author, setAuthor] = useState('');
-const [category, setCategory] = useState('');
-const [cloudinary_id , setCloudinary_id] = useState('');
+const [data , setData] = useState({})
 const [isLoading, setIsLoading] = useState(false);
 
 const { id } = useParams()
@@ -23,11 +20,7 @@ useEffect(() =>{
 const fetchBlog = async ()=>{
     try {
     const res = await axios.get(`${BASEURL}/api/v1/blog/${id}`);
-    setTitle(res.data.getBlogById.title)
-    setDescription(res.data.getBlogById.description)
-    setAuthor(res.data.getBlogById.author)
-    setCategory(res.data.getBlogById.category)
-    setCloudinary_id(res.data.getBlogById.cloudinary_id)  
+    setData(res.data.getBlogById)  
     setIsLoading(true);
     } catch (error) {
     console.log(error);
@@ -68,12 +61,12 @@ return (
          </ol>
  {isLoading ? (         
 <div>
-<h3 className='fw-bold'>{title}</h3>
+<h3 className='fw-bold'>{data.title}</h3>
 <div className="mt-4 ">
 <div className="row">
 <div className="col-md-12">
  <div className="card border-0 rounded ">
-<img src={cloudinary_id} alt="" className="singlePostImg rounded" />
+<img src={data.cloudinary_id} alt="" className="singlePostImg rounded" />
 </div>
 </div>
 </div>
@@ -81,17 +74,19 @@ return (
 <div className="container-flui mt-3 mb-4">
 <div className="row">
 <div className="col-6 col-md-6">
-<h6>Author: <span className='fst-italic ms-2'>{author}</span></h6>
+<h6>Author: <span className='fst-italic ms-2'>{data.author}</span></h6>
 </div>
 <div className="col-6 col-md-6">
 <div className="d-flex justify-content-end">
-<img src={edit} className='img-fluid me-3' style={{width:'20px' , cursor:"pointer"}}  alt="" />
+<Link className='text-decoration-none me-3'  style={{width:'20px' , cursor:"pointer"}}  to={`/update/${id}`} state={data}>
+    <img src={edit} className='img-fluid me-3'  style={{width:'20px' , cursor:"pointer"}}     alt="" />
+</Link>
 <img src={hgdelete} className='img-fluid' style={{width:'20px', cursor:"pointer"}} onClick={handleDelete}  alt="" />
 </div>
 </div>
 </div>
 </div>
-<div className="description">{description}</div>
+<div class="description" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.description)}}></div>
 </div>
 ) : (
     <div className='' style={{marginLeft:"25rem"}}>
@@ -144,7 +139,7 @@ return (
     <div className="mt-4">
         <h5 style={{color:"#34548c"}}>Categories</h5>
         <ul className='list-unstyled mt-2'>
-            <li>News</li>
+            <li>{data.category}</li>
             <li>Trends</li>
         </ul>
         <h5 className='mt-2' style={{color:"#34548c"}}>Be the first to know</h5>

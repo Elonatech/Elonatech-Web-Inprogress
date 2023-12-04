@@ -67,6 +67,7 @@ import Infinite from './pages/sales/infinite/infinite';
 import Grid from './pages/sales/grid/grid';
 import BlogDetails from './components/blogDetails/blogDetails';
 import BlogWrite from './components/blogWrite/blogWrite';
+import BlogUpdate from './components/blog/blogUpdate/blogUpdate';
 
 // Add
 import Graphic from './pages/add/graphic/graphic';
@@ -88,6 +89,7 @@ import GraphicCareer from './pages/add/graphicCareer/graphicCareer';
 import MarketingCareer from './pages/add/marketingCareer/marketingCareer';
 import SystemCareer from './pages/add/systemCareer/systemCareer';
 import WebCareer from './pages/add/webCareer/webCareer';
+
 
 
 
@@ -398,7 +400,12 @@ const router = createBrowserRouter([
         path:"/write",
         element:< BlogWrite />
       },
+      {
+        path:"/update/:id",
+        element:< BlogUpdate />
+      },
       
+  
  
    
   ],
@@ -408,6 +415,7 @@ const router = createBrowserRouter([
   path:"/grid",
   element:<Grid/>
 },
+
 
 
 ]);
