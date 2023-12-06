@@ -70,9 +70,17 @@ const Blog = () => {
                         </div>
                 ))
                 ) : (
-                    <div style={{marginLeft:"25rem"}}>
-                     <Loading  />
-                    </div>
+                  <div className="container">
+                  <div className="row">
+                   <div className="col-md-12">
+                       <div className="d-flex justify-content-center">
+                         <div className='my-5 py-5'>
+                       <Loading  />
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+                 </div>
                 )} 
         </div>
     </div>

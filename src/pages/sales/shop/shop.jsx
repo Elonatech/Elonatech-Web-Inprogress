@@ -1,33 +1,58 @@
+
+import { useState, useEffect } from 'react';
 import shopHeader from './caption/shopHeader.jpg'
 import office1 from './caption/office/1-3-1-1-130x130.jpg';
-import office2 from './caption/office/2-1-2-1-130x130.jpg';
-import office3 from './caption/office/1-1-2-130x130.jpg';
-import office4 from './caption/office/1-5-1-130x130.jpg';
-
-import computer1 from './caption/computer/81blwMhVV8L._AC_SX522_-130x110.jpg';
-import computer2 from './caption/computer/download-3-130x130.jpg';
-import computer3 from './caption/computer/Apple-Macbook-MRQN2LLA-2-130x91.jpg';
-import computer4 from './caption/computer/asus-laptop-130x130.jpg';
-
-import printer1 from './caption/printer/hp1.jpg';
-import printer2 from './caption/printer/printer2.jpg';
-import printer3 from './caption/printer/printer3.jpg';
-import printer4 from './caption/printer/printer4.jpg';
-
-import pos1 from './caption/pos/pos1.png';
-import pos2 from './caption/pos/pos2.png';
-import pos3 from './caption/pos/pos3.png';
-import pos4 from './caption/pos/pos4.jpg';
-
-
-
 import './shop.css'
+// import office2 from './caption/office/2-1-2-1-130x130.jpg';
+// import office3 from './caption/office/1-1-2-130x130.jpg';
+// import office4 from './caption/office/1-5-1-130x130.jpg';
+
+// import computer1 from './caption/computer/81blwMhVV8L._AC_SX522_-130x110.jpg';
+// import computer2 from './caption/computer/download-3-130x130.jpg';
+// import computer3 from './caption/computer/Apple-Macbook-MRQN2LLA-2-130x91.jpg';
+// import computer4 from './caption/computer/asus-laptop-130x130.jpg';
+
+// import printer1 from './caption/printer/hp1.jpg';
+// import printer2 from './caption/printer/printer2.jpg';
+// import printer3 from './caption/printer/printer3.jpg';
+// import printer4 from './caption/printer/printer4.jpg';
+
+// import pos1 from './caption/pos/pos1.png';
+// import pos2 from './caption/pos/pos2.png';
+// import pos3 from './caption/pos/pos3.png';
+// import pos4 from './caption/pos/pos4.jpg';
+
+import { BASEURL } from '../../../BaseURL/BaseURL';
+import Loading from '../../../components/Loading/Loading';
+import axios from 'axios'
+
+
+
+
+
 
 const Shop = () => {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BASEURL}/api/v1/product/`);
+        setData(response.data.getAllProducts);
+        setIsLoading(true);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(true);
+      }
+    };
+    fetchData();
+  }, []);
+
+
+
+  
     return (
         <>
-
-        
 {/* Header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${shopHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
  <div class="py-5 mt-5 ">
@@ -47,23 +72,48 @@ const Shop = () => {
 			</div>
 			<div class="row g-1 progress-circle ">
 				{/* office equipment */}
-			<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={office1} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">30 Meter 15 Pins VGA Cable - Black </h5>
-               <p className='lead fs-6'>Office System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
+
+           {isLoading ? (      
+            data?.map((product) => {
+
+              return(
+              
+                <div class="col-lg-3 mb-4" key={product.id}>
+                <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+                  <div className="text-center take">
+                  <img src={product.cloudinary_id[0].url} className='img-fluid'  alt="" />
+                  </div>
+                 <h5 class="fw-normal pt-3">{product.name} </h5>
+                 <p className='lead fs-6'>{product.category}</p>
+                 <div class="stars" style={{color:'black'}}>
+                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                 </div>
+                  <div class="d-flex justify-content-between">
+                 <p className='mt-2 px-1 text-danger'>₦ {product.price}.00</p>
+                 <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+             </div>
+             </div>
+         </div>
+          )
+
+            })
+                ) : (
+                 
+                    <div className="container">
+                     <div className="row">
+                      <div className="col-md-12">
+                          <div className="d-flex justify-content-center">
+                            <div className='my-5 py-5'>
+                          <Loading  />
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                    </div>
+                )}
+
+    
+		  {/* <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
                 <img src={office2} className='img-fluid' style={{}} alt="" />
@@ -110,9 +160,9 @@ const Shop = () => {
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
-		</div>
+		</div> */}
 		{/* computer */}
-		<div class="col-lg-3 mb-4">
+		{/* <div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
                 <img src={computer1} className='img-fluid ' style={{}} alt="" />
@@ -175,9 +225,9 @@ const Shop = () => {
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
-		</div>
+		</div> */}
 		{/* printer */}
-		<div class="col-lg-3 mb-4">
+		{/* <div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
                 <img src={printer1} className='img-fluid' style={{}} alt="" />
@@ -240,9 +290,9 @@ const Shop = () => {
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
-		</div>
+		</div> */}
 		{/* pos */}
-		<div class="col-lg-3 mb-4">
+		{/* <div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
                 <img src={pos1} className='img-fluid pt-2' style={{}} alt="" />
@@ -305,8 +355,8 @@ const Shop = () => {
                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
               </div>
               </div>				
-		</div>
-		{/*  */}
+		</div> */}
+		{/*  */} 
 		</div>
 		</div>
 	</section>
@@ -329,7 +379,7 @@ const Shop = () => {
             {/* range */}
           <h4 class="">Filter by price</h4>
           <input type="range"/>
-          {/* range end */}
+ 
         </div>
       </div>
 </div>
