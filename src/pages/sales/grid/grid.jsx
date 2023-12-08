@@ -1,6 +1,10 @@
 
 import { useState } from 'react';
 
+import './grid.css'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 
@@ -8,86 +12,83 @@ import { useState } from 'react';
 
 
 
-
-
-
- export const teamData = [
-    {
-      id: 1,
-      image: require('./captions/img1.jpg')  ,
-      name:"Gabriel Hart",
-      designation:"CEO",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 2,
-      image: require('./captions/img2.jpg')  ,
-      name:"Kingston Morgan",
-      designation:"Supervisor",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 3,
-      image: require('./captions/img3.jpg')  ,
-      name:"Shaw Michael",
-      designation:"Remote Support",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 4,
-      image: require('./captions/img4.jpg')  ,
-      name:"Paul Mason",
-      designation:"Team Lead",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 5,
-      image: require('./captions/img10.jpg')  ,
-      name:"Akinson",
-      designation:"Lead",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 6,
-      image: require('./captions/img11.jpg')  ,
-      name:"Mason Greenword",
-      designation:"MD",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 7,
-      image: require('./captions/img12.jpg')  ,
-      name:"Max",
-      designation:"Ko",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-    {
-      id: 8,
-      image: require('./captions/img13.jpg')  ,
-      name:"chrome",
-      designation:"Digital marketing",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
-    },
-]
+//  export const teamData = [
+//     {
+//       id: 1,
+//       image: require('./captions/img1.jpg')  ,
+//       name:"Gabriel Hart",
+//       designation:"CEO",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 2,
+//       image: require('./captions/img2.jpg')  ,
+//       name:"Kingston Morgan",
+//       designation:"Supervisor",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 3,
+//       image: require('./captions/img3.jpg')  ,
+//       name:"Shaw Michael",
+//       designation:"Remote Support",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 4,
+//       image: require('./captions/img4.jpg')  ,
+//       name:"Paul Mason",
+//       designation:"Team Lead",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 5,
+//       image: require('./captions/img10.jpg')  ,
+//       name:"Akinson",
+//       designation:"Lead",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 6,
+//       image: require('./captions/img11.jpg')  ,
+//       name:"Mason Greenword",
+//       designation:"MD",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 7,
+//       image: require('./captions/img12.jpg')  ,
+//       name:"Max",
+//       designation:"Ko",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+//     {
+//       id: 8,
+//       image: require('./captions/img13.jpg')  ,
+//       name:"chrome",
+//       designation:"Digital marketing",
+//       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex earum distinctio in vero similique quisquam "
+//     },
+// ]
 
 
 const Grid = () => {
 
 
-  const [currentFruit, setCurrentFruit] = useState('oranges')
+  // const [currentFruit, setCurrentFruit] = useState('oranges')
   
-  const changeFruit = (newFruit) => {
-    setCurrentFruit(newFruit)
-    if(newFruit === "bananas"){
-      console.log('Support Team')
-    }
+  // const changeFruit = (newFruit) => {
+  //   setCurrentFruit(newFruit)
+  //   if(newFruit === "bananas"){
+  //     console.log('Support Team')
+  //   }
 
   
-  }
+  // }
 
     return (
         <>
-  <section className="text-center">
+  {/* <section className="text-center">
         <div className="container">
             <h2 className="fw-bold">OUR TEAM</h2>
             <div className="row">
@@ -120,7 +121,25 @@ const Grid = () => {
         <option value="tomatoes">Technically a Fruit Tomatoes</option>
         <option value="bananas">Bodacious Bananas</option>
       </select>
-    </form>
+    </form> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

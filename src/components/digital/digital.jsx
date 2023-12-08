@@ -115,19 +115,6 @@ const Digital = () => {
 <div className="container mt-5 mb-5">
   <div className="row g-0">
     <div className="col-md-7 "  style={{background:"#f8f8f8"}}>
-      {/* <div className="card border-0" style={{background:"#f8f8f8"}}>
-      <div className="p-3 text-end">
-    <h2 className=' fw-bold pt-5'>The Disruptive Difference</h2>
-
-    <div className='d-flex justify-content-end'>
-    <div className="mt-4" style={{  width:"90px", height:"3px" ,margin:"" , background:"#f00"}}></div>
-    </div>
-        <p className="pt-3 pb-5 fs-5" style={{textAlign:"justify"}}>
-        We have a passion for people fueled by purpose. The brands and organizations we work with are supported to be world-changers by working with our innovative and empowered marketers. 
-        Businesses can truly make a positive impact by bringing unique solutions to the world. We've built an environment where employees and clients are empowered to learn, grow, and win.
-        </p>
-      </div>
-    </div> */}
       <div className="card border-0" style={{background:"#f8f8f8" , height:"22rem"}}>
       <div className="p-3 text-end">
     

@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import shopHeader from './caption/shopHeader.jpg'
 import office1 from './caption/office/1-3-1-1-130x130.jpg';
 import './shop.css'
@@ -72,16 +73,14 @@ const Shop = () => {
 			</div>
 			<div class="row g-1 progress-circle ">
 				{/* office equipment */}
-
            {isLoading ? (      
             data?.map((product) => {
-
               return(
-              
                 <div class="col-lg-3 mb-4" key={product.id}>
+                <Link className='text-decoration-none text-dark' to={`/product/${product._id}`}>
                 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                   <div className="text-center take">
-                  <img src={product.cloudinary_id[0].url} className='img-fluid'  alt="" />
+                  <img src={product.cloudinary_id[0].url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
                   </div>
                  <h5 class="fw-normal pt-3">{product.name} </h5>
                  <p className='lead fs-6'>{product.category}</p>
@@ -93,6 +92,7 @@ const Shop = () => {
                  <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
              </div>
              </div>
+             </Link>
          </div>
           )
 
@@ -110,7 +110,7 @@ const Shop = () => {
                       </div>
                      </div>
                     </div>
-                )}
+          )}
 
     
 		  {/* <div class="col-lg-3 mb-4">

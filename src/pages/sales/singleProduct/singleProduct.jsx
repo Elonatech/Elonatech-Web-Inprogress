@@ -1,10 +1,54 @@
-import product1 from './captions/single-product-01.jpg';
-import product2 from './captions/single-product-02.jpg';
 
+import hgdelete from './captions/delete.png'
+import {  useEffect, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import { BASEURL } from '../../../BaseURL/BaseURL';
+import { useNavigate } from 'react-router-dom';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 import './singleProduct.css';
 
+// import required modules
+import { FreeMode, Navigation, EffectFade, Thumbs, Pagination } from 'swiper/modules';
+
+
 const SingleProduct = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState();
+    const [data, setData] = useState({})
+    const [image, setImage] = useState([])
+    const { id } = useParams()
+    const navigate = useNavigate() 
+    useEffect(() =>{
+      const fetchData = async() =>{
+        try {
+            const res = await axios.get(`${BASEURL}/api/v1/product/${id}`);
+            setData(res.data.getProductById)
+            setImage(res.data.getProductById.cloudinary_id)
+            // setIsLoading(true);
+            } catch (error) {
+            console.log(error);
+            // setIsLoading(true);
+            }
+      }
+    
+      fetchData()
+    },[])
+   
+    const handleDelete = async () => {
+        const res = await axios.delete(`${BASEURL}/api/v1/product/${id}`)
+        console.log(res)
+        navigate('/shop')
+        };
+        
+
+
     return (
     <>
 
@@ -26,38 +70,94 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-    </section>
-   
-
+</section>
 {/* header */}
 
-{/* Product Area Starts */}
 
+{/* Product Area Starts */}
 <section class="section" id="product">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                <div class="left-images">
-                    
-                    <img src={product2} className='img-fluid' alt=""/>
-                </div>
+   <div class="container">
+   <div class="row">
+   {/* slide */}
+   <div class="col-lg-9 mb-5">
+   <div className="container">
+  <div className="row g-0 ">
+ <div className="col-2">
+ <div className="card border-0">
+      <Swiper
+        direction='vertical'
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={10}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation,  Thumbs, Pagination]}
+        className="swiper-container gallery-thumbs pb-5"
+      >
+       <ul className='list-unstyled text-center'>
+        {image.map((item) => (
+        <div key={item.id}> 
+       <li className='pb-3'>
+         <SwiperSlide className='pb-' style={{paddingBottom:"60px"}} >
+          <img src={item.url} className='img-fluid hto rounded border border-dark' style={{height:"60px", width:"60px", objectFit:"cover", cursor:"pointer"}} />
+          </SwiperSlide>
+         </li>
+        </div>
+    ))}
+    </ul>
+      </Swiper>
+        </div>
+        </div>
+        <div className="col-10">
+        <div className="card">
+
+    <div className="gall">
+    <Swiper
+       style={{
+        '--swiper-navigation-color': '#fff',
+        '--swiper-pagination-color': '#fff',
+      }}
+        spaceBetween={30}
+        // effect={'fade'}
+        pagination={{
+          clickable: true,
+        }}
+        thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+        modules={[FreeMode, Navigation, Thumbs, Pagination]}
+        className='swiper-container gallery-top '
+      >
+    {image.map((item) => (
+        <div key={item.id}> 
+         <SwiperSlide className='border-0'>
+          <img  src={item.url} className='img-fluid' style={{height:"400px", width:"770px", objectFit:"cover"}} />
+        </SwiperSlide>
+        </div>
+    ))}
+    </Swiper>
+       </div>  
+
             </div>
-            <div class="col-lg-4">
-                <div class="right-content">
-                    <h4>New Green Jacket</h4>
-                    <span class="price">$75.00</span>
-                    <ul class="stars">
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
+        </div>
+    </div>
+   </div>
+   </div>
+{/*  */}
+    <div class="col-lg-3 mb-5">
+            <div class="right-content">
+                    <h4>{data.name}</h4>
+                    <span class="price text-dark">₦ {data.price}.00</span>
+                    <ul class="stars" >
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                      
                     </ul>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore.</span>
                     <div class="quote">
-                        <i class="fa fa-quote-left"></i><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuski smod.</p>
+                       <p>{data.description}</p>
                     </div>
-                    <div class="quantity-content">
+                    {/* <div class="quantity-content">
                         <div class="left-content">
                             <h6>No. of Orders</h6>
                         </div>
@@ -66,969 +166,31 @@ const SingleProduct = () => {
                                 <input type="button" value="-" class="minus"/><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""/><input type="button" value="+" class="plus"/>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div class="">
-                        <h4 className='mt-4'>Total: $210.00</h4>
-                        <button className='btn btn-outline-dark mt-3'><b>Add To Cart</b></button>
+                        <h4 className='mt-4'>Total: ₦ {data.price}.00</h4>
                     </div>
+                            <div className="row justify-content-md-end mt-3">
+                                <div className="col-6">
+                                    <div className="">
+                                    <button className='btn btn-dark mt-3'><b>Add To Cart</b></button>
+                                    </div>
+                                </div>
+                                <div className="col-6">
+                                    <div className="text-end">
+                                        <div className="d-flex justify-content-md-end mt-4 ">
+                                        <img src={hgdelete} className='img-fluid  me-5' style={{width:'20px', cursor:"pointer"}} onClick={handleDelete}  alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                   
                 </div>
             </div>
             </div>
         </div>
     </section>
 
-
-{/* table */}
-<section class="hosting-section spad mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h3 className='text-center mb-5 mt-4'>WEB HOSTING PLAN PERFECT FOR YOU!</h3>
-                    </div>
-                    <div class="hosting__text">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                <div class="hosting__feature__table">
-                                    <table>
-                                
-                                        <tbody>
-                                            <tr>
-                                                <td class="hosting__feature--item">Number of Websites</td>
-                                                <td class="hosting__feature--info">1 Website</td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Web Space</td>
-                                                <td class="hosting__feature--info">5,000MB</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Email Accounts</td>
-                                                <td class="hosting__feature--info">25</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                                <td class="hosting__feature--check">
-                                                    <span class="fa fa-check-circle-o"></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">cPanel Control Panel</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Daily Backups</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Bandwidth</td>
-                                                <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Setup</td>
-                                                <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Advanced Security Features</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Website Builder</td>
-                                                <td class="hosting__feature--info">1</td>
-                                                <td class="hosting__feature--info">50</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                <div class="hosting__feature__table">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="hosting__feature__plan--choose">
-                                                        <span>All Servers Hosting Features</span>
-                                                        <div class="chose__title">CHOOSE PERFECT PLAN</div>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Started</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Business</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$5.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Premium</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$8.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="hosting__feature--item">Number of Websites</td>
-                                                <td class="hosting__feature--info">1 Website</td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Web Space</td>
-                                                <td class="hosting__feature--info">5,000MB</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Email Accounts</td>
-                                                <td class="hosting__feature--info">25</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">cPanel Control Panel</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Daily Backups</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Bandwidth</td>
-                                                <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Setup</td>
-                                                <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Advanced Security Features</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Website Builder</td>
-                                                <td class="hosting__feature--info">1</td>
-                                                <td class="hosting__feature--info">50</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                <div class="hosting__feature__table">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="hosting__feature__plan--choose">
-                                                        <span>All VPS Hosting Features</span>
-                                                        <div class="chose__title">CHOOSE PERFECT PLAN</div>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Started</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Business</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$5.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Premium</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$8.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="hosting__feature--item">Number of Websites</td>
-                                                <td class="hosting__feature--info">1 Website</td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Web Space</td>
-                                                <td class="hosting__feature--info">5,000MB</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Email Accounts</td>
-                                                <td class="hosting__feature--info">25</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">cPanel Control Panel</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Daily Backups</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Bandwidth</td>
-                                                <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Setup</td>
-                                                <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Advanced Security Features</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Website Builder</td>
-                                                <td class="hosting__feature--info">1</td>
-                                                <td class="hosting__feature--info">50</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-4" role="tabpanel">
-                                <div class="hosting__feature__table">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="hosting__feature__plan--choose">
-                                                        <span>All Dedicated Hosting Features</span>
-                                                        <div class="chose__title">CHOOSE PERFECT PLAN</div>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Started</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Business</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$5.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Premium</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$8.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="hosting__feature--item">Number of Websites</td>
-                                                <td class="hosting__feature--info">1 Website</td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Web Space</td>
-                                                <td class="hosting__feature--info">5,000MB</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Email Accounts</td>
-                                                <td class="hosting__feature--info">25</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">cPanel Control Panel</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Daily Backups</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Bandwidth</td>
-                                                <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Setup</td>
-                                                <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Advanced Security Features</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Website Builder</td>
-                                                <td class="hosting__feature--info">1</td>
-                                                <td class="hosting__feature--info">50</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-5" role="tabpanel">
-                                <div class="hosting__feature__table">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="hosting__feature__plan--choose">
-                                                        <span>All Reseller Hosting Features</span>
-                                                        <div class="chose__title">CHOOSE PERFECT PLAN</div>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Started</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$3.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Business</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$5.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="hosting__feature--plan">
-                                                        <div class="plan__title">Premium</div>
-                                                        <div class="hosting__feature--price">
-                                                            <div class="plan__price">$8.90</div>
-                                                            <span>month</span>
-                                                        </div>
-                                                        <a href="#" class="primary-btn">Buy now</a>
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="hosting__feature--item">Number of Websites</td>
-                                                <td class="hosting__feature--info">1 Website</td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                                <td class="hosting__feature--info">Multiple Websites
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Domain Registration</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Web Space</td>
-                                                <td class="hosting__feature--info">5,000MB</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Email Accounts</td>
-                                                <td class="hosting__feature--info">25</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">MySQL Databases</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free App Store</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">cPanel Control Panel</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Daily Backups</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Search Engine Optimization</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">99.9% Uptime Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Bandwidth</td>
-                                                <td class="hosting__feature--info">20GB</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Free Setup</td>
-                                                <td class="hosting__feature--info">$ 1.99</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Advanced Security Features</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                                <td class="hosting__feature--info">Extra</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Cloud Hosting</td>
-                                                <td class="hosting__feature--close"><span
-                                                        class="fa fa-times-circle-o"></span></td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                                <td class="hosting__feature--info">$ 250.0</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">24/7/365 Support</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">Website Builder</td>
-                                                <td class="hosting__feature--info">1</td>
-                                                <td class="hosting__feature--info">50</td>
-                                                <td class="hosting__feature--info">Unlimited</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="hosting__feature--item">30 Day Money Back Guarantee</td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                                <td class="hosting__feature--check"><span
-                                                        class="fa fa-check-circle-o"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     </>
     );

@@ -315,7 +315,7 @@ const router = createBrowserRouter([
  
       // single product
       {
-        path:"/pro",
+        path:"/product/:id",
         element:<SingleProduct/>
       },
       
