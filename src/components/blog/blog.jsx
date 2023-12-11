@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { BASEURL } from '../../BaseURL/BaseURL';
 import Loading from '../Loading/Loading';
 import DOMPurify from 'dompurify';
+import Pagination from '../Pagination/Pagination';
 
 
 
@@ -12,6 +13,9 @@ import DOMPurify from 'dompurify';
 const Blog = () => {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(3);
+
     useEffect(() => {
       const fetchData = async () => {
         try {
@@ -26,6 +30,32 @@ const Blog = () => {
       fetchData();
     }, []);
   
+
+
+    // pagination
+
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  const previousPage = () => {
+    if (currentPage !== 1) {
+       setCurrentPage(currentPage - 1);
+    }
+ };
+
+ const nextPage = () => {
+  if (currentPage !== Math.ceil(data.length / postsPerPage)) {
+     setCurrentPage(currentPage + 1);
+  }
+};
+
+
+
 
     return (
     <>
@@ -48,9 +78,8 @@ const Blog = () => {
    <div className="col-md-9">
     <div className="container">
         <div className="row">
-            {/* style={{position:"relative", right:"10px"}}  */}  
             {isLoading ? (      
-            data?.map((item) => (
+            currentPosts?.map((item) => (
                         <div className="col-md-12" key={item.id}>
                           <Link className='text-decoration-none text-dark' to={`${item._id}`}>
                                 <div className="mt-4">
@@ -82,7 +111,10 @@ const Blog = () => {
                   </div>
                  </div>
                 )} 
-        </div>
+        </div>  
+      <div className="mt-5">
+      <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} className={'mt-5'} 	currentPage={currentPage}  previousPage={previousPage} nextPage={nextPage} />
+      </div>
     </div>
    </div>
     
@@ -119,6 +151,8 @@ const Blog = () => {
 
     </>
     );
+
+
 }
 
 export default Blog;

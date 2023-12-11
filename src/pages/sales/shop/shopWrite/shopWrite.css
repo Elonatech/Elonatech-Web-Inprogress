@@ -1,0 +1,10 @@
+.bg-size{
+    width: 50%;
+}
+
+@media(max-width:768px){
+    .bg-size{
+        width: 100%;
+    }
+    
+}

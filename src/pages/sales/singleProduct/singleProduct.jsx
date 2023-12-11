@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { BASEURL } from '../../../BaseURL/BaseURL';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../../components/Loading/Loading';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -21,8 +22,9 @@ import { FreeMode, Navigation, EffectFade, Thumbs, Pagination } from 'swiper/mod
 
 const SingleProduct = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState();
-    const [data, setData] = useState({})
-    const [image, setImage] = useState([])
+    const [data, setData] = useState({});
+    const [isLoading, setIsLoading] = useState(false);
+    const [image, setImage] = useState([]);
     const { id } = useParams()
     const navigate = useNavigate() 
     useEffect(() =>{
@@ -31,10 +33,10 @@ const SingleProduct = () => {
             const res = await axios.get(`${BASEURL}/api/v1/product/${id}`);
             setData(res.data.getProductById)
             setImage(res.data.getProductById.cloudinary_id)
-            // setIsLoading(true);
+            setIsLoading(true);
             } catch (error) {
             console.log(error);
-            // setIsLoading(true);
+            setIsLoading(true);
             }
       }
     
@@ -76,11 +78,14 @@ const SingleProduct = () => {
 
 {/* Product Area Starts */}
 <section class="section" id="product">
-   <div class="container">
+{isLoading ? 
+<>
+<div class="container">
    <div class="row">
    {/* slide */}
    <div class="col-lg-9 mb-5">
    <div className="container">
+
   <div className="row g-0 ">
  <div className="col-2">
  <div className="card border-0">
@@ -106,9 +111,9 @@ const SingleProduct = () => {
     ))}
     </ul>
       </Swiper>
-        </div>
-        </div>
-        <div className="col-10">
+  </div>
+  </div>
+  <div className="col-10">
         <div className="card">
 
     <div className="gall">
@@ -118,12 +123,12 @@ const SingleProduct = () => {
         '--swiper-pagination-color': '#fff',
       }}
         spaceBetween={30}
-        // effect={'fade'}
+        effect={'fade'}
         pagination={{
           clickable: true,
         }}
         thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
-        modules={[FreeMode, Navigation, Thumbs, Pagination]}
+        modules={[FreeMode, EffectFade, Thumbs, Pagination]}
         className='swiper-container gallery-top '
       >
     {image.map((item) => (
@@ -134,10 +139,10 @@ const SingleProduct = () => {
         </div>
     ))}
     </Swiper>
-       </div>  
+  </div>  
 
-            </div>
-        </div>
+  </div>
+  </div>
     </div>
    </div>
    </div>
@@ -188,7 +193,25 @@ const SingleProduct = () => {
                 </div>
             </div>
             </div>
-        </div>
+    </div>
+</>
+
+: 
+<div className="container">
+<div className="row">
+ <div className="col-md-12">
+     <div className="d-flex justify-content-center">
+       <div className='my-5 py-5'>
+     <Loading  />
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+}
+
+  
+
     </section>
 
 

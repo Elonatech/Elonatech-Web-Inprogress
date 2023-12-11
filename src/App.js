@@ -89,6 +89,7 @@ import GraphicCareer from './pages/add/graphicCareer/graphicCareer';
 import MarketingCareer from './pages/add/marketingCareer/marketingCareer';
 import SystemCareer from './pages/add/systemCareer/systemCareer';
 import WebCareer from './pages/add/webCareer/webCareer';
+import Shopwrite from './pages/sales/shop/shopWrite/shopWrite';
 
 
 
@@ -403,6 +404,10 @@ const router = createBrowserRouter([
       {
         path:"/update/:id",
         element:< BlogUpdate />
+      },
+      {
+        path:"/shop-write",
+        element:< Shopwrite />
       },
       
   
