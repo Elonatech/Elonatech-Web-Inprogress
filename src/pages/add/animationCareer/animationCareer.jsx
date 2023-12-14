@@ -1,5 +1,7 @@
+import ApplyNow from '../../../components/ApplyNow/ApplyNow';
+
 import './animationCareer.css'
-import Applynow from '../ApplyNow/Applynow';
+
 
 const AnimationCareer = () => {
     return (
@@ -57,7 +59,7 @@ const AnimationCareer = () => {
               <p> <span style={{color:"#34548c",fontWeight:"700" }}>Method of Application: </span> Interested and qualified candidates should click the link below to apply </p>
              <p> <span style={{color:"#34548c",fontWeight:"700" }}> Note: </span> All applications will be treated in confidence and only shortlisted candidates will be contacted </p>
 
-            <Applynow/>
+            <ApplyNow/>
 
           </div>
         </div>

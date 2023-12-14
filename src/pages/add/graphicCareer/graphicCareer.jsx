@@ -1,5 +1,5 @@
-import Applynow from "../ApplyNow/Applynow";
 
+import ApplyNow from "../../../components/ApplyNow/ApplyNow";
 
 const GraphicCareer = () => {
     return (
@@ -62,7 +62,7 @@ const GraphicCareer = () => {
               </ul>
               <p className='mt-md-5'> <span style={{color:"#34548c",fontWeight:"700" }}> Method of Application:</span> Interested and qualified candidates should click the link below to apply</p>
               <div className="mt-md-5">
-                  < Applynow />
+              < ApplyNow />
               </div>
        
           </div>

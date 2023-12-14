@@ -1,31 +1,62 @@
 
-
 import computerHeader from './caption/computerHeader.webp'
-import computer1 from './caption/computer1.jpg';
-import computer2 from './caption/computer2.jpg';
-import computer3 from './caption/computer3.jpg';
-import computer4 from './caption/computer4.jpg';
-import computer5 from './caption/computer5.png';
-import computer6 from './caption/computer6.jpg';
-import computer7 from './caption/computer7.jpg';
-import computer8 from './caption/computer8.jpg';
-import computer9 from './caption/computer9.jpg';
-import computer10 from './caption/computer10.jpg';
-import computer11 from './caption/computer11.jpg';
-import computer12 from './caption/computer12.jpg';
-import computer13 from './caption/computer13.jpg';
-import computer14 from './caption/computer14.jpg';
-import computer15 from './caption/computer3.jpg';
-import computer16 from './caption/computer16.jpg';
-import computer17 from './caption/computer17.jpg';
-import computer18 from './caption/computer18.jpg';
-import computer19 from './caption/computer19.jpg';
-import computer20 from './caption/computer20.jpg';
-
-
 import './computer.css'
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Pagination from '../../../components/Pagination/Pagination';
+import { BASEURL } from '../../../BaseURL/BaseURL';
+import Loading from '../../../components/Loading/Loading';
+import axios from 'axios';
+
+
+
 
 const Computer = () => {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(8);
+  
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BASEURL}/api/v1/product/`);
+        const filtered = response.data.getAllProducts.filter(user => user.category === 'Computer')
+        console.log(filtered)
+        setData(filtered);
+        setIsLoading(true);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(true);
+      }
+    };
+    fetchData();
+  }, []);
+
+
+
+ const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  const previousPage = () => {
+    if (currentPage !== 1) {
+       setCurrentPage(currentPage - 1);
+    }
+ };
+
+ const nextPage = () => {
+  if (currentPage !== Math.ceil(data.length / postsPerPage)) {
+     setCurrentPage(currentPage + 1);
+  }
+};
+
+
     return (
  <>
 {/* Header */}
@@ -48,22 +79,71 @@ const Computer = () => {
 			<div class="row g-1 progress-circle ">
 	
 		{/* computer */}
-		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
-                <div className="text-center take">
-                <img src={computer1} className='img-fluid ' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-4">Apple IMac 4.5K 24″ – M1 – 8Cores – 256 GB SSD, – 2021</h5>
-               <p className='lead fs-6'>Computer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+    {isLoading ? (      
+            currentPosts?.map((product) => {
+              return(
+                <div class="col-lg-3 mb-4" key={product.id}>
+                <Link className='text-decoration-none text-dark' to={`/product/${product._id}`}>
+                <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+                  <div className="text-center take">
+                  <img src={product.cloudinary_id[0].url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
+                  </div>
+                 <h5 class="fw-normal pt-3">{product.name} </h5>
+                 <p className='lead fs-6'>{product.category}</p>
+                 <div class="stars" style={{color:'black'}}>
+                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                 </div>
+                  <div class="d-flex justify-content-between">
+                 <p className='mt-2 px-1 text-danger'>₦ {product.price}.00</p>
+                 <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
                </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦981,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
+               </div>
+               </Link>
+               </div>
+               
+            )
+              })
+                  ) : (
+                   
+                      <div className="container">
+                       <div className="row">
+                        <div className="col-md-12">
+                            <div className="d-flex justify-content-center">
+                              <div className='my-5 py-5'>
+                            <Loading  />
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                      </div>
+            )}
+
+
+
+    
+    <div className="mt-5">
+      <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} className={'mt-5'} 	currentPage={currentPage}  previousPage={previousPage} nextPage={nextPage} />
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
+
 		  <div class="col-lg-3 mb-4">
 				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
@@ -112,8 +192,8 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-    {/*  */}
-		{/* computer */}
+
+
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
                 <div className="text-center take">
@@ -178,8 +258,8 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-    {/*  */}
-		{/* computer */}
+  
+  
 		<div class="col-lg-3 mb-4">
 	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                 <div className="text-center take">
@@ -244,7 +324,8 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-    {/*  */}
+
+
 		 <div class="col-lg-3 mb-4" >
 		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
                 <div className="text-center take" style={{height:"10rem"}}>
@@ -309,7 +390,7 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-    {/*  */}
+    
 		 <div class="col-lg-3 mb-4">
 		 <div class=" mx-1 border shadow-lg p-3 bg-body rounded" style={{}}>
                 <div className="text-center take">
@@ -374,7 +455,8 @@ const Computer = () => {
               </div>
               </div>				
 		</div>
-    {/*  */}
+
+     */}
 		</div>
 		</div>
 	</section>

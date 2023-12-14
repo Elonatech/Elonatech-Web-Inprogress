@@ -10,16 +10,16 @@ const Pagination = ({postsPerPage, totalPosts, paginate , nextPage, previousPage
   return (
     <nav>
       <ul className='pagination justify-content-center'>
-      <li className='page-item'>
-          <Link onClick={previousPage}  className='page-link text-decoration-none'>Prev</Link>
+      <li className='page-item' style={{color:"#34548c"}}>
+          <Link onClick={previousPage}  className='page-link text-decoration-none' style={{color:"#34548c"}}>Prev</Link>
         </li> 
         {pageNumbers.map(number => (
-          <li key={number} className={`page-item ${currentPage === number ? 'active' : ''}`}>
+          <li key={number} className={`page-item ${currentPage === number ? 'active' : ''}`} style={{color:"#34548c"}}>
             <Link onClick={() => paginate(number)}  className='page-link text-decoration-none'> {number}</Link>
           </li>
         ))}
-     <li className='page-item'>
-          <Link onClick={nextPage}  className='page-link text-decoration-none'>Next</Link>
+     <li className='page-item' style={{color:"#34548c"}}>
+          <Link onClick={nextPage}  className='page-link text-decoration-none' style={{color:"#34548c"}}>Next</Link>
       </li> 
       </ul>
     </nav>

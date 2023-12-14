@@ -1,22 +1,64 @@
 
 import posHeader from './captions/posH.jpg'
-import pos1 from './captions/pos1.png'
-import pos2 from './captions/pos2.jpg'
-import pos3 from './captions/pos3.jpg'
-import pos4 from './captions/pos4.png'
-import pos5 from './captions/pos5.png'
-import pos6 from './captions/pos7.png'
-import pos7 from './captions/pos7.png'
-import pos8 from './captions/pos8.png'
-import pos9 from './captions/pos10.png'
-import pos10 from './captions/pos9.png'
-
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Pagination from '../../../components/Pagination/Pagination';
+import { BASEURL } from '../../../BaseURL/BaseURL';
+import Loading from '../../../components/Loading/Loading';
+import axios from 'axios';
 
 
 
 
 const Pos = () => {
-    return (
+
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(8);
+  
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BASEURL}/api/v1/product/`);
+        const filtered = response.data.getAllProducts.filter(user => user.category === 'Pos System')
+        setData(filtered);
+        setIsLoading(true);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(true);
+      }
+    };
+    fetchData();
+  }, []);
+
+
+  
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  const previousPage = () => {
+    if (currentPage !== 1) {
+       setCurrentPage(currentPage - 1);
+    }
+ };
+
+ const nextPage = () => {
+  if (currentPage !== Math.ceil(data.length / postsPerPage)) {
+     setCurrentPage(currentPage + 1);
+  }
+};
+
+
+
+
+return (
  <>
 {/* Header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${posHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
@@ -28,7 +70,7 @@ const Pos = () => {
 </div>
 
 
-	<main class="container-fluid">
+<main class="container-fluid">
 <div class="row g-0 ">
 <div class="col-md-9 ">
 <section class="ftco-section" id="skills-section">
@@ -38,152 +80,49 @@ const Pos = () => {
 			</div>
 			<div class="row g-1 progress-circle ">
 				{/* office equipment */}
-			<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={pos1} className='img-fluid' style={{paddingTop:"18.7px"}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">BIXOLON BARCODE PRINTER XD5-40DK </h5>
-               <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        
+        {isLoading ? (      
+            currentPosts?.map((product) => {
+              return(
+                <div class="col-lg-3 mb-4" key={product.id}>
+                <Link className='text-decoration-none text-dark' to={`/product/${product._id}`}>
+                <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+                  <div className="text-center take">
+                  <img src={product.cloudinary_id[0].url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
+                  </div>
+                 <h5 class="fw-normal pt-3">{product.name} </h5>
+                 <p className='lead fs-6'>{product.category}</p>
+                 <div class="stars" style={{color:'black'}}>
+                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                 </div>
+                  <div class="d-flex justify-content-between">
+                 <p className='mt-2 px-1 text-danger'>₦ {product.price}.00</p>
+                 <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
                </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦200,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={pos2} className='img-fluid pt-3' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">POS THERMAL PAPER 57MM X 38MM PER ROLL</h5>
-			   <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦2,600.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={pos3} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">SAM TC TOUCH – A8 SYSTEM WITH 2 LINES DISPLAY POLE</h5>
-			   <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+               </Link>
                </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦400,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
-                <img src={pos4} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">SAM TC TOUCH – A8 SYSTEM WITH DOUBLE SCREEN AND CARD READER</h5>
-			   <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦460,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		{/* computer */}
-		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
-                <div className="text-center take">
-                <img src={pos5} className='img-fluid pt-5 pb-5' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal">SAM4S CASH DRAWER</h5>
-               <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦45,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" card mx-1 p-3 shadow-lg  bg-body rounded">
-                <div className="text-center take">
-                <img src={pos6} className='img-fluid pt-4' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-4">SAM4S ELLIX-30 THERMAL RECEIPT PRINTER</h5>
-			        <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦85,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 pt-5 bg-body rounded">
-                <div className="text-center take">
-                <img src={pos8} className='img-fluid' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">THERMAL PAPER ROLL 80MM X 80MM</h5>
-			        <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦34,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		{/* printer */}
-		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3 pt-5 bg-body rounded">
-                <div className="text-center take">
-                <img src={pos9} className='img-fluid pt-3 ' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal ">SAM4S ELLIX-30 THERMAL RECEIPT PRINTER</h5>
-               <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦85,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={pos10} className='img-fluid pt-2' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-5">VOYAGER BLUETOOTH BARCODE SCANNER MS-9535</h5>
-			   <p className='lead fs-6'>Pos System</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between pt-0">
-               <p className='mt-2 px-1 text-danger'>₦230,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
+               
+            )
+              })
+                  ) : (
+                   
+                      <div className="container">
+                       <div className="row">
+                        <div className="col-md-12">
+                            <div className="d-flex justify-content-center">
+                              <div className='my-5 py-5'>
+                            <Loading  />
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                      </div>
+            )}
+
+    <div className="mt-5">
+      <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} className={'mt-5'} 	currentPage={currentPage}  previousPage={previousPage} nextPage={nextPage} />
+    </div>
 		</div>
 		</div>
 	</section>

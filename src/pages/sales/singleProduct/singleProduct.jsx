@@ -1,13 +1,13 @@
 
 import hgdelete from './captions/delete.png'
 import {  useEffect, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { BASEURL } from '../../../BaseURL/BaseURL';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../../../components/Loading/Loading';
+import DOMPurify from 'dompurify';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -23,16 +23,21 @@ import { FreeMode, Navigation, EffectFade, Thumbs, Pagination } from 'swiper/mod
 const SingleProduct = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState();
     const [data, setData] = useState({});
+    const [computer , setComputer] = useState([])
     const [isLoading, setIsLoading] = useState(false);
     const [image, setImage] = useState([]);
-    const { id } = useParams()
+    const { id } = useParams();
+
+    // console.log(computer)
     const navigate = useNavigate() 
     useEffect(() =>{
       const fetchData = async() =>{
         try {
             const res = await axios.get(`${BASEURL}/api/v1/product/${id}`);
-            setData(res.data.getProductById)
-            setImage(res.data.getProductById.cloudinary_id)
+            console.log(res.data.getProductById);
+            setData(res.data.getProductById);
+            setImage(res.data.getProductById.cloudinary_id);
+            setComputer(res.data.getProductById.computerProperty);
             setIsLoading(true);
             } catch (error) {
             console.log(error);
@@ -80,13 +85,14 @@ const SingleProduct = () => {
 <section class="section" id="product">
 {isLoading ? 
 <>
-<div class="container">
+<div class="container mb-5">
+
    <div class="row">
    {/* slide */}
-   <div class="col-lg-9 mb-5">
-   <div className="container">
+   <div class="col-lg-9 ">
+   <div className="container" >
 
-  <div className="row g-0 ">
+  <div className="row g-0  ">
  <div className="col-2">
  <div className="card border-0">
       <Swiper
@@ -139,6 +145,8 @@ const SingleProduct = () => {
         </div>
     ))}
     </Swiper>
+
+     
   </div>  
 
   </div>
@@ -147,7 +155,8 @@ const SingleProduct = () => {
    </div>
    </div>
 {/*  */}
-    <div class="col-lg-3 mb-5">
+
+  <div class="col-lg-3 mb-5">
             <div class="right-content">
                     <h4>{data.name}</h4>
                     <span class="price text-dark">₦ {data.price}.00</span>
@@ -160,8 +169,10 @@ const SingleProduct = () => {
                       
                     </ul>
                     <div class="quote">
-                       <p>{data.description}</p>
+                       <p >{data.brand}</p>
                     </div>
+
+
                     {/* <div class="quantity-content">
                         <div class="left-content">
                             <h6>No. of Orders</h6>
@@ -190,10 +201,207 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                    
-                </div>
-            </div>
-            </div>
+        </div>
+  </div>
+  </div>
+
+{data.category !== 'Computer' ?   
+
+<div className="container mt-5  mb-5">
+<div className="row ">
+  <div className="col-lg-12">
+  <h4 className='fw-bold mb-3 mt-3'>Product Detail</h4>
+  <hr className='text-danger' />
+  <div className="card border-0">
+  <div class="description mt-2 mb-5" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.description)}}></div>
     </div>
+  </div>
+  </div>
+</div>
+
+:
+<div>
+<div className="container mt-5 ">
+<div className="row ">
+  <div className="col-lg-12">
+  <h4 className='fw-bold mb-3 mt-3'>Overview</h4>
+  <hr className='text-danger' />
+  <div className="card border-0">
+  <div class="description mt-2 mb-5" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.description)}}></div>
+    </div>
+  </div>
+  </div>
+</div>
+{/* table */}
+<div>
+  {computer.map((com) =>(
+    <div key={com.id}>
+    <h4 className='fw-bold mb-3'>Description</h4>
+    <table class="table table-bordered" style={{width:"100%"}}>
+    <thead>
+    <tr >
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+     <th scope="row" style={{width:"30%"}}>Brand</th>
+     <td style={{width:"60%"}}>{data.brand} </td>
+    </tr>
+    <tr>
+     <th scope="row">Series</th>
+     <td colspan="2">
+     {com.series}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Item model number</th>
+     <td colspan="2">
+     {com.model}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Item Weight</th>
+     <td>
+     {com.weight}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Product Dimensions</th>
+     <td>
+     {com.dimension}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Item Dimensions LxWxH</th>
+     <td>
+     {com.item}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Color</th>
+     <td>
+     {com.color}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Hardware Platform</th>
+     <td>
+     {com.hardware}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Operating System</th>
+     <td>
+     {com.os}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Processor Brand</th>
+     <td>
+     {com.processor}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Number of Processors</th>
+     <td>
+     {com.number}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Computer Memory Type</th>
+     <td>
+     {com.memory}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">RAM</th>
+     <td>
+     {com.ram}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Hard Drive</th>
+     <td>
+     {com.drive}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Screen display size</th>
+     <td >
+     {com.display}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Screen Resolution</th>
+     <td >
+     {com.screen}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Graphics Coprocessor</th>
+     <td >
+     {com.graphics}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Voltage</th>
+     <td >
+     {com.voltage}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Batteries</th>
+     <td >
+     {com.battery}
+     </td>
+    </tr>
+    <tr>
+     <th scope="row">Wireless Type</th>
+     <td>
+     {com.wireless}
+     </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    
+    ))} 
+
+</div>
+</div> 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*  */}
+</div>
+
+    
+
+
+
 </>
 
 : 
@@ -209,6 +417,9 @@ const SingleProduct = () => {
 </div>
 </div>
 }
+
+
+
 
   
 

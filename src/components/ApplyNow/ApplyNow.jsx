@@ -1,33 +1,41 @@
-
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
-const Applynow = () => {
-    const [show, setShow] = useState(false);
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 700,
+  bgcolor: 'background.paper',
+  border: 'px solid #000',
+  boxShadow: 24,
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <Button variant="primary" onClick={handleShow} className='px-5'>
-         Apply Now
-        </Button>
-  
-        <Modal
-          show={show}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={false}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title style={{color:"#34548c"}} className='fw-bold'>Apply Now</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <div className=" px-3">
+  p: 4,
+};
+
+const  ApplyNow = () =>{
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  return (
+    <div>
+      <button className='btn btn-primary' onClick={handleOpen}>Apply Now</button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} className="rounded">
+        <div className=" px-3">
               <div class="row mt-2">
                 <div class="col">
                 <label for="validationCustom01" class="form-label fw-bold">First name<span>*</span> </label>
@@ -45,17 +53,15 @@ const Applynow = () => {
                 </div>
                 <div class=" col">
                 <label for="validationCustom01" class="form-label w-100 fw-bold">Phone Number<span>*</span> </label>
-                  <input type="text"  class="form-control" placeholder="080 xxxx xxxx" aria-label="Last name"/>
+                  <input type="number"  class="form-control" placeholder="080 xxxx xxxx" aria-label="Last name"/>
                 </div>
                 </div>
-  
                 <div class="row mt-2">
                   <div class="col-4">
                     <label for="validationCustom01" class="form-label fw-bold">Gender<span>*</span> </label>
                     <select class="form-select" aria-label="Default select example">
                       <option selected>male</option>
                       <option value="1">female</option>
-                      
                       </select>
                   </div>
                   <div class="col-8">
@@ -75,8 +81,6 @@ const Applynow = () => {
                   </div>
                   </div>
                 </div>
-  
-                
                 <div className="mt-2">
                 <label for="inputState" class="form-label fw-bold">Job Category<span>*</span> </label>
                     <select id="inputState" class="form-select">
@@ -88,10 +92,7 @@ const Applynow = () => {
                       <option >Systems/Network Engineer</option>
                       <option >Marketing & Sales Representative</option>
                     </select>
-          
-            
                 </div>
-                
                 <div class="mt-2">
                   <label for="inputState" class="form-label fw-bold">Current Employment Status<span>*</span> </label>
                     <select id="inputState" class="form-select">
@@ -105,66 +106,30 @@ const Applynow = () => {
                       <input type="file" class="form-control pt-1 " id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style={{fontSize:'12px'}}/>
                     <p className='pt-2'>Accepted file types: pdf, Max. file size: 150 MB.</p>
                   </div>
-
                   <div className='col ' style={{marginBottom:"4rem"}}>
-                  <label  for="validationCustom01" class="form-label fw-bold">Cover Letter</label> 
-                  <ReactQuill 
+                  <label  for="validationCustom01" class="form-label fw-bold">Cover Letter</label>
+                  <ReactQuill
                   theme="snow"
-                   className='' 
-                    placeholder="cover letter" 
-                    style={{height:"100px",}} 
-                    // modules={App.modules}
-                    // formats={App.formats}
+                   className=''
+                    placeholder="cover letter"
+                    style={{height:"100px",}}
                     />
                   </div>
-                
                 <div class="form-floating mt-3 " >
-                {/*  */}
-                {/* <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{height:"100px"}}></textarea>
-                <label for="floatingTextarea2">Cover Letter</label> */}
-                 
               </div>
-  
-              
-               
             </div>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary">Submit</Button>
-          </Modal.Footer>
-        </Modal>
-      </>
-    );
+           <div className="text-end mt-4">
+          <button className='btn btn-primary pe-4 ps-4'>Close</button>
+           <button className='btn btn-primary pe-4 ps-4 ms-3'>Submit</button>
+         </div>
+
+
+
+
+        </Box>
+      </Modal>
+    </div>
+  );
 }
 
-// App.modules = {
-//   toolbar:[
-//     [{header:"1"}, { header:"2"},{header:[3,4,5,6]}],
-//     [{size:[]}],
-//     ["bold", "italic", "underline", "strike" ],
-//     [{list: "ordered"}, {list:"bullet"}],
-//   ],
-// };
-
-// App.formats=[
-//   "header",
-//   "font",
-//   "size",
-//   "bold",
-//   "italic",
-//   "underline",
-//   "strike",
-//   "blackquote",
-//   "list",
-//   "bullet",
-//   "link",
-//   "image",
-//   "video",
-//   "code-block",
-//   "",
-// ];
-
-export default Applynow
+export default ApplyNow;

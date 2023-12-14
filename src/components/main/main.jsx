@@ -800,10 +800,10 @@ const Main = () => {
   <div class="about-border"></div>
   {/* product */}
 <div className="mx-auto">
-<div class="container-fluid mt-5">
+<div class="container mt-5">
 <div class="row mt-5  justify-content-md-center">
   {/* product 1 */}
-  <div class="col-lg-2 mx-1  border shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="col-md-2 mx-1  border shadow-lg p-3 mb-5 bg-body rounded">
     <div className="text-center">
     <img src={product1} className='img-fluid' style={{}} alt="" />
     </div>
@@ -819,7 +819,7 @@ const Main = () => {
 
   </div>
   {/* produt 2 */}
-  <div class="col-lg-2 mx-1  border  shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="col-md-2 mx-1  border  shadow-lg p-3 mb-5 bg-body rounded">
   <div className="text-center">
     <img src={product5} className='img-fluid' style={{}} alt="" />
     </div>
@@ -834,7 +834,7 @@ const Main = () => {
      </div>
   </div>
   {/* product 3 */}
-  <div class="col-lg-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
+  <div class="col-md-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
   <div className="text-center">
     <img src={product2} className='img-fluid' style={{}} alt="" />
     </div>
@@ -849,7 +849,7 @@ const Main = () => {
      </div>
   </div>
   {/* product 4 */}
-  <div class="col-lg-2  mx-1 border  shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="col-md-2  mx-1 border  shadow-lg p-3 mb-5 bg-body rounded">
   <div className="text-center">
     <img src={product3} className='img-fluid' style={{}} alt="" />
     </div>
@@ -864,7 +864,7 @@ const Main = () => {
      </div>
   </div>
   {/* product 5 */}
-  <div class="col-lg-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
+  <div class="col-md-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
   <div className="text-center">
     <img src={product4} className='img-fluid' style={{}} alt="" />
     </div>

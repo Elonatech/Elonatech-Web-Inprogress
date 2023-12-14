@@ -64,7 +64,6 @@ import PrinterSales from './pages/sales/printers/printers'
 // single products
 import SingleProduct from './pages/sales/singleProduct/singleProduct';
 import Infinite from './pages/sales/infinite/infinite';
-import Grid from './pages/sales/grid/grid';
 import BlogDetails from './components/blogDetails/blogDetails';
 import BlogWrite from './components/blogWrite/blogWrite';
 import BlogUpdate from './components/blog/blogUpdate/blogUpdate';
@@ -90,7 +89,11 @@ import MarketingCareer from './pages/add/marketingCareer/marketingCareer';
 import SystemCareer from './pages/add/systemCareer/systemCareer';
 import WebCareer from './pages/add/webCareer/webCareer';
 import Shopwrite from './pages/sales/shop/shopWrite/shopWrite';
+import ComputerWrite from './pages/sales/computer/computerWrite';
 
+// admin
+import AdminLogin from './components/admin/admin';
+import Dashboard from './components/admin/dashboard';
 
 
 
@@ -409,19 +412,22 @@ const router = createBrowserRouter([
         path:"/shop-write",
         element:< Shopwrite />
       },
-      
+      {
+        path:"/computer-write",
+        element:< ComputerWrite />
+      },
+      {
+        path:"/login",
+        element:< AdminLogin />
+      },
+      {
+        path:"/dashboard",
+        element:< Dashboard />
+      },
   
- 
-   
   ],
-
+ 
 },
-{
-  path:"/grid",
-  element:<Grid/>
-},
-
-
 
 ]);
 

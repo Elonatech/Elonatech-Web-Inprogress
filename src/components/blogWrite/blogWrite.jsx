@@ -8,14 +8,13 @@ import './blogWrite.css'
 
 
 const BlogWrite = () => {
-
   const [title , setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
   const [cloudinary_id , setCloudinary_id] = useState(null);
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) =>{
    e.preventDefault()
@@ -80,7 +79,6 @@ return (
 <div className="col-md-5 mt-3">
 <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Publish</button>
 </div>
-
 </div>
 </div>
 </form> 

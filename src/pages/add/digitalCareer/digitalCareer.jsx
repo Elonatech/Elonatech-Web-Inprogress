@@ -1,7 +1,10 @@
-import '../animationCareer/animationCareer.css'
-import Applynow from '../ApplyNow/Applynow';
+
+import { useState } from 'react';
+
+
 
 const DigitalCareer = () => {
+
     return (
         <>
     
@@ -58,9 +61,12 @@ const DigitalCareer = () => {
            </ul>
            <p> <span style={{color:"#34548c",fontWeight:"700" }}>Method of Application: </span> Interested and qualified candidates should click the link below to apply </p>
            <p> <span style={{color:"#34548c",fontWeight:"700" }}> Note: </span> All applications will be treated in confidence and only shortlisted candidates will be contacted </p>
-           < Applynow />
-          </div>
-        </div>
+           <div>
+
+ 
+      </div>
+    </div>
+    </div>
 
 
     </div>

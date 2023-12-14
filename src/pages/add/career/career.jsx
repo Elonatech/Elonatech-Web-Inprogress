@@ -63,19 +63,17 @@ const Career = () => {
                         <div class="col-md-4">
                             <div class="card h-100 " >
                                 <img src={ICON1} alt=""  style={{width:"20%", borderRadius:"10%", margin:"10px 20px"}}/>
-                                {/* <img src="..." class="card-img-top" alt="..."> */}
                                 <div class="card-body">
                                     <h5 class="card-title fs-5 fw-bold">Graphic Designer / Digital Marketer</h5>
                                     <p class="card-text" style={{fontWeight:"600"}}>with at least 1 year work experience with proof of professional Graphics Design and Animations.</p>
                                     <Link to="/graphic-career" class="btn btn-primary">Apply Now</Link>
-                                    {/* <a href="#" class="btn btn-primary">Apply Now</a> */}
+                                
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card h-100 " >
                             <img src={ICON2} alt=""  style={{width:"20%", borderRadius:"10%", margin:"10px 20px"}}/>
-                                {/* <img src="..." class="card-img-top" alt="..."> */}
                                 <div class="card-body">
                                     <h5 class="card-title fs-5 fw-bold">Full Stack Web developer</h5>
                                     <p class="card-text" style={{fontWeight:"600"}}>Must have at least 2 years' work experience with proof of Web Development.</p>
@@ -86,7 +84,6 @@ const Career = () => {
                         <div class="col-md-4">
                             <div class="card h-100 " >
                                         <img src={ICON3} alt=""  style={{width:"20%", borderRadius:"10%", margin:"10px 20px"}}/>
-                                {/* <img src="..." class="card-img-top" alt="..."> */}
                                 <div class="card-body">
                                     <h5 class="card-title fs-5 fw-bold">Digital Marketing</h5>
                                     <p class="card-text" style={{fontWeight:"600"}}>Must have at least 1 year work experience with proof of professional Digital Marketing.</p>
@@ -101,7 +98,6 @@ const Career = () => {
                         <div class="col-md-4">
                             <div class="card h-100 " >
                                         <img src={ICON4} alt=""  style={{width:"20%", borderRadius:"10%", margin:"10px 20px"}}/>
-                                {/* <img src="..." class="card-img-top" alt="..."> */}
                                 <div class="card-body">
                                     <h5 class="card-title fs-5 fw-bold">Animations/Motion Graphics & UI/UX Graphic Designer</h5>
                                     <p class="card-text" style={{fontWeight:"600"}}>Must be able to use Figma,Adobe XD,Photoshop etc.</p>
@@ -113,7 +109,6 @@ const Career = () => {
                         <div class="col-md-4">
                             <div class="card h-100 " style={{height:"70vh"}} >
                                         <img src={ICON5} alt=""  style={{width:"20%", borderRadius:"10%", margin:"10px 20px"}}/>
-                                {/* <img src="..." class="card-img-top" alt="..."> */}
                                 <div class="card-body">
                                     <h5 class="card-title fs-5 fw-bold">Systems/Network Engineer</h5>
                                     <p class="card-text" style={{fontWeight:"600"}}>minimum of 2 years' experience in maintenance of computer hardware , software systems  and supporting network.</p>
@@ -124,7 +119,6 @@ const Career = () => {
                         <div class="col-md-4">
                             <div class="card h-100 " style={{height:"70vh"}} >
                                         <img src={ICON6} alt=""  style={{width:"20%", borderRadius:"10%", margin:"10px 20px"}}/>
-                                {/* <img src="..." class="card-img-top" alt="..."> */}
                                 <div class="card-body">
                                     <h5 class="card-title fs-5 fw-bold">Marketing & Sales Representative</h5>
                                     <p class="card-text" style={{fontWeight:"600"}}>Previous work experience as a Marketer/Sales Representative, Basic knowledge(MS Office/excel).</p>
@@ -136,19 +130,21 @@ const Career = () => {
                     </div>
    </div>
 
-    <div className="container-fluid">
-        <div class="row justify-content-center pt-5">
-            <div class="col-md-5 align-self-center p-4" >
-            <img src={PHOTO} alt="" srcset="" className='img-fluid' />
-            </div>
-            <div class="col-md-5 ">
+    <div className="container">
+    <div class="mt-4">
                 <div className="">
                     <h1 className='fs-4' style={{color:"#34548c"}}>Our Passion</h1>
                     <p className='text-justify '>We have a passion for our clients, results and the solutions we provide. Our team possess a pragmatic drive for action that runs through the week, each working day, and doesn’t let up. We rally clients with our infectious energy, to make change stick.
                     And we never do it alone. We support and are supported to develop our own personal result(s) stories. We train, and get trained to further equip ourselves, so as to be abreast of imminent IT challenges.
                     We work hard, but we don’t take ourselves too seriously. We enjoy what we do and we laugh a lot… most often at ourselves.</p>
                 </div>
-                <div className="">
+           
+    </div>
+        <div class="row justify-content-center pt-5">
+            <div class="col-md-5 align-self-center p-3" >
+            <img src={PHOTO} alt="" srcset="" className='img-fluid' />
+            </div>
+            <div className="col-md-5 mt-3 ">
                 <h1 className='fs-4' style={{color:"#34548c"}}>Requirements</h1>
                 <p>Prospective candidates who wish to seek employment with us must fulfill the following criteria:</p>
                 <ul>
@@ -158,7 +154,6 @@ const Career = () => {
                     <li>Must be a Nigerian or have the necessary work permits if not a Nigerian citizen</li>
                 </ul>
                 </div>
-            </div>
         </div>
      </div>
 

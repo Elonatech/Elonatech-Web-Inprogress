@@ -1,4 +1,4 @@
-import Applynow from "../ApplyNow/Applynow";
+import ApplyNow from "../../../components/ApplyNow/ApplyNow";
 
 const SystemCareer = () => {
     return (
@@ -51,7 +51,7 @@ const SystemCareer = () => {
                   <p className='text-justify'>A minimum of 2 years' experience in maintenance of computer hardware and software systems, computer networks, and other related systems. Strong understanding of network infrastructure and network infrastructures and protocols. Ability to think through problems and visualize Solutions. Ability to implement, administer, and troubleshoot network infrastructure devices. Ability to create accurate network diagrams and documentation for design and planning network communication systems. Must have superior analytical thinking and problem solving skills, Self-motivated and able to work with minimal supervision and still meet deadlines, Open to collaboration and able to work productively as part of a team, Strong communication skills, both written and verbal, and able to break down complex technical problems into simple terms, Superior attention to detail in order to spot minute errors in code, Excellent creative thinking skills and able to devise innovative solutions to problems</p>
                   <p> <span style={{color:"#34548c",fontWeight:"700" }}>Method of Application: </span> Interested and qualified candidates should click the link below to apply </p>
                   <p> <span style={{color:"#34548c",fontWeight:"700" }}> Note: </span> All applications will be treated in confidence and only shortlisted candidates will be contacted </p>
-                < Applynow /> 
+             <ApplyNow />
           </div>
         </div>
       </div>
