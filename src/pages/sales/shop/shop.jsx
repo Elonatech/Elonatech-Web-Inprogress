@@ -13,8 +13,6 @@ import axios from 'axios';
 
 
 
-
-
 const Shop = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -58,9 +56,6 @@ const Shop = () => {
 
 
 
-
-
-  
     return (
         <>
 {/* Header */}
@@ -81,7 +76,6 @@ const Shop = () => {
         <h6>SHOWING 1–20 OF 32 RESULTS</h6>
 			</div>
 			<div class="row g-1 progress-circle ">
-				{/* office equipment */}
            {isLoading ? (      
             currentPosts?.map((product) => {
               return(
@@ -89,7 +83,7 @@ const Shop = () => {
                 <Link className='text-decoration-none text-dark' to={`/product/${product._id}`}>
                 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                   <div className="text-center take">
-                  <img src={product.cloudinary_id[0].url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
+                  <img src={product.images[0]?.url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
                   </div>
                  <h5 class="fw-normal pt-3">{product.name} </h5>
                  <p className='lead fs-6'>{product.category}</p>

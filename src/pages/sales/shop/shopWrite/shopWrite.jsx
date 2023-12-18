@@ -10,41 +10,61 @@ import { BASEURL } from '../../../../BaseURL/BaseURL';
 const shopWrite = () => {
      
     const getInitialState = () => {
-    const value = "Computer";
+    const value = "Pos";
     return value;
     };
+
+
+
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
-    const [brand, setBrand] = useState('');
     const [price, setPrice] = useState('');
+    const [brand, setBrand] = useState('');
     const [category, setCategory] = useState(getInitialState);
-    const [cloudinary_id, setCloudinary_id] = useState([]);
+    const [images, setImages] = useState([]);
+    const [loading, setLoading] = useState(false);
 
-   
 
-    const navigate = useNavigate();
-
-    const handleSubmit = async (e) =>{
-        try {
-            
-            e.preventDefault()
-            const newData = {
-            name,
-            description,
-            price,
-            brand,
-            category,
-            cloudinary_id: cloudinary_id
+    //handle images
+    const handleImage = (e) =>{
+        const files = Array.from(e.target.files);
+        files.forEach(file =>{
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onloadend = () =>{
+                setImages(oldArray => [...oldArray, reader.result ])
             }
-            console.log(newData)
-           const res = await axios.post(`${BASEURL}/api/v1/product/create`, newData, {headers:{"Content-Type":"multipart/form-data"}})
-           navigate('/shop')
-           console.log(res)
+        })
+ }
+
+const navigate = useNavigate();
+
+//submit the form
+    const handleSubmit = async (e) =>{
+        setLoading(true);
+        e.preventDefault();
+        const newData = {
+            name, 
+            description, 
+            price, 
+            brand, 
+            category, 
+            images
+        }
+        try {
+            const data = await axios.post(`${BASEURL}/api/v1/product/create`, newData)
+            if  (data.success === true){
+                setLoading(false);
+                setImages([]);
+                toast.success('slide created successfully');
+            }
+            navigate('/shop')
         } catch (error) {
             console.log(error)
+            toast.error(error);
         }
-    }
 
+    }
 
   return (
 <>
@@ -68,12 +88,11 @@ const shopWrite = () => {
                 </div>
                 <div class="mb-3 col-md-4">
                     <label for="formFile" class="form-label">File</label>
-                    <input class="form-control" type="file" name="files" multiple   onChange={(e)=>setCloudinary_id(e.target.files)}  id="formFile" />  
+                    <input onChange={handleImage} type="file" id="formupload" name="image" className="form-control" multiple />
                 </div>
                 <div class="mb-3 col-md-4">
                <label for="exampleInputEmail1" class="form-label">Categories</label>
               <select  class="form-select" value={category} onChange={(e) => setCategory(e.target.value)}  id="inputGroupSelect01">
-              <option value="Computer">Computer</option>
               <option value="Pos System">Pos System</option>
               <option value="Office">Office</option>
               <option value="Printer">Printer</option>
@@ -87,7 +106,7 @@ const shopWrite = () => {
            </div>
           </div>
           <div className="col-md-5 mt-3">
-          <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Upload</button>
+          <button type="submit" class="btn btn-primary" onClick={handleSubmit}>{loading ? "Uploading..." : "Upload"}</button>
           </div>
         </div>
     </div> 

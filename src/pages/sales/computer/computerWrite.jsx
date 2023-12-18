@@ -5,78 +5,103 @@ import 'react-quill/dist/quill.snow.css';
 import axios from 'axios';
 import { BASEURL } from "../../../BaseURL/BaseURL";
 
+
 import './computer.css'
 
 
 const ComputerWrite = () => {
+
     const getInitialState = () => {
         const value = "Computer";
         return value;
-    };
+        };
 
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
-    const [price, setPrice] = useState('');
-    const [brand, setBrand] = useState('');
-    const [category, setCategory] = useState(getInitialState);
-    const [series, setSeries] = useState('');
-    const [model, setModel] = useState('');
-    const [weight, setWeight] = useState('');
-    const [dimension, setdimension] = useState('');
-    const [item, setItem] = useState('');
-    const [color, setColor] = useState('');
-    const [hardware, setHardware] = useState('');
-    const [os, setOs] = useState('');
-    const [processor, setProcessor] = useState('');
-    const [number, setNumber] = useState('');
-    const [memory, setMemory] = useState('');
-    const [ram, setRam] = useState('');
-    const [drive, setDrive] = useState('');
-    const [display, setDisplay] = useState('');
-    const [resolution, setResolution] = useState('');
-    const [graphics, setGraphics] = useState('');
-    const [voltage, setVoltage] = useState('');
-    const [battery, setBattery] = useState('');
-    const [wireless, setWireless] = useState('');
-    const [cloudinary_id, setCloudinary_id] = useState(null);
+        const [name, setName] = useState('');
+        const [description, setDescription] = useState('');
+        const [price, setPrice] = useState('');
+        const [brand, setBrand] = useState('');
+        const [category, setCategory] = useState(getInitialState);
+        const [series, setSeries] = useState('');
+        const [model, setModel] = useState('');
+        const [weight, setWeight] = useState('');
+        const [dimension, setdimension] = useState('');
+        const [item, setItem] = useState('');
+        const [color, setColor] = useState('');
+        const [hardware, setHardware] = useState('');
+        const [os, setOs] = useState('');
+        const [processor, setProcessor] = useState('');
+        const [number, setNumber] = useState('');
+        const [memory, setMemory] = useState('');
+        const [ram, setRam] = useState('');
+        const [drive, setDrive] = useState('');
+        const [display, setDisplay] = useState('');
+        const [resolution, setResolution] = useState('');
+        const [graphics, setGraphics] = useState('');
+        const [voltage, setVoltage] = useState('');
+        const [battery, setBattery] = useState('');
+        const [wireless, setWireless] = useState('');
+        const [images, setImages] = useState([]);
+        const [loading, setLoading] = useState(false);
     
-  console.log(cloudinary_id)
-
+    
+        //handle images
+        const handleImage = (e) =>{
+            const files = Array.from(e.target.files);
+            files.forEach(file =>{
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onloadend = () =>{
+                    setImages(oldArray => [...oldArray, reader.result ])
+                }
+            })
+     }
+    
     const navigate = useNavigate();
-
-    const handleSubmit = async (e) =>{
-        e.preventDefault()
-        const newData = {
-        name,
-        description,
-        price,
-        brand,
-        category,
-        series,
-        model,
-        weight,
-        dimension,
-        item,
-        color,
-        hardware,
-        os,
-        processor,
-        number,
-        memory,
-        ram,
-        drive,
-        display,
-        resolution,
-        graphics,
-        voltage,
-        battery,
-        wireless,
-        cloudinary_id: cloudinary_id
+    
+    //submit the form
+        const handleSubmit = async (e) =>{
+            setLoading(true);
+            e.preventDefault();
+            const newData = {
+                name, 
+                description, 
+                price, 
+                brand, 
+                category, 
+                series,
+                model,
+                weight,
+                dimension,
+                item,
+                color,
+                hardware,
+                os,
+                processor,
+                number,
+                memory,
+                ram,
+                drive,
+                display,
+                resolution,
+                graphics,
+                voltage,
+                battery,
+                wireless,
+                images
+            }
+            try {
+                const data = await axios.post(`${BASEURL}/api/v1/product/create`, newData)
+                if  (data.success === true){
+                    setLoading(false);
+                    setImages([]);
+              
+                }
+                navigate('/shop')
+            } catch (error) {
+                console.log(error)
+            }
+    
         }
-       const res = await axios.post(`${BASEURL}/api/v1/product/create`, newData, {headers:{"Content-Type":"multipart/form-data"}})
-       navigate('/shop')
-       console.log(res)
-       }
 
     return (
         <>
@@ -102,19 +127,16 @@ const ComputerWrite = () => {
      </div>
      <div class="mb-3 col-md-4">
          <label for="formFile" class="form-label">File</label>
-         <input class="form-control" type="file" multiple  onChange={(e)=> setCloudinary_id(e.target.files[0])} id="formFile" />
+         <input onChange={handleImage} type="file" id="formupload" name="image" className="form-control" multiple />
      </div>
      <div class="mb-3 col-md-4">
-        <label for="exampleInputEmail1" class="form-label">Categories</label>
-        <select  class="form-select" value={category} onChange={(e) => setCategory(e.target.value)}  id="inputGroupSelect01">
-        <option value="Computer">Computer</option>
-        <option value="POS">POS</option>
-        <option value="Office">Office</option>
-        <option value="Printer">Printer</option>
+        <label for="exampleInputEmail1" class="form-label" >Categories</label>
+        <select  class="form-select " value={category} onChange={(e) => setCategory(e.target.value)}  id="inputGroupSelect01">
+        <option className="mt-4" value="Computer" >Computer</option>
         </select>
     </div>
  </div>
-
+{/*  */}
 <table class="table table-bordered" style={{width:"100%"}}>
 <thead>
 <tr >
@@ -238,6 +260,10 @@ const ComputerWrite = () => {
 </tbody>
 </table>
 
+
+
+
+{/*  */}
 <div class="mb-3" >
             <label for="exampleFormControlTextarea1" class="form-label">Description</label>
             <div className="editorContainer" id="exampleFormControlTextarea1">
@@ -245,18 +271,13 @@ const ComputerWrite = () => {
            </div>
           </div>
 <div className="col-md-5 mt-3">
-<button type="submit" class="btn btn-primary" onClick={handleSubmit}>Upload</button>
+
+<button type="submit" class="btn btn-primary" onClick={handleSubmit}>{loading ? "Uploading..." : "Upload"}</button>
 </div>
 </div>
 
 
-
-
-
-
-
-
-        </>
+ </>
     );
 }
 

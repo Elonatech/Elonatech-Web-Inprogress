@@ -96,7 +96,6 @@ import AdminLogin from './components/admin/admin';
 import Dashboard from './components/admin/dashboard';
 
 
-
 const Layout = () =>{
   return(
   <>
@@ -424,6 +423,7 @@ const router = createBrowserRouter([
         path:"/dashboard",
         element:< Dashboard />
       },
+  
   
   ],
  

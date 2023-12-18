@@ -88,7 +88,7 @@ const Blog = () => {
                                       <img src={item.cloudinary_id} className='img-fluid'  alt="" />
                                         </div>
                                         <div className="col-md-6">
-                                            <h6 className='fs-6 pb-3'>{item.category}</h6>
+                                            <h6 className='fs-6 pb-3 pt-4'>{item.category.charAt(0).toUpperCase() + item.category.slice(1)}</h6>
                                             <h5 className='pb-3' style={{color:"#34548c"}}> <Link className='text-decoration-none' to={`${item._id}`}>{item.title}</Link></h5>
                                             <p className='fs-6 pb-4' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(item.description.slice(0,150))}}></p>
                                             <p className='fs-6'> {item.author} / {new Date(item.createdAt).toDateString()}   </p>

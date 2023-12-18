@@ -28,7 +28,7 @@ const SingleProduct = () => {
     const [image, setImage] = useState([]);
     const { id } = useParams();
 
-    // console.log(computer)
+    console.log(computer)
     const navigate = useNavigate() 
     useEffect(() =>{
       const fetchData = async() =>{
@@ -36,7 +36,7 @@ const SingleProduct = () => {
             const res = await axios.get(`${BASEURL}/api/v1/product/${id}`);
             console.log(res.data.getProductById);
             setData(res.data.getProductById);
-            setImage(res.data.getProductById.cloudinary_id);
+            setImage(res.data.getProductById.images);
             setComputer(res.data.getProductById.computerProperty);
             setIsLoading(true);
             } catch (error) {
@@ -129,12 +129,13 @@ const SingleProduct = () => {
         '--swiper-pagination-color': '#fff',
       }}
         spaceBetween={30}
-        effect={'fade'}
+        // effect={'fade'}
+        navigation= {true}
         pagination={{
           clickable: true,
         }}
         thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
-        modules={[FreeMode, EffectFade, Thumbs, Pagination]}
+        modules={[FreeMode, Navigation,  EffectFade, Thumbs, Pagination]}
         className='swiper-container gallery-top '
       >
     {image.map((item) => (
@@ -219,7 +220,8 @@ const SingleProduct = () => {
   </div>
 </div>
 
-:
+ : 
+
 <div>
 <div className="container mt-5 ">
 <div className="row ">
@@ -232,7 +234,7 @@ const SingleProduct = () => {
   </div>
   </div>
 </div>
-{/* table */}
+{/*  */}
 <div>
   {computer.map((com) =>(
     <div key={com.id}>
@@ -334,7 +336,7 @@ const SingleProduct = () => {
     <tr>
      <th scope="row">Screen Resolution</th>
      <td >
-     {com.screen}
+     {com.resolution}
      </td>
     </tr>
     <tr>
@@ -369,41 +371,9 @@ const SingleProduct = () => {
 
 </div>
 </div> 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/*  */}
+ }
 </div>
-
-    
-
-
-
 </>
-
 : 
 <div className="container">
 <div className="row">
