@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './pagination.css';
 
 const Pagination = ({postsPerPage, totalPosts, paginate , nextPage, previousPage, currentPage }) => {
   const pageNumbers = [];
@@ -8,13 +9,15 @@ const Pagination = ({postsPerPage, totalPosts, paginate , nextPage, previousPage
   }
 
   return (
+    <>
     <nav>
       <ul className='pagination justify-content-center'>
       <li className='page-item' style={{color:"#34548c"}}>
           <Link onClick={previousPage}  className='page-link text-decoration-none' style={{color:"#34548c"}}>Prev</Link>
         </li> 
         {pageNumbers.map(number => (
-          <li key={number} className={`page-item ${currentPage === number ? 'active' : ''}`} style={{color:"#34548c"}}>
+          
+          <li key={number} className={`page-item  ${currentPage === number ? 'active' : ''}`} style={{backgroundColor:"black"}} >
             <Link onClick={() => paginate(number)}  className='page-link text-decoration-none'> {number}</Link>
           </li>
         ))}
@@ -23,10 +26,10 @@ const Pagination = ({postsPerPage, totalPosts, paginate , nextPage, previousPage
       </li> 
       </ul>
     </nav>
+</>
   );
-
-
-
 };
 
 export default Pagination;
+
+

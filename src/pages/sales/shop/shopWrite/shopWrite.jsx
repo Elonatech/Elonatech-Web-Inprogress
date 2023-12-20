@@ -56,12 +56,10 @@ const navigate = useNavigate();
             if  (data.success === true){
                 setLoading(false);
                 setImages([]);
-                toast.success('slide created successfully');
             }
             navigate('/shop')
         } catch (error) {
             console.log(error)
-            toast.error(error);
         }
 
     }

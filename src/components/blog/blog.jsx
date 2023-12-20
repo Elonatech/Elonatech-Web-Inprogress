@@ -7,8 +7,8 @@ import Loading from '../Loading/Loading';
 import DOMPurify from 'dompurify';
 import Pagination from '../Pagination/Pagination';
 
-
-
+import image from './captions/1500 X 749.png'
+import './blog.css'
 
 const Blog = () => {
     const [data, setData] = useState([]);
@@ -32,9 +32,7 @@ const Blog = () => {
   
 
 
-    // pagination
-
-  // Get current posts
+ // pagination
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
@@ -53,9 +51,6 @@ const Blog = () => {
      setCurrentPage(currentPage + 1);
   }
 };
-
-
-
 
     return (
     <>
@@ -76,22 +71,28 @@ const Blog = () => {
             <li class="breadcrumb-item"> <Link className='text-dark' to={'/blog'}   style={{textDecoration:"none"}} >Blog</Link></li> 
         </ol>
    <div className="col-md-9">
-    <div className="container">
-        <div className="row">
+    <div className="container">    
+        <div className="row">  
             {isLoading ? (      
             currentPosts?.map((item) => (
                         <div className="col-md-12" key={item.id}>
                           <Link className='text-decoration-none text-dark' to={`${item._id}`}>
                                 <div className="mt-4">
-                                    <div className="row shadow" style={{width:"100%"}}>
-                                        <div className="col-md-6" >
-                                      <img src={item.cloudinary_id} className='img-fluid'  alt="" />
+                                    <div className="row g-0 shim " >
+                                      <div className="col-md-6" >
+                                        <div className="rounded-start  border-dark">
+
+                                      <img src={image} className='img-fluid rounded-start' style={{height:"250px" , width:""}} alt="" />
                                         </div>
-                                        <div className="col-md-6">
+                                        </div>
+                                        <div className="col-md-6 ">
+                                          <div className="ms-3">
                                             <h6 className='fs-6 pb-3 pt-4'>{item.category.charAt(0).toUpperCase() + item.category.slice(1)}</h6>
                                             <h5 className='pb-3' style={{color:"#34548c"}}> <Link className='text-decoration-none' to={`${item._id}`}>{item.title}</Link></h5>
                                             <p className='fs-6 pb-4' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(item.description.slice(0,150))}}></p>
                                             <p className='fs-6'> {item.author} / {new Date(item.createdAt).toDateString()}   </p>
+
+                                          </div>
                                             </div>
                                         </div>
                                     </div>

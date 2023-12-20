@@ -1,18 +1,18 @@
 
 
 .testimonials {
-    padding: 80px 0;
+    padding: 30px ;
     background-position: center center;
     background-size: cover;
     position: relative;
   }
   
-  .testimonials::before {
+  /* .testimonials::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(var(--color-secondary-dark-rgb), 0.8);
-  }
+  } */
   
   .testimonials .section-header {
     margin-bottom: 40px;
@@ -105,20 +105,3 @@
       width: 80%;
     }
   }
-  
-  .about-border {
-    width: 50px;
-    height: 3px;
-    background: blue;
-    margin: auto;
-}
-
-
-.support-line{
-  width: 350px;
-    height: 1px;
-    background: blue;
-}
-  
-
-

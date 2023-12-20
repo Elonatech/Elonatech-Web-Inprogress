@@ -1,9 +1,18 @@
 import './footer.css'
-import elona from './caption/elona icon.png'
 import eloa2 from './caption/Elonatech icon (1).png'
+import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 
 const Footer = () => {
+
+ const [currentAdmin, setCurrentAdmin] = useState('');
+
+ useEffect(() =>{
+  const auth = JSON.parse(localStorage.getItem('token'));
+    setCurrentAdmin(auth)
+ }, []);
+
     return (
 <> 
 
@@ -50,7 +59,16 @@ const Footer = () => {
         </div>
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>4 , Oluwakemi Street, Shasha Road <br /> Egbeda, Lagos. <br /> Nigeria  <br /> <strong>Phone:</strong> +2349 0145 44520. <br /> <strong>Email:</strong>  info@elonatech.com.ng<br /></p>
+          <p>4 , Oluwakemi Street, Shasha Road <br /> Egbeda, Lagos. <br /> Nigeria  <br /> <strong>Phone:</strong> +2349 0145 44520. <br /> <strong>Email:</strong>  info@elonatech.com.ng<br /> 
+          
+          <div className="text-center mt-4">
+            {currentAdmin ? (
+              <Link to={'/login'} className='text-decoration-none text-white'><i class="bi bi-unlock-fill"   style={{cursor:"pointer"}}></i></Link>
+              ) : (
+                <Link to={'/login'} className='text-decoration-none text-white'><i class="bi bi-lock-fill"  style={{cursor:"pointer"}}></i></Link>
+            )}
+          </div>
+          </p>
         </div>
 
       </div>

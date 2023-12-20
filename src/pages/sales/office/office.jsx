@@ -90,7 +90,7 @@ const Office = () => {
                 <Link className='text-decoration-none text-dark' to={`/product/${product._id}`}>
                 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
                   <div className="text-center take">
-                  <img src={product.cloudinary_id[0].url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
+                  <img src={product.images[0].url} className='img-fluid' style={{height:"130px", width:"130px", objectFit:"cover"}}  alt="" />
                   </div>
                  <h5 class="fw-normal pt-3">{product.name} </h5>
                  <p className='lead fs-6'>{product.category}</p>
@@ -141,10 +141,10 @@ const Office = () => {
         </form>
           <h4 class="">Categories</h4>
           <ul className="list-unstyled">
-            <li>Computers</li>
-            <li>Office Equipment</li>
-            <li>POS System</li>
-            <li>Printers</li>
+            <li><Link to={'/computers'} className='text-decoration-none text-dark'>Computers</Link></li>
+            <li><Link to={'/office-equipment'}  className='text-decoration-none text-dark'>Office Equipment</Link></li>
+            <li><Link to={'/pos'} className='text-decoration-none text-dark'>POS System</Link></li>
+            <li><Link to={'/printer-sales'} className='text-decoration-none text-dark'>Printers</Link></li>
           </ul>
             {/* range */}
           <h4 class="">Filter by price</h4>

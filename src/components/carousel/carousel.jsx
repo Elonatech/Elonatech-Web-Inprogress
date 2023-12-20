@@ -1,62 +1,89 @@
-import './carousel.css';
-import carousel1 from './captions/samsung.jpg'
-import carousel2 from './captions/sales mike.png'
-import carousel4 from './captions/4391687.png'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import Slider1 from './captions/Slider1.jpg'
+import Slider2 from './captions/Slider2.png'
+import Slider3 from './captions/Slider3.png'
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+const swiperParams = {
+  noSwiping: true,  // Disable swiping for all slides
+  noSwipingClass: 'swiper-no-swiping', // Add this class to elements that should not trigger swiping
+};
 
 
 const Carousel = () => {
+  const params = {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  };
+  
     return (
 <>
-<main className='mt-5'>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" style={{height:"600px"}}>
-        <img src={carousel1} class="bd-placeholder-img" alt="" />
-        <div class="container">
-          <div class="carousel-caption text-start" style={{marginBottom:"150px"}}  >
-            <h1> IT CONSULTANTS </h1>
-            <h5 className='mt-3 mb-3'>Information technology consulting services help improve the performance, scalability <br /> and competitiveness of your company through right technology enablement and usage</h5>
+<div className=""  style={{background:"#f8f8f8"}}>
+  <Swiper  
+  modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]} 
+  spaceBetween={0} 
+  slidesPerView={1}
+  // navigation={true}
+  pagination={true}
+  autoplay={{delay: 5000}}
+  {...swiperParams}
+  {...params}
+  >
+    <div className="swiper-button-next" style={{color:"#fff",fontSize:"18px",margin:"0 0px", cursor:"pointer",float:"right"}}></div>
+    <div className="swiper-button-prev" style={{color:"#fff",fontSize:"18px",margin:"0 0px", cursor:"pointer",float:"left"}}></div>
+    {/*  */}
+  <SwiperSlide style={{height:"600px"}} className="swiper-slide swiper-no-swiping">
+    <div style={{ backgroundImage: `url(${Slider1})`, height:'600px', color:'white'}} >
+      <div class="" style={{paddingTop:"16rem",paddingLeft:"5rem"}}>
+          <div class=" text-start"   >
+            <h1 className=''>  IT CONSULTANTS </h1>
+            <h5>Information technology consulting services help improve the performance, scalability <br /> and competitiveness of your company through right technology enablement and usage</h5>
             <p><a class="btn btn-lg btn-danger" href="#">Know More</a></p>
           </div>
         </div>
-      </div>
-      <div class="carousel-item" style={{height:"600px"}}>
-        <img src={carousel2} class="bd-placeholder-img" style={{backgroundSize:"cover" , backgroundPosition:"center"}} alt="" />
-        <div class="container mt-5">
-          <div class="carousel-caption text-start" style={{marginBottom:"150px"}}>
+    </div>
+  
+  
+  </SwiperSlide>
+  
+  <SwiperSlide className="swiper-slide" >
+    <div  style={{ backgroundImage: `url(${Slider2})`, height:'600px', color:'white', backgroundSize:"cover" , backgroundPosition:"center"}}>
+      <div class="  " style={{paddingTop:"16rem",paddingLeft:"5rem"}}>
+          <div class=" text-start" style={{marginBottom:"150px"}}>
             <h1>WE ARE DIGITAL MARKETERS</h1>
             <h5>Experts in providing digital marketing strategies that convert engagement </h5>
             <p><a class="btn btn-lg btn-danger" href="#">Learn more</a></p>
           </div>
         </div>
-      </div>
-      <div class="carousel-item" style={{height:"600px"}}>
-        <img src={carousel4} class="bd-placeholder-img" alt="" />
-        <div class="container">
-          <div class="carousel-caption text-end" style={{marginBottom:"150px"}}>
+    </div>
+  
+  </SwiperSlide>
+  
+  
+  <SwiperSlide className="swiper-slide swiper-no-swiping">
+    <div  style={{ backgroundImage: `url(${Slider3})`, height:'600px', color:'white', backgroundSize:"cover" , backgroundPosition:"center"}}>
+      <div class="" style={{paddingTop:"16rem",paddingRight:"5rem"}}>
+          <div class=" text-end" style={{marginBottom:"150px"}}>
             <h1>WEB DEVELOPERS</h1>
             <h5>
               We offer bespoke user experience, web design, app design, and software development services</h5>
             <p><a class="btn btn-lg btn-danger mt-3" href="#">Know More</a></p>
           </div>
         </div>
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</main>        
+  
+  </SwiperSlide>
+  </Swiper> 
+  </div>        
 </>
     );
 }

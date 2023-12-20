@@ -19,22 +19,29 @@ import './singleProduct.css';
 // import required modules
 import { FreeMode, Navigation, EffectFade, Thumbs, Pagination } from 'swiper/modules';
 
-
 const SingleProduct = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState();
     const [data, setData] = useState({});
+    const [currentAdmin, setCurrentAdmin] = useState('');
     const [computer , setComputer] = useState([])
     const [isLoading, setIsLoading] = useState(false);
     const [image, setImage] = useState([]);
     const { id } = useParams();
 
-    console.log(computer)
     const navigate = useNavigate() 
+
+
+console.log(image)
+   useEffect(() =>{
+   const auth = JSON.parse(localStorage.getItem('token'));
+   setCurrentAdmin(auth)
+   }, []);
+
+
     useEffect(() =>{
       const fetchData = async() =>{
         try {
             const res = await axios.get(`${BASEURL}/api/v1/product/${id}`);
-            console.log(res.data.getProductById);
             setData(res.data.getProductById);
             setImage(res.data.getProductById.images);
             setComputer(res.data.getProductById.computerProperty);
@@ -44,21 +51,16 @@ const SingleProduct = () => {
             setIsLoading(true);
             }
       }
-    
       fetchData()
     },[])
    
     const handleDelete = async () => {
         const res = await axios.delete(`${BASEURL}/api/v1/product/${id}`)
-        console.log(res)
         navigate('/shop')
         };
         
-
-
     return (
     <>
-
 {/* header */}
 <section class="mt-5 bg-dark">
       <div class="container" >
@@ -79,7 +81,6 @@ const SingleProduct = () => {
       </div>
 </section>
 {/* header */}
-
 
 {/* Product Area Starts */}
 <section class="section" id="product">
@@ -128,7 +129,7 @@ const SingleProduct = () => {
         '--swiper-navigation-color': '#fff',
         '--swiper-pagination-color': '#fff',
       }}
-        spaceBetween={30}
+        spaceBetween={0}
         // effect={'fade'}
         navigation= {true}
         pagination={{
@@ -146,10 +147,7 @@ const SingleProduct = () => {
         </div>
     ))}
     </Swiper>
-
-     
   </div>  
-
   </div>
   </div>
     </div>
@@ -161,19 +159,12 @@ const SingleProduct = () => {
             <div class="right-content">
                     <h4>{data.name}</h4>
                     <span class="price text-dark">₦ {data.price}.00</span>
-                    <ul class="stars" >
-                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
-                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
-                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
-                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
-                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
-                      
-                    </ul>
+                 
                     <div class="quote">
                        <p >{data.brand}</p>
                     </div>
-
-
+                     
+ 
                     {/* <div class="quantity-content">
                         <div class="left-content">
                             <h6>No. of Orders</h6>
@@ -187,6 +178,15 @@ const SingleProduct = () => {
                     <div class="">
                         <h4 className='mt-4'>Total: ₦ {data.price}.00</h4>
                     </div>
+                    <p>In stock</p>
+                       <ul class="list-unstyled d-flex mt-3" >
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                        <li><i class="fa fa-star" style={{color:"#f4be1d"}}></i></li>
+                      
+                    </ul>
                             <div className="row justify-content-md-end mt-3">
                                 <div className="col-6">
                                     <div className="">
@@ -194,11 +194,17 @@ const SingleProduct = () => {
                                     </div>
                                 </div>
                                 <div className="col-6">
+                                  {currentAdmin ? (
                                     <div className="text-end">
-                                        <div className="d-flex justify-content-md-end mt-4 ">
-                                        <img src={hgdelete} className='img-fluid  me-5' style={{width:'20px', cursor:"pointer"}} onClick={handleDelete}  alt="" />
-                                        </div>
+                                    <div className="d-flex justify-content-md-end mt-4 ">
+                                    <img src={hgdelete} className='img-fluid  me-5' style={{width:'20px', cursor:"pointer"}} onClick={handleDelete}  alt="" />
                                     </div>
+                                   </div>
+
+                                  ) :(
+                                    <div></div>
+                                  )}
+                             
                                 </div>
                             </div>
                    
@@ -207,7 +213,6 @@ const SingleProduct = () => {
   </div>
 
 {data.category !== 'Computer' ?   
-
 <div className="container mt-5  mb-5">
 <div className="row ">
   <div className="col-lg-12">
@@ -387,13 +392,7 @@ const SingleProduct = () => {
 </div>
 </div>
 }
-
-
-
-
-  
-
-    </section>
+</section>
 
 
     </>

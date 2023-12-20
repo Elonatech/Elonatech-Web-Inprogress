@@ -1,26 +1,65 @@
-
-
 import printerHeader from './captions/printerHeader.png'
-import printer1 from './captions/printer1.jpg'
-import printer2 from './captions/printer2.jpg'
-import printer3 from './captions/printer3.jpg'
-import printer4 from './captions/printer4.jpg'
-import printer5 from './captions/printer5.jpg'
-import printer6 from './captions/printer6.png'
-import printer8 from './captions/printer7.jpg'
-import printer9 from './captions/printer9.jpg'
-import printer10 from './captions/printer10.png'
-import printer12 from './captions/printer11.jpg'
-import printer13 from './captions/printer12.jpg'
-import printer14 from './captions/printrer13.png'
-import printer15 from './captions/printer14.jpg'
-import printer16 from './captions/printer15.jpg'
-import printer17 from './captions/printer16.jpg'
-import printer18 from './captions/printer17.jpg'
+
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Pagination from '../../../components/Pagination/Pagination';
+import { BASEURL } from '../../../BaseURL/BaseURL';
+import Loading from '../../../components/Loading/Loading';
+import axios from 'axios';
+
+
+
+
 
 
 const Printers = () => {
-    return (
+
+const [data, setData] = useState([]);
+const [isLoading, setIsLoading] = useState(false);
+const [currentPage, setCurrentPage] = useState(1);
+const [postsPerPage] = useState(8);
+
+
+
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`${BASEURL}/api/v1/product/`);
+      const filtered = response.data.getAllProducts.filter(user => user.category === 'Printer')
+      setData(filtered);
+      setIsLoading(true);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setIsLoading(true);
+    }
+  };
+  fetchData();
+}, []);
+
+
+const indexOfLastPost = currentPage * postsPerPage;
+const indexOfFirstPost = indexOfLastPost - postsPerPage;
+const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+
+const paginate = pageNumber => setCurrentPage(pageNumber);
+
+const previousPage = () => {
+  if (currentPage !== 1) {
+     setCurrentPage(currentPage - 1);
+  }
+};
+
+const nextPage = () => {
+if (currentPage !== Math.ceil(data.length / postsPerPage)) {
+   setCurrentPage(currentPage + 1);
+}
+};
+
+
+
+
+return (
      <>
  {/* Header */}
 <div class="container-fluid bg-secondary py-5 " style={{height:"500px" , backgroundImage:`linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${printerHeader})`, backgroundRepeat:"no-repeat" , backgroundPosition:"center", backgroundSize:"cover"}}>
@@ -41,251 +80,48 @@ const Printers = () => {
         <h6 className='ms-4'>SHOWING 1–20 OF 32 RESULTS</h6>
 			</div>
 			<div class="row g-1 progress-circle ">
-				{/* office equipment */}
-			<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer1} className='img-fluid pt-4 ' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">All-In-One Printer HP Deskjet Ink Advantage 3790</h5>
-               <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦57,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer2} className='img-fluid pt-5 pb-2' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">Deskjet Ink Advantage 3835 All-In-One Color Printer</h5>
-			          <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦166,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer3} className='img-fluid' style={{}} alt="" />
-                </div>
-                <h5 class="fw-normal pt-3">HP Color LaserJet M577dn All-In-One Laser Printer</h5>
-			          <p className='lead fs-6'>Printer</p>
-                <div class="stars" style={{color:'black'}}>
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦1,407,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
-                <img src={printer4} className='img-fluid pt-4' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP Color LaserJet Enterprise M652dn Network Printer</h5>
-			         <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦728,500.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-    {/*  */}
-		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-4  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer5} className='img-fluid pt-5 ' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP Color LaserJet M454DW</h5>
-               <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦307,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer6} className='img-fluid pt-5 pb-4' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-4">HP Color LaserJet M553DN</h5>
-			        <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦505,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
-                <img src={printer8} className='img-fluid pt-5 pb-2' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP Color LaserJet Printer 255DW</h5>
-			        <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦457,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer9} className='img-fluid pt-4' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP DeskJet Plus 4120 All-In-One Printer</h5>
-               <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦106,900.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-       {/*  */}
-	 <div class="col-lg-3 mb-4">
-			<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-            <div className="text-center take">
-                <img src={printer10} className='img-fluid pt-5 pb-3' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-5">HP Color LaserJet M454DW</h5>
-			         <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between pt-0">
-               <p className='mt-2 px-1 text-danger'>₦307,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-          </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer12} className='img-fluid pt-3' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pb-1">HP Ink Tank WL 415 All In One Printer</h5>
-			       <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦122,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take pt-1">
-                <img src={printer13} className='img-fluid pt-5 pb-3 ' style={{}} alt="" />
-                </div>
-                <h5 class="fw-normal pt-3">HP LaserJet Enterprise M507dn</h5>
-			          <p className='lead fs-6'>Printer</p>
-                <div class="stars" style={{color:'black'}}>
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <div class="d-flex justify-content-between">
-                <p className='mt-2 px-1 text-danger'>₦357,000.00</p>
-                <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		<div class="col-lg-3 mb-4">
-	            <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take pt-3 pb-2">
-                <img src={printer14} className='img-fluid pt-1' style={{ height:"9rem"}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP LaserJet Enterprise M607n – K0Q14A</h5>
-               <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦286,900.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-           </div>
-           </div>
-		   </div>
-       {/*  */}
-		  <div class="col-lg-3 mb-4">
-				<div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take">
-                <img src={printer15} className='img-fluid pt-5' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-4">HP LaserJet Enterprise M607n – K0Q14A</h5>
-			         <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦286,900.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>
-		 </div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
-                <div className="text-center take pb-4 pt-3">
-                <img src={printer16} className='img-fluid pt-3' style={{height:"9rem"}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP LaserJet MFP M433a (1VR14A)</h5>
-			   <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦199,500.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		 <div class="col-lg-3 mb-4">
-		 <div class=" mx-1  border shadow-lg p-3 bg-body rounded">
-                <div className="text-center take">
-                <img src={printer17} className='img-fluid pt-5 pb-4' style={{}} alt="" />
-                </div>
-               <h5 class="fw-normal pt-3">HP LaserJet Enterprise M712DN Printer</h5>
-			         <p className='lead fs-6'>Printer</p>
-               <div class="stars" style={{color:'black'}}>
-               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-               </div>
-                <div class="d-flex justify-content-between">
-               <p className='mt-2 px-1 text-danger'>₦1,004,000.00</p>
-               <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
-              </div>
-              </div>				
-		</div>
-		{/*  */}
+       {isLoading ? (      
+      currentPosts?.map((product) => {
+      return(
+			<div class="col-lg-3 mb-4" key={product.id}>
+      <Link className='text-decoration-none text-dark' to={`/product/${product._id}`}>
+      <div class=" mx-1  border shadow-lg p-3  bg-body rounded">
+        <div className="text-center take">
+        <img src={product.images[0].url} className='img-fluid pt-4 ' style={{height:"130px", width:"130px", objectFit:"cover"}} alt="" />
+        </div>
+       <h5 class="fw-normal pt-3">{product.name}</h5>
+       <p className='lead fs-6'>{product.category}</p>
+       <div class="stars" style={{color:'black'}}>
+       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+       </div>
+        <div class="d-flex justify-content-between">
+       <p className='mt-2 px-1 text-danger'>₦ {product.price}.00</p>
+       <i class="bi bi-cart p-1" style={{fontSize:"20px" , cursor:"pointer"}}></i>
+      </div>
+     </div>
+     </Link>
+    </div>
+ 
+            )
+              })
+                  ) : (
+                   
+                      <div className="container">
+                       <div className="row">
+                        <div className="col-md-12">
+                            <div className="d-flex justify-content-center">
+                              <div className='my-5 py-5'>
+                            <Loading  />
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                      </div>
+            )}
+
+     <div className="mt-5">
+      <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} className={'mt-5'} 	currentPage={currentPage}  previousPage={previousPage} nextPage={nextPage} />
+     </div>
 		</div>
 		</div>
 	</section>
@@ -300,10 +136,10 @@ const Printers = () => {
         </form>
           <h4 class="">Categories</h4>
           <ul className="list-unstyled">
-            <li>Computers</li>
-            <li>Office Equipment</li>
-            <li>POS System</li>
-            <li>Printers</li>
+            <li><Link to={'/computers'} className='text-decoration-none text-dark'>Computers</Link></li>
+            <li><Link to={'/office-equipment'}  className='text-decoration-none text-dark'>Office Equipment</Link></li>
+            <li><Link to={'/pos'} className='text-decoration-none text-dark'>POS System</Link></li>
+            <li><Link to={'/printer-sales'} className='text-decoration-none text-dark'>Printers</Link></li>
           </ul>
           <h4 class="">Filter by price</h4>
           <input type="range"/>

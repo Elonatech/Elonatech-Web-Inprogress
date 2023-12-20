@@ -4,17 +4,14 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import axios from 'axios';
 import { BASEURL } from "../../../BaseURL/BaseURL";
-
-
 import './computer.css'
 
 
 const ComputerWrite = () => {
-
     const getInitialState = () => {
         const value = "Computer";
         return value;
-        };
+     };
 
         const [name, setName] = useState('');
         const [description, setDescription] = useState('');
@@ -94,7 +91,6 @@ const ComputerWrite = () => {
                 if  (data.success === true){
                     setLoading(false);
                     setImages([]);
-              
                 }
                 navigate('/shop')
             } catch (error) {
@@ -260,23 +256,18 @@ const ComputerWrite = () => {
 </tbody>
 </table>
 
-
-
-
-{/*  */}
-<div class="mb-3" >
+   {/*  */}
+   <div class="mb-3" >
             <label for="exampleFormControlTextarea1" class="form-label">Description</label>
             <div className="editorContainer" id="exampleFormControlTextarea1">
             <ReactQuill className="editor" theme="snow" onChange={(value) => setDescription(value)} />
            </div>
           </div>
-<div className="col-md-5 mt-3">
+    <div className="col-md-5 mt-3">
 
 <button type="submit" class="btn btn-primary" onClick={handleSubmit}>{loading ? "Uploading..." : "Upload"}</button>
 </div>
 </div>
-
-
  </>
     );
 }

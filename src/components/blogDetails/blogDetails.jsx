@@ -8,13 +8,25 @@ import './blog.css';
 import Loading from '../Loading/Loading';
 import DOMPurify from 'dompurify';
 
+import details from './caption/1500 X 749.png'
 
 const BlogDetails = () => {
 const [data , setData] = useState({})
+const [currentAdmin, setCurrentAdmin] = useState('');
 const [isLoading, setIsLoading] = useState(false);
 
 const { id } = useParams()
 const navigate = useNavigate();
+
+
+
+
+
+
+useEffect(() =>{
+ const auth = JSON.parse(localStorage.getItem('token'));
+   setCurrentAdmin(auth)
+}, [])
 
 useEffect(() =>{
 const fetchBlog = async ()=>{
@@ -30,6 +42,7 @@ const fetchBlog = async ()=>{
 }
 fetchBlog()
 },[]);
+
 
 const handleDelete = async () => {
 const res = await axios.delete(`${BASEURL}/api/v1/blog/${id}`)
@@ -66,7 +79,8 @@ return (
 <div className="row">
 <div className="col-md-12">
  <div className="card border-0 rounded ">
-<img src={data.cloudinary_id} alt="" className="singlePostImg rounded" />
+ {/* {data.cloudinary_id}  */}
+<img src={details}  alt="" className="singlePostImg rounded" />
 </div>
 </div>
 </div>
@@ -77,12 +91,18 @@ return (
 <h6>Author: <span className='fst-italic ms-2'>{data.author}</span></h6>
 </div>
 <div className="col-6 col-md-6">
+    {/*  */}
+{currentAdmin ?   (
 <div className="d-flex justify-content-end">
 <Link className='text-decoration-none me-3'  style={{width:'20px' , cursor:"pointer"}}  to={`/update/${id}`} state={data}>
     <img src={edit} className='img-fluid me-3'  style={{width:'20px' , cursor:"pointer"}}     alt="" />
 </Link>
 <img src={hgdelete} className='img-fluid' style={{width:'20px', cursor:"pointer"}} onClick={handleDelete}  alt="" />
 </div>
+) : (
+<div></div>
+    )}
+
 </div>
 </div>
 </div>

@@ -92,8 +92,10 @@ import Shopwrite from './pages/sales/shop/shopWrite/shopWrite';
 import ComputerWrite from './pages/sales/computer/computerWrite';
 
 // admin
+import PrivateRoute from './components/privateRoute/PrivateRoute';
 import AdminLogin from './components/admin/admin';
 import Dashboard from './components/admin/dashboard';
+import Clients from './components/clients/clients';
 
 
 const Layout = () =>{
@@ -110,7 +112,7 @@ const router = createBrowserRouter([
 {
   path:"/",
   element: <Layout/>,
-// errorElement:<Error />,
+  // errorElement:<Error />,
   children:[
     {
       path:'/',
@@ -401,29 +403,33 @@ const router = createBrowserRouter([
       
       {
         path:"/write",
-        element:< BlogWrite />
+        element: <PrivateRoute>< BlogWrite /></PrivateRoute>   
       },
       {
         path:"/update/:id",
-        element:< BlogUpdate />
+        element: <PrivateRoute>< BlogUpdate/></PrivateRoute>   
       },
       {
         path:"/shop-write",
-        element:< Shopwrite />
+        element: <PrivateRoute>< Shopwrite /></PrivateRoute>   
       },
       {
         path:"/computer-write",
-        element:< ComputerWrite />
-      },
+        element:<PrivateRoute>< ComputerWrite /></PrivateRoute>   
+      },   
       {
         path:"/login",
-        element:< AdminLogin />
+        element:<AdminLogin />
       },
       {
-        path:"/dashboard",
-        element:< Dashboard />
+        path:"/dashboard",   
+        element: <PrivateRoute>< Dashboard /></PrivateRoute>
       },
-  
+      {
+        path:"/may",
+        element:<Clients/>
+      }
+ 
   
   ],
  

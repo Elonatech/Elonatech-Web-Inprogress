@@ -3,11 +3,10 @@ import Main from "../main/main";
 
 const Home = () => {
     return (
-        <>
-        <Carousel />
-        <Main />
-            
-        </>
+    <>
+     <Carousel />
+     <Main />  
+    </>
     );
 }
 

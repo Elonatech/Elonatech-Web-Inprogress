@@ -11,7 +11,7 @@ const Navbar = () => {
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style={{backgroundColor:"#11253D"}}>
     <div class="container-fluid">
  
-      <Link to={'/'} onClick={() =>{ scrollTop()}} className='navbar-brand'><img src={logo} alt=""  style={{height:"4rem", width:"10rem"}} /></Link>
+      <Link to={'/'}   className='navbar-brand'><img src={logo} alt=""  style={{height:"4rem", width:"10rem"}} /></Link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

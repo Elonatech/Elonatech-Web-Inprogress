@@ -33,12 +33,10 @@ import client19 from './captions/cli/Wrahp-logo1.png'
 import client20 from './captions/cli/kosofe local govt1.png'
 import client21 from './captions/cli/okhma1.png'
 
-
-
 import Feature from './captions/elonatech web dev.png'
 
-import './main.css'
 
+import Serve from '../serve/serve'
 
 import bg1 from './captions/images (1).jpeg'
 import bg2 from './captions/images (2).jpeg'
@@ -58,35 +56,7 @@ import product2 from './captions/product/Honeywell-orbit-barcode.gif'
 import product3 from './captions/product/SAM-TC-Touch.png'
 import product4 from './captions/product/hp.jpg'
 import product5 from './captions/product/thermal-paper.jpg'
-import product6 from './captions/product/therminal-roll.png'
 
-
-import service1 from './captions/services/external-networking-network-technology-itim2101-fill-itim2101-1.png';
-
-import artboard1 from './captions/services/artboard9.jpg'
-import artboard2 from './captions/services/Artboard2.jpg'
-import artboard3 from './captions/services/Artboard3.jpg'
-import artboard4 from './captions/services/artboard4.jpg'
-import artboard5 from './captions/services/Artboard5.jpg'
-import artboard6 from './captions/services/Artboard6.jpg'
-import artboard7 from './captions/services/Artboard7.jpg'
-import artboard8 from './captions/services/Artboard8.jpg'
-import artboard9 from './captions/services/artboard1.jpg'
-
-import articonconputer from './captions/services/icons/computer.png'
-import articonconsult from './captions/services/icons/consult.png'
-import articoonsdigitial from './captions/services/icons/network (2).png'
-import articongraphic from './captions/services/icons/graphic.png'
-import articonnetwork from './captions/services/icons/network.png'
-import articonsuvalliance from './captions/services/icons/suvalliance.png'
-import articonvideo from './captions/services/icons/video.png'
-import articonConputer from './captions/services/icons/computer.png'
-import articonwebsite from './captions/services/icons/website.png'
-import articonvideogall from './captions/services/icons/video-gallery.png'
-
-
-
-import scrollTop from '../scrolltop/scrolltop'
 
 
 const Main = () => {
@@ -340,178 +310,12 @@ const Main = () => {
   </button>
 </div>
 </div>
-
 {/* services */}
-<div class="album py-5 bg-body-tertiary">
-      <h2 className='text-center mt-5'>What We Do Best</h2>
-       <div class="about-border"></div>
-      <div class="container">
 
-         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
-            {/* card 1 */}
-          <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard9}) `, height:" 360px" , backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">WEB DESIGN & DEVELOPMENT</h5>
-          <img className='text-white' src={articonwebsite} class="mb-4" style={{color:"white"}} alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">WEB DESIGN & DEVELOPMENT</h4>
-            <img src={articonwebsite} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists.</p>
-            <Link  to={'/web'}  onClick={()=> scrollTop()}   class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
+< Serve />
 
-          {/* card 2 */}
-          <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard2})`, height:" 360px", backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white"> DIGITIAL MARKETING</h5>
-          <img src={articoonsdigitial} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">DIGITIAL MARKETING</h4>
-            <img src={articoonsdigitial} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">With Digital marketing, we have successfully changed the way brands and businesses use technology for marketing. Digital platforms are..</p>
-            <Link  to={'/digital'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard1})`, height:" 360px",backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">GRAPHICS & BRANDING</h5>
-          <img src={articongraphic} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">GRAPHICS & BRANDING</h4>
-            <img src={articongraphic} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">Elonatech Nigeria Limited, in a bid to serve you better, has included Corporate branding in their services; Which includes: logo design..</p>
-            <Link to={'/brand'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard3})`, height:" 360px", backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">NETWORK ENGINEERING / ADMINISTRATION</h5>
-          <img src={articonnetwork} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">NETWORK ENGINEERING / ADMINISTRATION</h4>
-            <img src={articonnetwork} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">Elonatech Nigeria Limited is built on the assumption that the management of information technology for business is not...</p>
-            <Link to={'/network'} onClick={()=> scrollTop()} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard4})`, height:" 360px",backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">COMPUTER ENGINEERING</h5>
-          <img src={articonconputer} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">COMPUTER ENGINEERING</h4>
-            <img src={articonConputer} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">Network administration involves a wide array of operational tasks that help a network to run smoothly and efficiently. This includes activitie...</p>
-            <Link onClick={() =>  scrollTop() } to={'/computer'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard5})`, height:" 360px" ,backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">ACCESS CONTROL & SURVAILANCE</h5>
-          <img src={articonsuvalliance} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">ACCESS CONTROL & SURVAILANCE</h4>
-            <img src={articonsuvalliance} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio expedita, aut possimus labore non sit libero eaque autem molestias...</p>
-            <Link to={'/suvalliance'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard6})`, height:" 360px" ,backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">ANIMATIONS & VIDEO GRAPHIC</h5>
-          <img src={articonvideogall} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">ANIMATIONS & VIDEO GRAPHIC</h4>
-            <img src={articonvideogall} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">Elonatech Nigeria Limited is built on the assumption that the management of information technology for business is not</p>
-            <Link to={'/animation'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard7})`, height:" 360px" ,backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">LIVESTREAMING & VIDEOCONFERENCING</h5>
-          <img src={articonvideo} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">LIVESTREAMING & VIDEOCONFERENCING</h4>
-            <img src={articonvideo} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">Network administration involves a wide array of operational tasks that help a network to run smoothly and efficiently. This includes activiti</p>
-            <Link to={'/video'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-             {/* card 3 */}
-             <div class="col border-0">
-          <div class="card card-1 border-0 " style={{backgroundImage:`url(${artboard8})`, height:" 360px" ,backgroundSize:"cover", backgroundPosition:"center center", backgroundRepeat:"none"}}>
-          <div class="text-down text-center "  style={{position:"absolute", bottom:"-0"}} >
-          <h5 class="mt-4 text-white">CONSULTING</h5>
-          <img src={articonconsult} class="mb-4"  alt="" srcset=""/>
-           </div>
-          <div class="overlay">
-          <div class="text-center">
-            <h4 class="mt-5 text-white">CONSULTING</h4>
-            <img src={articonconsult} class="mb-4"  alt="" srcset=""/>
-            <p class="text-white">At Elonatech, we build websites that are not only visually beautiful but also functionally effective. Our team of web strategists,</p>
-            <Link to={'/social'} class="btn btn-danger"><h5>See More</h5></Link>
-            </div>
-          </div>
-           </div>
-          </div>
-        
-        
-       
+{/*  */}
 
-      
-
-{/* end */}
-      </div>
-    </div>
-  </div>
 {/* What They Say About Us */}
 <div id="demo" class="carousel slide  mb-5" data-bs-ride="carousel" style={{backgroundColor:"#11253D"}}>
   {/* <!-- The slideshow/carousel --> */}
@@ -800,10 +604,10 @@ const Main = () => {
   <div class="about-border"></div>
   {/* product */}
 <div className="mx-auto">
-<div class="container mt-5">
+<div class="container-fluid mt-5">
 <div class="row mt-5  justify-content-md-center">
   {/* product 1 */}
-  <div class="col-md-2 mx-1  border shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="col-lg-2 mx-1  border shadow-lg p-3 mb-5 bg-body rounded">
     <div className="text-center">
     <img src={product1} className='img-fluid' style={{}} alt="" />
     </div>
@@ -819,7 +623,7 @@ const Main = () => {
 
   </div>
   {/* produt 2 */}
-  <div class="col-md-2 mx-1  border  shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="col-lg-2 mx-1  border  shadow-lg p-3 mb-5 bg-body rounded">
   <div className="text-center">
     <img src={product5} className='img-fluid' style={{}} alt="" />
     </div>
@@ -834,7 +638,7 @@ const Main = () => {
      </div>
   </div>
   {/* product 3 */}
-  <div class="col-md-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
+  <div class="col-lg-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
   <div className="text-center">
     <img src={product2} className='img-fluid' style={{}} alt="" />
     </div>
@@ -849,7 +653,7 @@ const Main = () => {
      </div>
   </div>
   {/* product 4 */}
-  <div class="col-md-2  mx-1 border  shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="col-lg-2  mx-1 border  shadow-lg p-3 mb-5 bg-body rounded">
   <div className="text-center">
     <img src={product3} className='img-fluid' style={{}} alt="" />
     </div>
@@ -864,7 +668,7 @@ const Main = () => {
      </div>
   </div>
   {/* product 5 */}
-  <div class="col-md-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
+  <div class="col-lg-2 mx-1 border  shadow-lg p-3 mb-5 bg-body rounded ">
   <div className="text-center">
     <img src={product4} className='img-fluid' style={{}} alt="" />
     </div>

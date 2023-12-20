@@ -132,10 +132,10 @@ const Shop = () => {
         </form>
           <h4 class="">Categories</h4>
           <ul className="list-unstyled">
-            <li>Computers</li>
-            <li>Office Equipment</li>
-            <li>POS System</li>
-            <li>Printers</li>
+            <li><Link to={'/computers'} className='text-decoration-none text-dark'>Computers</Link></li>
+            <li><Link to={'/office-equipment'}  className='text-decoration-none text-dark'>Office Equipment</Link></li>
+            <li><Link to={'/pos'} className='text-decoration-none text-dark'>POS System</Link></li>
+            <li><Link to={'/printer-sales'} className='text-decoration-none text-dark'>Printers</Link></li>
           </ul>
             {/* range */}
           <h4 class="">Filter by price</h4>
