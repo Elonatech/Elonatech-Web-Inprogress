@@ -5,6 +5,7 @@ import  { useState } from 'react';
 import { useNavigate }  from 'react-router-dom';
 import axios from 'axios';
 import { BASEURL } from '../../../../BaseURL/BaseURL';
+import { toast } from 'react-toastify';
 
 
 const shopWrite = () => {
@@ -53,13 +54,16 @@ const navigate = useNavigate();
         }
         try {
             const data = await axios.post(`${BASEURL}/api/v1/product/create`, newData)
-            if  (data.success === true){
+            if(data.success == true){
                 setLoading(false);
                 setImages([]);
-            }
-            navigate('/shop')
+                toast.success('Product Added Successfully');
+                setTimeout(() =>{
+                  navigate('/shop')
+                }, 1000)
+              }
         } catch (error) {
-            console.log(error)
+            toast.warning('Please Fill All Required Fields');
         }
 
     }

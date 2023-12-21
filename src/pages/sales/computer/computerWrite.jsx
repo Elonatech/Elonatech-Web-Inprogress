@@ -4,7 +4,8 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import axios from 'axios';
 import { BASEURL } from "../../../BaseURL/BaseURL";
-import './computer.css'
+import './computer.css';
+import { toast } from 'react-toastify';
 
 
 const ComputerWrite = () => {
@@ -88,13 +89,16 @@ const ComputerWrite = () => {
             }
             try {
                 const data = await axios.post(`${BASEURL}/api/v1/product/create`, newData)
-                if  (data.success === true){
+                if(data){
                     setLoading(false);
                     setImages([]);
-                }
-                navigate('/shop')
+                    toast.success('Product Added Successfully');
+                    setTimeout(() =>{
+                      navigate('/shop')
+                    }, 1000)
+                  }
             } catch (error) {
-                console.log(error)
+                toast.error(error.response.data);
             }
     
         }

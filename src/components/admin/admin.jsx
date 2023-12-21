@@ -5,6 +5,7 @@ import elonatech from './caption/Elonatech.png';
 import Getintouch from "../GetInTouch/getintouch";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 
 
@@ -12,7 +13,6 @@ const AdminLogin = () => {
     const [email , setEmail] = useState('')
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-
     const handleTogglePassword = () => {
       setShowPassword((prevShowPassword) => !prevShowPassword);
     };
@@ -29,9 +29,12 @@ const AdminLogin = () => {
       
       const res =  await axios.post(`${BASEURL}/api/v1/auth/login`, newUser, {headers:{"Content-Type":"application/json"}})
       localStorage.setItem('token', JSON.stringify(res.data.access))
-      navigate('/dashboard');
+      toast.success('Admin Login Successfully');
+      setTimeout(() =>{
+        navigate('/dashboard');
+      }, 1000)
     } catch (error) {
-      console.log(error)
+      toast.error(error.response.data);
     } 
 }
 return (
@@ -76,7 +79,7 @@ return (
    
     </div>
 
-    <Getintouch />
+    {/* <Getintouch /> */}
             
         </>
     );
